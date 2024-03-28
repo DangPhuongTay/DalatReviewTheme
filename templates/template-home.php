@@ -196,7 +196,7 @@
                 </div>
                 
                 <div class="header__bottom--voucher">
-                    <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-icon-voucher.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-icon-voucher.png" alt="">
                     <a href="header__bottom--voucher__link">
                         Phiếu quà tặng Đà Lạt Review
                     </a>
@@ -207,9 +207,9 @@
         <div class="home__slider">
            <div class="home__slider--show">
             <div class="home__slider--list__images">
-             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?> /assets/images/home-slider-1.webp"\>
-             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?> /assets/images/home-slider-2.webp"\>
-             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?> /assets/images/home-slider-3.jpg"\>
+             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-slider-1.webp"\>
+             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-slider-2.webp"\>
+             <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-slider-3.jpg"\>
             </div>
             <div class="home__slider--btns">
                 <div class="home__slider--btn__left btn-slider"><ion-icon name="chevron-back"></ion-icon></div>
@@ -238,28 +238,28 @@
                 <div class="home__banner--mobile">
                      <div class="home__banner--mobile__top">
                         <a href="liveshow" class="home__banner--mobile__top--item">
-                            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-menu-item-5.png" alt="img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png" alt="img">
                             <span>Tour & Trải nghiệm</span>
                         </a>
                         <a href="category/tour/" class="home__banner--mobile__top--item">
-                            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-menu-item-4.png" alt="img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-4.png" alt="img">
                             <span>Vé tham quan</span>
                         </a>
                         <a href="hotel" class="home__banner--mobile__top--item">
-                            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-menu-item-3.png" alt="img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-3.png" alt="img">
                             <span>Chỗ nghỉ</span>
                         </a>
                         <a href="motorbike" class="home__banner--mobile__top--item">
-                            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-menu-item-2.png" alt="img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-2.png" alt="img">
                             <span>Di chuyển</span>
                         </a>
                         <a href="car" class="home__banner--mobile__top--item">
-                            <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-menu-item-1.png" alt="img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-1.png" alt="img">
                             <span>Thuê xe tự lái</span>
                         </a>
                      </div>
                      <a href="#" class="home__banner--mobile__bottom">
-                        <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-moblie-all-category.png" alt="img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png" alt="img">
                         <span>Tất cả các mục</span>
                      </a>
                 </div>
@@ -274,32 +274,32 @@
             <div class="home__sale--banner__container--list">
                 <div class="home__sale--banner__container--list__item">
                     <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-3.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-3.png" alt="">
                     </a>
                 </div>
                 <div class="home__sale--banner__container--list__item">
                     <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-2.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-2.png" alt="">
                     </a>
                 </div>
                 <div class="home__sale--banner__container--list__item last">
                    <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
                    </a>
                 </div>
                 <div class="home__sale--banner__container--list__item last">
                     <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-1.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
                     </a>
                  </div>
                  <div class="home__sale--banner__container--list__item last">
                     <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-1.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
                     </a>
                  </div>
                  <div class="home__sale--banner__container--list__item last">
                     <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-sale-banner-img-1.png" alt="">
+                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
                     </a>
                  </div>
             </div>
@@ -313,22 +313,22 @@
             </div>
             <div class="home__info--banner__container--list">
                 <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-info-banner-img-3.png" alt="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-3.png" alt="img">
                     <p>Vô vàn lựa chọn</p>
                     <span>Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải nghiệm thú vị</span>
                 </div>
                 <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-info-banner-img-2.png" alt="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-2.png" alt="img">
                     <p>Chơi vui, giá tốt</p>
                     <span>Trải nghiệm chất lượng với giá tốt. Tích luỹ Klook credit để được thêm ưu đãi</span>
                 </div>
                 <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-info-banner-img-1.png" alt="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-1.png" alt="img">
                     <p>Dễ dàng và tiện lợi</p>
                     <span>Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá</span>
                 </div>
                 <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?> /assets/images/home-info-banner-img-3.png" alt="img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-3.png" alt="img">
                     <p>Đáng tin cậy</p>
                     <span>Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc, mọi nơi</span>
                 </div>
@@ -354,8 +354,8 @@
                 <button><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button>
             </div>
             <div class="home__contact--banner__container--list__img">
-                <img src="<?php echo get_template_directory_uri(); ?> /assets/images/contact-banner-img-1.png" alt="img">
-                <img src="<?php echo get_template_directory_uri(); ?> /assets/images/contact-banner.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-img-1.png" alt="img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner.png" alt="">
             </div>
            
         </div>
@@ -371,7 +371,7 @@
                 <div class="fourProductList__wrapper--item">
                     <a href="detail-hotel">
                         <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>  /assets/images/home-sale-banner-img-1.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
@@ -422,7 +422,7 @@
                 <div class="fourProductList__wrapper--item">
                     <a href="detail-hotel">
                         <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>  /assets/images/home-sale-banner-img-1.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
@@ -473,7 +473,7 @@
                 <div class="fourProductList__wrapper--item">
                     <a href="detail-hotel">
                         <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>  /assets/images/home-sale-banner-img-1.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
@@ -524,7 +524,7 @@
                 <div class="fourProductList__wrapper--item">
                     <a href="detail-hotel">
                         <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>  /assets/images/home-sale-banner-img-1.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
