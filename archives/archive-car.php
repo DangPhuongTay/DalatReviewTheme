@@ -33,6 +33,7 @@
         
         <?php
         while(have_posts()){
+            the_post(  );
             ?>
             <div class="firstProduct__content--list__item col-sm-3 ">
                  <div class="firstProduct__content--list__item--wrap">
@@ -122,7 +123,6 @@
                                 </div>
                             </div>
             <?php
-          the_post(  );
         }
         ?>
        </div>
