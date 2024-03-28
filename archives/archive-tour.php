@@ -232,7 +232,7 @@
                         </div>
                     </div>
             <?php
-            the_post(  );
+            the_post();
         }
         ?>
                 </div>
