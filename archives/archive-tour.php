@@ -170,6 +170,7 @@
                 <div class="firstProduct__content--list">
         <?php
         while(have_posts(  )){
+            the_post(  );
             ?>
                     <div class="firstProduct__content--list__item">
                         <div class="firstProduct__content--list__item--wrap">
@@ -232,7 +233,7 @@
                         </div>
                     </div>
             <?php
-            the_post(  );
+           
         }
         ?>
                 </div>
