@@ -15,7 +15,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?> /style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <?php wp_head();?>
 </head>
 <body>
