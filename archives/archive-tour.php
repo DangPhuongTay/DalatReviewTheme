@@ -169,7 +169,7 @@
             <div class="firstProduct__content">
                 <div class="firstProduct__content--list">
         <?php
-        while(have_posts(  )){
+        while(have_posts()){
             ?>
                     <div class="firstProduct__content--list__item">
                         <div class="firstProduct__content--list__item--wrap">
