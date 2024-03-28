@@ -1,12 +1,12 @@
 
-<?php
-    if(have_posts()){
-        while(have_posts()){
+<?php 
+get_header( );
+switch (the_category()) {
+    case "tour":
+        get_template_part('contents/content', 'tour' );
+        break;
+    case "hotel":
+        get_template_part('archives/archive', 'hotel' );
+        break;
+}
 
-            the_post();
-            the_category();
-            the_title();
-            the_content();
-        }
-    }
-?>

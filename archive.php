@@ -13,6 +13,12 @@ function sb_get_current_url() {
         case "http://localhost/wordpress/category/hotel/":
             get_template_part('archives/archive', 'hotel' );
             break;
+        case "http://localhost/wordpress/category/blog/":
+            get_template_part('archives/archive', 'blog' );
+            break;
+        case "http://localhost/wordpress/category/liveshow/":
+            get_template_part('archives/archive', 'liveshow' );
+            break;
 
     }
 
