@@ -10,6 +10,7 @@
      */
     get_header();?>
         <section class="blog">
+ 
         <div class="blog__banner">
             <img src="<?php echo get_template_directory_uri( )?>/assets/images/blog-banner.png" alt="">
             <div class="blog__banner--text">
