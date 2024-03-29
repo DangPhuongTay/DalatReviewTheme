@@ -62,12 +62,12 @@
                                         Lưu trú
                                     </div>
                                     <div class="header__bottom--listlink__allcategory--list__item--content ">
-                                        <p><a href="hotel">Combo du lịch Đà Lạt<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Khách sạn<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Villa<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Resort<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Homestay<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Nhà nghỉ<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Combo du lịch Đà Lạt<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Khách sạn<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Villa<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Resort<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Homestay<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Nhà nghỉ<ion-icon name="chevron-forward"></ion-icon></a></p>
                                     </div>
                                 </ul>
                                 <ul class="header__bottom--listlink__allcategory--list__item">
@@ -75,8 +75,8 @@
                                         Di chuyển
                                     </div>
                                     <div class="header__bottom--listlink__allcategory--list__item--content ">
-                                        <p><a href="motobike">Thuê xe máy<ion-icon name="chevron-forward"></ion-icon></a></ion-icon></p>
-                                        <p><a href="car">Thuê ô tô<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/motobike/">Thuê xe máy<ion-icon name="chevron-forward"></ion-icon></a></ion-icon></p>
+                                        <p><a href="category/car/">Thuê ô tô<ion-icon name="chevron-forward"></ion-icon></a></p>
                                     </div>
                                 </ul>
                                 <ul class="header__bottom--listlink__allcategory--list__item">
@@ -84,9 +84,9 @@
                                         Thêm nhiều khám phá
                                     </div>
                                     <div class="header__bottom--listlink__allcategory--list__item--content ">
-                                        <p><a href="hotel">Chụp hình ngoại cảnh<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Chụp hình studio<ion-icon name="chevron-forward"></ion-icon></a></p>
-                                        <p><a href="hotel">Chụp hình cưới<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Chụp hình ngoại cảnh<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Chụp hình studio<ion-icon name="chevron-forward"></ion-icon></a></p>
+                                        <p><a href="category/hotel/">Chụp hình cưới<ion-icon name="chevron-forward"></ion-icon></a></p>
                                     </div>
                                 </ul>
    
@@ -114,16 +114,16 @@
                             <div class="header__bottom--listlink__category2--list shadow">
                                 <ul class="header__bottom--listlink__category2--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="liveshow">Công viên giải trí</a></p>
-                                        <p><a href="liveshow">Công viên nước</a></p>
-                                        <p><a href="liveshow">Bảo tàng</a></p>
-                                        <p><a href="liveshow">Công viên & Vườn bách thảo</a></p>
-                                        <p><a href="liveshow">Sở thú & Vườn thủy cung</a></p>
-                                        <p><a href="liveshow">Cáp treo</a></p>
-                                        <p><a href="liveshow">Di tích lịch sử</a></p>
-                                        <p><a href="liveshow">Khu vui chơi</a></p>
-                                        <p><a href="liveshow">Vui chơi trong nhà</a></p>
-                                        <p><a href="liveshow">Vé tham quan</a></p>
+                                        <p><a href="category/liveshow/">Công viên giải trí</a></p>
+                                        <p><a href="category/liveshow/">Công viên nước</a></p>
+                                        <p><a href="category/liveshow/">Bảo tàng</a></p>
+                                        <p><a href="category/liveshow/">Công viên & Vườn bách thảo</a></p>
+                                        <p><a href="category/liveshow/">Sở thú & Vườn thủy cung</a></p>
+                                        <p><a href="category/liveshow/">Cáp treo</a></p>
+                                        <p><a href="category/liveshow/">Di tích lịch sử</a></p>
+                                        <p><a href="category/liveshow/">Khu vui chơi</a></p>
+                                        <p><a href="category/liveshow/">Vui chơi trong nhà</a></p>
+                                        <p><a href="category/liveshow/show">Vé tham quan</a></p>
                                     </div>
                                 </ul>
                             </div>
@@ -135,11 +135,11 @@
                             <div class="header__bottom--listlink__category3--list shadow">
                                 <ul class="header__bottom--listlink__category3--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="hotel">Combo di lịch Đà Lạt</a></p>
-                                        <p><a href="hotel">Khách sạn</a></p>
-                                        <p><a href="hotel">Villa</a></p>
-                                        <p><a href="hotel">Homestay</a></p>
-                                        <p><a href="hotel">Nhà nghỉ</a></p>
+                                        <p><a href="category/hotel/">Combo di lịch Đà Lạt</a></p>
+                                        <p><a href="category/hotel/">Khách sạn</a></p>
+                                        <p><a href="category/hotel/">Villa</a></p>
+                                        <p><a href="category/hotel/">Homestay</a></p>
+                                        <p><a href="category/hotel/">Nhà nghỉ</a></p>
                                     </div>
                                 </ul>
                             </div>
@@ -151,8 +151,8 @@
                             <div class="header__bottom--listlink__category5--list shadow">
                                 <ul class="header__bottom--listlink__category5--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="motobike">Xe máy</a></p>
-                                        <p><a href="car">Xe ô tô</a></p>
+                                        <p><a href="category/motobike/">Xe máy</a></p>
+                                        <p><a href="category/car/">Xe ô tô</a></p>
                                     </div>
                                 </ul>
                             </div>
@@ -184,9 +184,9 @@
                                         Thêm nhiều khám phá
                                     </div>
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="blog">Wifi & thẻ SIM</a></p>
-                                        <p><a href="blog">Ẩm thực</a></p>
-                                        <p><a href="blog">Du lịch</a></p>
+                                        <p><a href="category/blog/">Wifi & thẻ SIM</a></p>
+                                        <p><a href="category/blog/">Ẩm thực</a></p>
+                                        <p><a href="category/blog/">Du lịch</a></p>
                                     </div>
                                 </ul>
                             </div>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="home__banner--mobile">
                      <div class="home__banner--mobile__top">
-                        <a href="liveshow" class="home__banner--mobile__top--item">
+                        <a href="category/liveshow/" class="home__banner--mobile__top--item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png" alt="img">
                             <span>Tour & Trải nghiệm</span>
                         </a>
@@ -245,15 +245,15 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-4.png" alt="img">
                             <span>Vé tham quan</span>
                         </a>
-                        <a href="hotel" class="home__banner--mobile__top--item">
+                        <a href="category/hotel/" class="home__banner--mobile__top--item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-3.png" alt="img">
                             <span>Chỗ nghỉ</span>
                         </a>
-                        <a href="motorbike" class="home__banner--mobile__top--item">
+                        <a href="category/motorbike/" class="home__banner--mobile__top--item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-2.png" alt="img">
                             <span>Di chuyển</span>
                         </a>
-                        <a href="car" class="home__banner--mobile__top--item">
+                        <a href="category/car/" class="home__banner--mobile__top--item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-1.png" alt="img">
                             <span>Thuê xe tự lái</span>
                         </a>
@@ -271,38 +271,7 @@
             <div class="home__sale--banner__container--header">
                 <p>Ưu đãi hấp dẫn</p>
             </div>
-            <div class="home__sale--banner__container--list">
-                <div class="home__sale--banner__container--list__item">
-                    <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-3.png" alt="">
-                    </a>
-                </div>
-                <div class="home__sale--banner__container--list__item">
-                    <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-2.png" alt="">
-                    </a>
-                </div>
-                <div class="home__sale--banner__container--list__item last">
-                   <a href="category/tour/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
-                   </a>
-                </div>
-                <div class="home__sale--banner__container--list__item last">
-                    <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
-                    </a>
-                 </div>
-                 <div class="home__sale--banner__container--list__item last">
-                    <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
-                    </a>
-                 </div>
-                 <div class="home__sale--banner__container--list__item last">
-                    <a href="category/tour/">
-                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png" alt="">
-                    </a>
-                 </div>
-            </div>
+            <?php get_template_part('archives/archive', 'voucher' ); ?>
         </div>
        </div>
        <!-- home info banner -->
@@ -367,212 +336,7 @@
                 <div class="home__product--banner__container--header">
                     <p>Sản phẩm nổi bật</p>
                 </div>
-            <div class="fourProductList__wrapper">
-                <div class="fourProductList__wrapper--item">
-                    <a href="detail-hotel">
-                        <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
-                        </div>
-                        <div class="fourProductList__wrapper--main">
-                            <div class="fourProductList__wrapper--info">
-                                <div class="fourProductList__wrapper--info__title">
-                                    <span>Dalat Wonder Resort</span>
-                                    <span class="fourProductList__wrapper--stars">
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                    </span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__review">
-                                    <div class="fourProductList__wrapper--info__score">
-                                        <span>4.4</span>
-                                        <span class="slash">/</span>
-                                        <span>5</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
-                                </div>
-                                <div class="fourProductList__wrapper--info__ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__tag">
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fourProductList__wrapper--price">
-                                <div class="fourProductList__wrapper--price__info">
-                                    <span>đ</span>
-                                    <span>1,444,527</span>
-                                </div>
-                                <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="fourProductList__wrapper--item">
-                    <a href="detail-hotel">
-                        <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
-                        </div>
-                        <div class="fourProductList__wrapper--main">
-                            <div class="fourProductList__wrapper--info">
-                                <div class="fourProductList__wrapper--info__title">
-                                    <span>Dalat Wonder Resort</span>
-                                    <span class="fourProductList__wrapper--stars">
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                    </span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__review">
-                                    <div class="fourProductList__wrapper--info__score">
-                                        <span>4.4</span>
-                                        <span class="slash">/</span>
-                                        <span>5</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
-                                </div>
-                                <div class="fourProductList__wrapper--info__ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__tag">
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fourProductList__wrapper--price">
-                                <div class="fourProductList__wrapper--price__info">
-                                    <span>đ</span>
-                                    <span>1,444,527</span>
-                                </div>
-                                <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="fourProductList__wrapper--item">
-                    <a href="detail-hotel">
-                        <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
-                        </div>
-                        <div class="fourProductList__wrapper--main">
-                            <div class="fourProductList__wrapper--info">
-                                <div class="fourProductList__wrapper--info__title">
-                                    <span>Dalat Wonder Resort</span>
-                                    <span class="fourProductList__wrapper--stars">
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                    </span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__review">
-                                    <div class="fourProductList__wrapper--info__score">
-                                        <span>4.4</span>
-                                        <span class="slash">/</span>
-                                        <span>5</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
-                                </div>
-                                <div class="fourProductList__wrapper--info__ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__tag">
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fourProductList__wrapper--price">
-                                <div class="fourProductList__wrapper--price__info">
-                                    <span>đ</span>
-                                    <span>1,444,527</span>
-                                </div>
-                                <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="fourProductList__wrapper--item">
-                    <a href="detail-hotel">
-                        <div class="fourProductList__wrapper--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
-                        </div>
-                        <div class="fourProductList__wrapper--main">
-                            <div class="fourProductList__wrapper--info">
-                                <div class="fourProductList__wrapper--info__title">
-                                    <span>Dalat Wonder Resort</span>
-                                    <span class="fourProductList__wrapper--stars">
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                    </span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__review">
-                                    <div class="fourProductList__wrapper--info__score">
-                                        <span>4.4</span>
-                                        <span class="slash">/</span>
-                                        <span>5</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
-                                </div>
-                                <div class="fourProductList__wrapper--info__ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
-                                </div>
-                                <div class="fourProductList__wrapper--info__tag">
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Phòng Gym</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Lễ tân 24/24</span>
-                                    </div>
-                                    <div class="fourProductList__wrapper--info__card--tag">
-                                        <span>Trung tâm thành phố</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fourProductList__wrapper--price">
-                                <div class="fourProductList__wrapper--price__info">
-                                    <span>đ</span>
-                                    <span>1,444,527</span>
-                                </div>
-                                <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <?php get_template_part('archives/archive', 'new' ); ?>
             </div>
            
         </div>
