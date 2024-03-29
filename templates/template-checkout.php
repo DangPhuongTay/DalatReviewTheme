@@ -126,7 +126,7 @@
                 <div class="checkouttour__container--left__last">
                     <p>Đơn hàng của bạn sẽ được gửi đi sau khi bạn đến bước tiếp theo (Bạn có thể chọn phương thức thanh toán ở trang kế tiếp)</p>
                     <div class="checkouttour__container--left__last--btn firstBtn">
-                        <a href="checkout-final">
+                        <a href="checkout-tour-final.html">
                             Thanh toán
                         </a>
                     </div>
@@ -148,6 +148,7 @@
         </div>
         
     </section>
+    <!-- phần footer -->
     <div class="checkouttour__container--add shadow">
         <div class="checkouttour__container--add--header">
             <span>Thêm thông tin liên lạc</span>

@@ -155,19 +155,16 @@
                         <p>Phổ biến nhất</p>
                     </div>
                     <div class="blog__container--bottom__right--header__list">
-                    <div class="blog__container--bottom__right--header__list--item">
-                            <a href="detail-blog">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>1</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </a>
+                        <div class="blog__container--bottom__right--header__list--item">
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>1</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
                         </div>
                         <div class="blog__container--bottom__right--header__list--item">
-                        <a href="detail-blog">
                             <div class="blog__container--bottom__right--header__list--item__number">
                                 <span>2</span>
                             </div>
@@ -175,29 +172,24 @@
                                 <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
                                 <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
                             </div>
-                            </a>
                         </div>
                         <div class="blog__container--bottom__right--header__list--item">
-                            <a href="detail-blog">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>3</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </a>
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>3</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
                         </div>
                         <div class="blog__container--bottom__right--header__list--item">
-                            <a href="detail-blog">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>4</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </a>
+                            <div class="blog__container--bottom__right--header__list--item__number">
+                                <span>4</span>
+                            </div>
+                            <div class="blog__container--bottom__right--header__list--item__text">
+                                <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
+                                <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
+                            </div>
                         </div>
                     </div>
             </div>
