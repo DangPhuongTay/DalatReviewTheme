@@ -78,7 +78,7 @@
                                 </a>
                             </div>
                             <div class="user__content--link">
-                                <a class="user__module--link" href="user-gift-card">
+                                <a class="user__module--link" href="user-giftcard">
                                     <ion-icon name="ticket-outline"></ion-icon>
                                     <span>Phiếu quà tặng</span>
                                 </a>
@@ -98,7 +98,7 @@
 
 
                             <div class="user__content--link">
-                                <a class="user__module--link" href="user-wishlist">
+                                <a class="user__module--link" href="http://localhost/wordpress/user-wishlist">
                                     <ion-icon name="heart-outline"></ion-icon>
                                     <span>Yêu thích </span>
 
