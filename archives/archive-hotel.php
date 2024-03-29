@@ -488,7 +488,8 @@
                     </div>
                 </div>
         <?php
-        while(have_posts(  )){
+        while(have_posts()){
+            the_post();
             ?>
                   <div class="hotel__right--item">
                         <a href="http://localhost/wordpress/hotel/detail-hotel/">
@@ -565,7 +566,7 @@
                         </a>
                     </div>
             <?php
-            the_post(  );
+          
         }
         ?>
            </div>
