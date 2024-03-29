@@ -1,6 +1,4 @@
-<?php
-if (have_posts()) {
-    ?>
+
     <section class="blog">
         <div class="blog__banner">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog-banner.png" alt="">
@@ -16,27 +14,18 @@ if (have_posts()) {
                     <p>Bài viết mới nhất</p>
                 </div>
                 <div class="blog__container--new__list">
-                    <?php
-                    while (have_posts()) {
-                        the_post();
-                        ?>
-                        <div class="blog__container--new__list--item">
-                            <a href="detail-blog">
-                                <div class="blog__container--new__list--item__img">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog-3.png" alt="">
-                                </div>
-                                <div class="blog__container--new__list--item__text">
-                                    <p><?php the_title() ?></p>
-                                    <span><?php the_content() ?></span>
-                                    <div class="blog__container--new__list--item__text--at"><?php the_date() ?></div>
-                                </div>
-                            </a>
-                        </div>
-                        <?php
-                        
-
-                    }
-                    ?>
+                <?php 
+                    $args = array(
+                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+                        'showposts' => 6, // số lượng bài viết
+                        'cat'=>6,
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+                <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                    <?php  get_template_part('archives/items/item', 'blog' ); ?>
+                <?php endwhile; wp_reset_postdata(); ?>
                 </div>
                 <div class="blog__container--bottom">
                     <div class="blog__container--bottom__left">
@@ -44,28 +33,22 @@ if (have_posts()) {
                             <p>Xu hướng du lịch mới nhất</p>
                         </div>
                         <div class="blog__container--bottom__left--header__list">
-                            <?php
-                            while (have_posts()) {
-                                the_post();
-                                ?>
-                                <div class="blog__container--bottom__left--header__list--item">
-                                    <a href="detail-blog">
-                                        <div class="blog__container--bottom__left--header__list--item__img">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog-2.png"
-                                                alt="">
-                                        </div>
-                                        <div class="blog__container--bottom__left--header__list--item__text">
-                                            <p><?php the_title() ?></p>
-                                            <span><?php the_content() ?></span>
-                                            <div class="blog__container--new__list--item__text--at">31/2/2024</div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <?php
-                                
+                        <?php 
+                    $args = array(
+                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+                        'showposts' => 6, // số lượng bài viết
+                        'cat'=>6,
+                        'tag'=>'new',
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+                <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                    <?php  get_template_part('archives/items/item', 'blognew' ); ?>
+                <?php endwhile; wp_reset_postdata(); ?>
 
-                            }
-                            ?>
+
+
                         </div>
                     </div>
                     <div class="blog__container--bottom__right">
@@ -73,27 +56,23 @@ if (have_posts()) {
                             <p>Phổ biến nhất</p>
                         </div>
                         <div class="blog__container--bottom__right--header__list">
-                            <?php
-                            while (have_posts()) {
-                                the_post();
-                                ?>
+                           
+                        <?php 
+                    $args = array(
+                        'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+                        'showposts' => 6, // số lượng bài viết
+                        'cat'=>6,
+                        'tag'=>'hot',
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+                <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                    <?php  get_template_part('archives/items/item', 'bloghot' ); ?>
+                <?php endwhile; wp_reset_postdata(); ?>
 
-                                <div class="blog__container--bottom__right--header__list--item">
-                                    <a href="detail-blog">
-                                        <div class="blog__container--bottom__right--header__list--item__number">
-                                            <span>1</span>
-                                        </div>
-                                        <div class="blog__container--bottom__right--header__list--item__text">
-                                            <p><?php the_title() ?></p>
-                                            <span><?php the_content() ?></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <?php
-                               
 
-                            }
-                            ?>
+
 
                         </div>
                     </div>
@@ -101,6 +80,4 @@ if (have_posts()) {
 
             </div>
     </section>
-    <?php
-}
-get_footer(); ?>  
+
