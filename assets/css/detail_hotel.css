@@ -8,7 +8,7 @@
 }
 .detailHotel__banner{
     margin: 0 auto;
-    margin-top: 140px;
+    margin-top: 107px;
     max-width: 1160px;
     width: 100%;
 }
@@ -184,7 +184,10 @@
     display: flex;
     align-items: center;
 }
-
+.detailHotel__list--body__reviews--content__item--content__header--user{
+    display: flex;
+    align-items: center;
+}
 .detailHotel__info--summary__left--bot img,
 .detailHotel__list--body__reviews--content__item--content__header--user img {
     border-radius: 50%;
@@ -1162,8 +1165,11 @@ body.MapCarForm{
 }
 
 @media  (max-width: 800px){
+    .detail__hotel--wrap .hotelMobile__fitter{
+        display: none !important;
+    }
     .detailHotel__banner{
-        margin-top: 65px;
+        margin-top: 40px;
         height: 0;
         position: relative;
         margin-bottom: -20px;
@@ -1343,12 +1349,13 @@ body.MapCarForm{
     .detailHotel__list--body__list--wrap__item--left__action--arrow__down{
         border: 1px solid var(--color-text-7);
         border-radius: 6px;
-        width: 20px;
-        height: 20px;
         margin-left: 20px;
+        align-items: center;
+        display: flex;
     }
     .detailHotel__list--body__list--wrap__item--left__action--arrow__down ion-icon{
         color: var(--color-text-7);
+        padding: 2px;
     }
     .detailHotel__list--body__list--wrap__item--left__img--main__1{
         flex: none;
@@ -1397,7 +1404,7 @@ body.MapCarForm{
     Creact at: 23/2/2024
 ============================================== */
     body.listDetailHotelSevice .detailHotelMobile__list--body__service--container{
-        top: 150px;
+        top: 175px;
     }
     body.listDetailHotelSevice .detailHotel__backgroup--blur{
         display: block;
@@ -1406,7 +1413,7 @@ body.MapCarForm{
         overflow: hidden;
     }
     body.listDetailHotelSevice2 .detailHotelMobile__list--body__service--container{
-        top: 150px;
+        top: 175px;
     }
     body.listDetailHotelSevice2 .detailHotel__backgroup--blur{
         display: block;

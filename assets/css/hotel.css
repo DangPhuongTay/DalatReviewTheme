@@ -1,4 +1,3 @@
-
 /* ==============================================
     Name: Hotel css
     Creact by: TienDat
@@ -13,31 +12,7 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .hotel__fitter {
-    position: fixed;
-    left: 0;
-    top: 61px;
-    z-index: 100;
-    width: 100%;
-    padding: 10px 60px;
-    background-color: var(--color-background-15);
-  }
-  
-  .hotel__fitter--wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1160px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .hotel__fitter--search {
-    margin-right: 8px;
-    width: 100%;
-  }
-  
+
   .hotel__search:hover {
     background-color: #ecf3fc;
   }
@@ -55,10 +30,6 @@
   
   .hotel__body--left {
     flex: 30%;
-  }
-  
-  .hotel__fitter--btn {
-    min-width: 127px;
   }
   
   .hotel__left--section {
@@ -350,39 +321,7 @@
     display: none;
   }
   
-  /* ==============================================
-    Name: drodownFitter
-    Creact by: Tien Dat
-    Creact at: 11AM 28/1/2024
-  ============================================== */
-  .hotel__fitter--search__suggest {
-    display: none;
-    margin-top: 5px;
-    position: absolute;
-    width: 100%;
-    background-color: var(--color-background-6);
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  .hotel__fitter--search__suggest--title {
-    font-weight: 600;
-    font-size: var(--size-text-5);
-  }
-  
-  .hotel__fitter--search__listlink {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .hotel__fitter--search__listlink p {
-    background-color: var(--color-background-12);
-    margin-top: 12px;
-    margin-left: 10px;
-    max-width: 100%;
-    padding: 8px 10px;
-    border-radius: var(--border-radius-size-3);
-  }
+
   
   /* ==============================================
     Name: From
@@ -570,9 +509,6 @@
     .hotelMobile__fitter{
       display: block !important;
     }
-    .hotel__fitter {
-        display: none;
-      }
   }
   @media (max-width: 630px) {
     .hotel__body--left {
@@ -622,10 +558,6 @@
       display: none;
     }
   
-    .hotel__fitter {
-      display: none;
-    }
-  
     .hotel__body--left {
       display: none;
     }
@@ -641,28 +573,7 @@
       width: 100%;
     }
   
-    .hotelMobile__fitter {
-      position: relative;
-      z-index: 20;
-      padding: 12px 35px;
-      display: block;
-    }
-  
-    .hotelMobile__fitter--wraper {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 12px 20px;
-      height: 40px;
-      border-radius: 20px;
-      background-color: var(--color-background-12);
-    }
-  
-    .hotelMobile__fitter--wraper span {
-      color: var(--color-background-2);
-    }
-  
+
     .hotelMobile__fitter--date,
     .hotelMobile__fitter--location {
       font-size: var(--size-text-4);
@@ -684,6 +595,7 @@
       line-height: 1.5;
       padding: 12px;
       border-bottom: 1px solid var(--color-background-12);
+      margin-top: 10px;
   
     }
   

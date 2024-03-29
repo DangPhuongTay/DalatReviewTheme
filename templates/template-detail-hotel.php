@@ -9,40 +9,40 @@
  * 
  */
     get_header();?>
-
-<div class="slide__img--box">
+     <div class="detail__hotel--wrap">
+     <div class="slide__img--box">
         <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
         <div class="container__slides">
     
           <!-- Full-width images with number text -->
           <div class="mySlides">
             <div class="numbertext">1 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide1.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide1.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
             <div class="numbertext">2 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide2.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide2.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
             <div class="numbertext">3 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide3.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide3.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
             <div class="numbertext">4 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide4.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide4.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
             <div class="numbertext">5 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide5.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide5.jpg" style="width:100%">
           </div>
       
           <div class="mySlides">
             <div class="numbertext">6 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%">
+            <img src="<?php echo get_template_directory_uri( )?>/assets/images/slide6.jpg" style="width:100%">
           </div>
       
           <!-- Next and previous buttons -->
@@ -57,41 +57,41 @@
           <!-- Thumbnail images -->
           <div class="container__slide--number">
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide1.jpg" style="width:100%" onclick="currentSlide(1)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide1.jpg" style="width:100%" onclick="currentSlide(1)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide2.jpg" style="width:100%" onclick="currentSlide(2)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide2.jpg" style="width:100%" onclick="currentSlide(2)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide3.jpg" style="width:100%" onclick="currentSlide(3)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide3.jpg" style="width:100%" onclick="currentSlide(3)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide4.jpg" style="width:100%" onclick="currentSlide(4)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide4.jpg" style="width:100%" onclick="currentSlide(4)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide5.jpg" style="width:100%" onclick="currentSlide(5)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide5.jpg" style="width:100%" onclick="currentSlide(5)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
             <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
+              <img class="demo cursor" src="<?php echo get_template_directory_uri( )?>/assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
                 alt="Đà Lạt Review Tất Tần Tật">
             </div>
           </div>
         </div>
       </div>
-      <div class="secondDropDown">
+           <div class="secondDropDown">
         <div class="hotel__fitter">
             <div class="hotel__fitter--wrapper">
                 <div class="hotel__fitter--search">
@@ -166,21 +166,116 @@
             </div>
         </div>
     
-
+        <div class="hotelMobile__fitter">
+            <div class="hotelMobile__fitter--wraper">
+                <div class="hotelMobile__fitter--date">
+                    Chọn ngày
+                </div>
+                <div class="hotelMobile__fitter--date__wrap">
+                    <div class="hotel__fitter--search">
+                        <p>Ngày nhận / trả phòng</p>
+                        <input type="date" placeholder="Chọn ngày" class="hotel__search">
+                    </div>
+                    <div class="hotel__fitter--search roomMobile">
+                        <p>Số khách & phòng</p>
+                        <input type="search" placeholder="Chọn phòng" class="hotel__search">
+                        <div class="hotel__fitter--room">
+                            <div class="hotel__fitter--room__inner">
+                                <div class="hotel__fitter--room__header">
+                                    <span>Số khách & phòng</span>
+                                </div>
+                                <div class="hotel__fitter--room__content">
+                                    <section class="hotel__fitter--room__item">
+                                        <b>Phòng</b>
+                                        <div class="number-input">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                        </div>
+                                    </section>
+                                    <section class="hotel__fitter--room__item">
+                                        <b>Người lớn</b>
+                                        <div class="number-input">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                        </div>
+                                    </section>
+                                    <section class="hotel__fitter--room__item">
+                                        <b>Trẻ em</b>
+                                        <div class="number-input">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="hotel__fitter--room__fotter">
+                                    <button class="firstBtn">
+                                        Xác nhận
+                                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="hotel__fitter--btn firstBtn">
+                            Tìm kiếm
+                        </div>
+                    </a>
+                </div>
+                <span>|</span>
+                <div class="hotelMobile__fitter--location">
+                    <ion-icon name="search-outline"></ion-icon>
+                    Khám phá những điểm gần đây
+                    <div class="hotelMobile__fitter--location__wrap">
+                        <div class="hotel__fitter--location__header">
+                            <span>Điểm đến</span>
+                        </div>
+                        <div class="hotel__fitter--search">                      
+                            <p>Địa điểm</p>
+                            <input type="search" placeholder="Khám phá những điểm gần đây" class="hotel__search">
+                            <div class="hotel__fitter--location">
+                                <div>
+                                    <section class="hotel__destination--wrapper">
+                                        <span>Vị trí của tôi</span>
+                                        <div class="hotel__destination--group">
+                                            <span class="hotel__destination--group__item">
+                                                Khám phá những điểm gần đây
+                                            </span>
+                                        </div>
+                                    </section>
+                                    <section class="hotel__destination--wrapper">
+                                        <span>Tên điểm đến hot</span>
+                                        <div class="hotel__destination--group">
+                                            <span class="hotel__destination--group__item">Hồng Kông</span>
+                                            <span class="hotel__destination--group__item">Tân Gia Ba</span>
+                                            <span class="hotel__destination--group__item">Tokyo</span>
+                                            <span class="hotel__destination--group__item">Đài Bắc</span>
+                                        </div>
+                                    </section>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="hotel__fitter--blur"></div>
         <div class="hotel__fitter--blur__2"></div>
-        </div>
+    </div>
     <div class="detailHotel__banner">
         <div class="detailHotel__top--link">
             <ion-icon name="chevron-back-outline"></ion-icon>
-            <a href="hotel">Tìm thêm khách sạn tại Đà Lạt</a>
+            <a href="category/hotel">Tìm thêm khách sạn tại Đà Lạt</a>
         </div>
         <div class="detailHotelMobile__slides">
             <div class="detailHotelMobile__slides--show">
                 <div class="detailHotelMobile__slides--show__item" onclick="btnDetailHotelSlides(   )">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel2.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel3.jpg" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel5.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel2.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel3.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel5.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -202,13 +297,13 @@
         
         <div class="detailHotel__img" onclick="btnDetailHotelSlides()">
             <div class="detailHotel__img--left">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel1.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel1.jpg" alt="">
             </div>
             <div class="detailHotel__img--right">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel2.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel3.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel2.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel5.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel3.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel2.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel5.jpg" alt="">
             </div>
         </div>
         <div class="detailHotel__info">
@@ -262,7 +357,7 @@
                         </div>
                     </div>
                     <div class="detailHotel__info--summary__left--bot">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
+                        <img src="<?php echo get_template_directory_uri( )?>/assets/images/user_avatar.png" alt="">
                         <div class="detailHotel__info--summary__left--bot__decs">
                             <div class="detailHotel__info--summary__left--bot__decs--name">Tien Dat</div>
                             <div class="detailHotel__info--summary__left--bot__decs--content">Khách sạn sạch đẹp, phòng
@@ -346,7 +441,7 @@
                                     <h2>Phòng Deluxe</h2>
                                 </div>
                                 <div class="detailHotel__list--body__list--wrappper__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel1.avif" alt="">
+                                    <img src="<?php echo get_template_directory_uri( )?>/assets/images/detailHotel1.avif" alt="">
                                 </div>
                                 <div class="detailHotel__rate--content__list">
                                     <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-info">
@@ -448,7 +543,7 @@
                                     <div class="detailHotel__footer--price__info--unit">Mỗi đêm</div>
                                     <ion-icon name="alert-circle-outline"></ion-icon>
                                 </div>
-                                <a class="firstBtn">Đặt</a>
+                                <a href="checkout" class="firstBtn">Đặt</a>
                             </div>
                         </div>
                     </div>
@@ -460,13 +555,13 @@
                                     <div class="detailHotel__list--body__list--wrap__item--left__img" onclick="btnDetailHotelSlides()">
                                         <div class="detailHotel__list--body__list--wrap__item--left__img--main">
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__1">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel1.avif" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/detailHotel1.avif" alt="">
                                             </div>
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__2">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel.avif" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/detailHotel.avif" alt="">
                                             </div>
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__3">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel2.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel2.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="detailHotel__list--body__list--wrap__item--left__img--count">
@@ -619,13 +714,13 @@
                                     <div class="detailHotel__list--body__list--wrap__item--left__img slides">
                                         <div class="detailHotel__list--body__list--wrap__item--left__img--main">
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__1">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel1.avif" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/detailHotel1.avif" alt="">
                                             </div>
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__2">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel.avif" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/detailHotel.avif" alt="">
                                             </div>
                                             <div class="detailHotel__list--body__list--wrap__item--left__img--main__3">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel2.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/hotel2.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="detailHotel__list--body__list--wrap__item--left__img--count">
@@ -851,7 +946,7 @@
                                     <div class="detailHotel__list--body__reviews--content__item--content">
                                         <div class="detailHotel__list--body__reviews--content__item--content__header">
                                             <div class="detailHotel__list--body__reviews--content__item--content__header--user">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/user_avatar.png" alt="">
                                                 <span>TienDat</span>
                                             </div>
                                             <div class="detailHotel__list--body__reviews--content__item--content__header--review">Đánh giá ngày: 18/8/2019</div>
@@ -876,7 +971,7 @@
                                     <div class="detailHotel__list--body__reviews--content__item--content">
                                         <div class="detailHotel__list--body__reviews--content__item--content__header">
                                             <div class="detailHotel__list--body__reviews--content__item--content__header--user">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
+                                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/user_avatar.png" alt="">
                                                 <span>TienDat</span>
                                             </div>
                                             <div class="detailHotel__list--body__reviews--content__item--content__header--review">Đánh giá ngày: 18/8/2019</div>
@@ -975,7 +1070,7 @@
                                 <div class="detailHotel__list--body__reviews--content__item--content">
                                     <div class="detailHotel__list--body__reviews--content__item--content__header">
                                         <div class="detailHotel__list--body__reviews--content__item--content__header--user">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
+                                            <img src="<?php echo get_template_directory_uri( )?>/assets/images/user_avatar.png" alt="">
                                             <span>TienDat</span>
                                         </div>
                                         <div class="detailHotel__list--body__reviews--content__item--content__header--review">Đánh giá ngày: 18/8/2019</div>
@@ -1523,19 +1618,19 @@
                     <div class="detailHotel__list--body__link">
                         <div class="detailHotel__list--body__link--inner">
                             <span class="detailHotel__list--body__link--inner__item">
-                                <a href="http://localhost/wordpress">Trang chủ</a>
+                                <a href="http://localhost/wordpress/">Trang chủ</a>
                             </span>
                             <span class="detailHotel__list--body__link--inner__divider">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </span>
                             <span class="detailHotel__list--body__link--inner__item">
-                                <a href="hotel">Khách sạn</a>
+                                <a href="/category/hotel">Khách sạn</a>
                             </span>
                             <span class="detailHotel__list--body__link--inner__divider">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </span>
                             <span class="detailHotel__list--body__link--inner__item">
-                                <a class="last__link" href="#">Rose Milano Villa</a>
+                                <a class="last__link" href="">Rose Milano Villa</a>
                             </span>
                         </div>
                     </div>
@@ -1627,8 +1722,8 @@
                                 <button><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button>
                             </div>
                             <div class="home__contact--banner__container--list__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner-img-1.png" alt="img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact-banner.png" alt="">
+                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/contact-banner-img-1.png" alt="img">
+                                <img src="<?php echo get_template_directory_uri( )?>/assets/images/contact-banner.png" alt="">
                             </div>
                            
                         </div>
@@ -1638,7 +1733,11 @@
             </div>
         </div>
     </section>
+     </div>
+
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
 <?php get_footer();?>
