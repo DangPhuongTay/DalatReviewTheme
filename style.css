@@ -496,14 +496,13 @@ body.active .primary__dropdown--content {
   font-size: var(--size-text-5);
 }
 
-.firstProduct__info--top__title a {
+.firstProduct__info--top__title p {
+  display: block;
   color: var(--color-text-1);
-  line-height: 5px;
   font-weight: 600;
-  /* font-style: 15px; */
 }
 
-.firstProduct__info--top__title a:hover {
+.firstProduct__info--top__title p:hover {
   text-decoration: none;
   color: var(--color-text-1);
 }
