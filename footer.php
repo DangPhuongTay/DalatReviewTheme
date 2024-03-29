@@ -202,6 +202,5 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/user_settings.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/user.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/voucher.js"></script>    
-   
 </body>
 </html>
