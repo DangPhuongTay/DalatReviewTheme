@@ -1,5 +1,5 @@
 <div class="hotel__right--item">
-                        <a href="http://localhost/wordpress/hotel/detail-hotel/">
+                        <a href="<?php the_permalink(); ?>">
                             <div class="hotel__right--img">
                                 <div class="hotel__right--img__icon">
                                     <ion-icon name="heart-outline"></ion-icon>
