@@ -10,18 +10,25 @@
         </footer> -->
 <?php
     if(have_posts()){
-        // <banner>
+        ?>
+        <!-- // <banner>
         //   img
         // </banner>
-        // <listproduct>
+        // <listproduct> -->
+        <?php
         while(have_posts()){
-            //<item>
+            the_post();
+            ?>
+            <!-- //<item>
             // Bài 1
-            //</item>
+            //</item> -->
+            <?php
         }
-        // </listproduct>
+        ?>
+        <!-- // </listproduct>
         // <footer>
-        // </footer>
+        // </footer> -->
+        <?php
     }
 ?>
 
