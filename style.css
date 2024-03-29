@@ -99,7 +99,7 @@ span {
   --color-background-23: #437dff;
   --color-background-24: #a8a8a8;
   --color-background-25: #12B7DA;
-
+  --color-background-26: #fafafa;
 
   /* List color text */
   --color-text-0: #000000;
@@ -947,4 +947,5 @@ body.tourfirstQuestion #fifthQuestion__btn {
   .hightlightProduct__content--list__item--wrap{
     width: 182px; 
   }
+}
 }
