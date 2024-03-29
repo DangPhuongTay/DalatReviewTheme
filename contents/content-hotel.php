@@ -3,6 +3,7 @@
   
     if(have_posts()){
         while(have_posts()){
+            the_post();
             ?>
 <div class="slide__img--box">
         <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
@@ -208,7 +209,7 @@
         <div class="detailHotel__info">
             <div class="detailHotel__info--wapper">
                 <div class="detailHotel__info--wapper__left">
-                    <h1>Rose Milano Villa</h1>
+                    <h1><?php  the_title(); ?></h1>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
                     <ion-icon name="star"></ion-icon>
@@ -1633,7 +1634,7 @@
         </div>
     </section>
             <?php
-            the_post();
+     
             the_title();
             the_content();
         }

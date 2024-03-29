@@ -1638,5 +1638,7 @@
             </div>
         </div>
     </section>
-
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
 <?php get_footer();?>
