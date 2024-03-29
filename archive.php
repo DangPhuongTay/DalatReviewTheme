@@ -19,6 +19,9 @@ function sb_get_current_url() {
         case "http://localhost/wordpress/category/liveshow/":
             get_template_part('archives/archive', 'liveshow' );
             break;
+        case "http://localhost/wordpress/category/car/":
+            get_template_part('archives/archive', 'car' );
+            break;
 
     }
 
