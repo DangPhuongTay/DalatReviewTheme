@@ -17,13 +17,13 @@
                <div class="motorbike__container--banner__btn">
                 <div class="motorbike__container--banner__box">
                     <div class="motorbike__container--banner__box--item">
-                        <a href="motorbike">
+                        <a href="motorbike.html">
                             <ion-icon name="bicycle-outline"></ion-icon>
                             <span>Xe máy</span>
                         </a>
                     </div>
                     <div class="motorbike__container--banner__box--item">
-                        <a href="car">
+                        <a href="car.html">
                             <ion-icon name="car-outline"></ion-icon>
                             <span>Xe Ôto</span>
                         </a>
@@ -45,14 +45,14 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct2.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="detail-car">Trải Nghiệm Canyoning
+                                                <a href="detail_car.html">Trải Nghiệm Canyoning
                                                     Vượt Thác Datanla</a>
                                             </div>
                                             <div
@@ -143,7 +143,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="detail-car">Đi Xe Trượt Thác Datanla
+                                                <a href="detail_car.html">Đi Xe Trượt Thác Datanla
                                                     New Alpine Tại Đà Lạt</a>
                                             </div>
                                             <div
@@ -223,7 +223,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="detail-car">Da Lat Conquer Langbiang
+                                                <a href="detail_car.html">Da Lat Conquer Langbiang
                                                     Mountain, Datanla Waterfall Day
                                                     Tour with Optional Lumiere
                                                     Visit</a>
@@ -312,7 +312,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="detail-car">Tour Săn Mây và Ngắm
+                                                <a href="detail_car.html">Tour Săn Mây và Ngắm
                                                     Bình Minh Tại Đà Lạt</a>
                                             </div>
                                             <div
@@ -387,7 +387,7 @@
                                         <div class="firstProduct__info--top">
                                             <div
                                                 class="firstProduct__info--top__title">
-                                                <a href="detail-car">Trải Nghiệm Đu Dây High
+                                                <a href="detail_car.html">Trải Nghiệm Đu Dây High
                                                     Rope Course Đà Lạt</a>
                                             </div>
                                             <div

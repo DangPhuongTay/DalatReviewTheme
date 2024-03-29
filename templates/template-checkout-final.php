@@ -91,11 +91,9 @@
                 </div>
                 <div class="checkouttour__container--left__last">
                     <p>Đơn hàng của bạn sẽ được gửi đi sau khi bạn đến bước tiếp theo (Bạn có thể chọn phương thức thanh toán ở trang kế tiếp)</p>
-                    <a href="http://localhost/wordpress/checkout/checkout-success/">
-                        <div class="checkouttour__container--left__last--btn firstBtn">
-                                Thanh toán
-                        </div>
-                    </a>
+                    <div class="checkouttour__container--left__last--btn firstBtn">
+                        Thanh toán
+                    </div>
                 </div>
             </div>
             <div class="checkouttour__container--right">
