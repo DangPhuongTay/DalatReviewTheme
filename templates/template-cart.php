@@ -9,7 +9,7 @@
  * 
  */
     get_header();?>
-       <section class="cart">
+   <section class="cart">
         <div class="cart__container">
             <div class="cart__container--top">
                 <div class="cart__container--top__left">
@@ -120,7 +120,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct2.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct2.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -211,7 +211,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -291,7 +291,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct3.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct3.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -380,7 +380,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct4.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct4.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -455,7 +455,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct5.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct5.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -541,7 +541,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct6.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct6.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -615,7 +615,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct7.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct7.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
@@ -703,7 +703,7 @@
                                 <div
                                     class="firstProduct__content--list__item--wrap">
                                     <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct8.webp"
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct8.webp"
                                             alt="tourProduct">
                                     </div>
                                     <div class="firstProduct__info">
