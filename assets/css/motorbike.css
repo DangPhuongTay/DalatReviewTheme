@@ -1,0 +1,76 @@
+/* ==============================================
+    Name: Motorbike page css
+    Creact by: Dang Phuong Tay
+    Creact at: 3/2/2024
+    Update at: 5/2/2024
+============================================== */
+
+.motorbike{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.motorbike__container--banner{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: end;
+}
+.motorbike__container--banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.motorbike__container--content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+}
+.motorbike__container--banner__btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+}
+.motorbike__container--banner__box{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1160px;
+    display: flex;
+    gap: 20px;
+}
+.motorbike__container--banner__box--item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--border-radius-size-3);
+    background: var(--color-background-6);
+    opacity: .8;
+}
+.motorbike__container--banner__box--item ion-icon{
+    font-size: var( --size-text-7);
+}
+.motorbike__container--header{
+    position: relative;
+    font-size: var(--size-text-7);
+    padding-left: 15px;
+    margin: 20px 0;
+}
+.motorbike__container--header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--color-background-7);
+    border-radius: var(--border-radius-size-3);
+}

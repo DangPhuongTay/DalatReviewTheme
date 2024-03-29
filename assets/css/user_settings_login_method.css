@@ -1,0 +1,187 @@
+.user__login--method__panel{
+    background: var(--color-background-6);
+    border-radius: var(--border-radius-size-5);
+    padding: 32px;
+}
+
+.user__section--title__header {
+    margin: 0;
+}
+.user__login--method__panel--title{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__section--title__header--icon {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+.user__section--title__header--icon ion-icon{
+    font-size: var(  --size-text-6);
+
+}
+.user__login--method__section--title{
+    margin: 20px 0 12px;
+}
+
+.user__login--method__bind--cart__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.user__login--method__bind--cart__item{
+    border: 1px solid #e6e6e6;
+    border-radius: var(--border-radius-size-4);
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    width: 390px;
+    padding: 16px;
+}
+.user__login--method__bind--cart__top{
+    align-items: center;
+    display: flex;
+}
+.user__login--method__bind--cart__logo{
+    background-position: 50%;
+    background-size: 100% 100%;
+    border-radius: var(--border-radius-size-6);
+    height: 24px;
+    margin-right: 12px;
+    width: 24px;
+}
+
+.user__login--method__bind--cart__logo ion-icon{
+   font-size: larger;
+   padding-top: 1px;
+   color: var(--color-text-21);
+}
+.user__login--method__bind--cart__name{
+    color: var(--color-text-1);
+    font-size: var(  --size-text-5);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.user__login--method__bind--control__group{
+    color: var(--color-text-1);
+    display: flex;
+    font-size: var(  --size-text-4);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: auto;
+
+}
+.user__login--method__bind--control__btn{
+    cursor: pointer;
+    margin-left: 8px;
+    position: relative;
+    text-decoration: underline;
+}
+.user__login--method__bind--cart__desc{
+    color: var(--color-text-2);
+    font-size: var(  --size-text-4);
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 4px 0 0 36px;
+
+}
+
+/* Thong tin da được gán */
+.user__bound--data ion-icon{
+    color: var(--color-text-7) !important;
+}
+
+/* mobile from here */
+
+.user__mb--box__method{
+    background: var(--color-background-3);
+    padding: 44px 20px 20px;
+}
+
+/* phan body */
+.user__mb--login__method--title__h5{
+    padding: 20px 0 8px;
+}
+.user__mb--login__method--title__header{
+    display: flex;
+
+}
+.user__mb--login__method--title__body{
+    color: var(--color-text-1);
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.user__mb--login__method--bind__card--box{
+    background: var(--color-background-6);
+    border-radius: var(--border-radius-size-4);
+    display: flex;
+    flex-wrap: wrap;
+}
+.user__mb--login__method--bind__card--items{
+    position: relative;
+    width: 100%;
+    padding: 16px
+}
+.user__mb--login__method--bind__card--top{
+    align-items: center;
+    display: flex;
+}
+.user__mb--login__method--bind__card__logo{
+    background-position: 50%;
+    background-size: 100% 100%;
+    border-radius: var(--border-radius-size-6);
+    height: 24px;
+    margin-right: 12px;
+    width: 24px;
+}
+.user__mb--login__method--bind__card__name{
+    color: var(--color-text-1);
+    font-size: var(  --size-text-5);
+    font-weight: 400;
+    line-height: 1.5;
+}
+.user__mb--login__method--bind--control__group{
+    color: var(--color-text-1);
+    display: flex;
+    font-size: var(  --size-text-4);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: auto;
+}
+.user__mb--login__method--bind--control__btn{
+    cursor: pointer;
+    margin-left: 8px;
+    position: relative;
+    text-decoration: underline;
+}
+
+.user__mb--login__method--bind__card--items::after{
+    background: var(--color-background-3);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    margin: 0 16px;
+    position: absolute;
+    width: calc(100% - 32px);
+
+}
+
+@media only screen and (max-width: 1280px) {
+   .user__login--method__bind--control__group{
+    flex-direction: column;
+   }
+   .user__login--method__bind--cart__desc{
+    margin:0 0 0 36px;
+   }
+   .user__center--box{
+    margin: 0 30px;
+   }
+  }

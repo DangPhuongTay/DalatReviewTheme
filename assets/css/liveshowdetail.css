@@ -1,0 +1,8 @@
+.lsDetail__container {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+    background-color: var(--color-background-3);
+    margin: auto;
+}
+/* header */

@@ -1,0 +1,61 @@
+/* ==============================================
+    Name: Sale banner css
+    Creact by: Dang Phuong Tay
+    Creact at: 29/1/2024
+    Update at: 2/2/2024
+============================================== */
+.home__sale--banner__container--list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    overflow: hidden;
+}
+.home__sale--banner__container--list__item:hover{
+    transform: translateY(-2%);
+}
+.home__sale--banner__container--list__item{
+    width: 370px;
+    border-radius: var(--border-radius-size-3);
+    transition: all ease .1s;
+}
+.home__sale--banner__container--list__item a img{
+    width: 370px;
+    border-radius: var(--border-radius-size-3);
+}
+
+
+ @media only screen and (max-width: 1400px) {
+    
+
+ }
+ @media only screen and (max-width: 1111px) {
+    .home__sale--banner__container--list{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .home__sale--banner__container--list__item{
+        width: 350px;
+        margin-right: 10px;
+    }
+    .home__sale--banner__container--list__item img{
+        width: 350px;
+        border-radius: var(--border-radius-size-3);
+     }
+    
+ }
+
+ @media only screen and (max-width: 850px) {
+
+    .home__sale--banner__container--list__item img{
+        width: 310px;
+        border-radius: var(--border-radius-size-3);
+     }
+ }
+ @media only screen and (max-width: 450px) {
+
+    
+ }
