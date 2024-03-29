@@ -16,6 +16,8 @@ if(strpos( sb_get_current_url(), "/hotel" )){
     get_template_part('contents/content', 'car');
 }elseif(strpos( sb_get_current_url(), "/blog" )){
     get_template_part('contents/content', 'blog');
+}elseif(strpos( sb_get_current_url(), "/motobike" )){
+    get_template_part('contents/content', 'motobike');
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('contents/content', 'liveshow');
 };

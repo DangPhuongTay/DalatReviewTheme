@@ -22,6 +22,9 @@ function sb_get_current_url() {
         case "http://localhost/wordpress/category/car/":
             get_template_part('archives/archive', 'car' );
             break;
+        case "http://localhost/wordpress/category/motobike/":
+            get_template_part('archives/archive', 'motobike' );
+            break;
 
     }
 
