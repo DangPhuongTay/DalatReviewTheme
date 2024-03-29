@@ -16,14 +16,7 @@
         // </banner>
         // <listproduct> -->
         <?php
-        while(have_posts()){
-            the_post();
-            ?>
-            <!-- //<item>
-            // Bài 1
-            //</item> -->
-            <?php
-        }
+
         ?>
         <!-- // </listproduct>
         // <footer>
