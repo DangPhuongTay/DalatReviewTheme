@@ -1,0 +1,33 @@
+.found{
+    margin: 0 auto;
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.found__title{
+    opacity: 0.7;
+    margin-top: 10px !important;
+}
+.found__link{
+margin-top: 50px;
+border: 1px solid var(--color-background-0);
+padding: 15px 20px;
+border-radius: var(--border-radius-size-2);
+}
+.found__link:hover{
+    background-color: var(--color-background-22);
+}
+
+@media  (max-width: 600px){
+.found__img{
+    width: 40%;
+    height: 40%;
+}
+.found__link{
+    padding: 10px 15px;
+    font-size: var( --size-text-4);
+    }
+}

@@ -1,0 +1,268 @@
+/* ==============================================
+    Name: Detail live page css
+    Creact by: Dang Phuong Tay
+    Creact at: 4/3/2024
+    Update at: 5/3/2024
+============================================== */
+.detail__liveshow{
+    width: 100%;
+
+    margin-top: 61px;
+}
+.detail__liveshow--container{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.detail__liveshow--ticket__box{
+     width: 100%;
+     background: var(--color-background-2);
+     padding: 20px 0;
+}
+.detail__liveshow--ticket__right img{
+    width: 100%;
+    height: 100%;
+}
+.detail__liveshow--ticket::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--color-background-2);
+    border-radius: var(--border-radius-size-6);
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.detail__liveshow--ticket::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--color-background-2);
+    border-radius: var(--border-radius-size-6);
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.detail__liveshow--ticket{
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background: var(--color-background-6);
+    border-radius: var(--border-radius-size-5);
+}
+.detail__liveshow--ticket__right::before{
+    background-position: right 10px top 0;
+    background-size: 17px 17px !important;
+    background: radial-gradient(#757575 0, #757575 4px, transparent 5px);
+    bottom: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: calc(100% - 9px);
+    top: 0;
+    width: 18px;
+    box-sizing: inherit;
+    line-height: 1.5;
+}
+.detail__liveshow--ticket__left{
+    width: 50%;
+    padding: 20px 35px 20px 20px;
+}
+.detail__liveshow--ticket__right{
+    width: 50%;
+    position: relative;
+    z-index: 2;
+}
+.detail__liveshow--ticket__left--local,
+.detail__liveshow--ticket__left--time{
+    padding: 5px 10px;
+    color: var(--color-text-2);
+}
+.detail__liveshow--ticket__left--title{
+    font-size: var(--size-text-6);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.detail__liveshow--ticket__left--local p,
+.detail__liveshow--ticket__left--time p{
+    width: 70%;
+}
+.detail__liveshow--ticket__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail__liveshow--ticket__left--local ion-icon,
+.detail__liveshow--ticket__left--time ion-icon{
+    font-size: var(--size-text-6);
+    color: var(--color-background-7);
+    width: 10%;
+}
+.detail__liveshow--ticket__left--local ion-icon{
+    font-size: var(--size-text-7);
+}
+.detail__liveshow--ticket__left--time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.detail__liveshow--ticket__left--local p{
+    display: flex;
+    flex-direction: column;
+}
+.detail__liveshow--ticket__left--local{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.detail__liveshow--ticket__left--price{
+    font-size: var(--size-text-6);
+    font-weight: 600;
+    color: var(--color-text-7);
+}
+.detail__liveshow--ticker__left--bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid var(--color-text-22);
+    padding-top: 15px;
+}
+.detail__liveshow--ticket__left--btn{
+    background: var(--color-background-7);
+    color: var(--color-text-6);
+    padding: 12px 25px;
+    border-radius: var(--border-radius-size-1);
+    cursor: pointer;
+}
+.detail__liveshow--content{
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+.detail__liveshow--content__left,
+.detail__liveshow--content__right{
+    border-radius: var(--border-radius-size-3);
+    padding: 20px;
+}
+.detail__liveshow--content__left{
+    width: 70%;
+}
+.detail__liveshow--content__left--body img{
+    width: 100%;
+    border-radius: var(--border-radius-size-3);
+}
+.detail__liveshow--content__right{
+    width: 30%;
+}
+.detail__liveshow--content__left--header{
+    font-size: var(--size-text-6);
+    font-weight: 500;
+    border-bottom: 1px solid var(--color-text-22);
+    padding: 0 0 10px 0; 
+    margin-bottom: 15px;
+}
+.detail__liveshow--content__left--body h4{
+    font-size: var(--size-text-6);
+    text-align: center;
+    padding: 25px 0;
+}
+.detail__liveshow--content__left--body p{
+    color: var(--color-text-1);
+    font-size: var(--size-text-5);
+    padding-bottom: 10px;
+}
+.detail__liveshow--content__left--body h5{
+    font-size: var(--size-text-5);
+    padding-bottom: 10px;
+}
+.detail__liveshow--content__right--list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.detail__liveshow--content__right--item a:hover{
+    background: var(--color-background-17);
+}
+.detail__liveshow--content__right--item a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text-6) !important;
+    background: var(--color-background-7);
+    padding: 15px 20px;
+    border-radius: var(--border-radius-size-2);
+}
+.detail__liveshow--content__right--item__name{
+    font-size: var(--size-text-4);
+}
+.detail__liveshow--content__right--item__price{
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .detail__liveshow--ticket__box,
+    .detail__liveshow--container{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .detail__liveshow--ticket__box,
+    .detail__liveshow--container{
+        padding: 10px;
+    }
+    .detail__liveshow--content{
+        flex-wrap: wrap;
+    }
+    .detail__liveshow--content__left,
+    .detail__liveshow--content__right{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:800px){
+    .detail__liveshow--ticket::after,
+    .detail__liveshow--ticket::before,
+    .detail__liveshow--ticket__right::before{
+        display: none;
+    }
+    .detail__liveshow--ticket{
+        flex-wrap: wrap;
+    }
+    .detail__liveshow--ticket__right,
+    .detail__liveshow--ticket__left{
+        width: 100%;
+    }
+    .detail__liveshow--ticket__left{
+        padding: 20px;
+    }
+    .detail__liveshow--container{
+        padding-bottom: 30px;
+    }
+    .detail__liveshow--content__left--body h4{
+        padding: 20px 0;
+        font-size: var(--size-text-5);
+    }
+    .detail__liveshow--content__left--header{
+        font-size: var(--size-text-5);
+    }
+    .detail__liveshow--content__left,
+    .detail__liveshow--content__right{
+        padding: 15px;
+    }
+    .detail__liveshow--ticket__left--title{
+        font-size: var(--size-text-5);
+    }
+    .detail__liveshow--content__right--list{
+        gap: 7px;
+    }
+}

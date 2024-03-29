@@ -1,0 +1,135 @@
+
+/* ==============================================
+    Name: first Tag 
+    Creact by: NL Thanh Tinh
+    Creact at: 30/11/2024
+    Update at: 30/11/2024
+============================================== */
+
+.firstTag__internal--mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  
+    
+    .firstTag__internal--desktop {
+      display: block;
+      padding: 0 30px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+    .firstTag__internal--desktop {
+      display: none;
+    }
+    .firstTag__internal--mobile {
+      display: block;
+
+    }
+    .firstTag__internal--wrap{
+      padding: 0 20px;
+    }
+ 
+    /* 1 */
+    .firstTag__internal--title {
+      font-size: var(--size-text-6) !important;
+    }
+    /* 2 */
+    .firstTag__internal--header {
+      font-size: var(--size-text-5);
+      line-height: 1.5;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    /* 3 */
+    .firstTag__unit--suggestion {
+      font-size: var(--size-text-4);
+      display: inline-block;
+      padding: 0 12px 0 12px;
+      height: 12px;
+      border-right: 1px solid var(--color-background-16);
+      line-height: 12px;
+      color: var(--color-text-2);
+    }
+    .firstTag__internal--unit {
+      margin-bottom: 8px;
+    }
+    .firstTag__internal--title{
+      margin-bottom: 20px;
+    }
+  }
+  
+  .firstTag__internal--desktop {
+    max-width: 1160px;
+    margin: 0 auto;
+   
+  }
+  
+  .firstTag__internal--mobile {
+    margin: 0 auto;
+  }
+  
+  .firstTag__internal--wrap {
+    margin: 1.5em 0 1em;
+  }
+  
+  /* Thẻ H2 */
+  .firstTag__internal--title {
+    font-size: var(--size-text-10);
+    line-height: 1.32;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+  
+  .firstTag__internal--content {
+    margin-bottom: 32px;
+  }
+  
+  /* thẻ H3  */
+  .firstTag__section--header {
+    font-size: var(--size-text-10);
+    font-weight: 600;
+    line-height: 1.32;
+    margin-bottom: 32px;
+  }
+  
+  .firstTag__internal--header {
+    font-size: var(--size-text-5);
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  /* thẻ ul */
+  .firstTag__internal--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px -12px -12px;
+  }
+
+  .mobile__wrap{
+    margin: 24px 0;
+  }
+  
+  /* thẻ li */
+  .firstTag__internal--unit {
+    font-size: var(--size-text-4);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  
+  /* thẻ a  */
+  .firstTag__unit--suggestion {
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    height: 12px;
+    border-right: 1px solid var(--color-background-16);
+    line-height: 12px;
+    color: var(--color-text-2);
+  }
+  
+  

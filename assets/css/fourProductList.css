@@ -1,0 +1,160 @@
+
+.fourProductList__wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+    gap: 10px;
+}
+.fourProductList__wrapper--item {
+    width: 100%;
+    transition: all .2s ease;
+}
+.fourProductList__wrapper--item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.08);
+}
+.fourProductList__wrapper--item img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-size-2);
+    border-top-right-radius: var(--border-radius-size-2);
+
+}
+.fourProductList__wrapper--main{
+    border: 1px solid #e9e9e9;
+    padding: 12px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+    border-bottom-left-radius: var(--border-radius-size-2);
+    border-bottom-right-radius: var(--border-radius-size-2);
+    
+}
+.fourProductList__wrapper--info__title{
+    display: flex;
+    align-items: center;
+}
+.icon__star{
+    color: var(--color-text-5);
+}
+.fourProductList__wrapper--info__title span:first-child{
+    font-weight: 600;
+    font-size: var(--size-text-5);
+    margin-right: 10px;
+}
+.fourProductList__wrapper--info__review{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+    
+}
+.fourProductList__wrapper--info__review div{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.fourProductList__wrapper--info__ellipsis{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.fourProductList__wrapper--info__score{
+    background-color: var(--color-background-9);
+    display: flex;
+    align-items: end;
+    border-radius: 12px 10px 2px 12px;
+    padding: 1px 5px 0 6px;
+    justify-content: center;
+    color: var(--color-background-6);
+}
+.fourProductList__wrapper--info__score span:last-child, .slash{
+    color: var(--color-text-13);
+    font-size: var(--size-text-3);
+}
+.fourProductList__wrapper--info__desc{
+    color: var(--color-background-9);
+    font-weight: 600;
+}
+.fourProductList__wrapper--info__count, 
+.fourProductList__wrapper--info__ellipsis,
+.fourProductList__wrapper--price__desc{
+    color: var(--color-text-11);
+    font-size: var(--size-text-4);
+}
+.fourProductList__wrapper--info__tag{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fourProductList__wrapper--info__card--tag{
+    background-color: var(--color-background-3);
+    border-radius: 6px;
+    font-size: var(--size-text-4);
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 2px 8px;
+    color: var(--color-text-2);
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.fourProductList__wrapper--price{
+    padding-top: 16px;
+    text-align: right;
+}
+.fourProductList__wrapper--price__info span:first-child {
+    text-decoration: underline;
+    font-size: var(--size-text-3);
+}
+.fourProductList__wrapper--price__info span:last-child {
+    font-size: var(--size-text-6);
+}
+
+
+@media  (max-width: 550px) {
+
+    .fourProductList__wrapper--info__ellipsis{
+        display: none;
+    }
+    .fourProductList__wrapper--info__tag{
+        display: none;
+    }
+    .fourProductList__wrapper--info__count{
+        display: none;
+    }
+    .fourProductList__wrapper--price__desc{
+        display: none;
+    }
+    .fourProductList__wrapper{
+        display: flex;
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .fourProductList__wrapper--img img {
+        width: 200px;
+    }
+    .fourProductList__wrapper--info__title{
+        display: block;
+    }
+    .fourProductList__wrapper--info__title span:first-child{
+        font-size: var(--size-text-3);
+        margin: 0;
+    }
+    .fourProductList__wrapper--stars ion-icon{
+        width: 12px;
+        height: 12px;
+    }
+    .fourProductList__wrapper--info__score{
+        padding: 1px 4px 0 5px;
+
+    }
+    .fourProductList__wrapper--info__desc{
+        font-weight: 400;
+        font-size: var(--size-text-3);
+    }
+    .fourProductList__wrapper--price__info span:first-child{
+        font-size: var(--size-text-2);
+    }
+    .fourProductList__wrapper--price__info span:last-child{
+        font-size: var(--size-text-5);
+    }
+
+}
