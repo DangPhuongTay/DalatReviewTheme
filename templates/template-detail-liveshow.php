@@ -65,7 +65,7 @@
                 </div>
                 <div class="detail__liveshow--content__right--list">
                     <div class="detail__liveshow--content__right--item">
-                        <a href="http://localhost/wordpress/checkout/">
+                        <a href="checkout-tour.html">
                             <div class="detail__liveshow--content__right--item__name">
                                 NHÁ NHEM
                             </div>
@@ -75,7 +75,7 @@
                         </a>
                     </div>
                     <div class="detail__liveshow--content__right--item">
-                        <a href="http://localhost/wordpress/checkout/">
+                        <a href="checkout-tour.html">
                             <div class="detail__liveshow--content__right--item__name">
                                 CHẬP CHOẠNG
                             </div>
@@ -85,7 +85,7 @@
                         </a>
                     </div>
                     <div class="detail__liveshow--content__right--item">
-                        <a href="http://localhost/wordpress/checkout/">
+                        <a href="checkout-tour.html">
                             <div class="detail__liveshow--content__right--item__name">
                                 CHẠNG VẠNG
                             </div>
@@ -95,7 +95,7 @@
                         </a>
                     </div>
                     <div class="detail__liveshow--content__right--item">
-                        <a href="http://localhost/wordpress/checkout/">
+                        <a href="checkout-tour.html">
                             <div class="detail__liveshow--content__right--item__name">
                                 CHIỀU TÀ
                             </div>

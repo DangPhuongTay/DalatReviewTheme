@@ -9,88 +9,6 @@
      * 
      */
     get_header();?>
-    <div class="slide__img--box">
-        <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
-        <div class="container__slides">
-    
-          <!-- Full-width images with number text -->
-          <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide1.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide2.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide3.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide4.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/slide5.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="../assets/images/slide6.jpg" style="width:100%">
-          </div>
-      
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-          <!-- Image text -->
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-      
-          <!-- Thumbnail images -->
-          <div class="container__slide--number">
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide1.jpg" style="width:100%" onclick="currentSlide(1)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide2.jpg" style="width:100%" onclick="currentSlide(2)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide3.jpg" style="width:100%" onclick="currentSlide(3)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide4.jpg" style="width:100%" onclick="currentSlide(4)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide5.jpg" style="width:100%" onclick="currentSlide(5)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="<?php echo get_template_directory_uri(); ?>../assets/images/slide6.jpg" style="width:100%" onclick="currentSlide(6)"
-                alt="Đà Lạt Review Tất Tần Tật">
-            </div>
-          </div>
-        </div>
-      </div>
-
     <section class="detail__tour">
         <div class="detail__tour--content__right--mobile shadow">
             <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
@@ -181,8 +99,8 @@
                                 
                                 </div>
                                 <div class="detail__tour--content__left--option__item--info__price--right">
-                                    <a href="http://localhost/wordpress/cart/">Thêm vào giỏ hàng</a>
-                                    <a href="http://localhost/wordpress/checkout">Đặt ngay</a>
+                                    <a href="cart.html">Thêm vào giỏ hàng</a>
+                                    <a href="checkout-tour.html">Đặt ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -728,5 +646,6 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                 </div>   
             </div>
         </div>
+    </section>
     </section>
  <?php get_footer();?>

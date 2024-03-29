@@ -9,7 +9,7 @@
  * 
  */
     get_header();?>
-    <div class="detail__car">
+<div class="detail__car">
         <div class="detail__car--container">
             <div class="detail__car--container__option">
                 <div class="detail__car--container__header">
@@ -26,7 +26,7 @@
                     </div>
                     <div class="detail__car--container__top--des">
                         <p>Điểm thuê xe máy MR.Din gần hồ Tuyền Lâm với các dòng xe đời mới và thủ tục thuê xe cực kỳ nhanh chóng. Theo mỗi xe, du khách sẽ nhận được đầy đủ trang bị nón bảo hiểm, áo mưa, bản đồ, giao xe tận nơi trên địa bàn thành phố Đà Lạt hoàn toàn miễn phí. </p>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail_car_1.jpg" alt="">
+                        <img src="/assets/img/detail_car_1.jpg" alt="">
                     </div>
                 </div>
                 <div class="detail__car--container__header">
@@ -35,7 +35,7 @@
                 <div class="detail__car--container__list">
                     <div class="detail__car--container__item shadow">
                         <div class="detail__car--container__item--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" alt="">
+                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
                         </div>
                         <div class="detail__car--container__item--text">
                             <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="detail__car--container__item shadow">
                         <div class="detail__car--container__item--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" alt="">
+                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
                         </div>
                         <div class="detail__car--container__item--text">
                             <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
@@ -61,7 +61,7 @@
                     </div>
                     <div class="detail__car--container__item shadow">
                         <div class="detail__car--container__item--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" alt="">
+                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
                         </div>
                         <div class="detail__car--container__item--text">
                             <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="detail__car--container__item shadow">
                         <div class="detail__car--container__item--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" alt="">
+                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
                         </div>
                         <div class="detail__car--container__item--text">
                             <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="detail__car--container__item shadow">
                         <div class="detail__car--container__item--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" alt="">
+                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
                         </div>
                         <div class="detail__car--container__item--text">
                             <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
@@ -112,10 +112,10 @@
                     Air Blade 125-150k/ngày
                 </div>
                 <div class="detail__car--info__body--img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg"  class="shadow" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="/assets/img/car-air-blade-125.jpg"  class="shadow" alt="">
+                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
                 </div>
               <div class="detail__car--info__body--form">
                 <div class="detail__car--info__body--form__item">
@@ -166,5 +166,4 @@
             </div>
         </div>
     </div>
-
 <?php get_footer();?>
