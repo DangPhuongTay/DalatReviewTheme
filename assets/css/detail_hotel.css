@@ -551,6 +551,7 @@
 .detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card{
     display: flex;
     align-items: center;
+    
 }
 .detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card ion-icon{
     margin-right: 5px;
