@@ -723,7 +723,7 @@
             Creact at: 1:45PM 30/1/2024
             Update: 
         ============================================== -->
-        <div class="firstReview ">
+        <div class="firstReview">
             <h2 class="tour__Title">
                 Mọi người nói gì về Tour & Trải nghiệm ở Đà Lạt
             </h2>
@@ -739,7 +739,7 @@
                         </div>
                         <div class="firstReview__for">
                             <span>Đánh giá cho: </span>
-                            <a href="../page/detail_tour.html">Đi Xe Trượt Thác Datanla New Alpine
+                            <a href="/detail_tour">Đi Xe Trượt Thác Datanla New Alpine
                                 Tại
                                 Đà Lạt</a>
                         </div>
