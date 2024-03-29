@@ -573,28 +573,7 @@
       width: 100%;
     }
   
-    .hotelMobile__fitter {
-      position: relative;
-      z-index: 20;
-      padding: 12px 35px;
-      display: block;
-    }
-  
-    .hotelMobile__fitter--wraper {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 12px 20px;
-      height: 40px;
-      border-radius: 20px;
-      background-color: var(--color-background-12);
-    }
-  
-    .hotelMobile__fitter--wraper span {
-      color: var(--color-background-2);
-    }
-  
+
     .hotelMobile__fitter--date,
     .hotelMobile__fitter--location {
       font-size: var(--size-text-4);
@@ -616,6 +595,7 @@
       line-height: 1.5;
       padding: 12px;
       border-bottom: 1px solid var(--color-background-12);
+      margin-top: 10px;
   
     }
   

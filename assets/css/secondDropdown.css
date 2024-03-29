@@ -278,7 +278,7 @@ input[type="number"] {
     .hotelMobile__fitter {
       position: relative;
       z-index: 1004;
-      top: 61px;
+      top: 16px;
       padding: 12px 35px;
       background-color: var(--color-background-6);
       display: block;
