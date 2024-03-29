@@ -9,8 +9,7 @@
  * 
  */
     get_header();?>
-
-<div class="secondDropDown">
+        <div class="secondDropDown">
         <div class="hotel__fitter">
             <div class="hotel__fitter--wrapper">
                 <div class="hotel__fitter--search">
@@ -502,7 +501,7 @@
                                 <div class="hotel__right--img__icon">
                                     <ion-icon name="heart-outline"></ion-icon>
                                 </div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel1.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detailHotel1.avif" alt="">
                             </div>
                             <div class="hotel__right--main">
                                 <div class="hotel__right--section">
@@ -570,11 +569,10 @@
                             </div>
                         </a>
                     </div>
-
-
             </div>
         </div>
     </div>
+
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/hotel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>

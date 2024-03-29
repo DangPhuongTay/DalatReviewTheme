@@ -1,6 +1,6 @@
 <div class="firstProduct__content--list__item">
                             <div class="firstProduct__content--list__item--wrap">
-                                <a href="http://localhost/wordpress/tour/detail-tour/" class="">
+                                <a href="<?php the_permalink() ?>" class="">
                                     <div class="firstProduct__img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct8.webp"
                                             alt="tourProduct">
