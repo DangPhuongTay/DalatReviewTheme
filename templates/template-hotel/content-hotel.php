@@ -281,7 +281,7 @@ if (have_posts()) {
             <div class="detailHotel__banner">
                 <div class="detailHotel__top--link">
                     <ion-icon name="chevron-back-outline"></ion-icon>
-                    <a href="category/hotel">Tìm thêm khách sạn tại Đà Lạt</a>
+                    <a href="http://localhost/wordpress/category/hotel/">Tìm thêm khách sạn tại Đà Lạt</a>
                 </div>
                 <div class="detailHotelMobile__slides">
                     <div class="detailHotelMobile__slides--show">

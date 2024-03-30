@@ -270,7 +270,7 @@ if (have_posts()) {
                         <div class="hightlightProduct__content--wrap">
                             
                             <?php
-                            get_template_part('archives/archive', 'tourhightlight');
+                            get_template_part('templates/template-tour/item', 'tourhightlight');
                             ?>
                           
                             <!-- nextBtn -->
@@ -282,7 +282,7 @@ if (have_posts()) {
                 </div>
             </div>
     </div>
-
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
     <?php
 
 }

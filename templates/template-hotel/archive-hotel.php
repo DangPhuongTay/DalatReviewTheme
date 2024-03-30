@@ -490,7 +490,7 @@
         <?php
         while(have_posts()){
             the_post();
-            get_template_part('archives/items/item', 'hotel' );
+            get_template_part('templates/template-hotel/item', 'hotel');
           
         }
         ?>

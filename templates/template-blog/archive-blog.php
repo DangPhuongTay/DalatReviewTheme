@@ -24,7 +24,7 @@
                 <?php $getposts = new WP_query($args); ?>
                 <?php global $wp_query; $wp_query->in_the_loop = true; ?>
                 <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                    <?php  get_template_part('archives/items/item', 'blog' ); ?>
+                    <?php  get_template_part('templates/template-blog/item', 'blog') ?>
                 <?php endwhile; wp_reset_postdata(); ?>
                 </div>
                 <div class="blog__container--bottom">
@@ -44,7 +44,7 @@
                 <?php $getposts = new WP_query($args); ?>
                 <?php global $wp_query; $wp_query->in_the_loop = true; ?>
                 <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                    <?php  get_template_part('archives/items/item', 'blognew' ); ?>
+                    <?php  get_template_part('templates/template-blog/item', 'blognew') ?>
                 <?php endwhile; wp_reset_postdata(); ?>
 
 
@@ -68,7 +68,7 @@
                 <?php $getposts = new WP_query($args); ?>
                 <?php global $wp_query; $wp_query->in_the_loop = true; ?>
                 <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                    <?php  get_template_part('archives/items/item', 'bloghot' ); ?>
+                    <?php  get_template_part('templates/template-blog/item', 'bloghot');?>
                 <?php endwhile; wp_reset_postdata(); ?>
 
 
