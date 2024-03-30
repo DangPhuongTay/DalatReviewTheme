@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/contact-banner.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail_hotel.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail_liveshow.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail_blog.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail-blog.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail-car.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail-tour.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/firstTag.css">

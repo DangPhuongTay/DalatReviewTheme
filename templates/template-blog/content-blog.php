@@ -150,42 +150,19 @@ if(have_posts()){
                             <p>Phổ biến nhất</p>
                         </div>
                         <div class="blog__container--bottom__right--header__list">
-                            <div class="blog__container--bottom__right--header__list--item">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>1</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </div>
-                            <div class="blog__container--bottom__right--header__list--item">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>2</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </div>
-                            <div class="blog__container--bottom__right--header__list--item">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>3</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </div>
-                            <div class="blog__container--bottom__right--header__list--item">
-                                <div class="blog__container--bottom__right--header__list--item__number">
-                                    <span>4</span>
-                                </div>
-                                <div class="blog__container--bottom__right--header__list--item__text">
-                                    <p>45 Địa Điểm Du Lịch Đà Lạt Mới Cập Nhật 2024</p>
-                                    <span>Đến với khu vườn QUÊ Garden, bạn sẽ có cơ hội được chìm đắm trong không gian xanh mướt và “tậu” cho mình những bộ ảnh check-in lung linh</span>
-                                </div>
-                            </div>
+                            <?php 
+                            $args = array(
+                                'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+                                'showposts' => 6, // số lượng bài viết
+                                'cat'=>6,
+                                'tag'=>'new',
+                            );
+                        ?>
+                        <?php $getposts = new WP_query($args); ?>
+                        <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+                        <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                            <?php  get_template_part('templates/template-blog/item', 'bloghot') ?>
+                        <?php endwhile; wp_reset_postdata(); ?>
                         </div>
                 </div>
       
