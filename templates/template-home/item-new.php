@@ -1,5 +1,5 @@
 <div class="fourProductList__wrapper--item">
-                    <a href="detail-hotel">
+                    <a href="<?php the_permalink(); ?>">
                         <div class="fourProductList__wrapper--img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
                         </div>
