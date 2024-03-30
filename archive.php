@@ -25,7 +25,7 @@ function sb_get_current_url() {
         case "http://localhost/wordpress/category/motobike/":
             get_template_part('archives/archive', 'motobike' );
         case "http://localhost/wordpress/product-category/demo/":
-            get_template_part('archives/archive', 'motobike' );
+            get_template_part('archives/archive', 'hotel' );
             break;
 
     }

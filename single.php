@@ -7,7 +7,6 @@ function sb_get_current_url() {
     return $current_url;
 }
 get_header();
-
 if(strpos( sb_get_current_url(), "/hotel" )){
     get_template_part('contents/content', 'hotel');
 }elseif(strpos( sb_get_current_url(), "/tour" )){
@@ -21,7 +20,6 @@ if(strpos( sb_get_current_url(), "/hotel" )){
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('contents/content', 'liveshow');
 }elseif(strpos( sb_get_current_url(), "/product" )){
-    echo sb_get_current_url();
     get_template_part('contents/content', 'liveshow');
 };
 
