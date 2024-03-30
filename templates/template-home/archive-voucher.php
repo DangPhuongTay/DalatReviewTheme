@@ -10,7 +10,7 @@
 
 <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
 	<?php 
-             get_template_part('archives/items/item', 'voucher' );   
+	get_template_part('templates/template-home/item', 'voucher' );   
              ?>
 <?php endwhile; wp_reset_postdata(); ?>
 </div>
