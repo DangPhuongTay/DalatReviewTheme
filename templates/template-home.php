@@ -271,7 +271,7 @@
             <div class="home__sale--banner__container--header">
                 <p>Ưu đãi hấp dẫn</p>
             </div>
-            <?php get_template_part('archives/archive', 'voucher' ); ?>
+            <?php get_template_part('templates/template-home/archive', 'voucher' );  ?>
         </div>
        </div>
        <!-- home info banner -->
@@ -336,7 +336,8 @@
                 <div class="home__product--banner__container--header">
                     <p>Sản phẩm nổi bật</p>
                 </div>
-                <?php get_template_part('archives/archive', 'new' ); ?>
+                <?php
+                get_template_part('templates/template-home/archive', 'new'); ?>
             </div>
            
         </div>
