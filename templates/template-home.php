@@ -123,7 +123,7 @@
                                         <p><a href="category/liveshow/">Di tích lịch sử</a></p>
                                         <p><a href="category/liveshow/">Khu vui chơi</a></p>
                                         <p><a href="category/liveshow/">Vui chơi trong nhà</a></p>
-                                        <p><a href="category/liveshow/show">Vé tham quan</a></p>
+                                        <p><a href="category/liveshow/">Vé tham quan</a></p>
                                     </div>
                                 </ul>
                             </div>
