@@ -6,7 +6,7 @@ function sb_get_current_url() {
     $current_url = trailingslashit(home_url($wp->request));
     return $current_url;
 }
-get_header( );
+get_header();
 
 if(strpos( sb_get_current_url(), "/hotel" )){
     get_template_part('contents/content', 'hotel');
@@ -19,6 +19,9 @@ if(strpos( sb_get_current_url(), "/hotel" )){
 }elseif(strpos( sb_get_current_url(), "/motobike" )){
     get_template_part('contents/content', 'motobike');
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
+    get_template_part('contents/content', 'liveshow');
+}elseif(strpos( sb_get_current_url(), "/product" )){
+    echo sb_get_current_url();
     get_template_part('contents/content', 'liveshow');
 };
 
