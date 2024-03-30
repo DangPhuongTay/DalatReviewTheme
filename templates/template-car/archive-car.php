@@ -34,7 +34,7 @@
                         <?php
         while(have_posts()){
             the_post(); 
-            get_template_part('archives/items/item', 'car' );
+            get_template_part('templates/template-car/item', 'car' );
 
         }
         ?>
