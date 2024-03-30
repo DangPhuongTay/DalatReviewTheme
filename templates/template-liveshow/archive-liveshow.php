@@ -193,7 +193,7 @@
         <?php
         while(have_posts()){
           the_post(  );
-          get_template_part('archives/items/item', 'liveshow' );
+          get_template_part('templates/template-liveshow/item', 'liveshow');
             
        
         }
@@ -228,7 +228,7 @@
 
             </div>
             </section>
-
+            <script src="<?php echo get_template_directory_uri(); ?>/assets/js/liveshow.js"></script>
     <?php
     }
 ?>

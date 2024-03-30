@@ -282,7 +282,7 @@ if (have_posts()) {
                 </div>
             </div>
     </div>
-
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
     <?php
 
 }

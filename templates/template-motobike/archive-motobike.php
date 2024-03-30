@@ -33,7 +33,7 @@ if (have_posts()) {
                             <?php
                             while (have_posts()) {
                                 the_post();
-                                get_template_part('archives/items/item', 'motobike' );
+                                get_template_part('templates/template-tour/item', 'motobike');
                             }
                             ?>
 
