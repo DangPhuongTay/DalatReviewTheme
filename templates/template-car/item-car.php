@@ -7,7 +7,7 @@
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title">
-                                            <a href="detail-car"><?php   the_title( );?></a>
+                                            <a href="<?php the_permalink();?>"><?php   the_title( );?></a>
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
