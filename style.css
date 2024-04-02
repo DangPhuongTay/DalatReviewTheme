@@ -431,6 +431,7 @@ body.active .primary__dropdown--content{
   height: auto;
 }
 .firstProduct__info{
+  position: relative;
 padding: 6px 10px;
 display: flex;
 flex-direction: column;
