@@ -428,7 +428,7 @@ body.active .primary__dropdown--content{
 }
 .firstProduct__img img{
   width: 100%;
-  height: auto;
+ height: 200px;
 }
 .firstProduct__info{
   position: relative;

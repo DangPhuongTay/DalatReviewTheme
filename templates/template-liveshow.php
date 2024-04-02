@@ -199,8 +199,8 @@
             <!--  -->
             <div class="liveshow__container--body__product--list">
             <?php 
-get_template_part('templates/template-liveshow/archive', 'liveshow');  
-?>
+            get_template_part('templates/template-liveshow/archive', 'liveshow');  
+            ?>
             </div>
   
            
