@@ -4,10 +4,13 @@
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
                                         alt="tourProduct">
                                 </div>
+                                <a href="<?php the_permalink();?>">
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title">
-                                            <a href="<?php the_permalink();?>"><?php   the_title( );?></a>
+                                            <?php   the_title( );?> 
+                                        <!--  -->
+                                        
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
@@ -65,5 +68,6 @@
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         </div>

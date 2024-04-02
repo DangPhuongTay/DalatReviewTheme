@@ -198,7 +198,7 @@
             <!-- Produclist -->
             <!--  -->
             <div class="liveshow__container--body__product--list">
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">
@@ -272,7 +272,7 @@
                   </div>
                 </a>
               </div>
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">
@@ -346,7 +346,7 @@
                   </div>
                 </a>
               </div>
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">
@@ -420,7 +420,7 @@
                   </div>
                 </a>
               </div>
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">
@@ -494,7 +494,7 @@
                   </div>
                 </a>
               </div>
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">
@@ -568,7 +568,7 @@
                   </div>
                 </a>
               </div>
-              <div class="firstProduct__content--list__item col-sm-3">
+              <div class="firstProduct__content--list__item">
                 <a href="detail-liveshow">
                   <div class="firstProduct__content--list__item--wrap">
                     <div class="firstProduct__img">

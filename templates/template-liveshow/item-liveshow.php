@@ -1,4 +1,4 @@
-<div class="firstProduct__content--list__item col-sm-3">
+<div class="firstProduct__content--list__item">
               <a href="<?php the_permalink(); ?>">
                 <div class="firstProduct__content--list__item--wrap">
                   <div class="firstProduct__img">
