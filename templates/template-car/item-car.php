@@ -1,13 +1,16 @@
 <div class="firstProduct__content--list__item col-sm-3 ">
                             <div class="firstProduct__content--list__item--wrap">
                                 <div class="firstProduct__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
-                                        alt="tourProduct">
+                                <?php echo get_the_post_thumbnail(get_the_ID(),
+                         'thumnail', array( 'class' =>'thumnail') ); ?>
                                 </div>
+                                <a href="<?php the_permalink();?>">
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title">
-                                            <a href="<?php the_permalink();?>"><?php   the_title( );?></a>
+                                            <?php   the_title( );?> 
+                                        <!--  -->
+                                        
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
@@ -65,5 +68,6 @@
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         </div>
