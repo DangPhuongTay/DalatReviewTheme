@@ -2,7 +2,7 @@
 <div class="fourProductList__wrapper--item">
                     <a href="<?php the_permalink(); ?>">
                         <div class="fourProductList__wrapper--img">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array('class' => 'thumnail')); ?>
+                       <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>" alt="">
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
