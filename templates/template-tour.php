@@ -9,5 +9,5 @@
      * 
      */
     get_header();?>
-
+    <?php get_template_part('templates/template-tour/archive', 'tour'); ?>
 <?php get_footer();?>

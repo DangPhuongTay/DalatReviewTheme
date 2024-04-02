@@ -41,8 +41,8 @@ if (have_posts()) {
                                             );
                                             $categories = get_categories( $args );
                                             foreach ( $categories as $category ) { ?>
-                                               
-                                                <a href="<?php get_term_link($category->slug, 'category'); ?>"> <?php echo $category->name ;?></a>
+                                                <a href="<?php get_term_link($category->slug, 'category'); ?>">                                                <?php 
+                                                echo $category->name ;?></a>
                                             <?php } ?>
                                         
                                         </div>
@@ -144,10 +144,15 @@ if (have_posts()) {
             <div class="firstProduct__content">
                 <div class="firstProduct__content--list">
                 <?php 
-                    $args = array(
+                            function request() {
+                                global $wp;
+                                $current_url = trailingslashit(home_url($wp->request));
+                                return $wp->request;
+                            }
+                            $args = array(
                         'post_type'      => 'product',
                         'posts_per_page' => 10,
-                        'product_cat'    => 'tour'
+                        'product_cat'    => request()
                     );
                 ?>
                 <?php $getposts = new WP_query($args); ?>
@@ -156,7 +161,7 @@ if (have_posts()) {
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                         <?php 
 
-                    get_template_part('templates/template-tour/item', 'tour');  
+                    get_template_part('templates/template-tour/item','tour');  
                     ?>
                 <?php endwhile; wp_reset_postdata(); ?>
                 </div>
@@ -268,4 +273,5 @@ if (have_posts()) {
 
 }
 get_footer();
+echo request();
 ?>
