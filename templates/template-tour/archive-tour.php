@@ -33,47 +33,18 @@ if (have_posts()) {
                                 <div class="quick__filter--entry__content--left">
                                     <div class="fliter__category">
                                         <div class="fliter__category--content ">
-                                            <div class="primary__dropdown">
-                                                <div id="primary__dropdown--button__all" class="primary__dropdown--button"
-                                                    onclick="primaryDropdown()">
-                                                    <span>Tất cả danh
-                                                        mục</span>
-                                                    <div class="primary__dropdown--icon">
-                                                        <ion-icon name="chevron-down-outline"></ion-icon>
-                                                    </div>
-                                                </div>
-                                                <div class="primary__dropdown--content" id="primaryDropdownHidden">
-                                                    <ul class="primary__dropdown--content__list"
-                                                        aria-labelledby="dropdownMenuButton1">
-                                                        <li><a class="primary__dropdown--content__list--item" href="#">Tour
-                                                                Camping Đà
-                                                                Lạt</a></li>
-                                                        <li><a class="primary__dropdown--content__list--item" href="#">Tour
-                                                                Săn
-                                                                mây</a></li>
-                                                        <li><a class="primary__dropdown--content__list--item" href="#">Tour
-                                                                Đà
-                                                                Lạt 1
-                                                                ngày</a></li>
-                                                        <li><a class="primary__dropdown--content__list--item" href="#">Tour
-                                                                Theo Tự
-                                                                Chọn</a></li>
-                                                    </ul>
-                                                </div>
-
-                                            </div>
-                                            <div class="fliter__category--content__box">
-                                                <div class="fliter__category--content__box--item">
-                                                    <a>Tour Camping</a>
-                                                </div>
-                                                <div class="fliter__category--content__box--item">
-                                                    <a>Tour Săn Mây</a>
-                                                </div>
-                                                <div class="fliter__category--content__box--item">
-                                                    <a>Tour Đà Lạt 1
-                                                        ngày</a>
-                                                </div>
-                                            </div>
+                                        <?php
+                                            $args = array(
+                                                'type'      => 'product',
+                                                'number'    => 10,
+                                                'parent'    => 0
+                                            );
+                                            $categories = get_categories( $args );
+                                            foreach ( $categories as $category ) { ?>
+                                               
+                                                <a href="<?php get_term_link($category->slug, 'category'); ?>"> <?php echo $category->name ;?></a>
+                                            <?php } ?>
+                                        
                                         </div>
 
                                     </div>
@@ -296,4 +267,5 @@ if (have_posts()) {
     <?php
 
 }
-get_footer(); ?>
+get_footer();
+?>
