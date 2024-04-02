@@ -172,12 +172,22 @@ if (have_posts()) {
         <div class="firstProduct ">
             <div class="firstProduct__content">
                 <div class="firstProduct__content--list">
-        <?php
-        while(have_posts(  )){
-            the_post();
-            get_template_part('templates/template-tour/item', 'tour');
-        }
-        ?>
+                <?php 
+                    $args = array(
+                        'post_type'      => 'product',
+                        'posts_per_page' => 10,
+                        'product_cat'    => 'tour'
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+
+                    <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                        <?php 
+
+                    get_template_part('templates/template-tour/item', 'tour');  
+                    ?>
+                <?php endwhile; wp_reset_postdata(); ?>
                 </div>
                 </div>
         </div>
