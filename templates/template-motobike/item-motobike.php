@@ -1,13 +1,13 @@
-<div class="firstProduct__content--list__item col-sm-3 ">
+<?php global $product; ?>
+<div class="firstProduct__content--list__item">
     <div class="firstProduct__content--list__item--wrap">
-        <div class="firstProduct__img">
-            <img src="<?php echo get_template_directory_uri(); ?>../assets/images/tourProduct2.webp" alt="tourProduct">
+        <div  class="firstProduct__img">
+            <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>        
         </div>
         <div class="firstProduct__info">
             <div class="firstProduct__info--top">
                 <div class="firstProduct__info--top__title">
-                    <a href="detail-car">Trải Nghiệm Canyoning
-                        Vượt Thác Datanla</a>
+                    <a href="detail-car"><?php the_title(); ?></a>
                 </div>
                 <div class="firstProduct__info--top__score">
                     <div class="firstProduct__info--top__score--star">
@@ -45,10 +45,10 @@
                 <div class="firstProduct__info--bottom__content">
                     <div class="firstProduct__info--bottom__content--box">
                         <div class="firstProduct__info--bottom__content--box__price">
-                            <span>đ 1,890,000</span>
-                        </div>
-                        <div class="firstProduct__info--bottom__content--box__underline">
-                            <span>đ 2,050,000</span>
+                            <?php echo $product->get_price_html(); ?>
+                       
+                       
+                        
                         </div>
                     </div>
                 </div>
