@@ -1,10 +1,11 @@
+<?php global $product; ?>
 <div class="hotel__right--item">
                         <a href="<?php the_permalink(); ?>">
                             <div class="hotel__right--img">
                                 <div class="hotel__right--img__icon">
                                     <ion-icon name="heart-outline"></ion-icon>
                                 </div>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hotel1.jpg" alt="">
+                                <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
                             </div>
                             <div class="hotel__right--main">
                                 <div class="hotel__right--section">
@@ -28,7 +29,7 @@
                                                 <span class="slash">/</span> 
                                                 <span>5</span>
                                             </div> 
-                                            <div class="hotel__right--review__desc">Rất tốt</div>
+                                            <div class="hotel__right--review__desc"> <?php wc_get_template('loop/rating.php'); ?> </div>
                                             <div class="hotel__right--review__count">47 Bình luận</div>
                                         </div>
                                         <div class="hotel__right--ellipsis">
@@ -60,8 +61,7 @@
                                 </div>
                                 <div class="hotel__right--price">
                                     <div class="hotel__right--price__info">
-                                        <span>đ</span>
-                                        <span>1,444,527</span>
+                                    <?php echo $product->get_price_html(); ?>
                                     </div>
                                     <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
                                     <div class="hotel__right--price__btn firstBtn">

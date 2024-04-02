@@ -4,6 +4,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
+        <?php global $product; ?>
         <div class="detail__hotel--wrap">
             <div class="slide__img--box">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
@@ -333,8 +334,13 @@ if (have_posts()) {
                         </div>
                         <div class="detailHotel__info--wapper__right">
                             <p class="detailHotel__info--wapper__right--name">
-                                <span class="detailHotel__info--wapper__right--1">đ</span>
-                                <span class="detailHotel__info--wapper__right--price">20XXXXX</span>
+                                <span class="detailHotel__info--wapper__right--price">
+
+
+                                    <?php echo $product->get_price_html(); ?>
+
+
+                                </span>
                                 <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                             </p>
                             <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
@@ -2037,6 +2043,8 @@ if (have_posts()) {
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
+
+
         <?php
 
         the_title();
