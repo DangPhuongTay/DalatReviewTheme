@@ -1,5 +1,5 @@
 <div class="firstProduct__content--list__item col-sm-3">
-              <a href="detail-liveshow">
+              <a href="<?php the_permalink(); ?>">
                 <div class="firstProduct__content--list__item--wrap">
                   <div class="firstProduct__img">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/liveshow_ticker.jpg" alt="tourProduct">

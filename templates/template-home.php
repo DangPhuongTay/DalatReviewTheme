@@ -272,6 +272,7 @@
                 <p>Ưu đãi hấp dẫn</p>
             </div>
             <?php get_template_part('templates/template-home/archive', 'voucher' );  ?>
+
         </div>
        </div>
        <!-- home info banner -->
@@ -337,9 +338,9 @@
                     <p>Sản phẩm nổi bật</p>
                 </div>
                 <?php
-                get_template_part('templates/template-home/archive', 'new'); ?>
+                get_template_part('templates/template-home/archive', 'product'); ?>
             </div>
-           
+    
         </div>
         <div class="firstTag__internal--desktop">
             <div class="firstTag__internal--wrap">

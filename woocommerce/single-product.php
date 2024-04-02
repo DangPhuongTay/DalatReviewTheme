@@ -38,7 +38,7 @@ get_header( 'shop' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
-	<?php
+	<?php echo "hello dev";
 		/**
 		 * woocommerce_after_main_content hook.
 		 *
@@ -57,6 +57,7 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php
+
 get_footer( 'shop' );
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

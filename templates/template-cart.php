@@ -9,7 +9,7 @@
  * 
  */
     get_header();?>
-   <section class="cart">
+   <!-- <section class="cart">
         <div class="cart__container">
             <div class="cart__container--top">
                 <div class="cart__container--top__left">
@@ -114,7 +114,6 @@
                 <div class="firstProduct row-max-width">
                     <div class="firstProduct__content container-fluid">
                         <div class="firstProduct__content--list row">
-                            <!-- product 1 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -149,7 +148,6 @@
                                                     <span
                                                         class="firstProduct__info--top__score--review__number">120
                                                     </span>)</span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -161,7 +159,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -172,7 +169,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -188,7 +184,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- button policy -->
                                             <div
                                                 class="firstProduct__info--bottom__tagging tagging__wrap">
                                                 <div
@@ -205,7 +200,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 2 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -242,7 +236,6 @@
                                                         class="firstProduct__info--top__score--review__number">1,485</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -254,7 +247,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -272,7 +264,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -285,7 +276,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 3 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -325,7 +315,6 @@
                                                     </span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -337,7 +326,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -348,7 +336,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -357,7 +344,6 @@
                                                     <span>đ 450,000</span>
                                                 </div>
                                             </div>
-                                            <!-- button policy -->
                                             <div
                                                 class="firstProduct__info--bottom__tagging tagging__wrap">
                                                 <div
@@ -374,7 +360,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 4 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -411,7 +396,6 @@
                                                         class="firstProduct__info--top__score--review__number">142</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -423,7 +407,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -434,7 +417,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -449,7 +431,6 @@
                             </div>
                         </div>
                         <div class="firstProduct__content--list row">
-                            <!-- product 5 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -486,7 +467,6 @@
                                                         class="firstProduct__info--top__score--review__number">407</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -498,7 +478,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -509,7 +488,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -518,7 +496,6 @@
                                                     <span>đ 460,000</span>
                                                 </div>
                                             </div>
-                                            <!-- button policy -->
                                             <div
                                                 class="firstProduct__info--bottom__tagging tagging__wrap">
                                                 <div
@@ -535,7 +512,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 6 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -573,7 +549,6 @@
                                                         class="firstProduct__info--top__score--review__number">57</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -585,7 +560,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -596,7 +570,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -609,7 +582,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 7 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -648,7 +620,6 @@
                                                         class="firstProduct__info--top__score--review__number">93</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -660,7 +631,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -671,7 +641,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -680,7 +649,6 @@
                                                     <span>đ 550,000</span>
                                                 </div>
                                             </div>
-                                            <!-- button policy -->
                                             <div
                                                 class="firstProduct__info--bottom__tagging tagging__wrap">
                                                 <div
@@ -697,7 +665,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- product 8 -->
                             <div
                                 class="firstProduct__content--list__item col-sm-3 ">
                                 <div
@@ -734,7 +701,6 @@
                                                         class="firstProduct__info--top__score--review__number">39</span>
                                                     )
                                                 </span>
-                                                <!-- sep -->
                                                 <div class="sep">
                                                     <ion-icon
                                                         name="ellipse"></ion-icon>
@@ -746,7 +712,6 @@
                                                         Đã được đặt </span>
                                                 </div>
                                             </div>
-                                            <!-- tag -->
                                             <div class="tagging__wrap">
                                                 <div class="tagging__box">
                                                     <div class="tagging__tag">
@@ -757,7 +722,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- bottom -->
                                         <div class="firstProduct__info--bottom">
                                             <div
                                                 class="firstProduct__info--bottom__content">
@@ -782,6 +746,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> -->
+    <?php wc_get_template('cart/cart.php'); ?>
 <?php get_footer();?>
