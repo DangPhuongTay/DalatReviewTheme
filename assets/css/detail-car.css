@@ -47,8 +47,7 @@
     width: 100%; */
 }
 .detail__car--container__item--img img{
-    width: 100%
-    
+    width: 100%;
 }
 .detail__car--container__item--img{
     border-radius: var(--border-radius-size-3);
@@ -95,8 +94,11 @@
     padding-top: 15px;
 }
 .detail__car--info{
-    display: none;
-    position: fixed;
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 30px 0;
+    /* position: fixed;
     min-width: 60vw;
     max-width: 60vw;
     min-height: 90vh;
@@ -107,7 +109,7 @@
     background: var(--color-background-6);
     z-index: 1111;
     padding: 15px 20px;
-    border-radius: var(--border-radius-size-4);
+    border-radius: var(--border-radius-size-4); */
 }
 .detail__car--map{
     display: none;
@@ -228,8 +230,6 @@
 }
 .detail__car--info__body{
     overflow: auto;
-    min-height: 70vh;
-    max-height:82vh;
 }
 .detail__car--info__body--desc__text{
     margin-bottom: 10px;

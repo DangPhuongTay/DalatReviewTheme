@@ -3,7 +3,6 @@
                 <?php 
                             function request() {
                                 global $wp;
-                                $current_url = trailingslashit(home_url($wp->request));
                                 return $wp->request;
                             }
                             $args = array(

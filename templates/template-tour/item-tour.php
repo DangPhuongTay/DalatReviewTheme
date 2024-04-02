@@ -16,24 +16,22 @@
                             ?>
                         </p>
                     </div>
-                    <div class="firstProduct__info--top__score">
-                        <div class="firstProduct__info--top__score--star">
-                            <div class="firstProduct__info--top__score--star__icon">
-                                <ion-icon name="star"></ion-icon>
-                            </div>
-                            <div class="firstProduct__info--top__score--star__number">
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <span class="firstProduct__info--top__score--review">(39)</span>
-                        <!-- sep -->
-                        <div class="sep">
-                            <ion-icon name="ellipse"></ion-icon>
-                        </div>
-                        <div class="firstProduct__info--top__score--booked">
-                            <span firstProduct__info--top__score--booked__number>800+
-                                Đã được đặt </span>
-                        </div>
+                    <div class="firstProduct__info--top__score" style="gap:7px;font-size: 11px;">
+                        <?php 
+                                foreach ($product->attributes as $taxonomy => $attribute) {
+                                    foreach ($attribute->get_terms() as $term) {
+                                        ?>
+                                         <span style="background: #eee;border-radius: 10px;padding: 6px 10px;">
+                                        <?php
+                                        echo  $term->name; 
+
+                                        ?>
+                                         </span>
+                                        <?php
+                                    }
+                                 }
+                                ?>
+                       
                     </div>
                     <!-- tag -->
                     <div class="tagging__wrap">
@@ -52,8 +50,10 @@
                         <div class="firstProduct__info--bottom__content--box">
                             <div class="firstProduct__info--bottom__content--box__price">
 
+
                                 <?php echo $product->get_price_html(); ?>
                             
+
                             </div>
                         </div>
                     </div>
