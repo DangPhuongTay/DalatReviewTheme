@@ -5,28 +5,20 @@ function sb_get_current_url() {
     $current_url = trailingslashit(home_url($wp->request));
     return $current_url;
 }
+if(strpos( sb_get_current_url(), "/hotel" )){
+    get_template_part('templates/template-hotel/archive', 'hotel');
+}elseif(strpos( sb_get_current_url(), "/tour" )){
+    get_template_part('templates/template-tour/archive', 'tour');
+}elseif(strpos( sb_get_current_url(), "/car" )){
+    get_template_part('templates/template-car/archive', 'car');
+}elseif(strpos( sb_get_current_url(), "/blog" )){
+    get_template_part('templates/template-blog/archive', 'blog' );
+}elseif(strpos( sb_get_current_url(), "/motobike" )){
+    get_template_part('templates/template-motobike/archive', 'motobike' );
+}elseif(strpos( sb_get_current_url(), "/liveshow" )){
+    get_template_part('templates/template-liveshow/archive', 'liveshow' );
+}elseif(strpos( sb_get_current_url(), "/product" )){
+    get_template_part('templates/template-tour/archive', 'product');
+};
 
-    switch (sb_get_current_url()) {
-        case "http://localhost/wordpress/category/tour/":
-            get_template_part('templates/template-tour/archive', 'tour');
-            break;
-        case "http://localhost/wordpress/category/hotel/":
-            get_template_part('templates/template-hotel/archive', 'hotel');
-            break;
-        case "http://localhost/wordpress/category/blog/":
-            get_template_part('templates/template-blog/archive', 'blog' );
-            break;
-        case "http://localhost/wordpress/category/liveshow/":
-            get_template_part('templates/template-liveshow/archive', 'liveshow' );
-            break;
-        case "http://localhost/wordpress/category/car/":
-            get_template_part('templates/template-car/archive', 'car' );
-            break;
-        case "http://localhost/wordpress/category/motobike/":
-            get_template_part('templates/template-motobike/archive', 'motobike' );
-        case "http://localhost/wordpress/product-category/demo/":
-            get_template_part('templates/template-hotel/archive', 'hotel' );
-            break;
-
-    }
 

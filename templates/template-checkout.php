@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="checkouttour__container--right">
+            <!-- <div class="checkouttour__container--right">
                 <div class="checkouttour__container--right__top">
                     <p>Thuê Xe Riêng Đi Nha Trang, Mũi Né, Phan Rang, TP Hồ Chí Minh từ Đà Lạt</p>
                     <p>Thuê Xe Riêng Đi Nha Trang, Mũi Né, Phan Rang, TP Hồ Chí Minh từ Đà Lạt</p>
@@ -144,11 +144,10 @@
                     <p><span>Tổng cộng</span><span><span>đ </span>1,750,000</span></p>
                     <p><span>Số tiền thanh toán</span><span><span>đ </span>1,750,000</span></p>
                 </div>
-            </div>
+            </div> -->
         </div>
         
     </section>
-    <!-- phần footer -->
     <div class="checkouttour__container--add shadow">
         <div class="checkouttour__container--add--header">
             <span>Thêm thông tin liên lạc</span>
@@ -180,5 +179,5 @@
             <button id="close__checkouttour--btn2" class="secondBtn">Hủy bỏ</button><button id="close__checkouttour--btn3" class="firstBtn">Lưu</button>
         </div>
     </div>
-  
+    <?php wc_get_template('checkout/form-checkout.php'); ?>
 <?php get_footer();?>
