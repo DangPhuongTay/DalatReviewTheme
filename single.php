@@ -19,7 +19,5 @@ if(strpos( sb_get_current_url(), "/hotel" )){
     get_template_part('templates/template-motobike/content', 'motobike');
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('templates/template-liveshow/content', 'liveshow');
-}elseif(strpos( sb_get_current_url(), "/product" )){
-    get_template_part('templates/template-tour/content', 'product');
 };
 
