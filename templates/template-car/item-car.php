@@ -1,8 +1,8 @@
 <div class="firstProduct__content--list__item col-sm-3 ">
                             <div class="firstProduct__content--list__item--wrap">
                                 <div class="firstProduct__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
-                                        alt="tourProduct">
+                                <?php echo get_the_post_thumbnail(get_the_ID(),
+                         'thumnail', array( 'class' =>'thumnail') ); ?>
                                 </div>
                                 <a href="<?php the_permalink();?>">
                                 <div class="firstProduct__info">

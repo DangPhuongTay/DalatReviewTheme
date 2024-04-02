@@ -30,7 +30,6 @@
             <div class="firstProduct row-max-width">
                 <div class="firstProduct__content container-fluid">
                     <div class="firstProduct__content--list row">
-
                     <?php 
                     $args = array(
                         'post_type'      => 'product',

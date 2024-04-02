@@ -2,7 +2,8 @@
 <div class="fourProductList__wrapper--item">
                     <a href="<?php the_permalink(); ?>">
                         <div class="fourProductList__wrapper--img">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
+                        <?php echo get_the_post_thumbnail(get_the_ID(),
+                         'thumnail', array( 'class' =>'thumnail') ); ?>
                         </div>
                         <div class="fourProductList__wrapper--main">
                             <div class="fourProductList__wrapper--info">
@@ -21,7 +22,8 @@
                                 </div>
                                 <div class="fourProductList__wrapper--info__ellipsis">
                                     <ion-icon name="location-outline"></ion-icon>
-                                    <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
+                                    <span class="fourProductList__wrapper--info__location">
+                                         2.1km từ Trung tâm thành phố,Đà Lạt</span>
                                 </div>
                                 <div class="fourProductList__wrapper--info__tag">
                                     <div class="fourProductList__wrapper--info__card--tag">
