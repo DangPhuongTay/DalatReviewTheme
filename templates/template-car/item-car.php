@@ -1,3 +1,4 @@
+<?php global $product; ?>
 <div class="firstProduct__content--list__item col-sm-3 ">
                             <div class="firstProduct__content--list__item--wrap">
                                 <div class="firstProduct__img">
