@@ -3,11 +3,12 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
+        <?php global $product; ?>
         <div class="detail__car">
             <div class="detail__car--container">
                 <div class="detail__car--container__option">
                     <div class="detail__car--container__header">
-                        Thuê xe máy MR.Din
+                        <?php the_title();?>
                     </div>
                     <div class="detail__car--container__top">
                         <div class="detail__car--container__top--contact">
@@ -19,37 +20,26 @@ if (have_posts()) {
                                 <span>Số 11, Lý Tự Trọng, Phường 2 Thành phố Đà Lạt Lâm Đồng</span>
                         </div>
                         <div class="detail__car--container__top--des">
-                            <p>Điểm thuê xe máy MR.Din gần hồ Tuyền Lâm với các dòng xe đời mới và thủ tục thuê xe cực kỳ nhanh chóng. Theo mỗi xe, du khách sẽ nhận được đầy đủ trang bị nón bảo hiểm, áo mưa, bản đồ, giao xe tận nơi trên địa bàn thành phố Đà Lạt hoàn toàn miễn phí. </p>
-                            <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
+                            <p><?php echo $product->get_short_description (); ?> </p>
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/detail_car_1.jpg" alt="">
                         </div>
                     </div>
                     <div class="detail__car--container__header">
                         Danh sách dịch vụ
                     </div>
-                    <div class="detail__car--container__list">
-                        <?php 
-
-                        get_template_part('templates/template-motobike/archive','detailmotobike');  
-                        ?>
-
-                    </div>
                 </div>
     
             </div>
             <div class="detail__car--info">
-                <div class="detail__car--info__header">
-                    <ion-icon class="detail__car--info__header--icon" name="close-outline">
-                    </ion-icon> <span>CHI TIẾT GÓI THUÊ</span>
-                </div>
                 <div class="detail__car--info__body">
                     <div class="detail__car--info__title">
-                        Air Blade 125-150k/ngày
+                        Air Blade  <?php echo $product->get_price_html(); ?>
                     </div>
                     <div class="detail__car--info__body--img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg"  class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg"  class="shadow" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
                     </div>
                   <div class="detail__car--info__body--form">
                     <div class="detail__car--info__body--form__item">
@@ -83,7 +73,7 @@ if (have_posts()) {
                   </div>
                 </div>
                 <div class="detail__car--info__btn">
-                    <a href="checkout-tour.html">THANH TOÁN</a>
+                    <?php wc_get_template('loop/add-to-cart.php'); ?> 
                 </div>
             </div>
             <div class="detail__car--map">
@@ -100,6 +90,7 @@ if (have_posts()) {
                 </div>
             </div>
         </div>
+            
         <?php
 
     }

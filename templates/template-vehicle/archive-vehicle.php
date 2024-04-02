@@ -9,7 +9,7 @@
     $args = array(
 'post_type'      => 'product',
 'posts_per_page' => 10,
-'product_cat'    => 'motobike'
+'product_cat'    => request()
 );
 ?>
 <?php $getposts = new WP_query($args); ?>
@@ -18,7 +18,7 @@
 <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
 <?php 
 
-get_template_part('templates/template-motobike/item','motobike');  
+get_template_part('templates/template-vehicle/item','motobike');  
 ?>
 <?php endwhile; wp_reset_postdata(); ?>
 
