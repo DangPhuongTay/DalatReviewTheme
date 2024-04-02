@@ -44,7 +44,7 @@
                                 
                                 <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
                             </div>
-                            <a class="firstBtn" href="<?php bloginfo('url'); ?>?add-to-cart=<?php the_ID(); ?>">Thêm vào giỏ</a>
+                            <?php wc_get_template('loop/add-to-cart.php'); ?> 
                         </div>
                     </a>
                 </div>
