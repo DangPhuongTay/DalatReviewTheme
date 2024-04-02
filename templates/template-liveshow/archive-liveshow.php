@@ -190,14 +190,22 @@
             <!--  -->
             <div class="liveshow__container--body__product--list">
         
-        <?php
-        while(have_posts()){
-          the_post(  );
-          get_template_part('templates/template-liveshow/item', 'liveshow');
-            
-       
-        }
-        ?>
+            <?php 
+                    $args = array(
+                        'post_type'      => 'product',
+                        'posts_per_page' => 10,
+                        'product_cat'    => 'liveshow'
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+
+                    <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                        <?php 
+
+                    get_template_part('templates/template-liveshow/item', 'liveshow');  
+                    ?>
+                <?php endwhile; wp_reset_postdata(); ?>
         </div>
 
             <div class="liveshow__container--body__product--list__page">

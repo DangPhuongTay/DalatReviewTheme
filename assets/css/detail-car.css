@@ -47,7 +47,8 @@
     width: 100%; */
 }
 .detail__car--container__item--img img{
-    width: 100%;
+    width: 100%
+    
 }
 .detail__car--container__item--img{
     border-radius: var(--border-radius-size-3);
