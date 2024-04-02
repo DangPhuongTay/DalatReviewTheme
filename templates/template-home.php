@@ -340,7 +340,7 @@
                 <?php
                 get_template_part('templates/template-home/archive', 'product'); ?>
             </div>
-           
+    
         </div>
         <div class="firstTag__internal--desktop">
             <div class="firstTag__internal--wrap">
