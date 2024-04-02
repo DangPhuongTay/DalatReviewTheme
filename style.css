@@ -428,6 +428,7 @@ body.active .primary__dropdown--content{
 }
 .firstProduct__img img{
   width: 100%;
+  height: auto;
 }
 .firstProduct__info{
 padding: 6px 10px;
