@@ -93,6 +93,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 .hotel__right--view__map{
     padding-left: 8px;

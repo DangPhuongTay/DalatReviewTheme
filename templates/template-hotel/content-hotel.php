@@ -574,7 +574,8 @@ if (have_posts()) {
                                             <div class="detailHotel__footer--price__info--unit">Mỗi đêm</div>
                                             <ion-icon name="alert-circle-outline"></ion-icon>
                                         </div>
-                                        <a href="checkout" class="firstBtn">Đặt</a>
+                                        <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -714,7 +715,7 @@ if (have_posts()) {
                                                                     Giá 1 đêm đã bao gồm thuế
                                                                 </div>
                                                             </div>
-                                                            <a href="checkout" class="firstBtn">Đặt</a>
+                                                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
                                                         </div>
                                                         <div
                                                             class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
@@ -767,7 +768,7 @@ if (have_posts()) {
                                                                     Giá 1 đêm đã bao gồm thuế
                                                                 </div>
                                                             </div>
-                                                            <a href="checkout" class="firstBtn">Đặt</a>
+                                                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
                                                         </div>
                                                         <div
                                                             class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
@@ -913,7 +914,7 @@ if (have_posts()) {
                                                                     Giá 1 đêm đã bao gồm thuế
                                                                 </div>
                                                             </div>
-                                                            <a href="checkout" class="firstBtn">Đặt</a>
+                                                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
                                                         </div>
                                                         <div
                                                             class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
@@ -966,7 +967,7 @@ if (have_posts()) {
                                                                     Giá 1 đêm đã bao gồm thuế
                                                                 </div>
                                                             </div>
-                                                            <a href="checkout" class="firstBtn">Đặt</a>
+                                                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
                                                         </div>
                                                         <div
                                                             class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
@@ -1692,226 +1693,7 @@ if (have_posts()) {
                                 </div>
                                 <div class="detailHotel__list--body__similar--content">
                                     <div class="fourProductList__wrapper">
-                                        <div class="fourProductList__wrapper--item">
-                                            <a href="">
-                                                <div class="fourProductList__wrapper--img">
-                                                    <img
-                                                        src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
-                                                </div>
-                                                <div class="fourProductList__wrapper--main">
-                                                    <div class="fourProductList__wrapper--info">
-                                                        <div class="fourProductList__wrapper--info__title">
-                                                            <span>Dalat Wonder Resort</span>
-                                                            <span class="fourProductList__wrapper--stars">
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                            </span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__review">
-                                                            <div class="fourProductList__wrapper--info__score">
-                                                                <span>4.4</span>
-                                                                <span class="slash">/</span>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                                            <div class="fourProductList__wrapper--info__count">47 Bình luận
-                                                            </div>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__ellipsis">
-                                                            <ion-icon name="location-outline"></ion-icon>
-                                                            <span class="fourProductList__wrapper--info__location"> 2.1km từ
-                                                                Trung tâm thành phố,Đà Lạt</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__tag">
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Phòng Gym</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Lễ tân 24/24</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Trung tâm thành phố</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fourProductList__wrapper--price">
-                                                        <div class="fourProductList__wrapper--price__info">
-                                                            <span>đ</span>
-                                                            <span>1,444,527</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm
-                                                            thuế</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="fourProductList__wrapper--item">
-                                            <a href="">
-                                                <div class="fourProductList__wrapper--img">
-                                                    <img
-                                                        src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
-                                                </div>
-                                                <div class="fourProductList__wrapper--main">
-                                                    <div class="fourProductList__wrapper--info">
-                                                        <div class="fourProductList__wrapper--info__title">
-                                                            <span>Dalat Wonder Resort</span>
-                                                            <span class="fourProductList__wrapper--stars">
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                            </span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__review">
-                                                            <div class="fourProductList__wrapper--info__score">
-                                                                <span>4.4</span>
-                                                                <span class="slash">/</span>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                                            <div class="fourProductList__wrapper--info__count">47 Bình luận
-                                                            </div>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__ellipsis">
-                                                            <ion-icon name="location-outline"></ion-icon>
-                                                            <span class="fourProductList__wrapper--info__location"> 2.1km từ
-                                                                Trung tâm thành phố,Đà Lạt</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__tag">
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Phòng Gym</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Lễ tân 24/24</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Trung tâm thành phố</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fourProductList__wrapper--price">
-                                                        <div class="fourProductList__wrapper--price__info">
-                                                            <span>đ</span>
-                                                            <span>1,444,527</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm
-                                                            thuế</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="fourProductList__wrapper--item">
-                                            <a href="">
-                                                <div class="fourProductList__wrapper--img">
-                                                    <img
-                                                        src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
-                                                </div>
-                                                <div class="fourProductList__wrapper--main">
-                                                    <div class="fourProductList__wrapper--info">
-                                                        <div class="fourProductList__wrapper--info__title">
-                                                            <span>Dalat Wonder Resort</span>
-                                                            <span class="fourProductList__wrapper--stars">
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                            </span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__review">
-                                                            <div class="fourProductList__wrapper--info__score">
-                                                                <span>4.4</span>
-                                                                <span class="slash">/</span>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                                            <div class="fourProductList__wrapper--info__count">47 Bình luận
-                                                            </div>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__ellipsis">
-                                                            <ion-icon name="location-outline"></ion-icon>
-                                                            <span class="fourProductList__wrapper--info__location"> 2.1km từ
-                                                                Trung tâm thành phố,Đà Lạt</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__tag">
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Phòng Gym</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Lễ tân 24/24</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Trung tâm thành phố</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fourProductList__wrapper--price">
-                                                        <div class="fourProductList__wrapper--price__info">
-                                                            <span>đ</span>
-                                                            <span>1,444,527</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm
-                                                            thuế</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="fourProductList__wrapper--item">
-                                            <a href="">
-                                                <div class="fourProductList__wrapper--img">
-                                                    <img
-                                                        src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
-                                                </div>
-                                                <div class="fourProductList__wrapper--main">
-                                                    <div class="fourProductList__wrapper--info">
-                                                        <div class="fourProductList__wrapper--info__title">
-                                                            <span>Dalat Wonder Resort</span>
-                                                            <span class="fourProductList__wrapper--stars">
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                                <ion-icon name="star" class="icon__star"></ion-icon>
-                                                            </span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__review">
-                                                            <div class="fourProductList__wrapper--info__score">
-                                                                <span>4.4</span>
-                                                                <span class="slash">/</span>
-                                                                <span>5</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                                            <div class="fourProductList__wrapper--info__count">47 Bình luận
-                                                            </div>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__ellipsis">
-                                                            <ion-icon name="location-outline"></ion-icon>
-                                                            <span class="fourProductList__wrapper--info__location"> 2.1km từ
-                                                                Trung tâm thành phố,Đà Lạt</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--info__tag">
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Phòng Gym</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Lễ tân 24/24</span>
-                                                            </div>
-                                                            <div class="fourProductList__wrapper--info__card--tag">
-                                                                <span>Trung tâm thành phố</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="fourProductList__wrapper--price">
-                                                        <div class="fourProductList__wrapper--price__info">
-                                                            <span>đ</span>
-                                                            <span>1,444,527</span>
-                                                        </div>
-                                                        <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm
-                                                            thuế</div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <?php get_template_part('templates/template-hotel/archive', 'stay'); ?>
                                     </div>
                                 </div>
                             </div>
@@ -2046,11 +1828,8 @@ if (have_posts()) {
 
 
         <?php
-
-        the_title();
-        the_content();
     }
 
 }
 
-?>
+get_footer();?>
