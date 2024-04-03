@@ -15,8 +15,8 @@ if(strpos( sb_get_current_url(), "/hotel" )){
     get_template_part('templates/template-car/content', 'car');
 }elseif(strpos( sb_get_current_url(), "/blog" )){
     get_template_part('templates/template-blog/content', 'blog');
-}elseif(strpos( sb_get_current_url(), "/motobike" )){
-    get_template_part('templates/template-motobike/content', 'motobike');
+}elseif(strpos( sb_get_current_url(), "/vehicle" )){
+    get_template_part('templates/template-vehicle/content', 'vehicle');
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('templates/template-liveshow/content', 'liveshow');
 };

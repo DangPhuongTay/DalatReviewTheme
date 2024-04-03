@@ -9,11 +9,11 @@
  * 
  */
     get_header();?>
-<div class="detail__car">
+    <div class="detail__car">
         <div class="detail__car--container">
             <div class="detail__car--container__option">
                 <div class="detail__car--container__header">
-                    Thuê xe máy MR.Din
+                   < Thuê xe máy MR.Din>
                 </div>
                 <div class="detail__car--container__top">
                     <div class="detail__car--container__top--contact">
@@ -26,96 +26,25 @@
                     </div>
                     <div class="detail__car--container__top--des">
                         <p>Điểm thuê xe máy MR.Din gần hồ Tuyền Lâm với các dòng xe đời mới và thủ tục thuê xe cực kỳ nhanh chóng. Theo mỗi xe, du khách sẽ nhận được đầy đủ trang bị nón bảo hiểm, áo mưa, bản đồ, giao xe tận nơi trên địa bàn thành phố Đà Lạt hoàn toàn miễn phí. </p>
-                        <img src="/assets/img/detail_car_1.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/detail_car_1.jpg" alt="">
                     </div>
                 </div>
                 <div class="detail__car--container__header">
                     Danh sách dịch vụ
                 </div>
-                <div class="detail__car--container__list">
-                    <div class="detail__car--container__item shadow">
-                        <div class="detail__car--container__item--img">
-                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
-                        </div>
-                        <div class="detail__car--container__item--text">
-                            <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
-                            <p class="detail__car--container__item--text__des firstProduct__info--top__title">Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</p>
-                            <p class="detail__car--container__item--text__price"><span class="numberVnd">150000</span>/ngày</span></p>
-                        </div>
-                        <div class="detail__car--container__item--select" onclick="openInfoCarFormBtn()">
-                            Chọn
-                        </div>
-                    </div>
-                    <div class="detail__car--container__item shadow">
-                        <div class="detail__car--container__item--img">
-                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
-                        </div>
-                        <div class="detail__car--container__item--text">
-                            <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
-                            <p class="detail__car--container__item--text__des firstProduct__info--top__title">Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</p>
-                            <p class="detail__car--container__item--text__price"><span class="numberVnd">150000</span>/ngày</span></p>
-                        </div>
-                        <div class="detail__car--container__item--select" onclick="openInfoCarFormBtn()">
-                            Chọn
-                        </div>
-                    </div>
-                    <div class="detail__car--container__item shadow">
-                        <div class="detail__car--container__item--img">
-                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
-                        </div>
-                        <div class="detail__car--container__item--text">
-                            <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
-                            <p class="detail__car--container__item--text__des firstProduct__info--top__title">Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</p>
-                            <p class="detail__car--container__item--text__price"><span class="numberVnd">150000</span>/ngày</span></p>
-                        </div>
-                        <div class="detail__car--container__item--select" onclick="openInfoCarFormBtn()">
-                            Chọn
-                        </div>
-                    </div>
-                    <div class="detail__car--container__item shadow">
-                        <div class="detail__car--container__item--img">
-                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
-                        </div>
-                        <div class="detail__car--container__item--text">
-                            <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
-                            <p class="detail__car--container__item--text__des firstProduct__info--top__title">Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</p>
-                            <p class="detail__car--container__item--text__price"><span class="numberVnd">150000</span>/ngày</span></p>
-                        </div>
-                        <div class="detail__car--container__item--select" onclick="openInfoCarFormBtn()">
-                            Chọn
-                        </div>
-                    </div>
-                    <div class="detail__car--container__item shadow">
-                        <div class="detail__car--container__item--img">
-                            <img src="/assets/img/car-air-blade-125.jpg" alt="">
-                        </div>
-                        <div class="detail__car--container__item--text">
-                            <p class="detail__car--container__item--text__name">Air Blade 125/150</p>
-                            <p class="detail__car--container__item--text__des firstProduct__info--top__title">Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</p>
-                            <p class="detail__car--container__item--text__price"><span class="numberVnd">150000</span><span>/ngày</span></p>
-                        </div>
-                        <div class="detail__car--container__item--select" onclick="openInfoCarFormBtn()">
-                            Chọn
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
         <div class="detail__car--info">
-            <div class="detail__car--info__header">
-                <ion-icon class="detail__car--info__header--icon" name="close-outline">
-                </ion-icon> <span>CHI TIẾT GÓI THUÊ</span>
-            </div>
             <div class="detail__car--info__body">
                 <div class="detail__car--info__title">
                     Air Blade 125-150k/ngày
                 </div>
                 <div class="detail__car--info__body--img">
-                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
-                    <img src="/assets/img/car-air-blade-125.jpg"  class="shadow" alt="">
-                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
-                    <img src="/assets/img/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg"  class="shadow" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
                 </div>
               <div class="detail__car--info__body--form">
                 <div class="detail__car--info__body--form__item">
@@ -166,4 +95,5 @@
             </div>
         </div>
     </div>
+        
 <?php get_footer();?>
