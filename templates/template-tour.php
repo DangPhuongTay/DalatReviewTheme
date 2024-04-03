@@ -89,78 +89,10 @@
     
                 ?>
 
-                <?php
-            $taxonomy     = 'product_cat';
-            $orderby      = 'name';
-            $show_count   = 0;      // 1 for yes, 0 for no
-            $pad_counts   = 0;      // 1 for yes, 0 for no
-            $hierarchical = 1;      // 1 for yes, 0 for no
-            $title        = '';
-            $empty        = 0;
-          
-            $args = array(
-                   'taxonomy'     => $taxonomy,
-                   'orderby'      => $orderby,
-                   'show_count'   => $show_count,
-                   'pad_counts'   => $pad_counts,
-                   'hierarchical' => $hierarchical,
-                   'title_li'     => $title,
-                   'hide_empty'   => $empty
-            );
-          
-           $all_categories = get_categories( $args );
-          
-           echo '<ul class="wc-product-categories-list">';
-          
-           foreach ( $all_categories as $cat ) {
-          
-              if ( $cat->category_parent == 0 ) {
-                  $category_id = $cat->term_id;
-          
-                  echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name  .'</a></li>';
-          
-                  /**
-                   *
-                   *	Show Sub Categories Too
-                   *
-                   */
-                  $args2 = array(
-                          'taxonomy'     => $taxonomy,
-                          'child_of'     => 0,
-                          'parent'       => $category_id,
-                          'orderby'      => $orderby,
-                          'show_count'   => $show_count,
-                          'pad_counts'   => $pad_counts,
-                          'hierarchical' => $hierarchical,
-                          'title_li'     => $title,
-                          'hide_empty'   => $empty
-                  );
-          
-                  $sub_cats = get_categories( $args2 );
-          
-                  if ( $sub_cats ) {
-          
-                      echo '<ul class="wc-sub-categories-list">';
-          
-                      foreach( $sub_cats as $sub_category ) {
-          
-                          echo  '<li>><a href="'.$sub_category->slug.'">'. $sub_category->name .'</a></li>';
-          
-                      }
-          
-                      echo '</ul>';
-          
-                  }
-          
-              }
-          
-          }
-          
-          echo '</ul>';
-                ?>
+             
 
                 <!-- filter left-->
-                <!-- <div class="search__filter--left">
+                 <div class="search__filter--left">
                     <div class="quick__filter--entry">
                         <div class="quick__filter--entry__wrapper">
                             <div class="quick__filter--entry__content">
@@ -326,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div> 
             </div>
         </div>
 
