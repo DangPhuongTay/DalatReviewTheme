@@ -59,7 +59,7 @@
           
            foreach ( $all_categories as $cat ) {
           
-              if ( $cat->category_parent == 0 ) {
+              if ( $cat->category_parent == 'tour' ) {
                   $category_id = $cat->term_id;
           
                   echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name  .'</a></li>';
