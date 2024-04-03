@@ -245,11 +245,6 @@
     width: 100%;
   }
   
-  .hotel__right--tag__wrap {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
   
   .hotel__right--view__map {
     padding-left: 8px;
