@@ -60,10 +60,9 @@
            foreach ( $all_categories as $cat ) {
           
               if ( $cat->category_parent == 0 ) {
-          
                   $category_id = $cat->term_id;
           
-                  echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a></li>';
+                  echo '<li><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name  .'</a></li>';
           
                   /**
                    *
@@ -90,7 +89,7 @@
           
                       foreach( $sub_cats as $sub_category ) {
           
-                          echo  '<li>><a href="'.$sub_category->name .'">'. $sub_category->name .'</a></li>';
+                          echo  '<li>><a href="'.$sub_category->slug.'">'. $sub_category->name .'</a></li>';
           
                       }
           
