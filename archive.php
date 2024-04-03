@@ -12,7 +12,3 @@ function request() {
 }
 
 
-// if(strpos( sb_get_current_url(), request() )){
-//     get_template_part('templates/template-hotel/archive', request());
-// }
-
