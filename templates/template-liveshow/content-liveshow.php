@@ -3,6 +3,7 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
+        <?php global $product; ?>
         <section class="detail__liveshow">
             <div class="detail__liveshow--ticket__box">
                 <div class="detail__liveshow--ticket">
@@ -13,28 +14,63 @@ if (have_posts()) {
                             </div>
                             <div class="detail__liveshow--ticket__left--time">
                                 <ion-icon name="calendar-clear-outline"></ion-icon>
-                                <p>17:15 - 19:15, 16 Mar, 2024 </p>
+                                <?php
+                           
+                                foreach ($product->attributes as $taxonomy => $attribute) {
+                                   
+                                   foreach ($attribute->get_terms() as $term) {
+                                       if($term ->taxonomy == 'pa_thoi-gian'){
+                                     echo $term->name ;
+                                           }else{
+                                       echo '';
+                                   }
+                                   }
+                                } ?>
                             </div>
                             <div class="detail__liveshow--ticket__left--local">
                                 <ion-icon name="location-outline"></ion-icon>
                                 <p>
-                                    <span>Lululola Coffee</span>
-                                    <span>Đường 3/4, Đồi Cà Ri Dê, Phường 3, Thành Phố Đà Lạt, Tỉnh Lâm Đồng</span>
+                                    <?php
+                           
+                                    foreach ($product->attributes as $taxonomy => $attribute) {
+                                       
+                                       foreach ($attribute->get_terms() as $term) {
+                                           if($term ->taxonomy == 'pa_dia-diem'){
+                                         echo $term->name ;
+                                               }else{
+                                           echo '';
+                                       }
+                                       }
+                                    } ?>
+                                    <br>
+                                    <?php
+                                    
+                                    foreach ($product->attributes as $taxonomy => $attribute) {
+                                       
+                                       foreach ($attribute->get_terms() as $term) {
+                                           if($term ->taxonomy == 'pa_dia-chi'){
+                                         echo $term->name ;
+                                         
+                                               }else{
+                                           echo '';
+                                       }
+                                       }
+                                    } ?>
                                 </p>
                             </div>
                         </div>
 
                         <div class="detail__liveshow--ticker__left--bottom">
                             <div class="detail__liveshow--ticket__left--price">
-                                <p><span class="numberVnd">500000</span></p>
+                                <p><?php echo $product->get_price_html(); ?></p>
                             </div>
                             <!-- <div class="detail__liveshow--ticket__left--btn">
                             MUA NGAY
-                        </div> -->
+                        </div>  -->
                         </div>
                     </div>
                     <div class="detail__liveshow--ticket__right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/liveshow_ticker.jpg" alt="">
+                        <img src=" <?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -45,63 +81,18 @@ if (have_posts()) {
                             Mô tả
                         </div>
                         <div class="detail__liveshow--content__left--body">
-                            <h4>Liveshow Bằng Kiều | CƠN MƯA BĂNG GIÁ</h4>
-                            <p class="detail__liveshow--content__left--body__text--1">Lululola Show - Hơn cả âm nhạc, không gian
-                                lãng mạn đậm chất thơ Đà Lạt bao trọn hình ảnh thung lũng Đà Lạt, được ngắm nhìn khoảng khắc
-                                hoàng hôn thơ mộng đến khi Đà Lạt về đêm siêu lãng mạn, được giao lưu với thần tượng một cách
-                                chân thật và gần gũi nhất trong không gian ấm áp và không khí se lạnh của Đà Lạt. Tất cả sẽ mang
-                                đến một đêm nhạc ấn tượng mà bạn không thể quên khi đến với Đà Lạt.</p>
-                            <h5>Qúy Khách sẽ được Lululola gửi thông tin số ghế và xác nhận đặt chỗ thành công!</h5>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail_liveshow_1.jpg" alt="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail_liveshow_2.jpg" alt="">
+                            <?php echo $product->get_description (); ?>
+                        
                         </div>
                     </div>
                     <div class="detail__liveshow--content__right shadow">
                         <div class="detail__liveshow--content__left--header">
                             Danh sách vé
                         </div>
-                        <div class="detail__liveshow--content__right--list">
-                            <div class="detail__liveshow--content__right--item">
-                                <a href="checkout-tour.html">
-                                    <div class="detail__liveshow--content__right--item__name">
-                                        NHÁ NHEM
-                                    </div>
-                                    <div class="detail__liveshow--content__right--item__price">
-                                        <span>đ</span> <span>500000</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="detail__liveshow--content__right--item">
-                                <a href="checkout-tour.html">
-                                    <div class="detail__liveshow--content__right--item__name">
-                                        CHẬP CHOẠNG
-                                    </div>
-                                    <div class="detail__liveshow--content__right--item__price">
-                                        <span>đ</span> <span>600000</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="detail__liveshow--content__right--item">
-                                <a href="checkout-tour.html">
-                                    <div class="detail__liveshow--content__right--item__name">
-                                        CHẠNG VẠNG
-                                    </div>
-                                    <div class="detail__liveshow--content__right--item__price">
-                                        <span>đ</span> <span>900000</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="detail__liveshow--content__right--item">
-                                <a href="checkout-tour.html">
-                                    <div class="detail__liveshow--content__right--item__name">
-                                        CHIỀU TÀ
-                                    </div>
-                                    <div class="detail__liveshow--content__right--item__price">
-                                        <span>đ</span> <span>1300000</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <?php 
+
+                    get_template_part('templates/template-liveshow/item','detailliveshow');  
+?>
                     </div>
                 </div>
             </div>

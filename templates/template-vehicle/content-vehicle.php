@@ -13,15 +13,37 @@ if (have_posts()) {
                     <div class="detail__car--container__top">
                         <div class="detail__car--container__top--contact">
                             <span>Điện Thoại liên hệ:</span>
-                            <span>02633. 986 987 – 02633. 986 988</span>
+                            <?php
+                           
+                             foreach ($product->attributes as $taxonomy => $attribute) {
+                                
+                                foreach ($attribute->get_terms() as $term) {
+                                    if($term ->taxonomy == 'pa_so-dien-thoai'){
+                                  echo $term->name ;
+                                        }else{
+                                    echo '';
+                                }
+                                }
+                             } ?>
                         </div>
                         <div class="detail__car--container__top--address">
                                 <span>Địa chỉ :</span>
-                                <span>Số 11, Lý Tự Trọng, Phường 2 Thành phố Đà Lạt Lâm Đồng</span>
+                                <?php
+                           
+                                foreach ($product->attributes as $taxonomy => $attribute) {
+                                   
+                                   foreach ($attribute->get_terms() as $term) {
+                                       if($term ->taxonomy == 'pa_dia-chi'){
+                                     echo $term->name ;
+                                           }else{
+                                       echo '';
+                                   }
+                                   }
+                                } ?>
                         </div>
                         <div class="detail__car--container__top--des">
                             <p><?php echo $product->get_short_description (); ?> </p>
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/detail_car_1.jpg" alt="">
+                            <img src=" <?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>" alt="">
                         </div>
                     </div>
                     <div class="detail__car--container__header">
@@ -57,18 +79,7 @@ if (have_posts()) {
                   </div>
                   <div class="detail__car--info__body--desc">
                     <div class="detail__car--info__body--desc__text">
-                        <p>Thông tin xe</p>
-                        <p>
-                            <span>&#x2022; Bộ tem ở phần ốp hông Air Blade 2021 cũng có đôi chút khác biệt có thêm dòng chữ Special Edition. Ở phiên bản cũ, dòng chữ Special Edition được đặt ở vị trí khu vực tiếp nhiên liệu.</span>
-                        </p>
-                    </div>
-                    <div class="detail__car--info__body--desc__text">
-                        <p>Điều khoản thuê xe</p>
-                        <p>
-                        <span>&#x2022; Mục đích thuê xe: đa dạng và phong phú tùy vào nhu cầu của các bên. Trong đó, có một số mục đích cơ bản như: thuê xe tự lái, thuê xe để kinh doanh, thuê xe du lịch, thuê xe phục vụ mục đích đi lại….</span>
-                           <span>&#x2022; Giá cả: Giá cả bao gồm cả số và chữ, có thể bao gồm cả tiền xăng xe di chuyển, cầu đường, tiền thuê lái xe …. tùy vào thỏa thuận của các bên và tùy vào loại hợp đồng thuê.</span>
-                           <span>&#x2022; Phương thức thanh toán: Có thể bằng tiền mặt hoặc chuyển khoản, có thể thanh toán ngay sau khi ký hợp đồng hoặc trả theo từng đợt…. tùy vào thỏa thuận của các bên. Tuy nhiên, trong Hợp đồng nên nêu rõ, cụ thể và chi tiết vấn đề này.</span> 
-                        </p>
+                       <?php echo $product->get_description (); ?>
                     </div>
                   </div>
                 </div>
