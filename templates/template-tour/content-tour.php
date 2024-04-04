@@ -5,6 +5,7 @@
             the_post();
             ?>
             <?php global $product; ?>
+
                 <section class="detail__tour">
         <div class="detail__tour--content__right--mobile shadow">
             <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
@@ -294,9 +295,9 @@
                     <div class="detail__tour--content__left--service">
                         <div class="detail__tour--content__left--service--text">
                             Đà Lạt mùa nào cũng đẹp! Đến với Đà Lạt vào bất cứ thời điểm nào trong năm, bạn cũng sẽ yêu mến mảnh đất này. Và nếu như vẫn đang phân vân không biết đi đâu, ngắm gì trong mùa hè Đà Lạt!? Vậy hãy để chúng dẫn bạn đi trải nghiệm Tour săn mây Đà Lạt 2023 – Săn mây Cầu Gỗ Bình Minh dưới đây nhé!
-Nhằm tiết kiệm thời gian, giảm thiểu chi phí du lịch và được thoải mái trải nghiệm các dịch vụ bạn có thể tải app book tour săn mây qua Ứng dụng Đà Lạt Review Tất Tần Tật trên Moblie
-Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận được voucher mua hàng 20k (Áp dụng cho hóa đơn trên 100.000đ) và rất nhiều ưu đãi hấp dẫn khác đang chờ đón bạn.
-Đà Lạt không chỉ gây ấn tượng bởi những rừng thông trầm mặc lung linh, hình ảnh thành phố lên đèn lộn lẫy mà còn bởi những thung lũng cuồn cuộn biển mây trắng. Nếu là một tín đồ ưa xê dịch và thích ngắm biển mây bồng bềnh, du khách không nên bỏ lỡ Săn mây Cầu Gỗ – Bình Minh, nơi được ví như “thiên đường săn mây” tại Đà Lạt.
+                            Nhằm tiết kiệm thời gian, giảm thiểu chi phí du lịch và được thoải mái trải nghiệm các dịch vụ bạn có thể tải app book tour săn mây qua Ứng dụng Đà Lạt Review Tất Tần Tật trên Moblie
+                            Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận được voucher mua hàng 20k (Áp dụng cho hóa đơn trên 100.000đ) và rất nhiều ưu đãi hấp dẫn khác đang chờ đón bạn.
+                            Đà Lạt không chỉ gây ấn tượng bởi những rừng thông trầm mặc lung linh, hình ảnh thành phố lên đèn lộn lẫy mà còn bởi những thung lũng cuồn cuộn biển mây trắng. Nếu là một tín đồ ưa xê dịch và thích ngắm biển mây bồng bềnh, du khách không nên bỏ lỡ Săn mây Cầu Gỗ – Bình Minh, nơi được ví như “thiên đường săn mây” tại Đà Lạt.
                         </div>
                         <div class="detail__tour--content__left--service--img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail-blog-9.jpg" alt="">
@@ -644,10 +645,12 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
         </div>
     </section>
     </section>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
             <?php
-            the_category();
-            the_title();
-            the_content();
+           
         }
     }
 ?>
