@@ -6,87 +6,63 @@ if (have_posts()) {
         ?>
         <?php global $product; ?>
         <div class="detail__hotel--wrap">
-            <div class="slide__img--box">
+        <div class="slide__img--box">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="container__slides">
-
-                    <!-- Full-width images with number text -->
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide1.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide2.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide3.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">4 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide4.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">5 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide5.jpg" style="width:100%">
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">6 / 6</div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/slide6.jpg" style="width:100%">
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <!-- Image text -->
-                    <div class="caption-container">
-                        <p id="caption"></p>
-                    </div>
-
-                    <!-- Thumbnail images -->
-                    <div class="container__slide--number">
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide1.jpg"
-                                style="width:100%" onclick="currentSlide(1)" alt="Đà Lạt Review Tất Tần Tật">
+                <?php  if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+                    return;
+                }
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                        <div class="mySlides" style="width: 800px;display: flex;align-items: center;justify-content: center;">
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
                         </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide2.jpg"
-                                style="width:100%" onclick="currentSlide(2)" alt="Đà Lạt Review Tất Tần Tật">
+                    <?php
+                    }
+                } ?>
+    
+    
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <!-- Thumbnail images -->
+                <div class="container__slide--number">
+                <?php  if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+                    return;
+                }
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                       <div class="column">
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
                         </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide3.jpg"
-                                style="width:100%" onclick="currentSlide(3)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide4.jpg"
-                                style="width:100%" onclick="currentSlide(4)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide5.jpg"
-                                style="width:100%" onclick="currentSlide(5)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide6.jpg"
-                                style="width:100%" onclick="currentSlide(6)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide6.jpg"
-                                style="width:100%" onclick="currentSlide(6)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="<?php echo get_template_directory_uri() ?>/assets/images/slide6.jpg"
-                                style="width:100%" onclick="currentSlide(6)" alt="Đà Lạt Review Tất Tần Tật">
-                        </div>
-                    </div>
+                    <?php
+                    }
+                } ?>
+    
                 </div>
             </div>
+        </div>
             <div class="secondDropDown">
                 <div class="hotel__fitter">
                     <div class="hotel__fitter--wrapper">
@@ -313,13 +289,26 @@ if (have_posts()) {
 
                 <div class="detailHotel__img" onclick="btnDetailHotelSlides()">
                     <div class="detailHotel__img--left">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel1.jpg" alt="">
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>" alt="">
                     </div>
                     <div class="detailHotel__img--right">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel2.jpg" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel3.jpg" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel2.jpg" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel5.jpg" alt="">
+                        
+                        <?php  
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                       
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
+                     
+                    <?php
+                    }
+                } ?>
                     </div>
                 </div>
                 <div class="detailHotel__info">
