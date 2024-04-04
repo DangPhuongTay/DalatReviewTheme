@@ -21,7 +21,19 @@
                     <?php the_title(); ?>
                 </div>
                 <div class="detail__tour--header__info">
-                    <ion-icon name="location-outline"></ion-icon><span>Đèo Prenn, Phường 3, Thành phố Đà Lạt, Tỉnh Lâm Đồng</span>
+                    <ion-icon name="location-outline"></ion-icon> <?php
+                                    
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                       
+                       foreach ($attribute->get_terms() as $term) {
+                           if($term ->taxonomy == 'pa_dia-chi'){
+                         echo $term->name ;
+                         
+                               }else{
+                           echo '';
+                       }
+                       }
+                    } ?>
                 </div>
             </div>
             <div class="detail__tour--img">

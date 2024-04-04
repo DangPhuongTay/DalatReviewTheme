@@ -1,14 +1,13 @@
 <?php global $product; ?>
 
 <div class="detail__liveshow--content__right--item">
-    <a href="checkout-tour.html">
+  <?php wc_get_template('loop/add-to-cart.php'); ?> 
  
-
-<?php
+  <?php
                                     
-foreach ($product->attributes as $taxonomy => $attribute) {
-foreach ($attribute->get_terms() as $term) {
- if($term ->taxonomy == 'pa_loai-ve'){
+  foreach ($product->attributes as $taxonomy => $attribute) {
+  foreach ($attribute->get_terms() as $term) {
+  if($term ->taxonomy == 'pa_loai-ve'){
         
           ?>
           <div class="detail__liveshow--content__right--item__name">
@@ -20,7 +19,10 @@ foreach ($attribute->get_terms() as $term) {
           
           <?php
     }else{
-  echo '';
-   }
-  }
+      echo '';
+        }
+      }
 } ?>
+
+</div>
+
