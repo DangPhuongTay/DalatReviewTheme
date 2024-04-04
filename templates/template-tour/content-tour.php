@@ -4,6 +4,7 @@
         while(have_posts()){
             the_post();
             ?>
+            <?php global $product; ?>
                 <section class="detail__tour">
         <div class="detail__tour--content__right--mobile shadow">
             <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
@@ -94,8 +95,8 @@
                                 
                                 </div>
                                 <div class="detail__tour--content__left--option__item--info__price--right">
-                                    <a href="cart.html">Thêm vào giỏ hàng</a>
-                                    <a href="checkout-tour.html">Đặt ngay</a>
+                                    <a href="cart">Thêm vào giỏ hàng</a>
+                                    <a href="checkout-tour">Đặt ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -435,7 +436,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
             <div class="detail__tour--content__left--related">
                 <div class="fourProductList__wrapper">
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -486,7 +487,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -537,7 +538,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -588,7 +589,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>

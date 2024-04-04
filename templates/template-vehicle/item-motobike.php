@@ -5,7 +5,8 @@
         <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
     </div>
     <div class="detail__car--container__item--text">
-        <p class="detail__car--container__item--text__name"><?php
+        <p class="detail__car--container__item--text__name">
+            <?php
 
             the_title();
 
