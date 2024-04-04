@@ -65,21 +65,7 @@ closeDetailHotelBlur.addEventListener('click', ()=>{
 })
 
 
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("readMore");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Xem tất cả chính sách"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Rút gọn"; 
-      moreText.style.display = "inline";
-    }
-  }
+
 
   const handleChangeSlide = () =>{
     if(current == lenght - 1){

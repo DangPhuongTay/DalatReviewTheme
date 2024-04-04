@@ -853,7 +853,7 @@
 }
 
 .detailHotel__list--body__description--text{
-    font-size: var(--size-text-4);
+    font-size: var(--size-text-5);
 }
 
 .detailHotel__list--body__link{
@@ -1106,7 +1106,8 @@ body.listDetailHotelSlides {
 .detailHotel__list--body__list--wrap__item--left__action,
 .detailHotelMobie__footer,
 .detailHotelMobile__list--body__service--container,
-.detail__list--body__select--rom{
+.detail__list--body__select--rom,
+.detailHotel__list--footer__btn{
     display: none;
 }
 .list__wrapper{
