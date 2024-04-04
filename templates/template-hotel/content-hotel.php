@@ -395,7 +395,7 @@ if (have_posts()) {
                             <div class="detailHotel__info--summary__left--bot">
                                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/user_avatar.png" alt="">
                                 <div class="detailHotel__info--summary__left--bot__decs">
-                                    <div class="detailHotel__info--summary__left--bot__decs--name">Tien Dat</div>
+                                    <div class="detailHotel__info--summary__left--bot__decs--name">Tien Dat<?php wc_get_template('single-product/rating.php'); ?></div>
                                     <div class="detailHotel__info--summary__left--bot__decs--content">Khách sạn sạch đẹp, phòng
                                         tiện nghi đầy đủ, dịch vụ tốt và nhân viên thân thiện. Sạc điện thoại mình bị hư đã được
                                         ks hỗ trợ cho mượn cái thay thế.
@@ -1118,6 +1118,7 @@ if (have_posts()) {
                                                     <div
                                                         class="detailHotel__list--body__reviews--content__item--content__header--review">
                                                         Đánh giá ngày: 18/8/2019</div>
+                                                        
                                                 </div>
                                                 <div class="detailHotel__list--body__reviews--content__item--content__score">
                                                     <p
@@ -1638,9 +1639,10 @@ if (have_posts()) {
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
 
+        <?php wc_get_template('single-product/review.php'); ?> 
         <?php
     }
-
+    
 }
 
 get_footer();?>
