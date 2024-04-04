@@ -51,11 +51,11 @@
                                         <div class="firstProduct__info--bottom__content">
                                             <div class="firstProduct__info--bottom__content--box">
                                                 <div class="firstProduct__info--bottom__content--box__price">
-<<<<<<<<< Temporary merge branch 1
+
                                                 <?php echo $product->get_price_html(); ?>
-=========
-                                                    <?php echo $product->get_price_html(); ?>
->>>>>>>>> Temporary merge branch 2
+
+
+
                                                 </div>
                                             </div>
                                         </div>
