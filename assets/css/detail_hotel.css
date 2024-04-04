@@ -54,14 +54,20 @@
     height: 100%;
     gap: 5px;
     flex: 50%;
-
+    overflow: hidden;
 }
-
-.detailHotel__img--right img {
-    width: calc(50% - 5px);
-    height: 50%;
+.detailHotel__img--right .woocommerce-product-gallery__image{
+    width: calc(50% - 5px) !important;
+    height: 30vh;
 }
-
+.detailHotel__img--right .woocommerce-product-gallery__image a{
+    width: 100% !important;
+    height: 30vh;
+}
+.detailHotel__img--right .woocommerce-product-gallery__image a img{
+    width: 100% !important;
+    height: 30vh;
+}
 .detailHotel__info {
     padding-top: 15px;
 }
