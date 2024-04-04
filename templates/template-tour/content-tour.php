@@ -83,27 +83,42 @@
                 </div>
                 <div class="detail__tour--header__info">
                     <ion-icon name="location-outline"></ion-icon> <?php
-                                    
-                    foreach ($product->attributes as $taxonomy => $attribute) {
+                    if ($product->attributes) {
+                        foreach ($product->attributes as $taxonomy => $attribute) {
                        
-                       foreach ($attribute->get_terms() as $term) {
-                           if($term ->taxonomy == 'pa_dia-chi'){
-                         echo $term->name ;
-                         
-                               }else{
-                           echo '';
-                       }
-                       }
-                    } ?>
+                            foreach ($attribute->get_terms() as $term) {
+                                if($term ->taxonomy == 'pa_dia-chi'){
+                              echo $term->name ;
+                              
+                                    }else{
+                                echo '';
+                            }
+                            }
+                         } 
+                    }else{echo'';} ?>             
+                    
                 </div>
             </div>
             <div class="detail__tour--img">
                 <div class="detail__tour--img__left">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-6.png" alt="">
+                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),
+                    'thumnail', array( 'class' =>'thumnail') ); ?>   " alt="">
                 </div>
                 <div class="detail__tour--img__right">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
+                    <?php  
+                    
+                    
+                    $attachment_ids = $product->get_gallery_image_ids();
+                    
+                    if ( $attachment_ids && $product->get_image_id() ) {
+                        foreach ( $attachment_ids as $attachment_id ) {
+                            ?>
+                            <?php
+                                echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                            ?>
+                        <?php
+                        }
+                    } ?>
                 </div>
             </div>
             <div class="detail__tour--content">
@@ -365,30 +380,7 @@
                         Về dịch vụ này
                     </div>
                     <div class="detail__tour--content__left--service">
-                        <div class="detail__tour--content__left--service--text">
-                            Đà Lạt mùa nào cũng đẹp! Đến với Đà Lạt vào bất cứ thời điểm nào trong năm, bạn cũng sẽ yêu mến mảnh đất này. Và nếu như vẫn đang phân vân không biết đi đâu, ngắm gì trong mùa hè Đà Lạt!? Vậy hãy để chúng dẫn bạn đi trải nghiệm Tour săn mây Đà Lạt 2023 – Săn mây Cầu Gỗ Bình Minh dưới đây nhé!
-                            Nhằm tiết kiệm thời gian, giảm thiểu chi phí du lịch và được thoải mái trải nghiệm các dịch vụ bạn có thể tải app book tour săn mây qua Ứng dụng Đà Lạt Review Tất Tần Tật trên Moblie
-                            Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận được voucher mua hàng 20k (Áp dụng cho hóa đơn trên 100.000đ) và rất nhiều ưu đãi hấp dẫn khác đang chờ đón bạn.
-                            Đà Lạt không chỉ gây ấn tượng bởi những rừng thông trầm mặc lung linh, hình ảnh thành phố lên đèn lộn lẫy mà còn bởi những thung lũng cuồn cuộn biển mây trắng. Nếu là một tín đồ ưa xê dịch và thích ngắm biển mây bồng bềnh, du khách không nên bỏ lỡ Săn mây Cầu Gỗ – Bình Minh, nơi được ví như “thiên đường săn mây” tại Đà Lạt.
-                        </div>
-                        <div class="detail__tour--content__left--service--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail-blog-9.jpg" alt="">
-                        </div>
-                        <div class="detail__tour--content__left--service--text">
-                            Săn mây Cầu Gỗ – Bình Minh là địa điểm check in đình đám tại Đà Lạt với những đồi chè xanh mát, những cột điện gió cao vót, đẹp yên bình. Khi đến đây chắc chắn bạn sẽ không khỏi thoảng thốt trước cảnh sắc tựa chốn bồng lai tiên cảnh này.
-                        </div>
-                        <div class="detail__tour--content__left--service--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail-blog-8.jpg" alt="">
-                        </div>
-                        <div class="detail__tour--content__left--service--text">
-                            Bầu trời sáng mai nơi đây đẹp tựa một bức tranh thuỷ mặc với sắc trắng tinh khôi từ mây trời, xanh ngát của những đồi chè, điểm xuyết thêm màu vàng ươm của những bông hoa dại và xa xa là những hàng thông tít tắp đến khuất tầm nhìn.
-                        </div>
-                        <div class="detail__tour--content__left--service--img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail-blog-7.jpg" alt="">
-                        </div>
-                        <div class="detail__tour--content__left--service--text">
-                            Bầu trời sáng mai nơi đây đẹp tựa một bức tranh thuỷ mặc với sắc trắng tinh khôi từ mây trời, xanh ngát của những đồi chè, điểm xuyết thêm màu vàng ươm của những bông hoa dại và xa xa là những hàng thông tít tắp đến khuất tầm nhìn.
-                        </div>
+                        <?php echo $product->get_description();?>
                     </div>
                     <div class="detail__tour--content__left--header">
                         Những điều cần lưu ý

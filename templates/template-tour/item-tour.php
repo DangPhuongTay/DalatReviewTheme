@@ -8,15 +8,14 @@
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title text__overflow--main">
-<<<<<<<<< Temporary merge branch 1
-                                        <?php  the_title( );?>
-=========
+
+ 
                                             <a href="#"><?php
 
                                                 the_title();
                                     
                                                 ?></p></a>
->>>>>>>>> Temporary merge branch 2
+
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
