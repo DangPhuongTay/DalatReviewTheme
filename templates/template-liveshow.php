@@ -248,7 +248,7 @@
   
            
             </a>
-             <div class="liveshow__container--body__product--list__page">
+             <!-- <div class="liveshow__container--body__product--list__page">
               <a href="">
                 <div class="liveshow__container--body__product--list__page--item">
                   <ion-icon name="chevron-back"></ion-icon>
@@ -271,7 +271,7 @@
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </div>
                 </a>
-            </div>
+            </div> -->
           </div>
   
         </div>

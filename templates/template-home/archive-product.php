@@ -8,8 +8,6 @@
                 'post_type' => 'product',
                 'posts_per_page' => 4,
                 'paged' => $paged
-                
-
                 );
             $loop = new WP_Query( $args );
             if ( $loop->have_posts() ) {
