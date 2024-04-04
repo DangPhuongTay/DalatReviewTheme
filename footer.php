@@ -26,15 +26,11 @@
                 </div>
                 <div class="footer__banner--content">
                     <ul class="footer__listUnit">
-                        <li><a href="">Khách sạn</a></li>
-                        <li><a href="">Villa Đà Lạt</a></li>
-                        <li><a href="">Cho thuê xe</a></li>
-                        <li><a href="">Combo du lịch</a></li>
-                        <li><a href="">Thuê trang phục</a></li>
-                        <li><a href="">Campling Đà Lạt</a></li>
-                        <li><a href="">Gampling Đà Lạt</a></li>
-                        <li><a href="">Vé tham quan Đà Lạt</a></li>
-                        <li><a href="">Đặt vé LiveShow</a></li>
+                        <li><a href="hotel">Khách sạn</a></li>
+                        <li><a href="vehicle">Cho thuê xe</a></li>                       
+                        <li><a href="tour-camping">Campling Đà Lạt</a></li>                      
+                        <li><a href="tour">Vé tham quan Đà Lạt</a></li>
+                        <li><a href="liveshow">Đặt vé LiveShow</a></li>
                     </ul>
                 </div>
             </div>
@@ -45,12 +41,12 @@
                 </div>
                 <div class="footer__banner--content">
                     <ul class="footer__listUnit">
-                        <li><a href="">Sapa Review Tất Tần Tật</a></li>
+                        <li><a href="http://reviewsapa.com/">Sapa Review Tất Tần Tật</a></li>
                         <li><a href="">Đà Lạt Review Tất Tần Tật</a></li>
-                        <li><a href="">TikTok Đà Lạt Review Tất Tần Tật</a></li>
-                        <li><a href="">Nha Trang Review Tất Tần Tật</a></li>
-                        <li><a href="">Phan Thiết Review Tất Tần Tật</a></li>
-                        <li><a href="">Phan Rang Review Tất Tần Tật</a></li>
+                        <li><a href="https://www.tiktok.com/@dalatreviewtattantat">TikTok Đà Lạt Review Tất Tần Tật</a></li>
+                        <li><a href="https://www.facebook.com/groups/NhaTrangReviewTatTanTat/">Nha Trang Review Tất Tần Tật</a></li>
+                        <li><a href="https://www.facebook.com/groups/249050729669509/">Phan Thiết Review Tất Tần Tật</a></li>
+                        <li><a href="https://www.facebook.com/groups/ninhthuantrongtoi/">Phan Rang Review Tất Tần Tật</a></li>
                     </ul>
                 </div>
             </div>

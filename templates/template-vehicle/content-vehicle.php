@@ -58,10 +58,25 @@ if (have_posts()) {
                         Air Blade  <?php echo $product->get_price_html(); ?>
                     </div>
                     <div class="detail__car--info__body--img">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg"  class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/car-air-blade-125.jpg" class="shadow" alt="">
+                  <?php  if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+                    return;
+                }
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                    
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
+                       
+                    <?php
+                    }
+                } ?>
+    
                     </div>
                   <div class="detail__car--info__body--form">
                     <div class="detail__car--info__body--form__item">
