@@ -115,13 +115,13 @@ input[type="number"] {
 }
 .detail__tour--img__right{
     width:30%;
-    height: 100%;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.detail__tour--img__right img{
-    height: 50%;
+.detail__tour--img__right .woocommerce-product-gallery__image a img{
+    height:30vh;  
 
 }
 .detail__tour--img__left img{
@@ -944,17 +944,12 @@ body.sale__detail--tour{
         height: 100%;
         object-fit: cover;
     }
-    .detail__tour--img__right,
     .detail__tour--img__left{
-        width: 100%;
+        width: 100vw;
         height: 370px;
     }
-    .detail__tour--img__left{
-        display: none;
-    }
     .detail__tour--img__right{
-        flex-direction: row;
-        gap: 0px;
+        display: none;
     }
     .detail__tour--container{
         position: relative;
@@ -964,10 +959,10 @@ body.sale__detail--tour{
     .detail__tour--container::before{
         position: absolute;
         content: '';
-        top: 351px;
+        top: 340px;
         left: 0;
         width: 100%;
-        height: 20px;
+        height: 30px;
         background: var(--color-background-6);
         z-index: 2;
         border-top-left-radius: var(--border-radius-size-5);
