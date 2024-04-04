@@ -717,3 +717,4 @@
         }
     }
 ?>
+<?php wc_get_template('loop/pagination.php'); ?> 
