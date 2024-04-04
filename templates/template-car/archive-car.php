@@ -1,5 +1,4 @@
 <?php
-
     if(have_posts()){
         ?>
 <section class="motorbike">
@@ -31,59 +30,22 @@
             <div class="firstProduct row-max-width">
                 <div class="firstProduct__content container-fluid">
                     <div class="firstProduct__content--list row">
-                    <?php 
-                    $args = array(
-                        'post_type'      => 'product',
-                        'posts_per_page' => 10,
-                        'product_cat'    => 'car'
-                    );
-                ?>
-                <?php $getposts = new WP_query($args); ?>
-                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
 
-                    <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                        <?php 
+                        <?php
+        while(have_posts()){
+            the_post(); 
+            get_template_part('templates/template-car/item', 'car' );
 
-                    get_template_part('templates/template-car/item', 'car');  
-                    ?>
-                <?php endwhile; wp_reset_postdata(); ?>
->>>>>>> origin/ThanhTinhHt
+        }
+        ?>
                     </div>
                 </div>
             </div>
 
-            <div class="motorbike__container--content">
-                <div class="motorbike__container--header">
-                    Xe Ô tô
-                </div>
-                <div class="firstProduct row-max-width">
-                    <div class="firstProduct__content container-fluid">
-                        <div class="firstProduct__content--list row">
-                            <?php
-                            $args = array(
-                                'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                                'showposts' => 12, // số lượng bài viết
-                            );
-                            ?>
-                            <?php $getposts = new WP_query($args); ?>
-                            <?php global $wp_query;
-                            $wp_query->in_the_loop = true; ?>
-
-                            <?php while ($getposts->have_posts()):
-                                $getposts->the_post(); ?>
-                                <?php
-                                get_template_part('templates/template-car/item', 'car');
-                                ?>
-                            <?php endwhile;
-                            wp_reset_postdata(); ?>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <?php
-}
+<?php
+    }
 ?>
