@@ -4,7 +4,69 @@
         while(have_posts()){
             the_post();
             ?>
-                <section class="detail__tour">
+            <?php global $product; ?>
+
+            <div class="slide__img--box">
+                <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
+                <div class="container__slides">
+                <?php  if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+                    return;
+                }
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                        <div class="mySlides" style="width: 800px;display: flex;align-items: center;justify-content: center;">
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
+                        </div>
+                    <?php
+                    }
+                } ?>
+    
+    
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <!-- Thumbnail images -->
+                <div class="container__slide--number">
+                <?php  if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
+                    return;
+                }
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                       <div class="column">
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
+                        </div>
+                    <?php
+                    }
+                } ?>
+    
+                </div>
+            </div>
+        </div>
+
+
+        
+    <section class="detail__tour">
         <div class="detail__tour--content__right--mobile shadow">
             <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
             <button class="detail__tour--content__right--btn firstBtn">
@@ -20,7 +82,19 @@
                     <?php the_title(); ?>
                 </div>
                 <div class="detail__tour--header__info">
-                    <ion-icon name="location-outline"></ion-icon><span>Đèo Prenn, Phường 3, Thành phố Đà Lạt, Tỉnh Lâm Đồng</span>
+                    <ion-icon name="location-outline"></ion-icon> <?php
+                                    
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                       
+                       foreach ($attribute->get_terms() as $term) {
+                           if($term ->taxonomy == 'pa_dia-chi'){
+                         echo $term->name ;
+                         
+                               }else{
+                           echo '';
+                       }
+                       }
+                    } ?>
                 </div>
             </div>
             <div class="detail__tour--img">
@@ -94,8 +168,8 @@
                                 
                                 </div>
                                 <div class="detail__tour--content__left--option__item--info__price--right">
-                                    <a href="cart.html">Thêm vào giỏ hàng</a>
-                                    <a href="checkout-tour.html">Đặt ngay</a>
+                                    <a href="cart">Thêm vào giỏ hàng</a>
+                                    <a href="checkout-tour">Đặt ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -293,9 +367,9 @@
                     <div class="detail__tour--content__left--service">
                         <div class="detail__tour--content__left--service--text">
                             Đà Lạt mùa nào cũng đẹp! Đến với Đà Lạt vào bất cứ thời điểm nào trong năm, bạn cũng sẽ yêu mến mảnh đất này. Và nếu như vẫn đang phân vân không biết đi đâu, ngắm gì trong mùa hè Đà Lạt!? Vậy hãy để chúng dẫn bạn đi trải nghiệm Tour săn mây Đà Lạt 2023 – Săn mây Cầu Gỗ Bình Minh dưới đây nhé!
-Nhằm tiết kiệm thời gian, giảm thiểu chi phí du lịch và được thoải mái trải nghiệm các dịch vụ bạn có thể tải app book tour săn mây qua Ứng dụng Đà Lạt Review Tất Tần Tật trên Moblie
-Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận được voucher mua hàng 20k (Áp dụng cho hóa đơn trên 100.000đ) và rất nhiều ưu đãi hấp dẫn khác đang chờ đón bạn.
-Đà Lạt không chỉ gây ấn tượng bởi những rừng thông trầm mặc lung linh, hình ảnh thành phố lên đèn lộn lẫy mà còn bởi những thung lũng cuồn cuộn biển mây trắng. Nếu là một tín đồ ưa xê dịch và thích ngắm biển mây bồng bềnh, du khách không nên bỏ lỡ Săn mây Cầu Gỗ – Bình Minh, nơi được ví như “thiên đường săn mây” tại Đà Lạt.
+                            Nhằm tiết kiệm thời gian, giảm thiểu chi phí du lịch và được thoải mái trải nghiệm các dịch vụ bạn có thể tải app book tour săn mây qua Ứng dụng Đà Lạt Review Tất Tần Tật trên Moblie
+                            Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận được voucher mua hàng 20k (Áp dụng cho hóa đơn trên 100.000đ) và rất nhiều ưu đãi hấp dẫn khác đang chờ đón bạn.
+                            Đà Lạt không chỉ gây ấn tượng bởi những rừng thông trầm mặc lung linh, hình ảnh thành phố lên đèn lộn lẫy mà còn bởi những thung lũng cuồn cuộn biển mây trắng. Nếu là một tín đồ ưa xê dịch và thích ngắm biển mây bồng bềnh, du khách không nên bỏ lỡ Săn mây Cầu Gỗ – Bình Minh, nơi được ví như “thiên đường săn mây” tại Đà Lạt.
                         </div>
                         <div class="detail__tour--content__left--service--img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/detail-blog-9.jpg" alt="">
@@ -435,7 +509,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
             <div class="detail__tour--content__left--related">
                 <div class="fourProductList__wrapper">
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -486,7 +560,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -537,7 +611,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -588,7 +662,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                         </a>
                     </div>
                     <div class="fourProductList__wrapper--item">
-                        <a href="detail_hotel.html">
+                        <a href="detail_hotel">
                             <div class="fourProductList__wrapper--img">
                                 <img src="https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,c_fill,f_auto,w_750,q_85/travelapi/34000000/33360000/33351000/33350943/8c4f0773_z.jpg">
                             </div>
@@ -643,10 +717,11 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
         </div>
     </section>
     </section>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
             <?php
-            the_category();
-            the_title();
-            the_content();
+
         }
     }
 ?>

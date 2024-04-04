@@ -32,65 +32,7 @@
         </div>
         <!--! filter -->
         <div class="search__filter">
-            <div class="search__filter--wrap ">
-            <?php
-            $taxonomy     = 'product_cat';
-            $orderby      = 'name';
-            $show_count   = 0;      // 1 for yes, 0 for no
-            $pad_counts   = 0;      // 1 for yes, 0 for no
-            $hierarchical = 1;      // 1 for yes, 0 for no
-            $title        = '';
-            $empty        = 0;
-
-            //  echo request();
-            $args = array(
-                   'taxonomy'     => $taxonomy,
-                   'orderby'      => $orderby,
-                   'show_count'   => $show_count,
-                   'pad_counts'   => $pad_counts,
-                   'hierarchical' => $hierarchical,
-                   'title_li'     => $title,
-                   'hide_empty'   => $empty
-            );
-          
-           $all_categories = get_categories( $args );
-           foreach ( $all_categories as $cat ) {
-          
-              if ( $cat->name == 'tour' ) {
-          
-                  $category_id = $cat->term_id;
-            
-                  $args2 = array(
-                          'taxonomy'     => $taxonomy,
-                          'child_of'     => 0,
-                          'parent'       => $category_id,
-                          'orderby'      => $orderby,
-                          'show_count'   => $show_count,
-                          'pad_counts'   => $pad_counts,
-                          'hierarchical' => $hierarchical,
-                          'title_li'     => $title,
-                          'hide_empty'   => $empty
-                  );
-          
-                  $sub_cats = get_categories( $args2 );
-                  if ( $sub_cats ) {
-                      echo ' ';
-                      foreach( $sub_cats as $sub_category ) {
-                        //   echo  '<li>><a href="'.$sub_category->slug.'">'. $sub_category->name .'</a></li>';
-                        // echo '<li><a class="primary__dropdown--content__list--item" href="#">Tour Camping Đà Lạt</a></li>';
-                      }
-                      echo '';
-          
-                  }
-          
-              }
-          
-          }
-    
-                ?>
-
-             
-
+            <div class="search__filter--wrap "> 
                 <!-- filter left-->
                  <div class="search__filter--left">
                     <div class="quick__filter--entry">
@@ -437,6 +379,7 @@
                 </div>
             </div>
     </div>
+    
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
     <?php
 
