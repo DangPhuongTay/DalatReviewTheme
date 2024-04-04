@@ -263,9 +263,22 @@ if (have_posts()) {
                 <div class="detailHotelMobile__slides">
                     <div class="detailHotelMobile__slides--show">
                         <div class="detailHotelMobile__slides--show__item" onclick="btnDetailHotelSlides(   )">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel2.jpg" alt="">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel3.jpg" alt="">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel5.jpg" alt="">
+                        <?php  
+                
+                
+                $attachment_ids = $product->get_gallery_image_ids();
+                
+                if ( $attachment_ids && $product->get_image_id() ) {
+                    foreach ( $attachment_ids as $attachment_id ) {
+                        ?>
+                       
+                        <?php
+                            echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html( $attachment_id ), $attachment_id ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                        ?>
+                     
+                    <?php
+                    }
+                } ?>
                         </div>
                     </div>
                 </div>
