@@ -8,7 +8,14 @@
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title text__overflow--main">
-                                        <?php  the_title( );?>
+
+
+                                            <a href="#"><?php
+
+                                                the_title();
+                                    
+                                                ?></p></a>
+
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
@@ -44,8 +51,11 @@
                                         <div class="firstProduct__info--bottom__content">
                                             <div class="firstProduct__info--bottom__content--box">
                                                 <div class="firstProduct__info--bottom__content--box__price">
+
                                                 <?php echo $product->get_price_html(); ?>
+
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                         <!-- button policy -->

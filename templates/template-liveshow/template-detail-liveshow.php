@@ -63,48 +63,10 @@
                 <div class="detail__liveshow--content__left--header">
                     Danh sách vé
                 </div>
-                <div class="detail__liveshow--content__right--list">
-                    <div class="detail__liveshow--content__right--item">
-                        <a href="checkout-tour.html">
-                            <div class="detail__liveshow--content__right--item__name">
-                                NHÁ NHEM
-                            </div>
-                            <div class="detail__liveshow--content__right--item__price">
-                                <span>đ</span> <span>500000</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="detail__liveshow--content__right--item">
-                        <a href="checkout-tour.html">
-                            <div class="detail__liveshow--content__right--item__name">
-                                CHẬP CHOẠNG
-                            </div>
-                            <div class="detail__liveshow--content__right--item__price">
-                                <span>đ</span> <span>600000</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="detail__liveshow--content__right--item">
-                        <a href="checkout-tour.html">
-                            <div class="detail__liveshow--content__right--item__name">
-                                CHẠNG VẠNG
-                            </div>
-                            <div class="detail__liveshow--content__right--item__price">
-                                <span>đ</span> <span>900000</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="detail__liveshow--content__right--item">
-                        <a href="checkout-tour.html">
-                            <div class="detail__liveshow--content__right--item__name">
-                                CHIỀU TÀ
-                            </div>
-                            <div class="detail__liveshow--content__right--item__price">
-                                <span>đ</span> <span>1300000</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <?php 
+
+                get_template_part('templates/template-liveshow/archive','detailliveshow');  
+                ?>
             </div>
         </div>
     </div>
