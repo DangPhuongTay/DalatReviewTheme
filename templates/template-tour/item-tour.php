@@ -8,8 +8,15 @@
                                 <div class="firstProduct__info">
                                     <div class="firstProduct__info--top">
                                         <div class="firstProduct__info--top__title text__overflow--main">
-                                            <a href="#">Trải Nghiệm Canyoning
-                                                Vượt Thác Datanla</a>
+<<<<<<<<< Temporary merge branch 1
+                                        <?php  the_title( );?>
+=========
+                                            <a href="#"><?php
+
+                                                the_title();
+                                    
+                                                ?></p></a>
+>>>>>>>>> Temporary merge branch 2
                                         </div>
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
@@ -45,10 +52,11 @@
                                         <div class="firstProduct__info--bottom__content">
                                             <div class="firstProduct__info--bottom__content--box">
                                                 <div class="firstProduct__info--bottom__content--box__price">
-                                                    <span>đ 1,890,000</span>
-                                                </div>
-                                                <div class="firstProduct__info--bottom__content--box__underline">
-                                                    <span>đ 2,050,000</span>
+<<<<<<<<< Temporary merge branch 1
+                                                <?php echo $product->get_price_html(); ?>
+=========
+                                                    <?php echo $product->get_price_html(); ?>
+>>>>>>>>> Temporary merge branch 2
                                                 </div>
                                             </div>
                                         </div>
