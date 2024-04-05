@@ -205,7 +205,8 @@
         </div>
         <!-- slider home -->
         <div class="home__slider">
-           <div class="home__slider--show">
+            
+           <!-- <div class="home__slider--show">
             <div class="home__slider--list__images">
              <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-slider-1.webp"\>
              <img class="home__slider--item__image" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-slider-2.webp"\>
@@ -226,7 +227,8 @@
                     <input class="home__slider--searchbox__btn" type="button" value="Khám phá">
                 </div>
             </div>
-           </div>
+           </div> -->
+
         </div>
         <!-- banner & box search mobile home -->
        <div class="home__banner--search__mobile">
