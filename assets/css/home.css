@@ -308,6 +308,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5px;
+    margin-top: 10px;
 }
 .home__slider--serchbox__search {
     width: 80%;

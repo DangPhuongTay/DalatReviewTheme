@@ -3,3 +3,4 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-3.png" alt="">
                     </a>
                 </div>
+
