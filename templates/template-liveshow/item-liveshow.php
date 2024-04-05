@@ -22,7 +22,7 @@
                           </div>
                         </div>
                         <span class="firstProduct__info--top__score--review">(
-                          <span class="firstProduct__info--top__score--review__number">120
+                          <span class="firstProduct__info--top__score--review__number"><?php echo $review_count = $product->get_review_count(); ?>
                           </span>)</span>
                         <!-- sep -->
                         <div class="sep">
