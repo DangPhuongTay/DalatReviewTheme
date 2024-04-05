@@ -1,3 +1,4 @@
+<?php global $product; ?>
 <div class="detailHotel__list--body__list--wrap">
                                         <div class="detailHotel__list--body__list--wrap__name"><?php the_title(); ?></div>
                                         <div class="detailHotel__list--body__list--wrap__item">
@@ -8,23 +9,11 @@
                                                     <div class="detailHotel__list--body__list--wrap__item--left__img--main">
                                                         <div
                                                             class="detailHotel__list--body__list--wrap__item--left__img--main__1">
-                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/detailHotel1.avif"
-                                                                alt="">
+                                                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>" alt="">
                                                         </div>
-                                                        <div
-                                                            class="detailHotel__list--body__list--wrap__item--left__img--main__2">
-                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/detailHotel.avif"
-                                                                alt="">
-                                                        </div>
-                                                        <div
-                                                            class="detailHotel__list--body__list--wrap__item--left__img--main__3">
-                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/hotel2.jpg"
-                                                                alt="">
-                                                        </div>
+                                                        
                                                     </div>
-                                                    <div class="detailHotel__list--body__list--wrap__item--left__img--count">
-                                                        <span> <ion-icon name="images-outline"></ion-icon> </span> 36
-                                                    </div>
+                                                    
                                                 </div>
 
                                                 <div class="detailHotel__list--body__list--wrap__item--left__popular">
@@ -46,10 +35,8 @@
                                                     </div>
                                                     <div
                                                         class="detailHotel__list--body__list--wrap__item--left__popular--price">
-                                                        <div
-                                                            class="detailHotel__list--body__list--wrap__item--left__popular--price__amount">
-                                                            Từ <div
-                                                                class="detailHotel__list--body__list--wrap__item--left__popular--price__format">
+                                                        <div class="detailHotel__list--body__list--wrap__item--left__popular--price__amount">
+                                                            Từ <div class="detailHotel__list--body__list--wrap__item--left__popular--price__format">
                                                                 đ <b>20XXXX</b>
                                                             </div>
                                                         </div>
@@ -83,9 +70,6 @@
                                                         <ion-icon name="checkmark-circle-outline"></ion-icon>
                                                         <p>Dịch vụ dọn phòng</p>
                                                     </div>
-                                                </div>
-                                                <div class="detailHotel__list--body__list--wrap__item--left__poptip">
-                                                    <p>Xem thêm tiện nghi</p>
                                                 </div>
                                             </div>
                                             <div class="detailHotel__list--body__list--wrap__item--right">
@@ -130,74 +114,18 @@
                                                                     class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part">
                                                                     <div
                                                                         class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
-                                                                        đ <b>20XXXXX</b>
+                                                                        <?php echo $product->get_price_html(); ?>
                                                                     </div>
                                                                     <div
                                                                         class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
                                                                         Giá 1 đêm đã bao gồm thuế
                                                                     </div>
                                                                 </div>
-                                                                <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
-                                                                        Đăng nhập để hưởng giá thành viên Klook
-                                                                    </div>
+                                                                <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="detailHotel__list--body__list--wrap__item--right__body"
-                                                        onclick="btnDetailHotelPrice2()">
-                                                        <div
-                                                            class="detailHotel__list--body__list--wrap__item--right__body--info">
-                                                            <div
-                                                                class="detailHotel__list--body__list--wrap__item--right__body--info__left">
-                                                                <div
-                                                                    class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
-                                                                    <span>1 giường queen</span>
-                                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate">
-                                                                    <div
-                                                                        class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-primary">
-                                                                        <ion-icon name="car-sport-outline"></ion-icon>
-                                                                        <span>Đỗ xe miễn phí</span>
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-info">
-                                                                        <ion-icon name="cafe-outline"></ion-icon>
-                                                                        <span>Bữa sáng miễn phí</span>
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
-                                                                        <ion-icon name="ban-outline"></ion-icon>
-                                                                        <span>Không hoàn tiền</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__list--wrap__item--right__body--info__right">
-                                                                <div
-                                                                    class="detailHotel__list--body__list--wrap__item--right__body--info__right--price">
-                                                                    <div
-                                                                        class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part">
-                                                                        <div
-                                                                            class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
-                                                                            đ <b>20XXXXX</b>
-                                                                        </div>
-                                                                        <div
-                                                                            class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
-                                                                            Giá 1 đêm đã bao gồm thuế
-                                                                        </div>
-                                                                    </div>
-                                                                    <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
-                                                                        <div
-                                                                            class="detailHotel__list--body__list--wrap__item--right__body--info__right--tip">
-                                                                            Đăng nhập để hưởng giá thành viên Klook
-                                                                        </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                             
                                                     </div>
                                                 </div>
                                             </div>

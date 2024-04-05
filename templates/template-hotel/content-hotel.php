@@ -259,7 +259,7 @@ if (have_posts()) {
             <div class="detailHotel__banner">
                 <div class="detailHotel__top--link">
                     <ion-icon name="chevron-back-outline"></ion-icon>
-                    <a href="http://localhost/wordpress/category/hotel/">Tìm thêm khách sạn tại Đà Lạt</a>
+                    <a href="http://localhost/wordpress/hotel/">Tìm thêm khách sạn tại Đà Lạt</a>
                 </div>
                 <div class="detailHotelMobile__slides">
                     <div class="detailHotelMobile__slides--show">
@@ -1320,13 +1320,13 @@ if (have_posts()) {
                                                 <div class="detailHotel__list--body__link">
                                                     <div class="detailHotel__list--body__link--inner">
                                                         <span class="detailHotel__list--body__link--inner__item">
-                                                            <a href="http://localhost/wordpress/">Trang chủ</a>
+                                                            <a href="<?php echo home_url(); ?>">Trang chủ</a>
                                                         </span>
                                                         <span class="detailHotel__list--body__link--inner__divider">
                                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                                         </span>
                                                         <span class="detailHotel__list--body__link--inner__item">
-                                                            <a href="/category/hotel">Khách sạn</a>
+                                                            <a href="<?php echo home_url(); ?>">Khách sạn</a>
                                                         </span>
                                                         <span class="detailHotel__list--body__link--inner__divider">
                                                             <ion-icon name="chevron-forward-outline"></ion-icon>
