@@ -342,7 +342,7 @@
                             </div>
                             <div class="firstReview__for">
                                 <span>Đánh giá cho: </span>
-                                <a href="../page/detail_tour.html">Trải Nghiệm Đu Dây High Rope Course
+                                <a href="detail-tour">Trải Nghiệm Đu Dây High Rope Course
                                     Đà Lạt</a>
                             </div>
                             <div class="firstReview__time">
