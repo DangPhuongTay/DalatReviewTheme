@@ -288,7 +288,7 @@
         </div>
             <div class="breakCrumb ">
                 <div class="breakCrumb__list">
-                    <a href="#" class="breakCrumb__list--item">Trang chủ</a>
+                    <a href="http://localhost/wordpress/" class="breakCrumb__list--item">Trang chủ</a>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                     <a href="#" class="breakCrumb__list--item">Đà Lạt</a>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -372,17 +372,17 @@
                         Xu Hướng
                     </h2>
                     <div class="hightlightProduct__content">
-                        <div class="hightlightProduct__content--wrap">
+                        
                             
                             <?php
-                            get_template_part('templates/template-tour/item', 'tourhightlight');
+                            get_template_part('templates/template-tour/archive', 'tourhightlight');
                             ?>
                           
                             <!-- nextBtn -->
                             <!-- <div class="nextBtn">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </div> -->
-                        </div>
+                        </div> -->
+                        
                     </div>
                 </div>
             </div>

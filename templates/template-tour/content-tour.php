@@ -328,9 +328,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="detail__tour--content__left--header">
+                    <!--<div class="detail__tour--content__left--header">
                         Đánh giá gần đây <a href="">Đọc tất cả đánh giá</a>
                     </div>
+                    
                     <div class="detail__tour--content__left--rate__first">
                         <div class="detail__tour--content__left--rate__first--title">
                             <p>7/10</p>
@@ -375,7 +376,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="detail__tour--content__left--header">
                         Về dịch vụ này
                     </div>
@@ -418,66 +419,12 @@
                             </div>
                         </div>
                         <div class="detail__tour--content__left--rate__second--list">
-                            <div class="detail__tour--content__left--rate__second--item">
-                                <div class="detail__tour--content__left--rate__second--item__user">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
-                                    <p><span>Người dùng</span><span>4 ngày trước</span></p>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__star">
-                                    <div class="detail__tour--content__left--rate__first--title__liststar">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-                                    <span>Rất hài lòng</span>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__content">
-                                    Hoàn toàn xứng đáng! bạn chắc chắn nên thử món này khi ghé thăm Đà Lạt! hàng chờ rất dài nhưng rất thuận tiện khi bạn mua vé ở klook vì bạn không cần phải xếp hàng chờ khác để mua vé.
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__like">
-                                    <ion-icon name="thumbs-up-outline"></ion-icon><span>Hữu ích</span>
-                                </div>
-                            </div>
-                            <div class="detail__tour--content__left--rate__second--item">
-                                <div class="detail__tour--content__left--rate__second--item__user">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
-                                    <p><span>Người dùng</span><span>4 ngày trước</span></p>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__star">
-                                    <div class="detail__tour--content__left--rate__first--title__liststar">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-                                    <span>Rất hài lòng</span>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__content">
-                                    Hoàn toàn xứng đáng! bạn chắc chắn nên thử món này khi ghé thăm Đà Lạt! hàng chờ rất dài nhưng rất thuận tiện khi bạn mua vé ở klook vì bạn không cần phải xếp hàng chờ khác để mua vé.
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__like">
-                                    <ion-icon name="thumbs-up-outline"></ion-icon><span>Hữu ích</span>
-                                </div>
-                            </div>
+                            <?php
+                            $args = array('post_id' => $product->id);
+                            $comments = get_comments($args);
+                            wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
+                            ?>
+                            
                         </div>
                     </div>
                     <div class="detail__tour--content__left--header">
