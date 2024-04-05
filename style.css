@@ -435,7 +435,7 @@ body.active .primary__dropdown--content{
 padding: 6px 10px;
 display: flex;
 flex-direction: column;
-min-height: 190px;
+min-height: 140px;
 }
 .firstProduct__info--top{
   width: 100%;
@@ -506,7 +506,7 @@ min-height: 190px;
   width: 100%;
 }
 .firstProduct__info--bottom{
-  margin: 10px 0;
+  margin: 10px;
 }
 .firstProduct__info--bottom__content--box{
   display: flex;

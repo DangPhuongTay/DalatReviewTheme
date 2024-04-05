@@ -14,7 +14,7 @@
                                     
                                                 ?></p></a>
 
-                                        </div>
+                                        
                                         <div class="firstProduct__info--top__score">
                                             <div class="firstProduct__info--top__score--star">
                                                 <div class="firstProduct__info--top__score--star__icon">
@@ -52,9 +52,6 @@
 
                                                 <?php echo $product->get_price_html(); ?>
 
-
-
-                                                </div>
 
                                             </div>
                                         </div>

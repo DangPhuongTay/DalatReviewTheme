@@ -67,8 +67,8 @@
                             <!-- <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động"> -->
                             <input type="hidden" name="post_type" value="product"> 
                             <form action="<?php echo home_url(); ?>" id="search-form" method="get">
-                            <input class="header__top--left__search--input" type="text" name="s" id="s" value="type your search" onblur="if(this.value=='')this.value='type your search'"
-                            onfocus="if(this.value=='type your search')this.value=''" />
+                            <input class="header__top--left__search--input" type="text" name="s" id="s" value="Tìm theo điểm đến, hoạt động" onblur="if(this.value=='')this.value='Tìm theo điểm đến, hoạt động'"
+                            onfocus="if(this.value=='Tìm theo điểm đến, hoạt động')this.value=''" />
                             <input type="hidden" value="submit" />
                         </form>
                             <ion-icon name="search-outline"></ion-icon>

@@ -25,8 +25,6 @@
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
                     <div class="tour__banner--search__input">
-                        <input placeholder="Tìm kiếm" type="text">
-                       
                         <form action="<?php echo home_url(); ?>" id="search-form" method="get">
                             <input type="text" name="s" id="s" value="Tìm kiếm" onblur="if(this.value=='')this.value='Tìm kiếm'"
                             onfocus="if(this.value=='Tìm kiếm')this.value=''" />
