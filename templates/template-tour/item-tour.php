@@ -54,6 +54,7 @@
 
                                                 <?php echo $product->get_price_html(); ?>
 
+
                                                 </div>
                                             </div>
                                         </div>

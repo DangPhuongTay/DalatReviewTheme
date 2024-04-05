@@ -482,18 +482,52 @@
             </div>
             <div class="hotel__body--right">
                 <div class="hotel__right--fitter">
-                    <div class="hotel__right--fitter__tag">
-                        <a href="#" id="hotel__right--fitter__title"  class="hotel__right--fitter__title">Đề cử </a>
+
+                <?php
+                $taxonomy     = 'product_cat';
+                $orderby      = 'name';
+                $show_count   = 0;      // 1 for yes, 0 for no
+                $pad_counts   = 0;      // 1 for yes, 0 for no
+                $hierarchical = 1;      // 1 for yes, 0 for no
+                $title        = '';
+                $empty        = 0;
+            $args = array(
+            'taxonomy'     => $taxonomy,
+            'orderby'      => $orderby,
+            'show_count'   => $show_count,
+            'pad_counts'   => $pad_counts,
+            'hierarchical' => $hierarchical,
+            'title_li'     => $title,
+            'hide_empty'   => $empty);
+            $all_categories = get_categories( $args );
+
+            foreach ( $all_categories as $cat ) {
+            if ( $cat->name == 'Place' ) {
+            $category_id = $cat->term_id;
+                $args2 = array(
+                'taxonomy'     => $taxonomy,
+                'child_of'     => 0,
+                'parent'       => $category_id,
+                'orderby'      => $orderby,
+                'show_count'   => $show_count,
+                'pad_counts'   => $pad_counts,
+                'hierarchical' => $hierarchical,
+                'title_li'     => $title,
+                'hide_empty'   => $empty,
+                );
+            $sub_cats = get_categories( $args2 );
+            if ( $sub_cats ) {
+                    
+                foreach( $sub_cats as $sub_category ) { ?>
+                        <div class="hotel__right--fitter__tag">
+                        <a href="<?php echo $sub_category->slug ?>" id="hotel__right--fitter__title"  class="hotel__right--fitter__title"><?php echo $sub_category->name ?></a>
                     </div>
-                    <div class="hotel__right--fitter__tag">
-                        <a href="#" id="hotel__right--fitter__title--1"  class="hotel__right--fitter__title">Độ phổ biến (Cao đến Thấp)</a>
-                    </div>
-                    <div class="hotel__right--fitter__tag">
-                        <a href="#" id="hotel__right--fitter__title--2"  class="hotel__right--fitter__title">Điểm đánh giá (Cao đến Thấp)</a>
-                    </div>
-                    <div class="hotel__right--fitter__tag">
-                        <a href="#" id="hotel__right--fitter__title--3" class="hotel__right--fitter__title">Khoảng cách (Gần đến Xa) </a>
-                    </div>
+                <?php }
+                   
+                }
+            }
+            }
+?>
                 </div>
                         <?php get_template_part('templates/template-hotel/archive', 'hotel'); ?>
             </div>

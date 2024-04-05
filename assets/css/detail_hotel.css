@@ -42,6 +42,7 @@
 
 .detailHotel__img--left img {
     width: 100%;
+    height: 40vh;
 }
 
 .detailHotel__img--left {
@@ -51,17 +52,23 @@
 .detailHotel__img--right {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 40vh;
     gap: 5px;
     flex: 50%;
-
+    overflow: hidden;
 }
-
-.detailHotel__img--right img {
-    width: calc(50% - 5px);
-    height: 50%;
+.detailHotel__img--right .woocommerce-product-gallery__image{
+    width: calc(50% - 5px) !important;
+    height: 20vh;
 }
-
+.detailHotel__img--right .woocommerce-product-gallery__image a{
+    width: 100% !important;
+    height: 20vh;
+}
+.detailHotel__img--right .woocommerce-product-gallery__image a img{
+    width: 100% !important;
+    height: 20vh;
+}
 .detailHotel__info {
     padding-top: 15px;
 }
@@ -853,7 +860,7 @@
 }
 
 .detailHotel__list--body__description--text{
-    font-size: var(--size-text-4);
+    font-size: var(--size-text-5);
 }
 
 .detailHotel__list--body__link{
@@ -1106,7 +1113,8 @@ body.listDetailHotelSlides {
 .detailHotel__list--body__list--wrap__item--left__action,
 .detailHotelMobie__footer,
 .detailHotelMobile__list--body__service--container,
-.detail__list--body__select--rom{
+.detail__list--body__select--rom,
+.detailHotel__list--footer__btn{
     display: none;
 }
 .list__wrapper{
@@ -1226,7 +1234,7 @@ body.MapCarForm{
         scroll-snap-type: x mandatory; */
     }
     .detailHotelMobile__slides--show__item img{
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
         height: 464px;
     }

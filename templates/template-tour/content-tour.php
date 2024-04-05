@@ -513,7 +513,8 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
             <?php
-
+              
         }
     }
 ?>
+<?php wc_get_template('loop/pagination.php'); ?> 
