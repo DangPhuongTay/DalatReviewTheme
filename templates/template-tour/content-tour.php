@@ -225,112 +225,17 @@
                             <ion-icon class="detail__tour--content__left--sale__info--close" name="close"></ion-icon><span>Bao gồm 11 hoạt động</span>
                         </div>
                         <div class="detail__tour--content__left--sale__info--list">
-                            <ul>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                        <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Giá vé</p>
-                                            <p>
-                                                <span><span>Người lớn: đ</span> 500.000</span>
-                                                <span><span>Trẻ em: đ</span> 200.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Điều kiện</p>
-                                            <p>
-                                                <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Bao gồm</p>
-                                            <p>
-                                                <span>1 vé Saigon Skydeck</span>
-                                                <span>Bảo tàng áo dài ở tầng 49</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Địa chỉ</p>
-                                            <p>
-                                                <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__btn">
-                                            <a href="" >Xem thêm</a>
-                                        </div>
-                                </li>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                    <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Giá vé</p>
-                                        <p>
-                                            <span><span>Người lớn: đ</span> 500.000</span>
-                                            <span><span>Trẻ em: đ</span> 200.000</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Điều kiện</p>
-                                        <p>
-                                            <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Bao gồm</p>
-                                        <p>
-                                            <span>1 vé Saigon Skydeck</span>
-                                            <span>Bảo tàng áo dài ở tầng 49</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Địa chỉ</p>
-                                        <p>
-                                            <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__btn">
-                                        <a href="" >Xem thêm</a>
-                                    </div>
-                                </li>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Giá vé</p>
-                                    <p>
-                                        <span><span>Người lớn: đ</span> 500.000</span>
-                                        <span><span>Trẻ em: đ</span> 200.000</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Điều kiện</p>
-                                    <p>
-                                        <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Bao gồm</p>
-                                    <p>
-                                        <span>1 vé Saigon Skydeck</span>
-                                        <span>Bảo tàng áo dài ở tầng 49</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Địa chỉ</p>
-                                    <p>
-                                        <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__btn">
-                                    <a href="" >Xem thêm</a>
-                                </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <?php 
+
+                        get_template_part('templates/template-tour/archive','detailticket');  
+                        ?>
+                    
                     </div>
-                    <div class="detail__tour--content__left--header">
+                </div>
+                    <!--<div class="detail__tour--content__left--header">
                         Đánh giá gần đây <a href="">Đọc tất cả đánh giá</a>
                     </div>
+                    
                     <div class="detail__tour--content__left--rate__first">
                         <div class="detail__tour--content__left--rate__first--title">
                             <p>7/10</p>
@@ -375,7 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="detail__tour--content__left--header">
                         Về dịch vụ này
                     </div>
@@ -418,66 +323,12 @@
                             </div>
                         </div>
                         <div class="detail__tour--content__left--rate__second--list">
-                            <div class="detail__tour--content__left--rate__second--item">
-                                <div class="detail__tour--content__left--rate__second--item__user">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
-                                    <p><span>Người dùng</span><span>4 ngày trước</span></p>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__star">
-                                    <div class="detail__tour--content__left--rate__first--title__liststar">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-                                    <span>Rất hài lòng</span>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__content">
-                                    Hoàn toàn xứng đáng! bạn chắc chắn nên thử món này khi ghé thăm Đà Lạt! hàng chờ rất dài nhưng rất thuận tiện khi bạn mua vé ở klook vì bạn không cần phải xếp hàng chờ khác để mua vé.
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__like">
-                                    <ion-icon name="thumbs-up-outline"></ion-icon><span>Hữu ích</span>
-                                </div>
-                            </div>
-                            <div class="detail__tour--content__left--rate__second--item">
-                                <div class="detail__tour--content__left--rate__second--item__user">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
-                                    <p><span>Người dùng</span><span>4 ngày trước</span></p>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__star">
-                                    <div class="detail__tour--content__left--rate__first--title__liststar">
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                        <ion-icon name="star"></ion-icon>
-                                    </div>
-                                    <span>Rất hài lòng</span>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__content">
-                                    Hoàn toàn xứng đáng! bạn chắc chắn nên thử món này khi ghé thăm Đà Lạt! hàng chờ rất dài nhưng rất thuận tiện khi bạn mua vé ở klook vì bạn không cần phải xếp hàng chờ khác để mua vé.
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--item__like">
-                                    <ion-icon name="thumbs-up-outline"></ion-icon><span>Hữu ích</span>
-                                </div>
-                            </div>
+                            <?php
+                            $args = array('post_id' => $product->id);
+                            $comments = get_comments($args);
+                            wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
+                            ?>
+                            
                         </div>
                     </div>
                     <div class="detail__tour--content__left--header">

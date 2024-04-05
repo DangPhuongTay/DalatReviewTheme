@@ -25,11 +25,9 @@
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
                     <div class="tour__banner--search__input">
-                        <input placeholder="Tìm kiếm" type="text">
-                       
-                        <form action="<?php echo home_url(); ?>/" id="search-form" method="get">
-                            <input type="text" name="s" id="s" value="type your search" onblur="if(this.value=='')this.value='type your search'"
-                            onfocus="if(this.value=='type your search')this.value=''" />
+                        <form action="<?php echo home_url(); ?>" id="search-form" method="get">
+                            <input type="text" name="s" id="s" value="Tìm kiếm" onblur="if(this.value=='')this.value='Tìm kiếm'"
+                            onfocus="if(this.value=='Tìm kiếm')this.value=''" />
                             <input type="hidden" value="submit" />
                         </form>
                             
@@ -288,7 +286,7 @@
         </div>
             <div class="breakCrumb ">
                 <div class="breakCrumb__list">
-                    <a href="#" class="breakCrumb__list--item">Trang chủ</a>
+                    <a href="http://localhost/wordpress/" class="breakCrumb__list--item">Trang chủ</a>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                     <a href="#" class="breakCrumb__list--item">Đà Lạt</a>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -344,7 +342,7 @@
                             </div>
                             <div class="firstReview__for">
                                 <span>Đánh giá cho: </span>
-                                <a href="../page/detail_tour.html">Trải Nghiệm Đu Dây High Rope Course
+                                <a href="detail-tour">Trải Nghiệm Đu Dây High Rope Course
                                     Đà Lạt</a>
                             </div>
                             <div class="firstReview__time">
@@ -372,17 +370,17 @@
                         Xu Hướng
                     </h2>
                     <div class="hightlightProduct__content">
-                        <div class="hightlightProduct__content--wrap">
+                        
                             
                             <?php
-                            get_template_part('templates/template-tour/item', 'tourhightlight');
+                            get_template_part('templates/template-tour/archive', 'tourhightlight');
                             ?>
                           
                             <!-- nextBtn -->
                             <!-- <div class="nextBtn">
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </div> -->
-                        </div>
+                        </div> -->
+                        
                     </div>
                 </div>
             </div>

@@ -435,7 +435,7 @@ body.active .primary__dropdown--content{
 padding: 6px 10px;
 display: flex;
 flex-direction: column;
-min-height: 190px;
+min-height: 140px;
 }
 .firstProduct__info--top{
   width: 100%;
@@ -506,7 +506,7 @@ min-height: 190px;
   width: 100%;
 }
 .firstProduct__info--bottom{
-  margin: 10px 0;
+  margin: 10px;
 }
 .firstProduct__info--bottom__content--box{
   display: flex;
@@ -530,10 +530,10 @@ min-height: 190px;
 }
 @media only screen and (max-width: 800px){
   .firstProduct, .breakCrumb, .firstReview, .hightlightProduct {
-    max-width: 650px;
-    margin: auto;
-    width: 100%;
-  }
+      max-width: 650px;
+      margin: auto;
+      width: 100%;
+    }
   .firstProduct__content--list__item{
     width: 90%;
     margin: 10px;
@@ -578,7 +578,12 @@ margin-top: 50px;
     padding: 0 15px;
     margin-bottom: 50px;
   }
-  
+  .hightlightProduct__content--list{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
 }
 /*! firstReview */
 .firstReview{
@@ -630,6 +635,8 @@ margin-top: 50px;
 }
 .hightlightProduct__content--wrap{
   position: relative;
+  display: flex;
+  gap: 15px;
 }
 .nextBtn{
   position: absolute;
@@ -685,8 +692,6 @@ margin-top: 50px;
   margin: 64px 0;
 }
 .hightlightProduct__content--list{
-  display: flex;
-  align-items: flex-start;
   margin-left: 15px;
 }
 .hightlightProduct__content--list__item{
@@ -716,7 +721,7 @@ margin-top: 50px;
 @media only screen and (max-width: 1040px) {
   .hightlightProduct__content--list{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }

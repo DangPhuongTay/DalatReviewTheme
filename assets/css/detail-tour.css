@@ -462,21 +462,41 @@ input[type="number"] {
     width: 30%;
     justify-content: space-between;
 }
-.detail__tour--content__left--rate__second--list{
+/* .detail__tour--content__left--rate__second--list{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     gap: 10px;
-}
-.detail__tour--content__left--rate__second--item{
+} */
+/* .detail__tour--content__left--rate__second--item{
     width: 100%;
     border: 1px solid var(--color-text-22);
     border-radius: var(--border-radius-size-3);
     overflow: hidden;
     padding: 15px;
+} */
+
+.detail__tour--content__left--rate__second--list .comment-author-dalatreviewtest .comment_container{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid var(--color-text-22) ;
+    display: flex;
+    border-radius: var(--border-radius-size-3);
+   
+    
 }
+.detail__tour--content__left--rate__second--list .comment-author-dalatreviewtest{
+    list-style: none;
+}
+.detail__tour--content__left--rate__second--list .comment-author-dalatreviewtest .avatar{
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
 .detail__tour--content__left--rate__second--item__user{
     display: flex;
     align-items: center;

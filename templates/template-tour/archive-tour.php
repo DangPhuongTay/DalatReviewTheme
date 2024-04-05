@@ -1,24 +1,40 @@
+<div class="firstProduct__content--list">
 
-                <div class="firstProduct__content--list">
-                <?php 
-                            function request() {
-                                global $wp;
-                                return $wp->request;
-                            }
-                            $args = array(
-                        'post_type'      => 'product',
-                        'posts_per_page' => 10,
-                        'product_cat'    => request()
-                    );
-                ?>
-                <?php $getposts = new WP_query($args); ?>
-                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+<?php
+global $paged;
 
-                    <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                        <?php 
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+function request() {
+    global $wp;
+    $url = $wp->request;
+    $requesturl = explode("/",  $url);
+    return $requesturl[0];
+}
+$args = array(
+    'post_type' => 'product',
+    'posts_per_page' => 8,
+    'paged' => $paged,
+    'product_cat' => request()
+    );
+$loop = new WP_Query( $args );
+if ( $loop->have_posts() ) {
+    
+    while ( $loop->have_posts() ) : $loop->the_post();
+   
+    get_template_part('templates/template-tour/item', 'tour');
+    endwhile;
+} else {
+    echo __( 'No products found' );
+}
+?></div>
+<div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
 
-                    get_template_part('templates/template-tour/item','tour');  
-                    ?>
-                <?php endwhile; wp_reset_postdata(); ?>
-                </div>
-                
+<?php previous_posts_link( '<div class="liveshow__container--body__product--list__page--item">
+      <ion-icon name="chevron-back"></ion-icon>
+    </div>', $loop->max_num_pages) ?></li> 
+<?php next_posts_link( '                <div class="liveshow__container--body__product--list__page--item">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>', $loop->max_num_pages) ?></li>
+
+</div>
+<?php wp_reset_postdata(); ?>

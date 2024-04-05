@@ -64,7 +64,13 @@
                         <a href="http://localhost/wordpress"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-logo.png" alt="" class="header__top--left__logo"></a>
                         <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
                         <div class="header__top--left__search">
-                            <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động">
+                            <!-- <input type="text" class="header__top--left__search--input" placeholder="Tìm theo điểm đến, hoạt động"> -->
+                            <input type="hidden" name="post_type" value="product"> 
+                            <form action="<?php echo home_url(); ?>" id="search-form" method="get">
+                            <input class="header__top--left__search--input" type="text" name="s" id="s" value="Tìm theo điểm đến, hoạt động" onblur="if(this.value=='')this.value='Tìm theo điểm đến, hoạt động'"
+                            onfocus="if(this.value=='Tìm theo điểm đến, hoạt động')this.value=''" />
+                            <input type="hidden" value="submit" />
+                        </form>
                             <ion-icon name="search-outline"></ion-icon>
                         </div>
                     </div>

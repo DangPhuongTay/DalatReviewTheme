@@ -494,18 +494,6 @@
 .detailHotel__list--body__list--wrap__item--left__facility--platform ion-icon{
     margin-right: 5px;
 }
-.detailHotel__list--body__list--wrap__item--left__poptip{
-    margin-top: 10px;
-    width: 150px;
-}
-.detailHotel__list--body__list--wrap__item--left__poptip p{
-
-    font-size: var(--size-text-5);
-    line-height: 1.5;
-    font-weight: 600;
-    cursor: pointer;
-    border-bottom: 1px dashed;
-}
 .detailHotel__list--body__list--wrap__item--right{
     width: calc(100% - 316px);
     display: flex;
@@ -528,6 +516,7 @@
 }
 .detailHotel__list--body__list--wrap__item--right__body{
     cursor: pointer;
+    height: 100%;
 }
 .detailHotel__list--body__list--wrap__item--right__header div:first-child,
 .detailHotel__list--body__list--wrap__item--right__body--info__left{
@@ -542,7 +531,7 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--color-text-3);
-
+    height: 100%;
 }
 .detailHotel__list--body__list--wrap__item--right__body--info__left{
     padding: 16px 16px 48px 20px;
