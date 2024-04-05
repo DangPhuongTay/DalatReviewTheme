@@ -25,11 +25,7 @@
                         <ion-icon name="search-outline"></ion-icon>
                     </div>
                     <div class="tour__banner--search__input">
-                        <form action="<?php echo home_url(); ?>" id="search-form" method="get">
-                            <input type="text" name="s" id="s" value="Tìm kiếm" onblur="if(this.value=='')this.value='Tìm kiếm'"
-                            onfocus="if(this.value=='Tìm kiếm')this.value=''" />
-                            <input type="hidden" value="submit" />
-                        </form>
+                        <?php wc_get_template('templates/template-search/searchtour.php'); ?> 
                             
  
                     </div>
