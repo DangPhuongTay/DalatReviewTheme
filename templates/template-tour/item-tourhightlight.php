@@ -5,7 +5,7 @@
 <a href="<?php the_permalink(); ?>">
                                         
                                         <div class="hightlightProduct__img">
-                                            <img src="https://res.klook.com/image/upload/c_fill,w_550,h_308/fl_lossy.progressive,q_85/q_85/activities/rkfj4bj4rtumbodna0fn.webp">
+                                            <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
                                         </div>
                                         <div class="hightlightProduct__title text__overflow--main">
                                             <p class="hightlightProduct__link">

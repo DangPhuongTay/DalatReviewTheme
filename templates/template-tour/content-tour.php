@@ -225,109 +225,12 @@
                             <ion-icon class="detail__tour--content__left--sale__info--close" name="close"></ion-icon><span>Bao gồm 11 hoạt động</span>
                         </div>
                         <div class="detail__tour--content__left--sale__info--list">
-                            <ul>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                        <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Giá vé</p>
-                                            <p>
-                                                <span><span>Người lớn: đ</span> 500.000</span>
-                                                <span><span>Trẻ em: đ</span> 200.000</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Điều kiện</p>
-                                            <p>
-                                                <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Bao gồm</p>
-                                            <p>
-                                                <span>1 vé Saigon Skydeck</span>
-                                                <span>Bảo tàng áo dài ở tầng 49</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__text">
-                                            <p>Địa chỉ</p>
-                                            <p>
-                                                <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                            </p>
-                                        </div>
-                                        <div class="detail__tour--content__left--sale__info--item__btn">
-                                            <a href="" >Xem thêm</a>
-                                        </div>
-                                </li>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                    <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Giá vé</p>
-                                        <p>
-                                            <span><span>Người lớn: đ</span> 500.000</span>
-                                            <span><span>Trẻ em: đ</span> 200.000</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Điều kiện</p>
-                                        <p>
-                                            <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Bao gồm</p>
-                                        <p>
-                                            <span>1 vé Saigon Skydeck</span>
-                                            <span>Bảo tàng áo dài ở tầng 49</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__text">
-                                        <p>Địa chỉ</p>
-                                        <p>
-                                            <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                        </p>
-                                    </div>
-                                    <div class="detail__tour--content__left--sale__info--item__btn">
-                                        <a href="" >Xem thêm</a>
-                                    </div>
-                                </li>
-                                <li class="detail__tour--content__left--sale__info--item">
-                                <h6>Vé Saigon Skydeck Tại Bitexco Financial Tower</h6>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp" alt="">
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Giá vé</p>
-                                    <p>
-                                        <span><span>Người lớn: đ</span> 500.000</span>
-                                        <span><span>Trẻ em: đ</span> 200.000</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Điều kiện</p>
-                                    <p>
-                                        <span>Trẻ em có độ tuổi từ 0-3 có thể vào miễn phí</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Bao gồm</p>
-                                    <p>
-                                        <span>1 vé Saigon Skydeck</span>
-                                        <span>Bảo tàng áo dài ở tầng 49</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__text">
-                                    <p>Địa chỉ</p>
-                                    <p>
-                                        <span>Toà nhà Bitexco Financial, Số 36, Hồ Tung Mậu, Quận 1, Thành phố Hồ Chí Minh</span>
-                                    </p>
-                                </div>
-                                <div class="detail__tour--content__left--sale__info--item__btn">
-                                    <a href="" >Xem thêm</a>
-                                </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <?php 
+
+                        get_template_part('templates/template-tour/archive','detailticket');  
+                        ?>
                     </div>
+                </div>
                     <!--<div class="detail__tour--content__left--header">
                         Đánh giá gần đây <a href="">Đọc tất cả đánh giá</a>
                     </div>
