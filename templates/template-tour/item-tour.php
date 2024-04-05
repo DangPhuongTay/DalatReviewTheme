@@ -24,7 +24,7 @@
                                                     <span>4.9</span>
                                                 </div>
                                             </div>
-                                            <span class="firstProduct__info--top__score--review">(120)</span>
+                                            <span class="firstProduct__info--top__score--review">(<?php echo $review_count = $product->get_review_count(); ?>)</span>
                                             <!-- sep -->
                                             <div class="sep">
                                                 <ion-icon name="ellipse"></ion-icon>
