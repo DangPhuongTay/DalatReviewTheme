@@ -319,7 +319,7 @@
     margin-left: 10px;
     color: var(--color-text-7);
 }
-.home__slider--serchbox__search input{
+/* .home__slider--serchbox__search input{
     padding: 10px 5px;
     width: 70%;
     line-height: 20px;
@@ -329,7 +329,7 @@
     border: none;
     margin-left: 10px;
     background: var(--color-background-12);
-}
+} */
 .home__slider--searchbox__btn {
     color: var(--color-text-6);
     background: var(--color-background-7);

@@ -221,7 +221,7 @@
                 <div class="home__slider--searchbox">
                     <div class="home__slider--serchbox__search">
                         <ion-icon name="search"></ion-icon>
-                        <input type="text" placeholder="Tour Săn Mây...">
+                        <?php wc_get_template('templates/template-search/searchhome.php'); ?> 
                     </div>
                     <input class="home__slider--searchbox__btn" type="button" value="Khám phá">
                 </div>
