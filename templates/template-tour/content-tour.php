@@ -229,6 +229,7 @@
 
                         get_template_part('templates/template-tour/archive','detailticket');  
                         ?>
+                    
                     </div>
                 </div>
                     <!--<div class="detail__tour--content__left--header">

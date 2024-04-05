@@ -1,16 +1,14 @@
 
    
     <?php 
-    function request() {
-        global $wp;
         $url = $wp->request;
         $requesturl = explode("/",  $url);
-        return $requesturl[0];
-    }
+         
+
     $args = array(
 'post_type'      => 'product',
 'posts_per_page' => 10,
-'product_cat'    => request()
+'product_cat'    => $requesturl[1]
 );
 ?>
 <?php $getposts = new WP_query($args); ?>
