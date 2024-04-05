@@ -37,5 +37,4 @@ if ( $loop->have_posts() ) {
     </div>', $loop->max_num_pages) ?></li>
 
 </div>
-<?php wc_get_template('loop/pagination.php'); ?> 
 <?php wp_reset_postdata(); ?>
