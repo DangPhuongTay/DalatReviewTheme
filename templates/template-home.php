@@ -219,11 +219,10 @@
                 <p class="home__slider--content__title">đà lạt trọn niềm vui</p>
                 <p class="home__slider--content__des">Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch ngẫu hứng tới những cuộc phiêu lưu khắp thế giới</p>
                 <div class="home__slider--searchbox">
-                    <div class="home__slider--serchbox__search">
-                        <ion-icon name="search"></ion-icon>
+                    
                         <?php wc_get_template('templates/template-search/searchhome.php'); ?> 
-                    </div>
-                    <input class="home__slider--searchbox__btn" type="button" value="Khám phá">
+                    
+                    
                 </div>
             </div>
            </div>
