@@ -15,4 +15,4 @@
         get_template_part('templates/template-tour/item', 'tour');  
         ?>
     <?php endwhile; wp_reset_postdata(); ?>
-    </div>
+    </div>   
