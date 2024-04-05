@@ -1135,84 +1135,13 @@ if (have_posts()) {
                                                                 </div>
                                                             </div>
                                                             <div class="detailHotel__list--body__reviews--content__item">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__item--content">
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__header">
-                                                                        <div
-                                                                            class="detailHotel__list--body__reviews--content__item--content__header--user">
-                                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/user_avatar.png"
-                                                                                alt="">
-                                                                            <span>TienDat</span>
-                                                                        </div>
-                                                                        <div
-                                                                            class="detailHotel__list--body__reviews--content__item--content__header--review">
-                                                                            Đánh giá ngày: 18/8/2019</div>
-
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__score">
-                                                                        <p
-                                                                            class="detailHotel__list--body__reviews--content__item--content__score--max">
-                                                                            <span>5.0</span>
-                                                                            <span>/5</span>
-                                                                        </p>
-                                                                        <span>Tuyệt vời</span>
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__text">
-                                                                        Good Hotel. I will comeback when go to Dalat. Everything
-                                                                        was perfect. Room
-                                                                        is new, clean and with very friendly staff. Will be back
-                                                                        again.
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__item--from">
-                                                                    <img src="https://res.klook.com/image/upload/Frame_910_hnuyax.png"
-                                                                        alt="">
-                                                                    <span>du khách</span>
-                                                                </div>
+                                                            <?php
+                                                                $args = array('post_id' => $product->id);
+                                                                $comments = get_comments($args);
+                                                                wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
+                                                                ?>
                                                             </div>
-                                                            <div class="detailHotel__list--body__reviews--content__item">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__item--content">
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__header">
-                                                                        <div
-                                                                            class="detailHotel__list--body__reviews--content__item--content__header--user">
-                                                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/user_avatar.png"
-                                                                                alt="">
-                                                                            <span>TienDat</span>
-                                                                        </div>
-                                                                        <div
-                                                                            class="detailHotel__list--body__reviews--content__item--content__header--review">
-                                                                            Đánh giá ngày: 18/8/2019</div>
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__score">
-                                                                        <p
-                                                                            class="detailHotel__list--body__reviews--content__item--content__score--max">
-                                                                            <span>5.0</span>
-                                                                            <span>/5</span>
-                                                                        </p>
-                                                                        <span>Tuyệt vời</span>
-                                                                    </div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__reviews--content__item--content__text">
-                                                                        Good Hotel. I will comeback when go to Dalat. Everything
-                                                                        was perfect. Room
-                                                                        is new, clean and with very friendly staff. Will be back
-                                                                        again.
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__item--from">
-                                                                    <img src="https://res.klook.com/image/upload/Frame_910_hnuyax.png"
-                                                                        alt="">
-                                                                    <span>du khách</span>
-                                                                </div>
-                                                            </div>
+                                                      
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1766,11 +1695,7 @@ if (have_posts()) {
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
 
-        <?php
-        $args = array('product','post_id' => $product->id);
-        $comments = get_comments($args);
-        wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
-        ?>
+
     <?php
     }
 
