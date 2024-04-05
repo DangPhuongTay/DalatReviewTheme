@@ -1,7 +1,7 @@
 <div class="fourProductList__wrapper">
 <?php 
 	$args = array(
-		'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+		'post_status' => 'publish', // Chỉ lấy những bài viết được public
 		'showposts' => 4, // số lượng bài viết
 	);
 ?>

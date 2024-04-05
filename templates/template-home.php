@@ -342,6 +342,8 @@
             </div>
     
         </div>
+
+
         <div class="firstTag__internal--desktop">
             <div class="firstTag__internal--wrap">
                 <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !</h2>
@@ -351,26 +353,10 @@
                     <h3 class="firstTag__internal--header">
                         Trải nghiệm tuyệt vời tại Đà Lạt
                     </h3>
+
                     <ul class="firstTag__internal--wrapper">
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Puppy Farm</a>
-                        </li>
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Cáp treo Đà Lạt</a>
-                        </li>
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Tour săn mây</a>
-                        </li>
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Đồi cỏ mây</a>
-                        </li>
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Quảng trường</a>
-                        </li>
-                        <li class="firstTag__internal--unit">
-                            <a href="" class="firstTag__unit--suggestion">Tour săn mây</a>
-                        </li>
-                        
+                <?php
+                    get_template_part('templates/template-home/first', 'tag'); ?>
                     </ul>
                 </div>
                 <div class="firstTag__internal--content">
