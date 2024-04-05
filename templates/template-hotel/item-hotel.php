@@ -1,4 +1,5 @@
 <?php global $product; ?>
+<?php global $rating_html; ?>
 <div class="hotel__right--item">
     <a href="<?php the_permalink(); ?>">
         <div class="hotel__right--img">
@@ -32,9 +33,9 @@
                             <span>5</span>
                         </div>
                         <div class="hotel__right--review__desc">
-                            <?php wc_get_template('loop/rating.php'); ?>
+                        <?php echo $rating_count = $product->get_rating_count(); ?>
                         </div>
-                        <div class="hotel__right--review__count">47 Bình luận</div>
+                        <div class="hotel__right--review__count"><?php echo $review_count = $product->get_review_count(); ?> Bình luận</div>
                     </div>
 
                     <?php

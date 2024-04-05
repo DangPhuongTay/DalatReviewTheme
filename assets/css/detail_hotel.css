@@ -704,6 +704,17 @@
     margin-top: 20px;
     padding: 12px;
     padding: 12px 20px 16px;
+    gap: 20px;
+}
+.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest .comment_container{
+    display: flex;
+    
+}
+.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest{
+    list-style: none;
+}
+.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest .avatar{
+    margin-right: 10px;
 }
 .detailHotel__list--body__reviews--content__item--content__header{
     display: flex;
