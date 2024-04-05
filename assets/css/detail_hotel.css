@@ -32,6 +32,7 @@
     overflow: hidden;
     border-radius: var(--border-radius-size-4);
     cursor: pointer;
+    background-color: var(--color-background-3);
 }
 
 .detailHotel__img img ,
@@ -704,27 +705,62 @@
     margin-top: 20px;
     padding: 12px;
     padding: 12px 20px 16px;
-    gap: 20px;
 }
-.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest .comment_container{
+.detailHotel__list--body__reviews--content .comment-author-dalatreviewtest .comment_container{
     display: flex;
     
 }
-.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest{
+.detailHotel__list--body__reviews--content .comment-author-dalatreviewtest .comment_container .comment-text .description{
+    color: var(--color-background-2);
+    font-size: var(--size-text-5); 
+    
+}
+.detailHotel__list--body__reviews--content .comment-author-dalatreviewtest .comment_container .comment-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly   ;
+    
+}
+.detailHotel__list--body__reviews--content .comment-author-dalatreviewtest{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    border: 1px solid var(--color-background-16);
+    margin-top: 20px;
+    padding: 12px;
+    padding: 12px 20px 16px;
+}
+
+.detailHotel__list--body__reviews--content .comment-author-dalatreviewtest .avatar{
+    margin-right: 10px;
+}
+.detailHotel__info--summary__left--bot .comment-author-dalatreviewtest .comment_container{
+    display: flex;
+    
+}
+.detailHotel__info--summary__left--bot .comment-author-dalatreviewtest .comment_container .comment-text .description{
+    color: var(--color-background-2);
+    font-size: var(--size-text-5); 
+    
+}
+.detailHotel__info--summary__left--bot .comment-author-dalatreviewtest .comment_container .comment-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly   ;
+    
+}
+.detailHotel__info--summary__left--bot .comment-author-dalatreviewtest{
     list-style: none;
 }
-.detailHotel__list--body__reviews--content__item .comment-author-dalatreviewtest .avatar{
+
+.detailHotel__info--summary__left--bot .comment-author-dalatreviewtest .avatar{
     margin-right: 10px;
 }
 .detailHotel__list--body__reviews--content__item--content__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.detailHotel__list--body__reviews--content__item--content__header--review{
-    color: var(--color-background-2);
-    font-size: var(--size-text-3);
-    margin-left: 16px;
 }
 .detailHotel__list--body__reviews--content__item--content__score{
     display: inline-flex;
