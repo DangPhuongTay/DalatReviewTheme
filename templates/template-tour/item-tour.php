@@ -6,8 +6,6 @@
                                 <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
                                 </div>
                                 <div class="firstProduct__info">
-                                    <div class="firstProduct__info--top">
-                                        <div class="firstProduct__info--top__title text__overflow--main">
 
  
                                             <a href="#"><?php
@@ -40,8 +38,8 @@
                                         <div class="tagging__wrap">
                                             <div class="tagging__box">
                                                 <div class="tagging__tag">
-                                                    <span class="tagging__tag--text">Hướng
-                                                        dẫn tiếng Việt</span>
+                                                    <span class="tagging__tag--text">
+                                                        Hướng dẫn tiếng Việt</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -56,7 +54,6 @@
 
 
 
-                                                </div>
                                             </div>
                                         </div>
                                         <!-- button policy -->
@@ -64,9 +61,9 @@
                                             <div class="tagging__box firstProduct__info--bottom__tagging--box">
                                                 <div class="tagging__tag">
                                                     <span
-                                                        class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                                                        sách đảm bảo về
-                                                        giá</span>
+                                                        class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">
+                                                        Chính sách đảm bảo về giá
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>

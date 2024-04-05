@@ -9,7 +9,7 @@
  * 
  */
     get_header();?>
-   <!-- <section class="cart">
+  <section class="cart">
         <div class="cart__container">
             <div class="cart__container--top">
                 <div class="cart__container--top__left">
@@ -746,6 +746,6 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section> 
     <?php wc_get_template('cart/cart.php'); ?>
 <?php get_footer();?>
