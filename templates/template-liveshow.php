@@ -241,6 +241,47 @@
             <!--  -->
             <!-- Produclist -->
             <!--  -->
+            <form method="post" action="<?php the_permalink() ?>">
+<select name="my_status" id="stato" class="postform" onchange="submit();">
+        <option selected="selected">Choose a status</option>
+        <option value="aperta">Aperta</option>
+        <option value="chiusa">Chiusa</option>
+</select>
+</form>
+<?php /* Reset filter */ ?>
+<p><a href="<?php the_permalink(); ?>">Clear filter</a></p>
+
+<?php
+if( !isset($_POST['my_status']) || '' == $_POST['my_status']) {
+
+}
+else {
+
+    $stato = $_POST['my_status'];
+
+    // Create new query
+    $query = new WP_Query( array(
+        'post_type'=> 'offerta_lavoro', // your CPT
+        'post_status' => 'publish',
+                'meta_query'=>array(
+    array(
+        'key' => 'crb_attiva_nonattiva',
+        'value' => $stato,
+    ),
+        ),
+    ) );
+
+    // Loop
+    if($query->have_posts()):
+        while( $query->have_posts() ): $query->the_post();
+
+        endwhile;
+    endif;
+
+    // reset query to default
+    wp_reset_postdata();
+
+} ?>
             <div class="liveshow__container--body__product--list">
             <?php 
             get_template_part('templates/template-liveshow/archive', 'liveshow');  
