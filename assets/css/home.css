@@ -312,27 +312,35 @@
     margin-top: 10px;
 }
 .home__slider--serchbox__search {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
+    
+}
+.home__slider--serchbox__search form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .home__slider--serchbox__search ion-icon{
     font-size: var(--size-text-7);
     margin-left: 10px;
     color: var(--color-text-7);
 }
-/* .home__slider--serchbox__search input{
+.home__slider--serchbox__search--input{
     padding: 10px 5px;
-    width: 70%;
+    width: 100%;
     line-height: 20px;
     font-size: var(--size-text-5);
-    color: var(--color-text-7);
+    color: var(--color-text-1);
     outline: none;
     border: none;
     margin-left: 10px;
     background: var(--color-background-12);
-} */
+}
 .home__slider--searchbox__btn {
+    
     color: var(--color-text-6);
     background: var(--color-background-7);
     font-size: var(--size-text-4);
@@ -341,6 +349,7 @@
     padding: 15px 35px;
     font-weight: 600;
     cursor: pointer;
+    
 }  /* height: 50vh; */
 
 .home__banner--search__mobile{
