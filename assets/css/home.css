@@ -245,6 +245,8 @@
     transition: .5s;
 }
 .home__slider--item__image{
+    height: auto;
+    object-fit: cover;
     width: 100%;
 }
 .btn-slider:hover{
@@ -616,6 +618,9 @@
   
  }
  @media only screen and (max-width: 850px) {
+    .home__search--box input{
+        border: 0 !important;
+    }
     .home__info--banner__container--list__item p{
         font-size: var(--size-text-4);
         margin-bottom:5px;
