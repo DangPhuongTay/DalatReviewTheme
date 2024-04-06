@@ -228,6 +228,7 @@
             </div>
            </div>
         </div>
+
         <!-- banner & box search mobile home -->
        <div class="home__banner--search__mobile">
             <div class="home__banner--search__mobile--box">
