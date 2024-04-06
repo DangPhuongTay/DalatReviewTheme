@@ -11,56 +11,6 @@
 
 get_header(); ?>
 
-
-<section class="home">
-    <!-- home header -->
-    <div class="header__content--bottom shadow">
-       <?php get_template_part('menudesktop'); ?>
-    </div>
-    <!-- slider home -->
-    <div class="home__slider">
-        <div class="home__slider--show">
-
-    
-            </div>
-            <div class="home__banner--mobile">
-                <div class="home__banner--mobile__top">
-                    <a href="category/liveshow/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png"
-                            alt="img">
-                        <span>Tour & Trải nghiệm</span>
-                    </a>
-                    <a href="category/tour/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-4.png"
-                            alt="img">
-                        <span>Vé tham quan</span>
-                    </a>
-                    <a href="category/hotel/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-3.png"
-                            alt="img">
-                        <span>Chỗ nghỉ</span>
-                    </a>
-                    <a href="category/motorbike/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-2.png"
-                            alt="img">
-                        <span>Di chuyển</span>
-                    </a>
-                    <a href="category/car/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-1.png"
-                            alt="img">
-                        <span>Thuê xe tự lái</span>
-                    </a>
-                </div>
-                <a href="#" class="home__banner--mobile__bottom">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png"
-                        alt="img">
-                    <span>Tất cả các mục</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- home sale banner -->
-    <div class="home__sale--banner">
     <section class="home">
         <!-- home header -->
         <div class="header__content--bottom shadow">
