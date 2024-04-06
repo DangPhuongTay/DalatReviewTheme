@@ -52,6 +52,7 @@ overflow: hidden;
 }
 .tour__banner--search__input input {
   font-size: var(--size-text-5);
+  
 }
 .tourMobile__category {
   display: none;

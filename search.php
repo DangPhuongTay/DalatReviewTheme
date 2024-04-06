@@ -93,10 +93,11 @@
                   }
               }else{
           ?>
-                  <h2 style='font-weight:bold;color:#000'>Nothing Found</h2>
-                  <div class="alert alert-info">
-                    <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-                  </div>
+                
+                  <div class="found">
+                  <h4 style='color:#000'>Không tìm thấy kết quả ?</h4>
+                    <a class="found__link" href="<?php echo home_url( ); ?>">Quay lại trang chủ</a>
+                </div>
           <?php } ?>
           </div>
             </div>

@@ -333,6 +333,7 @@ body.chatBox .header__container--chat{
     align-items: start;
     justify-content: center;
 }
+
 .header__mobile--box ul{
     display: flex;
     justify-content: start;
@@ -632,6 +633,12 @@ body.checker .login__mobile{
         border-radius: var(--border-radius-size-2);
         overflow: hidden;
     }
+   
+    .header__mobile--box li img{
+    
+       height: 30px;
+       border-radius: 50%;
+    }
     .header__box--chatcall{
         padding-right: 5px;
     }
@@ -731,6 +738,7 @@ body.checker .login__mobile{
     .header__container--chatcall{
         bottom: 150px;
     }
+    
     .login__signup--box__container--main__note_3::before{
         content: '';
         position: absolute;
