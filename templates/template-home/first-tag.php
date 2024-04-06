@@ -45,4 +45,6 @@ foreach ($topics as $topic_slug => $topic_tags) {
     </div>
     <?php
 }
+
 ?>
+

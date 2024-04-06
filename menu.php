@@ -11,7 +11,7 @@
                         <a href="http://localhost/wordpress"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-logo.png" alt="" class="header__top--left__logo"></a>
                         <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
                         <div class="header__top--left__search">
-                            <?php wc_get_template('templates/template-search/searchform.php'); ?> 
+                            <?php wc_get_template('templates/template-search/searchform.php'); ?>
                             <ion-icon name="search-outline"></ion-icon>
                         </div>
                     </div>
@@ -73,6 +73,71 @@
         <div class="header__mobile shadow">
             <div class="header__mobile--box">
                 <ul>
+                    <?php
+
+                    $taxonomy     = 'product_cat';
+                    $orderby      = 'name';
+                    $show_count   = 0;      // 1 for yes, 0 for no
+                    $pad_counts   = 0;      // 1 for yes, 0 for no
+                    $hierarchical = 1;      // 1 for yes, 0 for no  
+                    $title        = '';
+                    $empty        = 0;
+
+                    $args = array(
+                        'taxonomy'     => $taxonomy,
+                        'orderby'      => $orderby,
+                        'show_count'   => $show_count,
+                        'pad_counts'   => $pad_counts,
+                        'hierarchical' => $hierarchical,
+                        'title_li'     => $title,
+                        'hide_empty'   => $empty
+                    );
+                    $all_categories = get_categories($args);
+                    foreach ($all_categories as $cat) {
+                        if ($cat->category_parent == 0) {
+                            $category_id = $cat->term_id;
+                            $thumbnail_id = get_term_meta($cat->term_id, 'thumbnail_id', true);
+
+                            // get the image URL
+                            $image = wp_get_attachment_url($thumbnail_id);
+                    ?>
+
+                            <li><a href="tour"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a></li>
+                            <?php
+
+
+                            $args2 = array(
+                                'taxonomy'     => $taxonomy,
+                                'child_of'     => 0,
+                                'parent'       => $category_id,
+                                'orderby'      => $orderby,
+                                'show_count'   => $show_count,
+                                'pad_counts'   => $pad_counts,
+                                'hierarchical' => $hierarchical,
+                                'title_li'     => $title,
+                                'hide_empty'   => $empty
+                            );
+                            $sub_cats = get_categories($args2);
+                            if ($sub_cats) {
+                                foreach ($sub_cats as $sub_category) {
+                                    $thumbnail_id = get_term_meta($sub_category->term_id, 'thumbnail_id', true);
+
+                                    // get the image URL
+                                    $image = wp_get_attachment_url($thumbnail_id);
+                            ?>
+
+                                    <li><a href="tour"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
+                    <?php
+                                }
+                            }
+                        }
+                    }
+                    ?>
+                </ul>
+
+
+
+                <!-- <ul>
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-1.png" alt="img"><span>Tour</span></a></li>
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a></li>
@@ -97,7 +162,7 @@
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-10.png" alt="img"><span>Công viên và vườn Bác thảo</span></a></li>
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a></li>
                     <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
         <div class="header__background--blur">
@@ -113,76 +178,76 @@
                 </div>
                 <div class="login__sigup--box__container--form__box">
                     <div class="login__signup--box-container-form">
-                    <div class="login__signup--box__container--number">
-                        <div class="login__signup--box__container--number__main">
-                            <div class="login__singup--box__container--number__main--btn">
-                                <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--email">
-                                    Địa chỉ Email
+                        <div class="login__signup--box__container--number">
+                            <div class="login__signup--box__container--number__main">
+                                <div class="login__singup--box__container--number__main--btn">
+                                    <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--email">
+                                        Địa chỉ Email
+                                    </div>
+                                    <div class="login__signup--box__container--main__btn--numberphone">
+                                        Số điện thoại
+                                    </div>
                                 </div>
-                                <div class="login__signup--box__container--main__btn--numberphone">
-                                    Số điện thoại
+                                <form action="#">
+                                    <div class="login__signup--box__container--main__form">
+                                        <label for="#">
+                                            <select name="#" id="#">
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#">+84</option>
+                                                <option value="#"></option>
+                                            </select>
+                                        </label>
+                                        <input type="text" placeholder="Số điện thoại">
+                                    </div>
+                                </form>
+                                <div class="login__signup--box__container--main__note_1">Đăng nhập bằng số điện thoại chưa đăng ký để tạo tài khoản Đà Lạt review tất tần tật mới</div>
+                                <button class="login__signup--box__container--main__btn firstBtn login2">Gửi mã xác nhận</button>
+                                <div class="login__signup--box__container--main__note_2">Đăng nhập bằng mật khẩu</div>
+                                <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                                <div class="login__signup--box__container--main__bottom">
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png" alt=""></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gg_logo.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <form action="#">
-                                <div class="login__signup--box__container--main__form">
-                                    <label for="#">
-                                        <select name="#" id="#">
-                                            <option value="#">+84</option>
-                                            <option value="#">+84</option>
-                                            <option value="#">+84</option>
-                                            <option value="#">+84</option>
-                                            <option value="#"></option>
-                                        </select>
-                                    </label>
-                                    <input type="text" placeholder="Số điện thoại">
-                                </div>  
-                            </form>
-                            <div class="login__signup--box__container--main__note_1">Đăng nhập bằng số điện thoại chưa đăng ký để tạo tài khoản Đà Lạt review tất tần tật mới</div>
-                            <button class="login__signup--box__container--main__btn firstBtn login2">Gửi mã xác nhận</button>
-                            <div class="login__signup--box__container--main__note_2">Đăng nhập bằng mật khẩu</div>
-                            <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
-                            <div class="login__signup--box__container--main__bottom">
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png" alt=""></a>
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gg_logo.jpg" alt=""></a>
+                        </div>
+                        <div class="login__signup--box__container--email">
+                            <div class="login__signup--box__container--email__main">
+                                <div class="login__singup--box__container--email__main--btn">
+                                    <div class="login__signup--box__container--main__btn--numberphone">
+                                        Địa chỉ Email
+                                    </div>
+                                    <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--numberphone">
+                                        Số điện thoại
+                                    </div>
+                                </div>
+                                <form action="#">
+                                    <div class="login__signup--box__container--main__form">
+                                        <input type="text" placeholder="Địa chi Email">
+                                    </div>
+                                </form>
+                                <button class="login__signup--box__container--main__btn firstBtn login1">Xác nhận</button>
+                                <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
+                                <div class="login__signup--box__container--main__bottom">
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png" alt=""></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gg_logo.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="login__signup--box__container--email">
-                        <div class="login__signup--box__container--email__main">
-                            <div class="login__singup--box__container--email__main--btn">
-                                <div class="login__signup--box__container--main__btn--numberphone">
-                                    Địa chỉ Email
-                                </div>
-                                <div class="login__signup--box__container--main__btn--email" id="login__signup--box__container--main__btn--numberphone">
-                                    Số điện thoại
-                                </div>
-                            </div>
-                            <form action="#">
-                                <div class="login__signup--box__container--main__form">
-                                    <input type="text" placeholder="Địa chi Email">
-                                </div>
-                            </form>
-                            <button class="login__signup--box__container--main__btn firstBtn login1">Xác nhận</button>
-                            <div class="login__signup--box__container--main__note_3">Hoặc đăng nhập bằng </div>
-                            <div class="login__signup--box__container--main__bottom">
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/fb_logo.png" alt=""></a>
-                                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gg_logo.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
         <div class="header__container--chatcall">
             <div class="header__box--chatcall">
-                
+
                 <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
             </div>
             <div class="header__container--chat  shadow">
                 <div class="header__container--chat__box">
                     <div class="header__container--chat__box--title">
-                        <div>                        
+                        <div>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="">
                             <span>Đà Lạt Review Tất Tần Tật</span>
                         </div>
@@ -191,7 +256,7 @@
                     <div class="header__container--chat__box--body">
                         <div class="header__container--chat__box--list">
                             <div class="header__container--chat__box--item chatbox__left">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="">
                                 <div class="header__container--chat__box--item__text">
                                     <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
                                     <span>20:00 - 29/2/2024</span>
@@ -205,7 +270,7 @@
                                 </div>
                             </div>
                             <div class="header__container--chat__box--item chatbox__left">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="" >
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="">
                                 <div class="header__container--chat__box--item__text">
                                     <p>Do ảnh hưởng của không khí lạnh tăng cường, khu vực phía Đông Bắc Bộ trời tiếp tục rét đậm, có nơi rét hại, khu vực phía Tây Bắc Bộ và Bắc Trung Bộ trời tiếp tục rét.</p>
                                     <span>20:00 - 29/2/2024</span>
@@ -227,4 +292,4 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
