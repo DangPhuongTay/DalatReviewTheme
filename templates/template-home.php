@@ -393,6 +393,7 @@
                 </div>
                 <div class="home__banner--mobile">
                      <div class="home__banner--mobile__top">
+                        
                         <a href="category/liveshow/" class="home__banner--mobile__top--item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png" alt="img">
                             <span>Tour & Trải nghiệm</span>
