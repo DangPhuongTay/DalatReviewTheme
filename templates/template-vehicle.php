@@ -16,7 +16,6 @@
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/motorbike-banner.jpg" alt="">
                <div class="motorbike__container--banner__btn">
                 <div class="motorbike__container--banner__box">
-                    
                     <?php
                 $taxonomy     = 'product_cat';
                 $orderby      = 'name';
