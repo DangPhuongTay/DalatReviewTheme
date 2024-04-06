@@ -99,10 +99,50 @@
                             <div class="header__bottom--listlink__category1--list shadow">
                                 <ul class="header__bottom--listlink__category1--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="category/tour/">Tour</a></p>
-                                        <p><a href="category/tour/">Tour săn mây</a></p>
-                                        <p><a href="category/tour/">Tour Đà Lạt một ngày</a></p>
-                                        <p><a href="category/tour/">Camping & Glamping</a></p>
+                                                                    <?php
+                                            $taxonomy     = 'product_cat';
+                                            $orderby      = 'name';
+                                            $show_count   = 0;      // 1 for yes, 0 for no
+                                            $pad_counts   = 0;      // 1 for yes, 0 for no
+                                            $hierarchical = 1;      // 1 for yes, 0 for no
+                                            $title        = '';
+                                            $empty        = 0;
+                            $args = array(
+                            'taxonomy'     => $taxonomy,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty);
+                            $all_categories = get_categories( $args );
+                            foreach ( $all_categories as $cat ) {
+                            if ( $cat->name == 'tour' ) {
+                            $category_id = $cat->term_id;
+                            $args2 = array(
+                            'taxonomy'     => $taxonomy,
+                            'child_of'     => 0,
+                            'parent'       => $category_id,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty,
+                            );
+                            $sub_cats = get_categories( $args2 );
+                            if ( $sub_cats ) {
+                            echo '<div class="tourMobile__category--list">';
+                            foreach( $sub_cats as $sub_category ) { ?>
+                            <p>
+                            <a  href="<?php echo$sub_category->slug ?>"><?php echo $sub_category->name ?></a>
+                            </p>
+                            <?php }
+                            echo '</div>';
+                            }
+                            }
+                            }
+                            ?>
                                     </div>
                                 </ul>
                             </div>
@@ -114,16 +154,50 @@
                             <div class="header__bottom--listlink__category2--list shadow">
                                 <ul class="header__bottom--listlink__category2--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="category/liveshow/">Công viên giải trí</a></p>
-                                        <p><a href="category/liveshow/">Công viên nước</a></p>
-                                        <p><a href="category/liveshow/">Bảo tàng</a></p>
-                                        <p><a href="category/liveshow/">Công viên & Vườn bách thảo</a></p>
-                                        <p><a href="category/liveshow/">Sở thú & Vườn thủy cung</a></p>
-                                        <p><a href="category/liveshow/">Cáp treo</a></p>
-                                        <p><a href="category/liveshow/">Di tích lịch sử</a></p>
-                                        <p><a href="category/liveshow/">Khu vui chơi</a></p>
-                                        <p><a href="category/liveshow/">Vui chơi trong nhà</a></p>
-                                        <p><a href="category/liveshow/">Vé tham quan</a></p>
+                                    <?php
+                                            $taxonomy     = 'product_cat';
+                                            $orderby      = 'name';
+                                            $show_count   = 0;      // 1 for yes, 0 for no
+                                            $pad_counts   = 0;      // 1 for yes, 0 for no
+                                            $hierarchical = 1;      // 1 for yes, 0 for no
+                                            $title        = '';
+                                            $empty        = 0;
+                            $args = array(
+                            'taxonomy'     => $taxonomy,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty);
+                            $all_categories = get_categories( $args );
+                            foreach ( $all_categories as $cat ) {
+                            if ( $cat->name == 'liveshow' ) {
+                            $category_id = $cat->term_id;
+                            $args2 = array(
+                            'taxonomy'     => $taxonomy,
+                            'child_of'     => 0,
+                            'parent'       => $category_id,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty,
+                            );
+                            $sub_cats = get_categories( $args2 );
+                            if ( $sub_cats ) {
+                            echo '<div class="tourMobile__category--list">';
+                            foreach( $sub_cats as $sub_category ) { ?>
+                            <p>
+                            <a  href="<?php echo$sub_category->slug ?>"><?php echo $sub_category->name ?></a>
+                            </p>
+                            <?php }
+                            echo '</div>';
+                            }
+                            }
+                            }
+                            ?>
                                     </div>
                                 </ul>
                             </div>
@@ -135,11 +209,50 @@
                             <div class="header__bottom--listlink__category3--list shadow">
                                 <ul class="header__bottom--listlink__category3--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="category/hotel/">Combo di lịch Đà Lạt</a></p>
-                                        <p><a href="category/hotel/">Khách sạn</a></p>
-                                        <p><a href="category/hotel/">Villa</a></p>
-                                        <p><a href="category/hotel/">Homestay</a></p>
-                                        <p><a href="category/hotel/">Nhà nghỉ</a></p>
+                                    <?php
+                                            $taxonomy     = 'product_cat';
+                                            $orderby      = 'name';
+                                            $show_count   = 0;      // 1 for yes, 0 for no
+                                            $pad_counts   = 0;      // 1 for yes, 0 for no
+                                            $hierarchical = 1;      // 1 for yes, 0 for no
+                                            $title        = '';
+                                            $empty        = 0;
+                            $args = array(
+                            'taxonomy'     => $taxonomy,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty);
+                            $all_categories = get_categories( $args );
+                            foreach ( $all_categories as $cat ) {
+                            if ( $cat->name == 'Place' ) {
+                            $category_id = $cat->term_id;
+                            $args2 = array(
+                            'taxonomy'     => $taxonomy,
+                            'child_of'     => 0,
+                            'parent'       => $category_id,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty,
+                            );
+                            $sub_cats = get_categories( $args2 );
+                            if ( $sub_cats ) {
+                            echo '<div class="tourMobile__category--list">';
+                            foreach( $sub_cats as $sub_category ) { ?>
+                            <p>
+                            <a  href="<?php echo$sub_category->slug ?>"><?php echo $sub_category->name ?></a>
+                            </p>
+                            <?php }
+                            echo '</div>';
+                            }
+                            }
+                            }
+                            ?>
                                     </div>
                                 </ul>
                             </div>
@@ -151,8 +264,50 @@
                             <div class="header__bottom--listlink__category5--list shadow">
                                 <ul class="header__bottom--listlink__category5--list__item">
                                     <div class="header__bottom--listlink__allcategory--list__item--content">
-                                        <p><a href="category/motobike/">Xe máy</a></p>
-                                        <p><a href="category/car/">Xe ô tô</a></p>
+                                    <?php
+                                            $taxonomy     = 'product_cat';
+                                            $orderby      = 'name';
+                                            $show_count   = 0;      // 1 for yes, 0 for no
+                                            $pad_counts   = 0;      // 1 for yes, 0 for no
+                                            $hierarchical = 1;      // 1 for yes, 0 for no
+                                            $title        = '';
+                                            $empty        = 0;
+                            $args = array(
+                            'taxonomy'     => $taxonomy,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty);
+                            $all_categories = get_categories( $args );
+                            foreach ( $all_categories as $cat ) {
+                            if ( $cat->name == 'vehicle' ) {
+                            $category_id = $cat->term_id;
+                            $args2 = array(
+                            'taxonomy'     => $taxonomy,
+                            'child_of'     => 0,
+                            'parent'       => $category_id,
+                            'orderby'      => $orderby,
+                            'show_count'   => $show_count,
+                            'pad_counts'   => $pad_counts,
+                            'hierarchical' => $hierarchical,
+                            'title_li'     => $title,
+                            'hide_empty'   => $empty,
+                            );
+                            $sub_cats = get_categories( $args2 );
+                            if ( $sub_cats ) {
+                            echo '<div class="tourMobile__category--list">';
+                            foreach( $sub_cats as $sub_category ) { ?>
+                            <p>
+                            <a  href="<?php echo$sub_category->slug ?>"><?php echo $sub_category->name ?></a>
+                            </p>
+                            <?php }
+                            echo '</div>';
+                            }
+                            }
+                            }
+                            ?>
                                     </div>
                                 </ul>
                             </div>
@@ -191,7 +346,6 @@
                                 </ul>
                             </div>
                         </li>
-                        
                     </ul>
                 </div>
                 
