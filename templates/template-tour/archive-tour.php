@@ -4,12 +4,14 @@
 global $paged;
 
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
 function request() {
     global $wp;
     $url = $wp->request;
     $requesturl = explode("/",  $url);
     return $requesturl[0];
 }
+
 $args = array(
     'post_type' => 'product',
     'posts_per_page' => 8,
