@@ -621,6 +621,22 @@
     .home__search--box input{
         border: 0 !important;
     }
+    .home__banner--mobile{
+        max-width: 800px;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+        flex-direction: column;
+    }
+   
+    .home__banner--mobile__top img span{
+        width: 40px;
+        /* display: flex;
+        flex-direction: column; */
+    }
+    .home__banner--mobile__bottom{
+
+    }
     .home__info--banner__container--list__item p{
         font-size: var(--size-text-4);
         margin-bottom:5px;
