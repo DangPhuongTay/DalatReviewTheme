@@ -1,3 +1,4 @@
+<div class="home__banner--mobile__top">
 <?php
                    
                     $taxonomy     = 'product_cat';
@@ -28,12 +29,15 @@
                             $image = wp_get_attachment_url($thumbnail_id);
                     ?>
 
-                            <a href="tour"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a>
+                            <a  href="tour"><img src=" <?php echo $image; ?>" alt="img">
+                                <span><?php echo $cat->name ?></span>
+                            </a>
                             <?php
                         }
                     
                     }
                     ?>
+                </div>
 
 
 

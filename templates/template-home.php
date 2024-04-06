@@ -49,9 +49,9 @@ get_header(); ?>
                     <input type="text" placeholder="Tìm kiếm theo địa điểm, hoạt động">
                 </div>
                 <div class="home__banner--mobile">
-                     <div class="home__banner--mobile__top">
+                     
                         <?php wc_get_template('templates/template-home/banner-mobile.php'); ?>
-                     </div>
+                    
                      <a href="#" class="home__banner--mobile__bottom">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png" alt="img">
                         <span>Tất cả các mục</span>

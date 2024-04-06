@@ -16,7 +16,6 @@ $media_items = get_all_media_items_with_slide_home_title();
 foreach ($media_items as $media_item) {
     // Lấy mã HTML của hình ảnh với class "home__slider--item__image"
     $image_html = wp_get_attachment_image($media_item->ID, 'full', false, array('class' => 'home__slider--item__image'));
-
     // Hiển thị hình ảnh
     echo $image_html;
 }
