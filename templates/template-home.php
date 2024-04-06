@@ -11,19 +11,17 @@
 
 get_header(); ?>
 
-<section class="home">
-    <!-- home header -->
-    <div class="header__content--bottom shadow">
-       <?php get_template_part('menudesktop'); ?>
-    </div>
-    <!-- slider home -->
-    <div class="home__slider">
-        <div class="home__slider--show">
+    <section class="home">
+        <!-- home header -->
+        <div class="header__content--bottom shadow">
+            <?php wc_get_template('menudesktop.php'); ?>
+        </div>
+        <!-- slider home -->
+        <div class="home__slider">
+            
+           <div class="home__slider--show">
             <div class="home__slider--list__images">
-               <!-- get banner images -->
-               <?php 
-                    get_template_part('templates/template-home/slider', 'banner'); ?>
-                </div>
+            <?php  get_template_part('templates/template-home/slider','banner'); ?>
             </div>
             <div class="home__slider--btns">
                 <div class="home__slider--btn__left btn-slider"><ion-icon name="chevron-back"></ion-icon></div>
@@ -34,60 +32,54 @@ get_header(); ?>
                 <p class="home__slider--content__des">Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch
                     ngẫu hứng tới những cuộc phiêu lưu khắp thế giới</p>
                 <div class="home__slider--searchbox">
-                    <div class="home__slider--serchbox__search">
-                        <ion-icon name="search"></ion-icon>
+                   
                         <?php wc_get_template('templates/template-search/searchhome.php'); ?>
-                    </div>
-                    <input class="home__slider--searchbox__btn" type="button" value="Khám phá">
+                   
+                
                 </div>
+            </div>
+           </div>
 
         </div>
-    </div>
-    <!-- banner & box search mobile home -->
-    <div class="home__banner--search__mobile">
-        <div class="home__banner--search__mobile--box">
-            <div class="home__search--box">
-                <ion-icon name="search-outline"></ion-icon>
-                <input type="text" placeholder="Tìm kiếm theo địa điểm, hoạt động">
-            </div>
-            <div class="home__banner--mobile">
-                <div class="home__banner--mobile__top">
-                    <a href="category/liveshow/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png"
-                            alt="img">
-                        <span>Tour & Trải nghiệm</span>
-                    </a>
-                    <a href="category/tour/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-4.png"
-                            alt="img">
-                        <span>Vé tham quan</span>
-                    </a>
-                    <a href="category/hotel/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-3.png"
-                            alt="img">
-                        <span>Chỗ nghỉ</span>
-                    </a>
-                    <a href="category/motorbike/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-2.png"
-                            alt="img">
-                        <span>Di chuyển</span>
-                    </a>
-                    <a href="category/car/" class="home__banner--mobile__top--item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-1.png"
-                            alt="img">
-                        <span>Thuê xe tự lái</span>
-                    </a>
+        <!-- banner & box search mobile home -->
+       <div class="home__banner--search__mobile">
+            <div class="home__banner--search__mobile--box">
+                <div class="home__search--box">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Tìm kiếm theo địa điểm, hoạt động">
                 </div>
-                <a href="#" class="home__banner--mobile__bottom">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png"
-                        alt="img">
-                    <span>Tất cả các mục</span>
-                </a>
+                <div class="home__banner--mobile">
+                     <div class="home__banner--mobile__top">
+                        <a href="category/liveshow/" class="home__banner--mobile__top--item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-5.png" alt="img">
+                            <span>Tour & Trải nghiệm</span>
+                        </a>
+                        <a href="category/tour/" class="home__banner--mobile__top--item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-4.png" alt="img">
+                            <span>Vé tham quan</span>
+                        </a>
+                        <a href="category/hotel/" class="home__banner--mobile__top--item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-3.png" alt="img">
+                            <span>Chỗ nghỉ</span>
+                        </a>
+                        <a href="category/motorbike/" class="home__banner--mobile__top--item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-2.png" alt="img">
+                            <span>Di chuyển</span>
+                        </a>
+                        <a href="category/car/" class="home__banner--mobile__top--item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-menu-item-1.png" alt="img">
+                            <span>Thuê xe tự lái</span>
+                        </a>
+                     </div>
+                     <a href="#" class="home__banner--mobile__bottom">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png" alt="img">
+                        <span>Tất cả các mục</span>
+                     </a>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- home sale banner -->
-    <div class="home__sale--banner">
+       </div>
+       <!-- home sale banner -->
+       <div class="home__sale--banner">
         <div class="home__sale--banner__container">
             <div class="home__sale--banner__container--header">
                 <p>Ưu đãi hấp dẫn</p>
