@@ -513,6 +513,10 @@
         height: 25px;
         margin-right: 10px;
     }
+    .home__slider--searchbox__btn{
+       
+       padding: 15px;
+    }
     .header__top--left__hamburger--box {
         position: absolute;
         top: 50%;
