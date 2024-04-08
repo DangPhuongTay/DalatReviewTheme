@@ -108,6 +108,7 @@ input[type="number"] {
     border-radius: var(--border-radius-size-5);
     overflow: hidden;
     margin-bottom: 40px;
+    background-color: var(--color-background-3);
 }
 .detail__tour--img__left{
     width: 70%;

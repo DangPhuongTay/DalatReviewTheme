@@ -97,7 +97,7 @@
                                                             <ul class="primary__dropdown--content__list"
                                                                 aria-labelledby="dropdownMenuButton1">';
                                                             foreach( $sub_cats as $sub_category ) {
-                                                                echo '<li><a class="primary__dropdown--content__list--item" href="'.$sub_category->slug.'">'. $sub_category->name .'</a></li>';
+                                                                echo '<li><a class="primary__dropdown--content__list--item" href="'.home_url().'/'.$sub_category->slug.'">'. $sub_category->name .'</a></li>';
                                                             }
                                                             echo '</ul>
                                                             </div>';
@@ -155,7 +155,7 @@
                                                             echo ' <div class="fliter__category--content__box">';
                                                             foreach( $sub_cats as $sub_category ) {
                                                                 echo '<div class="fliter__category--content__box--item">
-                                                                <a href="'.$sub_category->slug.'">'. $sub_category->name .'</a>
+                                                                <a href="'.home_url().'/'.$sub_category->slug.'">'. $sub_category->name .'</a>
                                                             </div>';
                                                             }
                                                             echo '</div>';
