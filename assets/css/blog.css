@@ -6,7 +6,7 @@
 ============================================== */
 .blog{
     width: 100%;
-    margin-top: 65px;
+    margin-top: 29px;
 }
 .blog__banner{
     position: relative;
@@ -111,6 +111,8 @@
 }
 .blog__container--bottom__left--header__list .blog__container--bottom__left--header__list--item__img img{
     width: 100%;
+    object-fit: cover;
+    height: 20%;
 }
 .blog__container--bottom__left--header__list .blog__container--bottom__left--header__list--item__text{
     width: 70%;

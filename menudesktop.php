@@ -320,19 +320,9 @@
                         </div>
                     </li>
                     <li class="header__bottom--listlink__category4">
-                        <a href="category/tour/">
+                        <a href="<?php echo home_url() ?>/blog">
                             Tin tức
                         </a>
-                        <div class="header__bottom--listlink__category4--list shadow">
-                            <ul class="header__bottom--listlink__category4--list__item">
-                                <div class="header__bottom--listlink__allcategory--list__item--content">
-                                    <p><a href="category/tour/">Tour</a></p>
-                                    <p><a href="category/tour/">Tour săn mây</a></p>
-                                    <p><a href="category/tour/">Tour Đà Lạt một ngày</a></p>
-                                    <p><a href="category/tour/">Camping & Glamping</a></p>
-                                </div>
-                            </ul>
-                        </div>
                     </li>
                     <!-- <li class="header__bottom--listlink__category6">
                         <a href="#" class="header__bottom--listlink__la">

@@ -1,5 +1,5 @@
 <div class="blog__container--bottom__left--header__list--item">
-                                    <a href="detail-blog">
+                                    <a href="<?php the_permalink(); ?>">
                                         <div class="blog__container--bottom__left--header__list--item__img">
                                             <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>  
                                         </div>
