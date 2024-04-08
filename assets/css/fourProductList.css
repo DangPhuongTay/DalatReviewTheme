@@ -30,7 +30,7 @@
     line-height: 1.5;
     border-bottom-left-radius: var(--border-radius-size-2);
     border-bottom-right-radius: var(--border-radius-size-2);    
-    min-height: 300px;
+    min-height: 250px;
     
 }
 .fourProductList__wrapper--info__title{

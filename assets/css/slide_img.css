@@ -6,7 +6,7 @@
     display: none;
   }
   .container__slides {
-    width: 800px;
+    width: 100%;
     overflow: hidden;
     position: fixed;
     height: auto;
@@ -23,8 +23,11 @@
     overflow-x: scroll;
   }
   /* Hide the images by default */
+  .mySlides{
+    display: flex;align-items: center;justify-content: center;
+  }
   .mySlides .woocommerce-product-gallery__image{
-    width: 100%;
+    width:80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +35,9 @@
   }
   .mySlides  img {
     vertical-align: middle;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -44,8 +50,7 @@
   .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
-    width: auto;
+    top: 50%;
     padding: 16px;
     margin-top: -50px;
     color: var(--color-background-6) !important;
