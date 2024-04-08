@@ -11,6 +11,6 @@
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                         <?php 
 
-                    	get_template_part('templates/template-hotel/item','stay');  
+                    	get_template_part('templates/template-place/item','stay');  
                     ?>
                 <?php endwhile; wp_reset_postdata(); ?>
