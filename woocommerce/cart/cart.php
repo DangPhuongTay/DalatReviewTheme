@@ -95,9 +95,9 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     </div>
                                 </div>
                                 <div class="cart__container--top__left--list__item--top__quality">
-                                    <span>Người lớn</span>
+                                    <!-- <span>Người lớn</span> -->
                                     <div class="number-input">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                                        <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button> -->
 										<?php
 						if ( $_product->is_sold_individually() ) {
 							$min_quantity = 1;
@@ -121,7 +121,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 						?>
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                        <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button> -->
                                       </div>
                                     
                                 </div>
