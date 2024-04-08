@@ -204,7 +204,7 @@
                         </div>
                     </li>
                     <li class="header__bottom--listlink__category3">
-                        <a href="<?php echo home_url() ?>/hotel">
+                        <a href="<?php echo home_url() ?>/place">
                             Khách sạn
                         </a>
                         <div class="header__bottom--listlink__category3--list shadow">

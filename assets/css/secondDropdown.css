@@ -91,7 +91,7 @@ input[type="number"] {
     position: fixed;
     left: 0;
     top: 61px;
-    z-index: 1004;
+    z-index: 99;
     width: 100%;
     padding: 10px 60px;
     background-color: var(--color-background-15);
@@ -146,19 +146,6 @@ input[type="number"] {
   .hotel__fitter--search p {
     display: none;
   }
-  
-  body.listHotelFitter .hotel__fitter--search p {
-    display: block;
-  }
-  
-  body.listHotelFitter .hotel__search {
-    padding: 35px 20px 20px 20px;
-  }
-  
-  body.listHotelFitter .hotel__fitter--btn {
-    padding: 17.5px 0 17.5px 0;
-  }
-  
   body.listHotelRoom .hotel__fitter--room {
     display: block;
   }
@@ -278,7 +265,7 @@ input[type="number"] {
     .hotelMobile__fitter {
       position: relative;
       z-index: 1004;
-      top: 29px;
+      top: 14px;
       padding: 12px 35px;
       background-color: var(--color-background-6);
       display: block;

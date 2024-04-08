@@ -4,7 +4,7 @@
                 <div class="hotel__fitter--search">
                     <p>Địa điểm</p>
                     <input class="hotel__search" type="text" name="s" id="s" value="Hotel" onblur="if(this.value=='')this.value='Hotel'"
-    onfocus="if(this.value=='Hotel')this.value=''" />
+                    onfocus="if(this.value=='Hotel')this.value=''" />
                 </div>
                 <div class="hotel__fitter--search">
                     <p>Ngày nhận / trả phòng</p>

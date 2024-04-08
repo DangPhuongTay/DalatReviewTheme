@@ -38,7 +38,7 @@
             // echo ceil($count/4);
             for ($x = 1; $x <= ceil($count/$loop->max_num_pages); $x++) {
                 ?>
-                    <a href="<?php echo home_url();?>/hotel/page/<?php echo $x; ?>" class="">
+                    <a href="<?php echo home_url();?>/place/page/<?php echo $x; ?>" class="">
                         <div class="liveshow__container--body__product--list__page--item"><?php echo $x; ?></div>
                     </a>    
                 <?php
