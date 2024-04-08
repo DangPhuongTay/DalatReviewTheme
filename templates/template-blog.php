@@ -12,7 +12,7 @@
     
     <section class="blog">
         <div class="blog__banner">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/images/blog-banner.png" alt="">
+        <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>  
             <div class="blog__banner--text">
                 <p>Bí kíp trải nghiệm trọn vẹn Đà Lạt</p>
                 <span>Khám phá những câu chuyện, cảm hứng và ý tưởng du lịch Đà Lạt độc đáo cho chuyến vi vu tiếp theo của
