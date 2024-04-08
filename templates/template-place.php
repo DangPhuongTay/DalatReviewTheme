@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: TemplateHotel
- * Display Only Hotel template
+ * Template Name: TemplatePlace
+ * Display Only Place template
  * 
  * @package WordPress
  * @subpackage eminent
@@ -366,7 +366,7 @@
             }
 ?>
                 </div>
-                        <?php get_template_part('templates/template-hotel/archive', 'hotel'); ?>
+                        <?php get_template_part('templates/template-place/archive', 'place'); ?>
             </div>
         </div>
     </div>

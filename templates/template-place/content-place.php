@@ -406,7 +406,7 @@ if (have_posts()) {
                                 <div class="detailHotel__list--body__list">
                                     <?php
 
-                                    get_template_part('templates/template-hotel/archive', 'detailhotel');
+                                    get_template_part('templates/template-place/archive', 'detailhotel');
                                     ?>
 
                                 </div>
@@ -904,7 +904,7 @@ if (have_posts()) {
                                     </div>
                                     <div class="detailHotel__list--body__similar--content">
                                         <div class="fourProductList__wrapper">
-                                            <?php get_template_part('templates/template-hotel/archive', 'stay'); ?>
+                                            <?php get_template_part('templates/template-place/archive', 'stay'); ?>
                                         </div>
                                     </div>
                                 </div>

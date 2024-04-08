@@ -7,7 +7,7 @@ function sb_get_current_url() {
 
 get_header();
 if(strpos( sb_get_current_url(), "/place" )){
-    get_template_part('templates/template-hotel');
+    get_template_part('templates/template-place');
 }elseif(strpos( sb_get_current_url(), "/tour" )){
     get_template_part('templates/template-tour');   
 }elseif(strpos( sb_get_current_url(), "/blog" )){
@@ -17,6 +17,6 @@ if(strpos( sb_get_current_url(), "/place" )){
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('templates/template-liveshow');
 };
-get_footer();
+;
 
 
