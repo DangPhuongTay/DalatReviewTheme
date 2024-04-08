@@ -20,7 +20,7 @@
                 
                 while ( $loop->have_posts() ) : $loop->the_post();
                
-                get_template_part('templates/template-hotel/item', 'hotel');
+                get_template_part('templates/template-place/item', 'place');
                 endwhile;
             } else {
                 echo __( 'No products found' );

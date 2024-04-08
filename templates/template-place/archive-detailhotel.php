@@ -4,7 +4,7 @@
                         global $wp;
                         $url = $wp->request;
                         $requesturl = explode("/",  $url);
-                        return $requesturl[3];
+                        return $requesturl[0];
                     }
                     
                     $args = array(
@@ -19,6 +19,6 @@
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                         <?php 
                     
-                    get_template_part('templates/template-hotel/item','detailhotel');  
+                    get_template_part('templates/template-place/item','detailhotel');  
                     ?>
                 <?php endwhile; wp_reset_postdata(); ?>
