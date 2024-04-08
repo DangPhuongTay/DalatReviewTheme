@@ -26,6 +26,8 @@
 }
 .detail__blog--left__date--img img{
     width: 100%;
+    object-fit: cover;
+    height: 60%;
 }
 .detail__blog--left__content--paragraph__img{
     width: 100%;
