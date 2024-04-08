@@ -1,5 +1,4 @@
 <?php get_header();
- 
 function sb_get_current_url() {
     global $wp;
     $current_url = trailingslashit(home_url($wp->request));
