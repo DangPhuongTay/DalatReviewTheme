@@ -301,7 +301,7 @@
 }
 .home__slider--searchbox{
     border-radius: var(--border-radius-size-2);
-    background: var(--color-background-12);
+    background: var(--color-background-6);
     width: 75%;
     height: 56px;
     display: flex;
@@ -310,17 +310,25 @@
     padding: 0 5px;
     margin-top: 10px;
 }
-.home__slider--serchbox__search {
-    width: 80%;
+.home__slider--searchbox__search {
+    width: 100%;
     display: flex;
     align-items: center;
 }
-.home__slider--serchbox__search ion-icon{
+.home__slider--searchbox__search ion-icon{
     font-size: var(--size-text-7);
     margin-left: 10px;
     color: var(--color-text-7);
 }
-/* .home__slider--serchbox__search input{
+.home__slider--searchbox__element
+{
+   display: flex;
+   justify-content: space-between;
+}
+.home__slider--searchbox__element--left{
+    border: none;
+}
+/* .home__slider--searchbox__search input{
     padding: 10px 5px;
     width: 70%;
     line-height: 20px;
