@@ -1,6 +1,6 @@
 
 <div class="blog__container--bottom__right--header__list--item">
-                                    <a href="detail-blog">
+                                    <a href="<?php the_permalink(); ?>">
                                         <div class="blog__container--bottom__right--header__list--item__number">
                                             <span>1</span>
                                         </div>
