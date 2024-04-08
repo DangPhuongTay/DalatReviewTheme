@@ -95,7 +95,7 @@
                     
                 foreach( $sub_cats as $sub_category ) { ?>
                         <div class="hotel__right--fitter__tag">
-                        <a href="<?php echo $sub_category->slug ?>" id="hotel__right--fitter__title"  class="hotel__right--fitter__title"><?php echo $sub_category->name ?></a>
+                        <a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>" id="hotel__right--fitter__title"  class="hotel__right--fitter__title"><?php echo $sub_category->name ?></a>
                     </div>
                 <?php }
                    
