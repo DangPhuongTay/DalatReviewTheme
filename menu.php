@@ -94,7 +94,7 @@
                     );
                     $all_categories = get_categories($args);
                     foreach ($all_categories as $cat) {
-                        if ($cat->category_parent == 0) {
+                        if ($cat->category_parent == 0 && $cat->term_id != 24) {
                             $category_id = $cat->term_id;
                             $thumbnail_id = get_term_meta($cat->term_id, 'thumbnail_id', true);
 
