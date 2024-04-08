@@ -36,10 +36,6 @@ get_header(); ?>
                 </div>
             </div>
            </div>
-
-                    <?php wc_get_template('templates/template-search/searchhome.php'); ?>
-
-
                 </div>
             </div>
         </div>
