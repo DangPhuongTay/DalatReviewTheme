@@ -3,15 +3,8 @@
     <?php
 
     global $paged;
-
+  
     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-    add_filter( 'woocommerce_catalog_orderby', 'swat_sort_by_title' );  // Add options to sort dropdown on category page.
-    function swat_sort_by_title( $orderby_array ) {
-        $orderby_array[ 'title' ] = 'Sort by title (A-Z)';
-        $orderby_array[ 'title-desc' ] = 'Sort by title (Z-A)';
-
-        return $orderby_array;
-    }
     function request() {
         global $wp;
         $url = $wp->request;
@@ -21,7 +14,7 @@
 
     $args = array(
         'post_type' => 'product',
-        'posts_per_page' =>1,
+        'posts_per_page' =>8,
         'paged' => $paged,
         'product_cat' => request()
         );

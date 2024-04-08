@@ -36,7 +36,7 @@ get_header(); ?>
     
 </div>
 
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
+
 <?php
 
 

@@ -102,4 +102,5 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		height: 150px;
 	}
 </style>
-<?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+
+<?php  do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
