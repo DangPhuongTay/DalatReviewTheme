@@ -12,15 +12,7 @@
     width: 100%;
     background: var(--color-background-12);
 }
-.checkouttour::before{
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 100%;
-    background: var(--color-background-6);
-    top: 0;
-    height: 120px;
-}
+
 .checkouttour__header{
     width: 100%;
     max-width: 1160px;

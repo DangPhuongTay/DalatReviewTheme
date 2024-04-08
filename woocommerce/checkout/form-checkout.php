@@ -16,13 +16,7 @@
  */
 ?>
     <section class="checkouttour">
-        <div class="checkouttour__header">
-            <span><ion-icon name="checkmark-circle"></ion-icon></span>
-            <span></span>
-            <span><ion-icon name="ellipsis-horizontal-circle-sharp"></ion-icon></span>
-            <span></span>
-            <span><ion-icon name="ellipse-sharp"></ion-icon></span>
-        </div>
+
 <?php
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -55,14 +49,13 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			</div>
 		</div>
 
-		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+		<?php do_action( 'Additional information' ); ?>
 
 	<?php endif; ?>
 	
 	<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 	
-	<h4 style="padding-left: 20px" id="order_review_heading"><?php esc_html_e( 'Thông tin đơn hàng', 'woocommerce' ); ?></h4>
-	
+
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 	</div>
 	<div class="checkouttour__container--right">
@@ -75,5 +68,38 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 	</div>
 </form>
-
+<style>
+	.woocommerce-additional-fields__field-wrapper,
+	.woocommerce-billing-fields__field-wrapper{
+		width: 100%;
+	}
+	.woocommerce-additional-fields__field-wrapper .form-row,
+	.woocommerce-billing-fields__field-wrapper .form-row{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 0;
+	}
+	.woocommerce-additional-fields__field-wrapper .form-row span,
+	.woocommerce-additional-fields__field-wrapper .form-row lable,
+	.woocommerce-billing-fields__field-wrapper .form-row span,
+	.woocommerce-billing-fields__field-wrapper .form-row lable{
+		width: 50%;
+		display: flex;
+ 		align-items: center;
+	}
+	.woocommerce-additional-fields__field-wrapper .form-row span textarea,
+	.woocommerce-billing-fields__field-wrapper .form-row span input,
+	.woocommerce-billing-fields__field-wrapper .form-row span select{
+		resize: none;
+		width: 100%;
+		padding: 7px 15px;
+		border: 1px solid var(--color-text-12);
+    	border-radius: var(--border-radius-size-1);
+		outline:none;
+	}
+	.woocommerce-additional-fields__field-wrapper .form-row span textarea{
+		height: 150px;
+	}
+</style>
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
