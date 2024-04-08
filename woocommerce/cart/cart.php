@@ -20,9 +20,9 @@
             <div class="cart__container--top">
                 <div class="cart__container--top__left">
                     <div class="cart__container--top__left--all">
-						<h4>
+						<h5>
 						Sản phẩm đã thêm vào giỏ hàng
-						</h4>
+						</h5>
                     </div>
                     
 <?php
@@ -188,7 +188,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                 <div class="cart__container--bottom__header">
                     <span>Thường được đặt với</span>
                 </div>
-                <div class="firstProduct row-max-width">
+                <!-- <div class="firstProduct row-max-width">
                     <div class="firstProduct__content container-fluid">
                         <div class="firstProduct__content--list row">
                             <div
@@ -820,7 +820,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section> 
