@@ -86,9 +86,7 @@
                             <span>Tho chau</span>
                         </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
         <div class="hotelMobile__fitter--box__footer">
