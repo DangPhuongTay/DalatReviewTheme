@@ -32,10 +32,7 @@ get_header(); ?>
                 <p class="home__slider--content__des">Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch
                     ngẫu hứng tới những cuộc phiêu lưu khắp thế giới</p>
                 <div class="home__slider--searchbox">
-                   
                         <?php wc_get_template('templates/template-search/searchhome.php'); ?>
-                   
-                
                 </div>
             </div>
            </div>
