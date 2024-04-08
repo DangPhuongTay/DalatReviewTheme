@@ -10,7 +10,7 @@
                     <p>Ngày nhận / trả phòng</p>
                     <input type="date" placeholder="Chọn ngày" class="hotel__search">
                 </div>
-                <div class="hotel__fitter--search room">
+                <div class="hotel__fitter--search {room}">
                     <p>Số khách & phòng</p>
                     <input type="search" placeholder="Chọn phòng" class="hotel__search">
                     <!-- <div class="hotel__fitter--room">
