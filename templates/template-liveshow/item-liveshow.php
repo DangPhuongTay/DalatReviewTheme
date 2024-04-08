@@ -1,6 +1,6 @@
 <?php global $product; ?>
 <div class="firstProduct__content--list__item">
-              <a href="<?php the_permalink(); ?>">
+    <a href="<?php the_permalink(); ?>">
                 <div class="firstProduct__content--list__item--wrap">
                   <div class="firstProduct__img">
                         <?php echo get_the_post_thumbnail(get_the_ID(),
@@ -60,14 +60,13 @@
                       <div class="firstProduct__info--bottom__tagging tagging__wrap">
                         <div class="tagging__box firstProduct__info--bottom__tagging--box">
                           <div class="tagging__tag">
-                            <span class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                              sách đảm bảo về
-                              giá</span>
+                            <span class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">
+                              Chính sách đảm bảo về giá</span>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </a>
-            </div>
+    </a>
+</div>
