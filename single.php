@@ -6,7 +6,7 @@ get_header();
         global $product;
         global $post; 
         $termproduct = get_the_terms($product->ID, 'product_cat');
-        $termpost = get_the_terms($post->ID, 'cat');
+        $termpost = get_the_terms($post->ID, 'category');
         if($termproduct){
             foreach ($termproduct as $term) {
                 $cat_parent_id = $term->parent;
@@ -24,7 +24,7 @@ get_header();
                 if($cat_parent_id == 0){
                     return $term->slug;
                 }else{
-                    $cat_parent =  get_term_by('id',  $cat_parent_id, 'cat');
+                    $cat_parent =  get_term_by('id',  $cat_parent_id, 'category');
                     return $cat_parent->slug;
                 }
     
