@@ -1,46 +1,52 @@
-<div class="firstProduct__content--list">
+    <div class="firstProduct__content--list">
 
-<?php
-global $paged;
+    <?php
 
-$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    global $paged;
 
-function request() {
-    global $wp;
-    $url = $wp->request;
-    $requesturl = explode("/",  $url);
-    return $requesturl[0];
-}
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    add_filter( 'woocommerce_catalog_orderby', 'swat_sort_by_title' );  // Add options to sort dropdown on category page.
+    function swat_sort_by_title( $orderby_array ) {
+        $orderby_array[ 'title' ] = 'Sort by title (A-Z)';
+        $orderby_array[ 'title-desc' ] = 'Sort by title (Z-A)';
 
-$args = array(
-    'post_type' => 'product',
-    'posts_per_page' => 8,
-    'paged' => $paged,
-    'product_cat' => request()
-    );
-$loop = new WP_Query( $args );
-$count = $loop->found_posts;;
-if ( $loop->have_posts() ) {
-    
-    while ( $loop->have_posts() ) : $loop->the_post();
-   
-    get_template_part('templates/template-tour/item', 'tour');
-    endwhile;
-} else {
-    echo __( 'No products found' );
-}
-?></div>
-<div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
+        return $orderby_array;
+    }
+    function request() {
+        global $wp;
+        $url = $wp->request;
+        $requesturl = explode("/",  $url);
+        return $requesturl[0];
+    }
 
-<?php previous_posts_link( '<div class="liveshow__container--body__product--list__page--item">
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' =>1,
+        'paged' => $paged,
+        'product_cat' => request()
+        );
+    $loop = new WP_Query( $args );
+    $count = $loop->found_posts;;
+    if ( $loop->have_posts() ) {
+        
+        while ( $loop->have_posts() ) : $loop->the_post();
+
+        get_template_part('templates/template-tour/item', 'tour');
+        endwhile;
+    } else {
+        echo __( 'No products found' );
+    }
+    ?></div>
+    <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
+
+    <?php previous_posts_link( '<div class="liveshow__container--body__product--list__page--item">
                   <ion-icon name="chevron-back"></ion-icon>
-                </div>', $loop->max_num_pages); ?></li> 
+                </div>', $loop->max_num_pages); ?> 
             <?php 
             
-            // echo ceil($count/4);
-            for ($x = 1; $x <= ceil($count/$loop->max_num_pages); $x++) {
+            for ($x = 1; $x <= $loop->max_num_pages; $x++) {
                 ?>
-                    <a href="<?php echo home_url();?>/tour/page/<?php echo $x; ?>" class="">
+                    <a href="<?php echo home_url();?>/<?php request(); ?>/page/<?php echo $x; ?>" class="">
                         <div class="liveshow__container--body__product--list__page--item"><?php echo $x; ?></div>
                     </a>    
                 <?php
@@ -49,7 +55,7 @@ if ( $loop->have_posts() ) {
             ?>
             <?php next_posts_link( ' <div class="liveshow__container--body__product--list__page--item">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
-                </div>', $loop->max_num_pages) ?></li>
+                </div>', $loop->max_num_pages) ?>
        
 
 </div>
