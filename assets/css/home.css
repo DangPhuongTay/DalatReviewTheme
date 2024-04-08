@@ -659,7 +659,14 @@
     .home__banner--search__mobile{
         display: flex;
     }
-    
+    .home__search--box__input{
+        border: none;
+    }
+    .home__search--box__mobile{
+        display: flex;
+        align-items: center;
+        
+    }
 
  }
  @media only screen and (max-width: 627px) {

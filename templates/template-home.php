@@ -11,17 +11,17 @@
 
 get_header(); ?>
 
-    <section class="home">
-        <!-- home header -->
-        <div class="header__content--bottom shadow">
-            <?php wc_get_template('menudesktop.php'); ?>
-        </div>
-        <!-- slider home -->
-        <div class="home__slider">
-            
-           <div class="home__slider--show">
+<section class="home">
+    <!-- home header -->
+    <div class="header__content--bottom shadow">
+        <?php wc_get_template('menudesktop.php'); ?>
+    </div>
+    <!-- slider home -->
+    <div class="home__slider">
+
+        <div class="home__slider--show">
             <div class="home__slider--list__images">
-            <?php  get_template_part('templates/template-home/slider','banner'); ?>
+                <?php get_template_part('templates/template-home/slider', 'banner'); ?>
             </div>
             <div class="home__slider--btns">
                 <div class="home__slider--btn__left btn-slider"><ion-icon name="chevron-back"></ion-icon></div>
@@ -37,27 +37,33 @@ get_header(); ?>
             </div>
            </div>
 
-        </div>
-        <!-- banner & box search mobile home -->
-       <div class="home__banner--search__mobile">
-            <div class="home__banner--search__mobile--box">
-                <div class="home__search--box">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <input type="text" placeholder="Tìm kiếm theo địa điểm, hoạt động">
-                </div>
-                <div class="home__banner--mobile">
-                     
-                   <?php wc_get_template('templates/template-home/banner-mobile.php'); ?>
-                    
-                     <a href="#" class="home__banner--mobile__bottom">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png" alt="img">
-                        <span>Tất cả các mục</span>
-                     </a>
+                    <?php wc_get_template('templates/template-search/searchhome.php'); ?>
+
+
                 </div>
             </div>
-       </div>
-       <!-- home sale banner -->
-       <div class="home__sale--banner">
+        </div>
+
+    </div>
+    <!-- banner & box search mobile home -->
+    <div class="home__banner--search__mobile">
+        <div class="home__banner--search__mobile--box">
+            <?php wc_get_template('templates/template-search/search-home-mobile.php'); ?>
+
+            <div class="home__banner--mobile">
+
+                <?php wc_get_template('templates/template-home/banner-mobile.php'); ?>
+
+                <a href="#" class="home__banner--mobile__bottom">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png"
+                        alt="img">
+                    <span>Tất cả các mục</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- home sale banner -->
+    <div class="home__sale--banner">
         <div class="home__sale--banner__container">
             <div class="home__sale--banner__container--header">
                 <p>Ưu đãi hấp dẫn</p>
@@ -160,106 +166,7 @@ get_header(); ?>
         </div>
     </div>
 
-    <div class="firstTag__internal--mobile">
+    <?php wc_get_template('templates/template-home/home-firstTagMobile.php'); ?>
 
-        <div class="firstTag__internal--wrap">
-            <h2 class="firstTag__internal--title">Hấp dẫn không kém</h2>
-
-            <!-- module-banner -->
-            <div class="firstTag__internal--content">
-                <h3 class="firstTag__internal--header">
-                    Khám phá các hoạt động phổ biến
-                </h3>
-                <ul class="firstTag__internal--wrapper">
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Warner Bros Studio Tour Tokyo</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Ba Na Hills</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Grand World Phú QuốC</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">xe Huế- Đà Nẵng</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Vinwonders Phú QuốC</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Saigon Skydeck</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Taipei 101 Ticket</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Garden By The Bay</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Vinpearl Safari Phú QuốC</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Xe Limousine Đi Vũng Tàu</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Puppy Farm</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Vé Cáp Treo Núi Bà Đen</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Xe Limousine Hà NộI Hạ Long</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Universal Studios Japan</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Artscience Museum</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Tropicana Park</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Sun World Hạ Long</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">London Eye Ticket</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Limousine Hà NộI Ninh Bình</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Universal Singapore</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">BảO Tàng Thế GiớI Cà Phê</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Sagrada Familia</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Bts Skytrain Bangkok</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Ký ỨC HộI An</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Vinwonders Nam HộI An</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Cung ĐiệN Versailles</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Fresh Garden Đà LạT</a>
-                    </li>
-                    <li class="firstTag__internal--unit">
-                        <a href="" class="firstTag__unit--suggestion">Landmark 81 Skyview</a>
-                    </li>
-
-
-                </ul>
-            </div>
-        </div>
-    </div>
 </section>
 <?php get_footer(); ?>
