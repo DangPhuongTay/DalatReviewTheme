@@ -77,7 +77,7 @@
             $all_categories = get_categories( $args );
 
             foreach ( $all_categories as $cat ) {
-            if ( $cat->name == 'Place' ) {
+            if ( $cat->name == 'place' ) {
             $category_id = $cat->term_id;
                 $args2 = array(
                 'taxonomy'     => $taxonomy,

@@ -2,7 +2,7 @@
                             $args = array(
                         'post_type'      => 'product',
                         'posts_per_page' => 4,
-                        'product_cat'    => 'hotel'
+                        'product_cat'    => 'place'
                     );
                 ?>
                 <?php $getposts = new WP_query($args); ?>
