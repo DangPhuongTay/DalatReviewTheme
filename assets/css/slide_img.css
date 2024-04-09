@@ -24,10 +24,12 @@
   }
   /* Hide the images by default */
   .mySlides{
-    display: flex;align-items: center;justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .mySlides .woocommerce-product-gallery__image{
-    width:80%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,6 +40,10 @@
     width: 100%;
     max-width: 1000px;
     height: auto;
+
+    object-fit: cover;
+    min-width: 550px;
+  
   }
   
   /* Add a pointer when hovering over the thumbnail images */

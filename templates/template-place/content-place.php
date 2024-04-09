@@ -7,7 +7,6 @@ if (have_posts()) {
         <?php global $product; ?>
         <?php global $comment; ?>
         <div class="detail__hotel--wrap">
-
             <!-- slide- area -->
             <div class="slide__img--box">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
@@ -41,8 +40,6 @@ if (have_posts()) {
                  
                 </div>
             </div>
-
-            <!-- banner area -->
             <div class="secondDropDown">    
             <?php get_template_part('templates/template-search/searchhotel'); ?>
             </div>
