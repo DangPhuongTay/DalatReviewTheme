@@ -49,6 +49,7 @@
             $args = array(
             'taxonomy'     => $taxonomy,
             'orderby'      => $orderby,
+            'parent'        => '31',
             'show_count'   => $show_count,
             'pad_counts'   => $pad_counts,
             'hierarchical' => $hierarchical,
@@ -57,7 +58,21 @@
             $all_categories = get_categories( $args );
 
             foreach ( $all_categories as $cat ) {
-            if ( $cat->name == 'liveshow' ) {
+
+            if ( $cat->term_id != 24) {
+              ?>
+             
+               
+                 
+             
+              
+              <div>  
+                <a class="cart__container--top__left--all__left--check"><?php echo $cat->name; ?>
+                  <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                    </a>
+                
+          <?php
             $category_id = $cat->term_id;
                 $args2 = array(
                 'taxonomy'     => $taxonomy,
@@ -80,15 +95,20 @@
                             <span class="checkmark"></span>
                           </a>
                         </div>
+                        
                 <?php }
                    
                 }
+                ?>
+              </div> 
+              <?php
             }
+
             }
 ?>
 
               </div>
-              <div class="liveshow__container--body__menu--wrap">
+             <!-- <div class="liveshow__container--body__menu--wrap">
                 <div class="liveshow__container--body__menu--title">Điểm đến</div>
                 <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub()">
                   <label class="cart__container--top__left--all__left--check">Lịch diễn liveshow Đà Lạt
@@ -171,7 +191,7 @@
                     </label>
                   </div>
                 </div>
-              </div>
+              </div>-->
   
             </div>
           </div>
@@ -201,7 +221,7 @@
                 </div>
                 <div class="liveshow__container--body__product--filter__price--content">
                   <div class="liveshow__container--body__product--filter__price--text">Sắp xếp theo</div>
-                  <div class="liveshow__container--body__product--filter__price instant-filter"
+                  <!--<div class="liveshow__container--body__product--filter__price instant-filter"
                     onclick="btnLiveshowPoptip()">
                     <span class="liveshow__container--body__product--filter__price--title">Đề xuất</span>
                     <ion-icon name="chevron-down-outline"></ion-icon>
@@ -223,7 +243,50 @@
                         <span>Giá (cao đến thấp)</span>
                       </div>
                     </div>
-                  </div>
+                  </div>-->
+                  <!--<form method="post" action="<?php the_permalink() ?>">
+                    <select name="my_status" id="stato" class="postform" onchange="submit();">
+                            <option selected="selected">Đề xuất</option>
+                            <option value="aperta">Đặt nhiều nhất</option>
+                            <option value="chiusa">Đánh giá cao nhất</option>
+                            <option value="chiusa">Giá (thấp đến cao)</option>
+                            <option value="chiusa">Giá (cao đến thấp)</option>
+                    </select>
+                    </form>
+                   <?php /* Reset filter */ ?>
+                    <p class="reset_filter"><a  href="<?php the_permalink(); ?>">Làm mới</a></p>
+                    
+                    <?php
+                    if( !isset($_POST['my_status']) || '' == $_POST['my_status']) {
+                    
+                    }
+                    else {
+                    
+                        $stato = $_POST['my_status'];
+                    
+                        // Create new query
+                        $query = new WP_Query( array(
+                            'post_type'=> 'offerta_lavoro', // your CPT
+                            'post_status' => 'publish',
+                                    'meta_query'=>array(
+                        array(
+                            'key' => 'crb_attiva_nonattiva',
+                            'value' => $stato,
+                        ),
+                            ),
+                        ) );
+                    
+                        // Loop
+                        if($query->have_posts()):
+                            while( $query->have_posts() ): $query->the_post();
+                    
+                            endwhile;
+                        endif;
+                    
+                        // reset query to default
+                        wp_reset_postdata();
+                    
+                    } ?> -->
                 </div>
   
               </div>
@@ -231,47 +294,7 @@
             <!--  -->
             <!-- Produclist -->
             <!--  -->
-            <form method="post" action="<?php the_permalink() ?>">
-<select name="my_status" id="stato" class="postform" onchange="submit();">
-        <option selected="selected">Choose a status</option>
-        <option value="aperta">Aperta</option>
-        <option value="chiusa">Chiusa</option>
-</select>
-</form>
-<?php /* Reset filter */ ?>
-<p><a href="<?php the_permalink(); ?>">Clear filter</a></p>
-
-<?php
-if( !isset($_POST['my_status']) || '' == $_POST['my_status']) {
-
-}
-else {
-
-    $stato = $_POST['my_status'];
-
-    // Create new query
-    $query = new WP_Query( array(
-        'post_type'=> 'offerta_lavoro', // your CPT
-        'post_status' => 'publish',
-                'meta_query'=>array(
-    array(
-        'key' => 'crb_attiva_nonattiva',
-        'value' => $stato,
-    ),
-        ),
-    ) );
-
-    // Loop
-    if($query->have_posts()):
-        while( $query->have_posts() ): $query->the_post();
-
-        endwhile;
-    endif;
-
-    // reset query to default
-    wp_reset_postdata();
-
-} ?>
+            
             <div class="liveshow__container--body__product--list">
             <?php 
             get_template_part('templates/template-liveshow/archive', 'liveshow');  
