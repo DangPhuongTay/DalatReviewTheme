@@ -19,7 +19,7 @@
         <div class="detail__tour--container">
             <div class="detail__tour--header">
                 <div class="detail__tour--header__link">
-                    <a href="">Trang chủ</a> > <a href="">Vé tham quan</a> > <a href="">Vé tham quan Săn Mây Cầu Gỗ – BÌNH MINH</a>
+                    <a href="home">Trang chủ</a> > <a href="">Vé tham quan</a> > <a href="">Vé tham quan Săn Mây Cầu Gỗ – BÌNH MINH</a>
                 </div>
                 <div class="detail__tour--header__title">
                     VÉ THAM QUAN SĂN MÂY CẦU GỖ – BÌNH MINH
