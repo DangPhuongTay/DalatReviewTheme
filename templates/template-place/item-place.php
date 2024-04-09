@@ -61,7 +61,7 @@
                 </div>
                 <div class="hotel__right--tag">
                     <div class="hotel__right--tag__wrap">
-
+                            
                         <?php
                         foreach ($product->attributes as $taxonomy => $attribute) {
                             foreach ($attribute->get_terms() as $term) {

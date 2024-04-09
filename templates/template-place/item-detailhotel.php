@@ -142,7 +142,7 @@
                                     Giá 1 đêm đã bao gồm thuế
                                 </div>
                             </div>
-                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
+                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?></a> </div>
                         </div>
                     </div>
 
