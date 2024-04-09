@@ -5,7 +5,7 @@ function sb_get_current_url() {
     return $current_url;
 }
 
-get_header();
+
 if(strpos( sb_get_current_url(), "/place" )){
     get_template_part('templates/template-place');
 }elseif(strpos( sb_get_current_url(), "/tour" )){
@@ -17,6 +17,6 @@ if(strpos( sb_get_current_url(), "/place" )){
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('templates/template-liveshow');
 };
-;
+get_footer();
 
 

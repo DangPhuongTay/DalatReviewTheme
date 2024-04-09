@@ -134,7 +134,7 @@ if (have_posts()) {
 
                                     <?php echo $product->get_price_html(); ?>
 
-
+                                    
                                 </span>
                                 <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                             </p>
