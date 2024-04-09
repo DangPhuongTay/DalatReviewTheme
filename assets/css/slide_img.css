@@ -1,6 +1,15 @@
 
 
   /* Position the image container (needed to position the left and right arrows) */
+
+  .slide__img--close{
+    position: absolute;
+    color: var(--color-background-6);
+    font-weight: 700;
+    top: -7px;
+    right: 30px;
+    font-size: 37px;
+  }
   .slide__img--box{
     position: relative;
     display: none;
@@ -38,7 +47,7 @@
   .mySlides  img {
     vertical-align: middle;
     width: 100%;
-    max-width: 1160px;
+    max-width: 1060px;
     height: auto;
 
     object-fit: cover;

@@ -1,6 +1,15 @@
 #more {
     display: none;
 }
+
+/* empty img */
+.image_empty{
+    min-height: 636px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
 .detailHotel {
     margin: 0 auto;
     max-width: 1160px;
