@@ -21,8 +21,11 @@ if (have_posts()) {
                             ?>
                             <div class="mySlides">
                                 <?php
-                                echo apply_filters('woocommerce_single_product_image_thumbnail_html',
-                                 wc_get_gallery_image_html($attachment_id), $attachment_id); //
+                                echo apply_filters(
+                                    'woocommerce_single_product_image_thumbnail_html',
+                                    wc_get_gallery_image_html($attachment_id),
+                                    $attachment_id
+                                ); //
                                 ?>
                             </div>
                             <?php
@@ -35,19 +38,21 @@ if (have_posts()) {
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                 
+
                 </div>
             </div>
 
-            <div class="secondDropDown">    
-            <?php get_template_part('templates/template-search/searchhotel'); ?>
+            <!-- banner area -->
+            <div class="secondDropDown">
+                <?php get_template_part('templates/template-search/searchhotel'); ?>
+
             </div>
             <div class="detailHotel__banner">
                 <div class="detailHotel__top--link">
                     <ion-icon name="chevron-back-outline"></ion-icon>
-                    
+
                     <a href="<?php echo home_url(); ?>/">Tìm thêm khách sạn tại Đà Lạt</a>
-                    
+
                 </div>
                 <div class="detailHotelMobile__slides">
                     <div class="detailHotelMobile__slides--show">
