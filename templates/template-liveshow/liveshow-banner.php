@@ -1,6 +1,6 @@
 <div class="liveshow__banner">
         <div class="liveshow__banner--img">
-        <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array('class' => 'thumnail')); ?>
+        <?php echo get_the_post_thumbnail_url(get_the_ID(),'thumbnail'); ?>
         </div>
         <div class="liveshow__banner--content">
           <div class="liveshow__banner--content__title"><?php the_title(); ?></div>
