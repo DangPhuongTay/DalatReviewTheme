@@ -12,13 +12,9 @@ if (have_posts()) {
                 <div class="container__slides">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="image_empty">
-
                 <?php if (!function_exists('wc_get_gallery_image_html')) {
                         return;
                     }
-             
-
-
                     $attachment_ids = $product->get_gallery_image_ids();
                     if ($attachment_ids && $product->get_image_id()) {
                         foreach ($attachment_ids as $attachment_id) {
