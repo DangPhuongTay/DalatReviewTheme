@@ -1,5 +1,5 @@
 <div class="motorbike__container--banner">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/motorbike-banner.jpg" alt="">
+            <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array('class' => 'thumnail')); ?>
                <div class="motorbike__container--banner__btn">
                 <div class="motorbike__container--banner__box">
                     <?php

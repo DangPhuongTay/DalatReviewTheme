@@ -13,7 +13,6 @@ btnHotelSearch.addEventListener('click', ()=>{
 })
 btnHotelRoom.addEventListener('click', ()=>{
     secondDropDownBody.classList.add('listHotelRoom')
-    secondDropDownBody.classList.add('hotelFitterBlur')
 })
 btnHotelRoomMobile.addEventListener('click', ()=>{
     secondDropDownBody.classList.add('listHotelRoomMoblie')
