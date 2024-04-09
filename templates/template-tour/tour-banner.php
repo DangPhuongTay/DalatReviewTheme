@@ -1,5 +1,5 @@
 <div class="tour__banner"
-    style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumnail', array('class' => 'thumnail')); ?>');">
+    style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumnail'); ?>');">
     <div class="tour__banner--wrap ">
         <div class="tour__banner--heading">
             <h1>Tour & Trải nghiệm</h1>
