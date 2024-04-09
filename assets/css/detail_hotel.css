@@ -1,6 +1,15 @@
 #more {
     display: none;
 }
+
+/* empty img */
+.image_empty{
+    min-height: 636px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
 .detailHotel {
     margin: 0 auto;
     max-width: 1160px;
@@ -13,7 +22,6 @@
     width: 100%;
 }
 .detailHotel__top--link {
-    padding: 10px 0;
     display: flex;
     align-items: center;
     color: var(--color-text-19);
@@ -1223,7 +1231,7 @@ body.MapCarForm{
         display: none !important;
     }
     .detailHotel__banner{
-        margin-top: 14px;
+        margin-top: 40px;
         height: 0;
         position: relative;
         margin-bottom: -20px;
