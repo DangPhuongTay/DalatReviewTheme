@@ -6,7 +6,7 @@
     position: absolute;
     color: var(--color-background-6);
     font-weight: 700;
-    top:-7px;
+    top: -7px;
     right: 30px;
     font-size: 37px;
   }
@@ -141,7 +141,7 @@
     }
   
   }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 800px) {
     .slide__img--box{
       position: relative;
       z-index: 1111;
@@ -159,7 +159,7 @@
     .slide__img--close{
       position: absolute;
       color: var(--color-background-6);
-      top: 10px;
+      top: 10%;
       left: 10px;
       font-size: var(--size-text-7);
       font-weight: 700;
