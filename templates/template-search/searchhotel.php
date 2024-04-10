@@ -3,8 +3,8 @@
             <div class="hotel__fitter--wrapper">
                 <div class="hotel__fitter--search">
                     <p>Địa điểm</p>
-                    <input class="hotel__search" type="text" name="s" id="s" value="Hotel" onblur="if(this.value=='')this.value='Hotel'"
-                    onfocus="if(this.value=='Hotel')this.value=''" />
+                    <input class="hotel__search" type="text" name="s" id="s" value="" onblur="if(this.value=='')this.value=''"
+                    onfocus="if(this.value=='')this.value=''" />
                 </div>
                 <div class="hotel__fitter--search">
                     <p>Ngày nhận / trả phòng</p>
@@ -13,7 +13,7 @@
                 <div class="hotel__fitter--search room">
                     <p>Số khách & phòng</p>
                     <input type="search" placeholder="Chọn phòng" class="hotel__search">
-                    <!-- <div class="hotel__fitter--room">
+                    <div class="hotel__fitter--room">
                         <div class="hotel__fitter--room__inner">
                             <div class="hotel__fitter--room__content">
                                 <section class="hotel__fitter--room__item">
@@ -42,11 +42,11 @@
                                 </section>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     
                 </div>
                 <a href="#">
-                    <button type="submit" class="hotel__fitter--btn firstBtn">
+                    <button class="hotel__fitter--btn firstBtn">
                         Tìm kiếm
                     </button>
                 </a>
