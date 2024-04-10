@@ -126,7 +126,7 @@
                                     $image = wp_get_attachment_url($thumbnail_id);
                             ?>
 
-                                    <li><a href="tour"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
+                                    <li><a href="<?php echo home_url() ?>/tour"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
                     <?php
                                 }
                             }

@@ -1,6 +1,15 @@
 
 
   /* Position the image container (needed to position the left and right arrows) */
+
+  .slide__img--close{
+    position: absolute;
+    color: var(--color-background-6);
+    font-weight: 700;
+    top:-7px;
+    right: 30px;
+    font-size: 37px;
+  }
   .slide__img--box{
     position: relative;
     display: none;
@@ -24,10 +33,12 @@
   }
   /* Hide the images by default */
   .mySlides{
-    display: flex;align-items: center;justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .mySlides .woocommerce-product-gallery__image{
-    width:80%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +47,12 @@
   .mySlides  img {
     vertical-align: middle;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1060px;
     height: auto;
+
+    object-fit: cover;
+    min-width: 550px;
+  
   }
   
   /* Add a pointer when hovering over the thumbnail images */

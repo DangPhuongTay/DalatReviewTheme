@@ -144,12 +144,34 @@
                                     <ion-icon name="chevron-down-outline"></ion-icon>
                                 </div>
                             </div>
-                            <div class="filter__price primary__dropdown--button">
-                                <span>Lọc theo giá</span>
+
+                            
+                        
+                           
+                                 <?php function request() {
+                                    global $wp;
+                                    $url = $wp->request;
+                                    $requesturl = explode("/",  $url);
+                                    return $requesturl[0];
+                                } ?> 
+                                <form   method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
+                                    <div class="search">
+                            
+                                        <select   name="price"  onChange="this.form.submit();">
+                                        <option value="" selected>Giá</option>    
+                                        <option VALUE="0">0 - 100.000 </option>";                   
+                                        <option VALUE="100000">100.000 - 200.000</option>";
+                                        <option VALUE="200000">200.000 - 300.000</option>"; 
+                                        </select>
+                                    </div><!-- #search1 -->
+                            
+                            </form>
+                                 
+                                <!--<span>Lọc theo giá</span>
                                 <div class="primary__dropdown--icon">
                                     <ion-icon name="chevron-down-outline"></ion-icon>
-                                </div>
-                            </div>
+                                </div>-->
+                            
                         </div>
                     </div>
                 </div>

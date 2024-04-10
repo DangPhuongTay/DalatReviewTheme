@@ -7,18 +7,15 @@ if (have_posts()) {
         <?php global $product; ?>
         <?php global $comment; ?>
         <div class="detail__hotel--wrap">
-
             <!-- slide- area -->
             <div class="slide__img--box">
-                <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="container__slides">
-                    <?php if (!function_exists('wc_get_gallery_image_html')) {
+                <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
+                <div class="image_empty">
+                <?php if (!function_exists('wc_get_gallery_image_html')) {
                         return;
                     }
-
-
                     $attachment_ids = $product->get_gallery_image_ids();
-
                     if ($attachment_ids && $product->get_image_id()) {
                         foreach ($attachment_ids as $attachment_id) {
                             ?>
@@ -35,7 +32,7 @@ if (have_posts()) {
                         }
                     } ?>
 
-
+                </div>   
 
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -48,6 +45,7 @@ if (have_posts()) {
             <!-- banner area -->
             <div class="secondDropDown">
                 <?php get_template_part('templates/template-search/searchhotel'); ?>
+
             </div>
             <div class="detailHotel__banner">
                 <div class="detailHotel__top--link">
@@ -113,6 +111,7 @@ if (have_posts()) {
 
                                 <?php
                                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($attachment_id), $attachment_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                             
                                 ?>
 
                                 <?php
@@ -137,7 +136,7 @@ if (have_posts()) {
 
                                     <?php echo $product->get_price_html(); ?>
 
-
+                                    
                                 </span>
                                 <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                             </p>

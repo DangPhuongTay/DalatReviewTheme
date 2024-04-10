@@ -1,5 +1,14 @@
 <?php
-
+add_action( 'woocommerce_product_query', 'zero_price_products' );
+function zero_price_products( $q ){
+    $meta_query = $q->get( 'meta_query' );
+        $meta_query[] = array(
+        'key'       => '_price',
+        'value'     => 0,
+        'compare'   => '='
+    );
+    $q->set( 'meta_query', $meta_query );
+}
     add_action( 'after_setup_theme', 'setup_woocommerce_support' );
 
     function setup_woocommerce_support()
@@ -23,5 +32,7 @@
         }
         add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 
+
+        
     
 ?>
