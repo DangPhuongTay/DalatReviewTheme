@@ -1,15 +1,15 @@
 /*
 	* Theme Name: DaLatReviewTheme
 	* Description: Theme  wordpress create by team
-	* Theme URI: 
+	* Theme URI:
 	* Version: 1.0
 	* Author: team
 	* Author URI: tay
 	* Tags: theme wordpress, responsive
 	* Textdomain: DaLatReviewTheme
 	* Language Folder: /languages
-	* font-family: 'Montserrat', sans-serif; 
- 	* font-family: 'Playfair Display', serif; 
+	* font-family: 'Montserrat', sans-serif;
+ 	* font-family: 'Playfair Display', serif;
  */
 
 /*! RESET STYLE */
@@ -113,8 +113,8 @@ p,span{
   --color-text-16: #e6e6e6;
   --color-text-17: #e05000;
   --color-text-18: #fef1e5;
-  --color-text-19: #2073f9;  
-  --color-text-20: #4d40cc;  
+  --color-text-19: #2073f9;
+  --color-text-20: #4d40cc;
   --color-text-21: #8a8a8a;
   --color-text-22: #ebebeb;
   --color-text-23:  #12B7DA;
@@ -172,6 +172,7 @@ p,span{
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
 /*! button */
 
 .firstBtn {
@@ -219,7 +220,6 @@ p,span{
   max-width: 1160px;
   margin: auto !important;
 }
-
 /*! search filter */
 
 .search__filter {
@@ -279,8 +279,6 @@ p,span{
   margin: 0 10px 0 20px;
 }
 
-
-
 /*! first dropdown */
 
 .primary__dropdown {
@@ -316,7 +314,6 @@ body.active .primary__dropdown--content{
   display: block;
 }
 
-
 .primary__dropdown--icon {
   margin-left: 6px;
 }
@@ -337,11 +334,8 @@ body.active .primary__dropdown--content{
   width: 250px;
   background: var(--color-background-6);
   z-index: 666;
-  
 }
-/* .primary__dropdown--button.active .primary__dropdown--content{
-  display: block;
-} */
+
 .show{
   display: block;
 }
@@ -387,10 +381,6 @@ body.active .primary__dropdown--content{
 .total__filter--btn__text {
   margin-left: 8px;
 }
-
-/*! calendarFilter */
-
-
 
 /*! firstProduct */
 
@@ -546,8 +536,6 @@ min-height: 140px;
   }
 }
 /*! breakCrumb */
-.breakCrumb{
-}
 .breakCrumb__list {
   margin-top: 50px;
   margin-bottom: 20px;
@@ -692,12 +680,12 @@ min-height: 140px;
   margin-left: 15px;
 }
 .hightlightProduct__content--list__item{
-  width: 200px; 
+  width: 200px;
   margin-right: 35px;
   cursor: pointer;
 }
 .hightlightProduct__content--list__item--wrap{
-  width: 220px; 
+  width: 220px;
 }
 .hightlightProduct__img{
   border-radius: var(--border-radius-size-5);
@@ -729,9 +717,9 @@ min-height: 140px;
   margin-bottom: 64px;
 
 }
-body.tourfirstQuestion #secondQuestion__btn, 
+body.tourfirstQuestion #secondQuestion__btn,
 body.tourfirstQuestion #firstQuestion__btn,
-body.tourfirstQuestion #thirdQuestion__btn, 
+body.tourfirstQuestion #thirdQuestion__btn,
 body.tourfirstQuestion #fourthQuestion__btn,
 body.tourfirstQuestion #fifthQuestion__btn{
   height: auto;
@@ -759,24 +747,17 @@ body.tourfirstQuestion #fifthQuestion__btn{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .firstQuestion__content--list__item:last-child{
   border: none;
 }
 .firstQuestion__top--title{
   margin-bottom: 10px;
-  
 }
 .firstQuestion__top--title h3{
   font-size: var(--size-text-6);
 }
-.firstQuestion__top--icon{
-  
-}
-.firstQuestion__top--icon ion-icon{
-  
-}
+
 .firstQuestion__bottom{
   position: absolute;
   top: 100%;
@@ -794,7 +775,6 @@ body.tourfirstQuestion #fifthQuestion__btn{
 }
 .firstQuestion__bottom ul li{
   position: relative;
-  
 }
 .firstQuestion__bottom ul li::before{
   content: "";
@@ -805,7 +785,7 @@ body.tourfirstQuestion #fifthQuestion__btn{
   font-size: 20px;
   color: var(--color-text-0);
   border-radius: var(--border-radius-size-6);
-  top: 40%; 
+  top: 40%;
 }
 .firstQuestion__bottom ul li a{
   margin-left: 15px;
@@ -846,7 +826,7 @@ body.tourfirstQuestion #fifthQuestion__btn{
     margin-left: 8px;
   }
   .hightlightProduct__content--list__item{
-    width: 182px; 
+    width: 182px;
     margin-right: 15px;
   }
   .hightlightProduct__content--list__item--wrap{
@@ -857,9 +837,7 @@ body.tourfirstQuestion #fifthQuestion__btn{
   margin-right: 12px;
   display: flex;
   flex-wrap: wrap;
-  
 }
 .comment-text{
   margin-left: 10px;
-  
 }
