@@ -6,7 +6,7 @@
     position: absolute;
     color: var(--color-background-6);
     font-weight: 700;
-    top:-7px;
+    top: -7px;
     right: 30px;
     font-size: 37px;
   }
@@ -47,9 +47,8 @@
   .mySlides  img {
     vertical-align: middle;
     width: 100%;
-    max-width: 1060px;
+    max-width: 1000px;
     height: auto;
-
     object-fit: cover;
     min-width: 550px;
   
@@ -141,7 +140,7 @@
     }
   
   }
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 800px) {
     .slide__img--box{
       position: relative;
       z-index: 1111;
@@ -159,10 +158,11 @@
     .slide__img--close{
       position: absolute;
       color: var(--color-background-6);
-      top: 10px;
+      top: 0;
       left: 10px;
       font-size: var(--size-text-7);
       font-weight: 700;
+      font-size: 30px;
     }
     .mySlides .woocommerce-product-gallery__image{
       width: 100vw;

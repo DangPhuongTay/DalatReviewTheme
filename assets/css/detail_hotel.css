@@ -4,7 +4,8 @@
 
 /* empty img */
 .image_empty{
-    min-height: 636px;
+    min-height: 650px;
+    max-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,11 +80,13 @@
 .detailHotel__img--right .woocommerce-product-gallery__image a {
     width: 100% !important;
     height: 20vh;
+    pointer-events: none;
 }
 
 .detailHotel__img--right .woocommerce-product-gallery__image a img {
     width: 100% !important;
     height: 20vh;
+    pointer-events: none;
 }
 
 .detailHotel__info {
@@ -1347,6 +1350,9 @@ body.MapCarForm {
     }
 }
 @media (max-width: 800px) {
+    .woocommerce-product-gallery__image a{
+        pointer-events: none;
+    }
     .detail__hotel--wrap .hotelMobile__fitter {
         display: none !important;
     }
