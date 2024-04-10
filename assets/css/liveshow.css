@@ -278,6 +278,9 @@ body.listLiveshowSub2 .liveshow__container--body__menu--item__dropdown--2{
 .liveshow__container--body__product--list .firstProduct__info{
     background-color: var(--color-background-6);
 }
+.firstProduct__content--list__item{
+    min-height: 60px;
+}
 .liveshow__container--body__product--list .firstProduct__content--list__item{
     margin-bottom: 15px;
 }
