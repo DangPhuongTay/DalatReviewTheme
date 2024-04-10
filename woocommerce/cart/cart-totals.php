@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<h4><?php esc_html_e( 'Tổng cộng', 'woocommerce' ); ?></h4>
+	<h5 style="color:#444"><?php esc_html_e( 'Tổng cộng', 'woocommerce' ); ?></h5>
 
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
@@ -70,7 +70,7 @@ defined( 'ABSPATH' ) || exit;
 			if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) {
 				foreach ( WC()->cart->get_tax_totals() as $code => $tax ) { // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 					?>
-					<tr class="tax-rate tax-rate-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
+					<tr  class="tax-rate tax-rate-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
 						<th><?php echo esc_html( $tax->label ) . $estimated_text; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></th>
 						<td data-title="<?php echo esc_attr( $tax->label ); ?>"><?php echo wp_kses_post( $tax->formatted_amount ); ?></td>
 					</tr>
@@ -78,7 +78,7 @@ defined( 'ABSPATH' ) || exit;
 				}
 			} else {
 				?>
-				<tr class="tax-total">
+				<tr class="tax-total" >
 					<th><?php echo esc_html( WC()->countries->tax_or_vat() ) . $estimated_text; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></th>
 					<td data-title="<?php echo esc_attr( WC()->countries->tax_or_vat() ); ?>"><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>

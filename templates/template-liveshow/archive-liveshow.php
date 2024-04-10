@@ -11,7 +11,7 @@
             }
             $args = array(
                 'post_type' => 'product',
-                'posts_per_page' => 6,
+                'posts_per_page' => 8,
                 'paged' => $paged,
                 'product_cat' => request()
                 );
