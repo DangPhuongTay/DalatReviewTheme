@@ -85,6 +85,7 @@
 .detailHotel__img--right .woocommerce-product-gallery__image a img {
     width: 100% !important;
     height: 20vh;
+    pointer-events: none;
 }
 
 .detailHotel__info {

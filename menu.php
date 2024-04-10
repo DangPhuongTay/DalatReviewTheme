@@ -102,7 +102,7 @@
                             $image = wp_get_attachment_url($thumbnail_id);
                     ?>
 
-                            <li><a href="tour"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a></li>
+                            <li><a href="<?php echo home_url() ?>/<?php echo $cat->slug ?>"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a></li>
                             <?php
 
 
@@ -126,7 +126,7 @@
                                     $image = wp_get_attachment_url($thumbnail_id);
                             ?>
 
-                                    <li><a href="<?php echo home_url() ?>/tour"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
+                                    <li><a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
                     <?php
                                 }
                             }

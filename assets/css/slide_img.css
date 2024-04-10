@@ -159,10 +159,11 @@
     .slide__img--close{
       position: absolute;
       color: var(--color-background-6);
-      top: 10%;
+      top: 0;
       left: 10px;
       font-size: var(--size-text-7);
       font-weight: 700;
+      font-size: 30px;
     }
     .mySlides .woocommerce-product-gallery__image{
       width: 100vw;
