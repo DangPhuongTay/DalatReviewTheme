@@ -111,6 +111,7 @@ if (have_posts()) {
 
                                 <?php
                                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($attachment_id), $attachment_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                             
                                 ?>
 
                                 <?php
