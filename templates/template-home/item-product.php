@@ -66,7 +66,8 @@
                                 </div>
                                 <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
                             </div>
-                        </div>
+                  
+                        </div>         <?php wc_get_template( 'loop/add-to-cart.php' ); ?>
                     </a>
                 </div>
                 

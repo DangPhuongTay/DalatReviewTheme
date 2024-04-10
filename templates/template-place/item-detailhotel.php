@@ -136,13 +136,14 @@
                                 <div
                                     class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
                                     <?php echo $product->get_price_html(); ?>
+                                    
                                 </div>
                                 <div
                                     class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
-                                    Giá 1 đêm đã bao gồm thuế
+                                    Giá 1 đêm đã bao gồm thuế 
                                 </div>
                             </div>
-                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
+                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?></a> </div>
                         </div>
                     </div>
 

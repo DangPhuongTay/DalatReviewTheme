@@ -1,29 +1,73 @@
-    <div class="firstProduct__content--list">
-
-    <?php
-
-    global $paged;
-  
-    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-    function request() {
+<div class="select_wrapper" style="background: #fff;">
+<?php     function request() {
         global $wp;
         $url = $wp->request;
         $requesturl = explode("/",  $url);
         return $requesturl[0];
-    }
+    } ?>
+<form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
+        <div class="search">
 
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' =>8,
-        'paged' => $paged,
-        'product_cat' => request()
-        );
+            <select class="styled" name="price"  onChange="this.form.submit();">
+            <option value="" selected>Giá</option>    
+            <option VALUE="0">0 - 100.000 </option>";                   
+            <option VALUE="100000">100.000 - 200.000</option>";
+            <option VALUE="200000">200.000 - 300.000</option>"; 
+            </select>
+        </div><!-- #search1 -->
+
+</form>
+
+</div>
+    <div class="firstProduct__content--list">
+    <?php
+    global $paged;
+    if (isset($_GET['price'])) {
+        $variable = $_GET['price'];
+        $args = array(
+            'post_type' => 'product',
+            'posts_per_page' =>8,
+            'paged' => $paged,
+            'product_cat' => request(),
+            'meta_query' => array(
+                'relation' => 'AND',
+                array(
+                        'key'       => '_price',
+                        'compare'   => '<=',
+                        'type'    => 'numeric',
+                        'value'     => $variable + 100000,
+                ),
+                array(
+                    'key'       => '_price',
+                    'compare'   => '>=',
+                    'type'    => 'numeric',
+                    'value'     => $variable,
+                ),
+   
+                    
+             ),
+            );
+    }else {
+        $args = array(
+            'post_type' => 'product',
+            'posts_per_page' =>8,
+            'paged' => $paged,
+            'product_cat' => request(),
+            
+            ); 
+    }
+   
+
+ 
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+   
+
+    
     $loop = new WP_Query( $args );
     $count = $loop->found_posts;;
     if ( $loop->have_posts() ) {
         
         while ( $loop->have_posts() ) : $loop->the_post();
-
         get_template_part('templates/template-tour/item', 'tour');
         endwhile;
     } else {

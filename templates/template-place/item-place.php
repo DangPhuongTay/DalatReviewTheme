@@ -61,7 +61,7 @@
                 </div>
                 <div class="hotel__right--tag">
                     <div class="hotel__right--tag__wrap">
-
+                            
                         <?php
                         foreach ($product->attributes as $taxonomy => $attribute) {
                             foreach ($attribute->get_terms() as $term) {
@@ -101,7 +101,8 @@
                     Xem chi tiết
                 </div>
                 <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-            </div>
+         
         </div>
     </a>
+   <?php wc_get_template( 'loop/add-to-cart.php' ); ?>
 </div>

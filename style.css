@@ -51,7 +51,7 @@ input {
   -webkit-tap-highlight-color: transparent;
 }
 ul,
-ol {
+ol,li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -547,9 +547,10 @@ min-height: 140px;
 }
 /*! breakCrumb */
 .breakCrumb{
-margin-top: 50px;
 }
 .breakCrumb__list {
+  margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -596,19 +597,15 @@ margin-top: 50px;
   margin-bottom: 32px;
 }
 .firstReview__card{
-  position: relative;
   display: flex;
   align-items: center;
-  
+  justify-content: flex-start;
 }
 .firstReview__card--item{
-  width: 50%;
-  border: 1px solid var(--color-background-16);
   border-radius: var(--border-radius-size-4);
-  padding: 20px;
-  margin-right: 20px;
   font-size: var(--size-text-4);
-  min-height: 250px;
+  display: flex;
+  justify-content: flex-start;
 }
 .scoreStar{
   color: var(--color-text-5);
@@ -855,4 +852,14 @@ body.tourfirstQuestion #fifthQuestion__btn{
   .hightlightProduct__content--list__item--wrap{
     width: 182px;
   }
+}
+.comment_container{
+  margin-right: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.comment-text{
+  margin-left: 10px;
+  
 }
