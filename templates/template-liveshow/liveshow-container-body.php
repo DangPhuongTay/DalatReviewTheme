@@ -1,7 +1,7 @@
 <div class="liveshow__container--body">
     <div class="liveshow__container--body__wrap">
         <div class="liveshow__container--body__menu">
-            <div class="liveshow__container--body__menu--wrap liveshow__boder">
+        <div class="liveshow__container--body__menu--wrap">
                 <div class="liveshow__container--body__menu--title">Danh mục</div>
                 <?php
                 $taxonomy = 'product_cat';
@@ -16,6 +16,7 @@
                     'orderby' => $orderby,
                     'show_count' => $show_count,
                     'pad_counts' => $pad_counts,
+                    'parent' => 31,
                     'hierarchical' => $hierarchical,
                     'title_li' => $title,
                     'hide_empty' => $empty
@@ -23,7 +24,16 @@
                 $all_categories = get_categories($args);
 
                 foreach ($all_categories as $cat) {
-                    if ($cat->name == 'liveshow') {
+                    if ( $cat->term_id != 24) { ?>
+                        <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub()"> 
+                            <div class="cart__container--top__left--all__left--check"><?php echo $cat->name ?>
+
+                            </div>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                        
+                        </div>
+                        
+                        <?php
                         $category_id = $cat->term_id;
                         $args2 = array(
                             'taxonomy' => $taxonomy,
@@ -38,20 +48,26 @@
                         );
                         $sub_cats = get_categories($args2);
                         if ($sub_cats) {
-
+                            ?>
+                            <div class="liveshow__container--body__menu--item__dropdown">
+                        <div class="liveshow__container--body__menu--item__content">
+                            <?php
                             foreach ($sub_cats as $sub_category) { ?>
-                                <div class="liveshow__container--body__menu--item">
-                                    <a href="<?php echo $sub_category->slug ?>" class="cart__container--top__left--all__left--check">
-                                        <?php echo $sub_category->name ?>
-                                        <input type="checkbox" checked="checked">
-                                        <span class="checkmark"></span>
-                                    </a>
-                                </div>
-                            <?php }
 
+                            <div class="liveshow__container--body__menu--item">
+                            <a href="<?php echo $sub_category->slug ?>" class="cart__container--top__left--all__left--check">
+                                        <?php echo $sub_category->name ?>
+
+                                    </a>
+                            </div>
+                        
+                            <?php }
+                            ?> </div></div><?php
                         }
+                        
                     }
                 }
+                
                 ?>
 
             </div>
@@ -71,79 +87,12 @@
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Lịch LiveShow Tháng 2
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Lịch LiveShow Tháng 3
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub1()">
-                    <label class="cart__container--top__left--all__left--check">Mây Lang Thang Show
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </div>
-                <div class="liveshow__container--body__menu--item__dropdown--1">
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Mây Lang Thang Show Tháng 1
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Mây Lang Thang Show Tháng 2
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Mây Lang Thang Show Tháng 3
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub2()">
-                    <label class="cart__container--top__left--all__left--check">Lululola Show
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </div>
-                <div class="liveshow__container--body__menu--item__dropdown--2">
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Lululola Show Tháng 1
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Lululola Show Tháng 2
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="liveshow__container--body__menu--item__content">
-                        <label class="cart__container--top__left--all__left--check">Lululola Show Tháng 3
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
                 </div>
             </div>
 
         </div>
     </div>
     <div class="liveshow__container--body__product">
-        <div class="liveshowMobile__title">Vé liveshow</div>
         <div class="liveshow__container--body__product--filter">
             <p class="liveshow__container--body__product--filter__find">
                 Tìm thấy <b>50</b> kết quả
@@ -197,49 +146,8 @@
         <!--  -->
         <!-- Produclist -->
         <!--  -->
-        <form method="post" action="<?php the_permalink() ?>">
-            <select name="my_status" id="stato" class="postform" onchange="submit();">
-                <option selected="selected">Choose a status</option>
-                <option value="aperta">Aperta</option>
-                <option value="chiusa">Chiusa</option>
-            </select>
-        </form>
-        <?php /* Reset filter */ ?>
-        <p><a href="<?php the_permalink(); ?>">Clear filter</a></p>
 
-        <?php
-        if (!isset($_POST['my_status']) || '' == $_POST['my_status']) {
 
-        } else {
-
-            $stato = $_POST['my_status'];
-
-            // Create new query
-            $query = new WP_Query(
-                array(
-                    'post_type' => 'offerta_lavoro', // your CPT
-                    'post_status' => 'publish',
-                    'meta_query' => array(
-                        array(
-                            'key' => 'crb_attiva_nonattiva',
-                            'value' => $stato,
-                        ),
-                    ),
-                )
-            );
-
-            // Loop
-            if ($query->have_posts()):
-                while ($query->have_posts()):
-                    $query->the_post();
-
-                endwhile;
-            endif;
-
-            // reset query to default
-            wp_reset_postdata();
-
-        } ?>
         <div class="liveshow__container--body__product--list">
             <?php
             get_template_part('templates/template-liveshow/archive', 'liveshow');

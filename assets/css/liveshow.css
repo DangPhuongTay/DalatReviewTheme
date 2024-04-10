@@ -203,9 +203,7 @@
     width: 210px;
 }
 
-.liveshow__container--body__product--filter__price .cart__container--top__left--all__left--check {
-    padding-left: 25px;
-}
+
 
 .liveshow__container--body__product--list .user__booking--popular__slide--items__wrapper {
     margin-bottom: 12px;
@@ -326,7 +324,7 @@ body.listLiveshowSub2 .liveshow__container--body__menu--item__dropdown--2 {
 
 .liveshow__container--body__menu--item__content {
     display: flex;
-    padding: 10px 16px;
+    flex-direction: column;
     align-items: flex-start;
     border-radius: var(--border-radius-size-2);
 }
