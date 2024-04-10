@@ -1,22 +1,5 @@
 <div class="select_wrapper" style="background: #fff;">
-<?php     function request() {
-        global $wp;
-        $url = $wp->request;
-        $requesturl = explode("/",  $url);
-        return $requesturl[0];
-    } ?>
-<form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
-        <div class="search">
 
-            <select class="styled" name="price"  onChange="this.form.submit();">
-            <option value="" selected>Giá</option>    
-            <option VALUE="0">0 - 100.000 </option>";                   
-            <option VALUE="100000">100.000 - 200.000</option>";
-            <option VALUE="200000">200.000 - 300.000</option>"; 
-            </select>
-        </div><!-- #search1 -->
-
-</form>
 
 </div>
     <div class="firstProduct__content--list">
