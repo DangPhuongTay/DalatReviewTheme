@@ -239,7 +239,7 @@
                 </div>
             </div>
         </div>
-        <div class="header__container--chatcall">
+        <!-- <div class="header__container--chatcall">
             <div class="header__box--chatcall">
 
                 <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
@@ -291,5 +291,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>

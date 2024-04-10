@@ -350,10 +350,10 @@ body.chatBox .header__container--chat{
 }
 .header__mobile--box ul li a{
     display: flex;
-    width: 100%;
     align-items: center;
     padding: 15px 25px;
     border-bottom: 1px solid var(--color-text-10);
+   
 }
 .header__mobile--box ul li a img{
     width: 24px;
@@ -632,12 +632,6 @@ body.checker .login__mobile{
         background: var(--color-background-6);
         border-radius: var(--border-radius-size-2);
         overflow: hidden;
-    }
-   
-    .header__mobile--box li img{
-    
-       height: 30px;
-       border-radius: 50%;
     }
     .header__box--chatcall{
         padding-right: 5px;
