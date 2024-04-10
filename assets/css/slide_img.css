@@ -47,9 +47,8 @@
   .mySlides  img {
     vertical-align: middle;
     width: 100%;
-    max-width: 1060px;
+    max-width: 1000px;
     height: auto;
-
     object-fit: cover;
     min-width: 550px;
   

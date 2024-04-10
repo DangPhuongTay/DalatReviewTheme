@@ -4,7 +4,8 @@
 
 /* empty img */
 .image_empty{
-    min-height: 636px;
+    min-height: 650px;
+    max-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
