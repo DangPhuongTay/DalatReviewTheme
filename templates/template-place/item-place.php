@@ -101,8 +101,7 @@
                     Xem chi tiết
                 </div>
                 <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-         
+                </div>
         </div>
     </a>
-   <?php wc_get_template( 'loop/add-to-cart.php' ); ?>
 </div>
