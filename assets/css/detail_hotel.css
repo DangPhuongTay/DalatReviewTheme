@@ -1346,7 +1346,6 @@ body.MapCarForm {
         right: -70%;
     }
 }
-
 @media (max-width: 800px) {
     .detail__hotel--wrap .hotelMobile__fitter {
         display: none !important;
@@ -1364,14 +1363,12 @@ body.MapCarForm {
         padding-bottom: 75%;
         overflow: hidden;
     }
-
     .detailHotel {
         position: relative;
         background: #fff;
         z-index: 1;
         border-radius: 20px;
     }
-
     .hotel__fitter,
     .detailHotel__top--link ion-icon,
     .detailHotel__img,
