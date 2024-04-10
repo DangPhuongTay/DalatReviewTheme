@@ -134,7 +134,21 @@
     overflow: hidden;
   }
 
+  @media only screen and (max-width: 1150px) {
+    .mySlides img{
+    max-width: 930px;
+    }
+
+}
+@media only screen and (max-width: 1020px){}
+  .mySlides img{
+    max-width: 860px;
+    }  
+
   @media only screen and (max-width: 850px) {
+    .mySlides img{
+      max-width: 800px;
+      }  
     .container__slides {
       width: 100%;
     }
@@ -165,6 +179,6 @@
       font-size: 30px;
     }
     .mySlides .woocommerce-product-gallery__image{
-      width: 100vw;
+      width: 100%;
     }
   }
