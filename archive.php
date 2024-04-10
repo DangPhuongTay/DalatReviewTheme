@@ -17,6 +17,6 @@ if(strpos( sb_get_current_url(), "/place" )){
 }elseif(strpos( sb_get_current_url(), "/liveshow" )){
     get_template_part('templates/template-liveshow');
 };
-get_footer();
+;
 
 
