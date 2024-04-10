@@ -13,7 +13,7 @@
             $count = $loop->found_posts;;
             if ( $loop->have_posts() ) {
                 while ( $loop->have_posts() ) : $loop->the_post();
-                get_template_part('templates/template-home/item', 'product');  
+                get_template_part('templates/template-home/item', 'new');
                 endwhile;
             } else {
                 echo __( 'No products found' );
