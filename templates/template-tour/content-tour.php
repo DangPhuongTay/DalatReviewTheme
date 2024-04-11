@@ -195,13 +195,13 @@ if (have_posts()) {
                                 </div>
                             </div>
                         </div> -->
-                        <div class="detail__tour--content__left--header">
+ <div class="detail__tour--content__left--header">
                             Về dịch vụ này
                         </div>
                         <div class="detail__tour--content__left--service">
                             <?php echo $product->get_description(); ?>
                         </div>
- <!--
+
                         <div class="detail__tour--content__left--header">
                             Tiết kiệm hơn khi du lịch Đà Lạt
                         </div>
@@ -222,7 +222,7 @@ if (have_posts()) {
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
                                 <a href="">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="detail__tour--content__left--sale__info shadow">
 
                             <div class="detail__tour--content__left--sale__info--header">

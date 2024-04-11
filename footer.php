@@ -25,7 +25,7 @@
                     Dịch vụ
                 </div>
                 <div class="footer__banner--content">
-                    <ul class="footer__listUnit">
+                    <ul class="footer__listUnit ">
                         <li><a href="hotel">Khách sạn</a></li>
                         <li><a href="vehicle">Cho thuê xe</a></li>                       
                         <li><a href="tour-camping">Campling Đà Lạt</a></li>                      
