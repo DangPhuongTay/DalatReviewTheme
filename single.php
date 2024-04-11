@@ -5,8 +5,8 @@ get_header();
     function slug(){
         global $product;
         global $post; 
-        $termproduct = get_the_terms($product->ID, 'product_cat');
-        $termpost = get_the_terms($post->ID, 'category');
+        $termproduct = get_the_terms($product->term_id, 'product_cat');
+        $termpost = get_the_terms($post->term_id, 'category');
         if($termproduct){
             foreach ($termproduct as $term) {
                 $cat_parent_id = $term->parent;
