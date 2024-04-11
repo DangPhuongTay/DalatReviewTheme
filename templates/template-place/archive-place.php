@@ -6,7 +6,6 @@
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
             add_filter( 'woocommerce_catalog_orderby', 'swat_sort_by_title' );
 
-            
             if (isset($_GET['price'])) {
                 $variable = $_GET['price'];
                 $args = array(
@@ -17,43 +16,56 @@
                     'orderby'=>'price',
                     'order'=>$variable,
                     );
-            }else {
-                $args = array(
-                    'post_type' => 'product',
-                    'posts_per_page' =>8,
-                    'paged' => $paged,
-                    'product_cat' => request(),
-                    
-                    ); 
-            }
+            }elseif (isset($_GET['minprice']) && isset($_GET['maxprice'])) {
 
-            if (isset($_GET['pricenumber'])) {
-                $variable = $_GET['pricenumber'];
                 $args = array(
                     'post_type' => 'product',
                     'posts_per_page' =>8,
                     'paged' => $paged,
                     'product_cat' => request(),
-                    'meta_query' => array(
-                        array(
+                    'meta_query' => array( 
+                        'relation' => 'AND',
+                            array(
+                                    'key'       => '_price',
+                                    'compare'   => '<=',
+                                    'type'    => 'numeric',
+                                    'value'     => $_GET['maxprice'],
+                            ),
+                            array(
                                 'key'       => '_price',
-                                'compare'   => '<=',
+                                'compare'   => '>=',
                                 'type'    => 'numeric',
-                                'value'     => $variable ,
-                        )
+                                'value'     => $_GET['minprice'],
+                            ),
            
                             
                      ),
                     );
-            }else {
-                $args = array(
-                    'post_type' => 'product',
-                    'posts_per_page' =>8,
-                    'paged' => $paged,
-                    'product_cat' => request(),
-                    
-                    ); 
+                } elseif (isset($_GET['pricehight'])) {
+                    $args = array(
+                        'post_type' => 'product',
+                        'posts_per_page' =>8,
+                        'paged' => $paged,
+                        'product_cat' => request(),
+                        'meta_query' => array( 
+                            'relation' => 'AND',
+                                array(
+                                        'key'       => '_price',
+                                        'compare'   => '>=',
+                                        'type'    => 'numeric',
+                                        'value'     => $_GET['pricehight'],
+                                ),));
+                    }else {
+                    $args = array(
+                        'post_type' => 'product',
+                        'posts_per_page' =>8,
+                        'paged' => $paged,
+                        'product_cat' => request(),
+                        
+                        ); 
             }
+
+            
             $loop = new WP_Query( $args );
             $count = $loop->found_posts;;
             if ( $loop->have_posts() ) {
