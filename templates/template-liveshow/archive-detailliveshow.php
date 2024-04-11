@@ -6,9 +6,9 @@
         return $wp->request;
     }
     $args = array(
-'post_type'      => 'product',
-'posts_per_page' => 10,
-'product_cat'    => request()
+    'post_type'      => 'product',
+    'posts_per_page' => 10,
+    'product_cat'    => request()
 );
 ?>
 <?php $getposts = new WP_query($args); ?>

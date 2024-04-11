@@ -26,6 +26,8 @@
                     </div> -->
                     <div class="hotel__left--item">
                         <p class="hotel__left--item__title">Lọc theo giá</p>
+
+                        
                         <?php 
                         function request() {
                             global $wp;
@@ -33,18 +35,8 @@
                             $requesturl = explode("/",  $url);
                             return $requesturl[0];
                         } ?>
-                        <form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
-                            <div>
-                                <button class="hotel__left--star" value="ASC"  name="price"  onChange="this.form.submit();">Thấp tới cao</button>       
-                                <button class="hotel__left--star" value="DESC"  name="price"  onChange="this.form.submit();">Cao đến thấp</button>
-                                <!-- <button class="hotel__left--star" name="pricenumber"  VALUE="0">Dưới 100.000 cá</button>                 
-                                <button class="hotel__left--star" name="pricenumber" VALUE="100000" onChange="this.form.submit();" >100.000 - 200.000 cá</button>
-                                <button class="hotel__left--star" name="pricenumber" VALUE="200000"  onChange="this.form.submit();">200.000 - 300.000 cá</button>  -->
-                                <input type="range" name="pricenumber" min="0" max="1000000000">
-                                <input type="submit" onChange="this.form.submit();">
-                            </div>
-
-                        </form>
+                        <!-- fitter price -->
+                        <?php get_template_part('templates/template-place/fitter', 'priceplace'); ?>
                     </div>
                     <div class="hotel__left--content location">
                         <div class="hotel__left--content__title">
