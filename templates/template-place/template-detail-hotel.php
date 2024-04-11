@@ -1717,7 +1717,7 @@ get_header(); ?>
                                                     </div>
                                                 </div>
                                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                                    <ion-icon name="location-outline"></ion-icon>
+                                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                                     <span class="fourProductList__wrapper--info__location"> 2.1km từ
                                                         Trung tâm thành phố,Đà Lạt</span>
                                                 </div>
@@ -1772,7 +1772,7 @@ get_header(); ?>
                                                     </div>
                                                 </div>
                                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                                    <ion-icon name="location-outline"></ion-icon>
+                                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                                     <span class="fourProductList__wrapper--info__location"> 2.1km từ
                                                         Trung tâm thành phố,Đà Lạt</span>
                                                 </div>
@@ -1827,7 +1827,7 @@ get_header(); ?>
                                                     </div>
                                                 </div>
                                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                                    <ion-icon name="location-outline"></ion-icon>
+                                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                                     <span class="fourProductList__wrapper--info__location"> 2.1km từ
                                                         Trung tâm thành phố,Đà Lạt</span>
                                                 </div>
@@ -1882,7 +1882,7 @@ get_header(); ?>
                                                     </div>
                                                 </div>
                                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                                    <ion-icon name="location-outline"></ion-icon>
+                                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                                     <span class="fourProductList__wrapper--info__location"> 2.1km từ
                                                         Trung tâm thành phố,Đà Lạt</span>
                                                 </div>

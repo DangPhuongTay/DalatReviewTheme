@@ -30,7 +30,7 @@
                             if ($term->taxonomy == 'pa_address') {
                                 ?>
                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
+                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                     <span class="fourProductList__wrapper--info__location">
                                     <?php echo $term->name; ?>
                                     </span>
