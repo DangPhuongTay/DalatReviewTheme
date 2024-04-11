@@ -138,40 +138,14 @@
                         </div>
                         <div class="gap"></div>
                         <div class="quick__filter--entry__content--right">
-                            <div class="filter__date primary__dropdown--button">
-                                <span>Ngày tham gia</span>
-                                <div class="primary__dropdown--icon">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </div>
-                            </div>
 
-                            
-                        
-                           
                                  <?php function request() {
                                     global $wp;
                                     $url = $wp->request;
                                     $requesturl = explode("/",  $url);
                                     return $requesturl[0];
                                 } ?> 
-                                <form   method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
-                                    <div class="search">
-                            
-                                        <select   name="price"  onChange="this.form.submit();">
-                                        <option value="" selected>Giá</option>    
-                                        <option VALUE="0">0 - 100.000 </option>";                   
-                                        <option VALUE="100000">100.000 - 200.000</option>";
-                                        <option VALUE="200000">200.000 - 300.000</option>"; 
-                                        </select>
-                                    </div><!-- #search1 -->
-                            
-                            </form>
-                                 
-                                <!--<span>Lọc theo giá</span>
-                                <div class="primary__dropdown--icon">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </div>-->
-                            
+
                         </div>
                     </div>
                 </div>
@@ -188,6 +162,37 @@
                         <span>Lọc</span>
                     </div>
                 </div>
+            </div>
+            <div class="total__filter--list shadow">
+            <form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
+                            <div>
+                                <button class="hotel__left--star" value="ASC"  name="price"  onChange="this.form.submit();">Thấp tới cao</button>       
+                                <button class="hotel__left--star" value="DESC"  name="price"  onChange="this.form.submit();">Cao đến thấp</button>
+                              
+                                
+                            </div>
+
+                        </form>
+                        <form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
+                            <div>
+                                <button class="hotel__left--star" value="5000000"  name="pricehight"  onChange="this.form.submit();">Trên 5.000.000</button>
+                        
+                                
+                            </div>
+
+                        </form>
+                        <form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
+                            <div>
+                                <section class="range-slider">
+                                <span class="rangeValues"></span>
+                                <input class="range__input" value="200000" min="200000" name="minprice" max="5000000" step="100000" type="range" >
+                                <input class="range__input"  value="5000000" min="200000" name="maxprice" max="5000000" step="100000" type="range">
+                            </section>
+                            <input class="range__submit" type="submit" onChange="this.form.submit();">
+                            </div>
+
+                        </form>
+                   
             </div>
         </div>
     </div>
@@ -264,4 +269,3 @@
         </div>
     </div>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>

@@ -6,6 +6,7 @@ const btnHotelSearchMobile = document.querySelector('.hotelMobile__fitter--locat
 const closeHotelFitterBlur = document.querySelector('.hotel__fitter--blur');
 const closeHotelFitterBlur2 = document.querySelector('.hotel__fitter--blur__2');
 
+
 const secondDropDownBody = document.querySelector('body');
 
 btnHotelSearch.addEventListener('click', ()=>{
@@ -37,3 +38,4 @@ closeHotelFitterBlur2.addEventListener('click', ()=>{
     secondDropDownBody.classList.remove('listHotelDateMoblie')
     secondDropDownBody.classList.remove('hotelFitterBlur2')
 })
+
