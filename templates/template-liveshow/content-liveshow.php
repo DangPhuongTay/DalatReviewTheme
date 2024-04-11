@@ -92,15 +92,19 @@ if (have_posts()) {
                         <?php 
 
                     get_template_part('templates/template-liveshow/item','detailliveshow');  
-?>
+                    ?> 
+                    
+                        <div class="detail__liveshow--content__right--item-btn">
+                        <?php wc_get_template('loop/add-to-cart.php'); ?> 
+                        </div>
                     </div>
+                    
                 </div>
             </div>
 
         </section>
 
         <?php
-
     }
 }
 get_footer();?>
