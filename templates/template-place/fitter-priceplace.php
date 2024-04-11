@@ -3,7 +3,6 @@
                                 <button class="hotel__left--star" value="ASC"  name="price"  onChange="this.form.submit();">Thấp tới cao</button>       
                                 <button class="hotel__left--star" value="DESC"  name="price"  onChange="this.form.submit();">Cao đến thấp</button>
                               
-                                
                             </div>
 
                         </form>

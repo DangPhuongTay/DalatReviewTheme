@@ -600,11 +600,15 @@
       align-items: center;
       justify-content: space-between;
     }
-  
+    
     .hotelMobile__header--filter__item span {
       padding-right: 5px;
     }
-  
+    
+    .hotelMobile__select{
+      border: none;
+      width: 100px;
+    }
     .hotel__body--right {
       flex: none;
       padding: 0 8px;

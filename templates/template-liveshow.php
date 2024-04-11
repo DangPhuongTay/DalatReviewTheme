@@ -17,9 +17,6 @@ get_header(); ?>
       <div class="liveshowMobile__fitter--input">
         <input type="text" placeholder="Đang tìm...">
       </div>
-
-
-
       <div class="liveshowMobile__fitter--icon">
         <ion-icon name="search-outline"></ion-icon>
       </div>
@@ -38,5 +35,5 @@ get_header(); ?>
     
 </section>
 
-
 <?php get_footer(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
