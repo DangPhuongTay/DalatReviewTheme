@@ -3,8 +3,8 @@
             <div class="hotel__fitter--wrapper">
                 <div class="hotel__fitter--search">
                     <p>Địa điểm</p>
-                    <input class="hotel__search" type="text" name="s" id="s" value="" onblur="if(this.value=='')this.value=''"
-                    onfocus="if(this.value=='')this.value=''" />
+                    <input class="hotel__search" type="text" name="s" id="s" value="hotel" onblur="if(this.value=='')this.value=''"
+                    onfocus="if(this.value=='hotel')this.value='hotel'" />
                 </div>
                 <div class="hotel__fitter--search">
                     <p>Ngày nhận / trả phòng</p>
