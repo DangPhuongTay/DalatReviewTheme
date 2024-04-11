@@ -201,12 +201,12 @@ if (have_posts()) {
                         <div class="detail__tour--content__left--service">
                             <?php echo $product->get_description(); ?>
                         </div>
-
+ <!--
                         <div class="detail__tour--content__left--header">
                             Tiết kiệm hơn khi du lịch Đà Lạt
                         </div>
                         <div class="detail__tour--content__left--sale">
-                            <!-- <div class="detail__tour--content__left--sale__left">
+                            <div class="detail__tour--content__left--sale__left">
                                 <span class="detail__tour--content__left--sale__header">
                                     Ưu đãi lên đến 12%
                                 </span>
@@ -217,12 +217,12 @@ if (have_posts()) {
                                 <div class="detail__tour--content__left--sale__price">
                                     <p>₫ 640,000</p><span>₫ 730,000</span>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="detail__tour--content__left--sale__right">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
                                 <a href="">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="detail__tour--content__left--sale__info shadow">
 
                             <div class="detail__tour--content__left--sale__info--header">
