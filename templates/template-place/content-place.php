@@ -889,6 +889,7 @@ if (have_posts()) {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="detailHotel__list--body__link">
                                     <div class="detailHotel__list--body__link--inner">
                                         <span class="detailHotel__list--body__link--inner__item">
@@ -898,7 +899,7 @@ if (have_posts()) {
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__item">
-                                            <a href="<?php echo home_url(); ?>/hotel">Khách sạn</a>
+                                            <a href="<?php echo home_url(); ?>/place">Hotel</a>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__divider">
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
