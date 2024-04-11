@@ -1,6 +1,4 @@
 <div class="select_wrapper" style="background: #fff;">
-
-
 </div>
     <div class="firstProduct__content--list">
     <?php
@@ -54,7 +52,7 @@
         get_template_part('templates/template-tour/item', 'tour');
         endwhile;
     } else {
-        echo __( 'No products found' );
+        echo __( 'Không có sản phẩm nào' );
     }
     ?></div>
     <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">

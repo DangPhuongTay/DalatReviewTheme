@@ -163,6 +163,8 @@
 }
 .detail__liveshow--content__right{
     width: 30%;
+    position: sticky;
+    top: 7%;
 }
 .detail__liveshow--content__left--header{
     font-size: var(--size-text-6);
