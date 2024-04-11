@@ -155,7 +155,7 @@ footer{
 
 .footer__banner--left {
     display: grid;
-    grid-template-columns: 18em 18em 18em;
+    grid-template-columns: 18em 12em 18em;
 
 }
 
