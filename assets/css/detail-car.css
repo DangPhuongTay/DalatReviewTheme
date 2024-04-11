@@ -273,6 +273,7 @@
 }
 .detail__car--container__top--des img{
     width: 100%;
+    height: 50vh;
     object-fit: cover;
     border-radius: var(--border-radius-size-3);
 }

@@ -8,7 +8,22 @@
   margin-bottom: 20px;
   position: relative;
 }
-
+.total__filter--list{
+  display: none;
+  position: absolute;
+  width: 500px;
+  right: 0;
+  top: 110%;
+  background: var(--color-background-6);
+  border-radius: var(--border-radius-size-4);
+  padding: 20px;
+}
+body.filterBox .total__filter--list{
+  display: block;
+}
+.search__filter--right{
+  position: relative;
+}
 .tour__banner--background {
   position: absolute;
   top: 0;

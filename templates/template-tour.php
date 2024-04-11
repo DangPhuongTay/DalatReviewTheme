@@ -29,7 +29,7 @@ get_header(); ?>
         </div>
     </div>
     <!--! firstReview -->
-    <?php wc_get_template('templates/template-tour/tour-firstReview.php'); ?>
+
 
     <!--! hightlightProduct -->
     <?php wc_get_template('templates/template-tour/tour-hightlightProduct.php'); ?>
@@ -37,7 +37,8 @@ get_header(); ?>
 </div>
 
 
-<?php
+<?php ?>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
 
-
-get_footer(); ?>
