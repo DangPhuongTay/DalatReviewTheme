@@ -105,7 +105,7 @@ if (have_posts()) {
                 </div>
                 <div class="detail__tour--content">
                     <div class="detail__tour--content__left">
-                        <div class="detail__tour--content__left--header">
+                        <!-- <div class="detail__tour--content__left--header">
                             Các gói dịch vụ
                         </div>
                         <div class="detail__tour--content__left--option">
@@ -194,12 +194,19 @@ if (have_posts()) {
 
                                 </div>
                             </div>
+                        </div> -->
+                        <div class="detail__tour--content__left--header">
+                            Về dịch vụ này
                         </div>
+                        <div class="detail__tour--content__left--service">
+                            <?php echo $product->get_description(); ?>
+                        </div>
+
                         <div class="detail__tour--content__left--header">
                             Tiết kiệm hơn khi du lịch Đà Lạt
                         </div>
                         <div class="detail__tour--content__left--sale">
-                            <div class="detail__tour--content__left--sale__left">
+                            <!-- <div class="detail__tour--content__left--sale__left">
                                 <span class="detail__tour--content__left--sale__header">
                                     Ưu đãi lên đến 12%
                                 </span>
@@ -210,7 +217,7 @@ if (have_posts()) {
                                 <div class="detail__tour--content__left--sale__price">
                                     <p>₫ 640,000</p><span>₫ 730,000</span>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="detail__tour--content__left--sale__right">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
                                 <a href="">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
@@ -277,12 +284,7 @@ if (have_posts()) {
                             </div>
                         </div>
                     </div>-->
-                        <div class="detail__tour--content__left--header">
-                            Về dịch vụ này
-                        </div>
-                        <div class="detail__tour--content__left--service">
-                            <?php echo $product->get_description(); ?>
-                        </div>
+                       
                         <div class="detail__tour--content__left--header">
                             Những điều cần lưu ý
                         </div>
@@ -292,39 +294,14 @@ if (have_posts()) {
                         <div class="detail__tour--content__left--header">
                             Đánh giá
                         </div>
-                        <div class="detail__tour--content__left--rate__second">
-                            <div class="detail__tour--content__left--rate__first--title">
-                                <p>7/10</p>
-                                <div class="detail__tour--content__left--rate__first--title__liststar">
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                    <ion-icon name="star"></ion-icon>
-                                </div>
-                                <span>2 <span>Bình chọn</span></span>
-                            </div>
-                            <div class="detail__tour--content__left--rate__second--album">
-                                <div class="detail__tour--content__left--rate__second--album__text">
-                                    <p><span>Album hình</span><span>4 ảnh</span></p>
-                                    <p><a href="">Xem thêm</a></p>
-                                </div>
-                                <div class="detail__tour--content__left--rate__second--album__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-1.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-2.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-3.png" alt="">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                </div>
-                            </div>
+                        <div class="detail__tour--content__left--rate__second">                           
                             <div class="detail__tour--content__left--rate__second--list">
                                 <?php
                                 $args = array('post_id' => $product->id);
                                 $comments = get_comments($args);
                                 wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
                                 ?>
-
+    
                             </div>
                         </div>
                         <div class="detail__tour--content__left--header">
