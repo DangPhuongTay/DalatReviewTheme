@@ -286,12 +286,6 @@ if (have_posts()) {
                     </div>-->
                        
                         <div class="detail__tour--content__left--header">
-                            Những điều cần lưu ý
-                        </div>
-                        <div class="detail__tour--content__left--note">
-                            <p>Alpine Coaster will stop operating when raining</p>
-                        </div>
-                        <div class="detail__tour--content__left--header">
                             Đánh giá
                         </div>
                         <div class="detail__tour--content__left--rate__second">                           
