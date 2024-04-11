@@ -32,7 +32,7 @@
     background: var(--color-background-2);
     border-radius: var(--border-radius-size-6);
     bottom: -60px;
-    left: 50%;
+    left: 34.5%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
@@ -44,11 +44,12 @@
     background: var(--color-background-2);
     border-radius: var(--border-radius-size-6);
     top: 0px;
-    left: 50%;
+    left: 34.5%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 .detail__liveshow--ticket{
+    max-height: 440px;
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
@@ -77,7 +78,7 @@
     padding: 20px 35px 20px 20px;
 }
 .detail__liveshow--ticket__right{
-    width: 50%;
+    width: 100%;
     position: relative;
     z-index: 2;
 }
@@ -229,7 +230,7 @@
         width: 100%;
     }
 }
-@media only screen and (max-width:800px){
+@media only screen and (max-width:850px){
     .detail__liveshow--ticket::after,
     .detail__liveshow--ticket::before,
     .detail__liveshow--ticket__right::before{

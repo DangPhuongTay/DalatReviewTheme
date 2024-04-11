@@ -62,7 +62,6 @@ input[type="number"] {
     max-width: 3rem;
     padding: .5rem;
     /* border: solid #ddd; */
-    border-width: 0 2px;
     font-size: 1rem;
     height:  1.5rem;
     font-weight: bold;
@@ -123,10 +122,11 @@ input[type="number"] {
 }
 .detail__tour--img__right .woocommerce-product-gallery__image a img{
     height:30vh;  
-
+    pointer-events: none;
 }
 .detail__tour--img__left img{
     height: 100%;
+    pointer-events: none;
 }
 .detail__tour--img__right img,
 .detail__tour--img__left img{
@@ -775,7 +775,13 @@ body.sale__detail--tour{
 }
 
 
-@media only screen and (max-width: 1111px) {
+
+
+@media only screen and (max-width: 1111px) {  
+   
+    .woocommerce-product-gallery__image a{
+        pointer-events: none;
+    }
     .detail__tour--container{
         padding: 0 30px;
     }
@@ -924,6 +930,7 @@ body.sale__detail--tour{
     .detail__tour--content__left--rate__second--item__user img{
         width: 35px;
         height: 35px;
+        pointer-events: none;
     }
     .detail__tour--content__left--rate__second--item__user p span:nth-child(1){
         font-size: var(--size-text-4);
