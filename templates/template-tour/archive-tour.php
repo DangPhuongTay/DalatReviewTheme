@@ -1,6 +1,4 @@
 <div class="select_wrapper" style="background: #fff;">
-
-
 </div>
     <div class="firstProduct__content--list">
     <?php

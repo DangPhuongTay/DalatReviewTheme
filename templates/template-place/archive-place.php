@@ -78,6 +78,5 @@ function request() {
                 </div>', $loop->max_num_pages) ?>
        
         </div>
-        <?php wc_get_template('loop/pagination.php'); ?> 
     <?php wp_reset_postdata(); ?>
             

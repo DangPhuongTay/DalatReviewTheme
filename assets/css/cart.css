@@ -173,7 +173,6 @@ input[type="number"] {
 }
 .cart__container--top__left--all__left--check {
     position: relative;
-    padding-left: 35px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
