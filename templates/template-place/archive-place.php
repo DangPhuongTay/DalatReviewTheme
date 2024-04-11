@@ -1,25 +1,7 @@
-<?php             
-function request() {
-                global $wp;
-                $url = $wp->request;
-                $requesturl = explode("/",  $url);
-                return $requesturl[0];
-            } ?>
-<form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
-        <div class="search">
 
-            <select class="styled" name="price"  onChange="this.form.submit();">
-            <option value="" selected>Giá</option>
-            <option value="ASC" >thấp tới cao</option>       
-            <option value="DESC" >cao đến thấp</option>   
-            </select>
-        </div>
-
-</form>
 <div class="hotel__right--item">
 <?php
-
-            global $paged;
+    global $paged;
 
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
             add_filter( 'woocommerce_catalog_orderby', 'swat_sort_by_title' );
@@ -44,6 +26,34 @@ function request() {
                     
                     ); 
             }
+
+            if (isset($_GET['pricenumber'])) {
+                $variable = $_GET['pricenumber'];
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    'meta_query' => array(
+                        array(
+                                'key'       => '_price',
+                                'compare'   => '<=',
+                                'type'    => 'numeric',
+                                'value'     => $variable ,
+                        )
+           
+                            
+                     ),
+                    );
+            }else {
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    
+                    ); 
+            }
             $loop = new WP_Query( $args );
             $count = $loop->found_posts;;
             if ( $loop->have_posts() ) {
@@ -53,7 +63,7 @@ function request() {
                 get_template_part('templates/template-place/item', 'place');
                 endwhile;
             } else {
-                echo __( 'No products found' );
+                echo __( 'Không có sản phẩm nào' );
             }
         ?>
 </div>
