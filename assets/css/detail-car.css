@@ -368,7 +368,7 @@ body.InfoCarForm{
         border-radius: var(--border-radius-size-4);
     }
     .detail__car--container__item--img{
-       width: 300px;
+       width: 100%;
     }
     .detail__car--container__item--text{
         gap: 2px;
