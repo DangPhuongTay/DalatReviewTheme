@@ -2,7 +2,7 @@
     <div class="liveshow__container--body__wrap">
         <div class="liveshow__container--body__menu">
         <div class="liveshow__container--body__menu--wrap">
-                <div class="liveshow__container--body__menu--title">Lock</div>
+                <div class="liveshow__container--body__menu--title">Loc</div>
                 <!-- <?php
                 $taxonomy = 'product_cat';
                 $orderby = 'name';
@@ -69,7 +69,7 @@
                 
                 ?> -->
 
-                
+
                 <form method="get" name="form" action="<?php echo home_url();?>/<?php echo request();?>" >
                             <div>
                                 <button class="hotel__left--star" value="ASC"  name="price"  onChange="this.form.submit();">Thấp tới cao</button>       

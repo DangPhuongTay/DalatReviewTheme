@@ -37,3 +37,4 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/liveshow.js"></script>
