@@ -6,8 +6,6 @@
                         return;
                     }
              
-
-
                     $attachment_ids = $product->get_gallery_image_ids();
                     if ($attachment_ids && $product->get_image_id()) {
                         foreach ($attachment_ids as $attachment_id) {
