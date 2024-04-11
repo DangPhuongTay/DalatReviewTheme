@@ -27,11 +27,9 @@ get_header(); ?>
   </div>
   <div class="liveshow__container">
     <div class="liveshow__container--link">
-      <a class="liveshow__container--link__return1" href="http://localhost/wordpress/">Trang chủ> </a>
-      <a class="liveshow__container--link__return2" href="http://localhost/wordpress/liveshow/">Vé LiveShow>
-      </a>
-      <a class="liveshow__container--link__return3" href="http://localhost/wordpress/liveshow/detail-liveshow/">Lịch
-        diễn liveshow Đà Lạt</a>
+      <a class="liveshow__container--link__return1" href="<?php home_url( ); ?>">Trang chủ > </a>
+      <a class="liveshow__container--link__return2" href="">Vé LiveShow</a>
+
     </div>
     <!--  -->
     <!-- Category -->

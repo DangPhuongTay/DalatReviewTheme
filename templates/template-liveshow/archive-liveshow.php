@@ -3,18 +3,26 @@
             global $paged;
 
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-            function request() {
-                global $wp;
-                $url = $wp->request;
-                $requesturl = explode("/",  $url);
-                return $requesturl[0];
+
+            if (isset($_GET['price'])) {
+                $variable = $_GET['price'];
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    'orderby'=>'price',
+                    'order'=>$variable,
+                    );
+            }else {
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    
+                    ); 
             }
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 8,
-                'paged' => $paged,
-                'product_cat' => request()
-                );
             $loop = new WP_Query( $args );
             $count = $loop->found_posts;;
             if ( $loop->have_posts() ) {
