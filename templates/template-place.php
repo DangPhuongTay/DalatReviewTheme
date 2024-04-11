@@ -22,5 +22,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/hotel.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
 </body>
 </html>
