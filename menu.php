@@ -17,16 +17,6 @@
                     </div>
                     <div class="header__top--right">
                         <ul>
-                            <li>
-                                <a href="#" class="header__top--right__item">
-                                    Trợ giúp
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="header__top--right__item">
-                                    Xem gần đây
-                                </a>
-                            </li>
                             <li class="logout">
                                 <div class="header__top--right__item logout">
                                     Đăng xuất

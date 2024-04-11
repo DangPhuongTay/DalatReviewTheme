@@ -66,6 +66,8 @@
 }
 .blog__container--bottom__right{
     width: 35%;
+    position: sticky;
+    top: 7%;
 }
 .blog__container--bottom__left{
     width: 60%;
