@@ -19,7 +19,7 @@
         </p>
         
     </div>
-    <div class="detail__car--container__item--select" ">
+    <div class="detail__car--container__item--select">
         Chọn
     </div>
 </div>
