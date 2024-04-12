@@ -8,6 +8,17 @@
   margin-bottom: 20px;
   position: relative;
 }
+.total__filter--list__mb{
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: -30px;
+  top: 100%;
+  background: var(--color-background-6);
+  border-radius: var(--border-radius-size-4);
+  padding: 20px;
+  z-index: 100;
+}
 .total__filter--list{
   display: none;
   position: absolute;
@@ -19,6 +30,9 @@
   padding: 20px;
 }
 body.filterBox .total__filter--list{
+  display: block;
+}
+body.filterBox .total__filter--list__mb{
   display: block;
 }
 .search__filter--right{
@@ -66,7 +80,11 @@ body.filterBox .total__filter--list{
   padding: 8px 13px;
   border: none;
 }
-
+.total__filter--btns span{ 
+  border: 1px solid var(--color-text-2);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
 .filter__price form :hover {
   background-color: var(--color-background-12);
 }
@@ -124,14 +142,16 @@ body.filterBox .total__filter--list{
   .tour__banner {
     display: none;
   }
-
+  .total__filter--list{
+    display: none;
+  }
   .tourMobile__category {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .tourMobile__categoryTop {
     display: block;
-    margin-top: 80px;
   }
 
   .tourMobile__category--list {
@@ -174,5 +194,14 @@ body.filterBox .total__filter--list{
     border: 1px solid transparent;
     font-size: var(--size-text-4);
     margin-right: 8px;
+  }
+  .tourMobile__categoryBot{
+    position: relative;
+    margin: 30px 30px 0 0;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .firstProduct__content--list{
+    justify-content: center;
   }
 }
