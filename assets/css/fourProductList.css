@@ -1,6 +1,6 @@
 .fourProductList__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, .25fr));
     gap: 10px;
 }
 
@@ -131,9 +131,20 @@
 .fourProductList__wrapper--price__info span:last-child {
     font-size: var(--size-text-6);
 }
-
+@media (max-width: 900px) {
+    .fourProductList__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, .3fr));
+        gap: 10px;
+    }
+    
+}
 @media (max-width: 550px) {
-
+    .fourProductList__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+    }
     .fourProductList__wrapper--info__ellipsis {
         display: none;
     }
@@ -157,7 +168,7 @@
     }
 
     .fourProductList__wrapper--img img {
-        width: 200px;
+        width: 100%;
     }
 
     .fourProductList__wrapper--info__title {

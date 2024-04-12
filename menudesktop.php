@@ -37,7 +37,7 @@
 
                             <?php
                             foreach ($all_categories as $cat) {
-                                if ($cat->category_parent == 0) {
+                                if ($cat->category_parent == 0 && $cat->term_id != 24) {
                                     $category_id = $cat->term_id;
                                     ?>
                                     <ul class="header__bottom--listlink__allcategory--list__item">

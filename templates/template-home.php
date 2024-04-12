@@ -113,7 +113,7 @@ get_header(); ?>
                 <p>Sản phẩm nổi bật</p>
             </div>
             <?php
-            get_template_part('templates/template-home/archive', 'product'); ?>
+            get_template_part('templates/template-home/archive', 'new'); ?>
         </div>
 
     </div>
