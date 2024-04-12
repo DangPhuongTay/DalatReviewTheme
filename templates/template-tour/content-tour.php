@@ -331,6 +331,7 @@ if (have_posts()) {
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>
         <?php
 
     }

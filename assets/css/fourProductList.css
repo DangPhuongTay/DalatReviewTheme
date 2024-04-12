@@ -67,10 +67,13 @@
 }
 
 .fourProductList__wrapper--info__ellipsis {
-    display: flex;
-    align-items: flex-start;
     margin-bottom: 5px;
     flex-direction: column;
+    white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
 }
 
 .fourProductList__wrapper--info__score {
@@ -136,6 +139,7 @@
 
     .fourProductList__wrapper--info__ellipsis {
         display: none;
+        
     }
 
     .fourProductList__wrapper--info__tag {
