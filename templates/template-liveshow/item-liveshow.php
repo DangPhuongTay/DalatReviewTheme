@@ -46,6 +46,10 @@
                           </div>
                         </div>
                       </div>
+                      <div class="firstProduct__info--top__desc">
+                        <?php echo $product->get_short_description(); ?>
+                      </div>
+
                     </div>
                     <!-- bottom -->
                     <div class="firstProduct__info--bottom">
