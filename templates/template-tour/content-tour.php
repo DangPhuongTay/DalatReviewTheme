@@ -312,8 +312,9 @@ if (have_posts()) {
 
                     </div>
                     <div class="detail__tour--content__right">
-                        <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
-                        <button class="detail__tour--content__right--btn__pc firstBtn">CHỌN DỊCH VỤ
+                        <p><span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span></p>
+                        <button class="detail__tour--content__right--btn__pc firstBtn"><?php wc_get_template('loop/add-to-cart.php'); ?></div> 
+
                         </button>
                     </div>
                 </div>
