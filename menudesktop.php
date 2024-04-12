@@ -229,7 +229,7 @@
                                     );
                                     $all_categories = get_categories($args);
                                     foreach ($all_categories as $cat) {
-                                        if ($cat->name == 'place') {
+                                        if ($cat->slug == 'place') {
                                             $category_id = $cat->term_id;
                                             $args2 = array(
                                                 'taxonomy' => $taxonomy,
@@ -262,7 +262,7 @@
                         </div>
                     </li>
                     <li class="header__bottom--listlink__category5">
-                        <a href="<?php echo home_url() ?>/phuong-tien">
+                        <a href="<?php echo home_url() ?>/vehicle">
                             Thuê xe
                         </a>
                         <div class="header__bottom--listlink__category5--list shadow">
@@ -287,7 +287,7 @@
                                     );
                                     $all_categories = get_categories($args);
                                     foreach ($all_categories as $cat) {
-                                        if ($cat->name == 'vehicle') {
+                                        if ($cat->slug == 'vehicle') {
                                             $category_id = $cat->term_id;
                                             $args2 = array(
                                                 'taxonomy' => $taxonomy,

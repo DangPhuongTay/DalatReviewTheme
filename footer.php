@@ -186,13 +186,6 @@
             </div>
         </div>
 </footer>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/pagination.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/user_settings.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/user.js"></script>
 
 </body>
 

@@ -139,4 +139,7 @@ get_header(); ?>
     <?php wc_get_template('templates/template-home/home-firstTagMobile.php'); ?>
 
 </section>
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
+
 <?php get_footer(); ?>
