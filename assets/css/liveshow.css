@@ -158,10 +158,10 @@
 }
 
 .liveshow__container--body__product--list {
-    width: 100%;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, .3333fr));
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
 }
 
 .liveshow__container--body__product--list .firstProduct__content--list__item {

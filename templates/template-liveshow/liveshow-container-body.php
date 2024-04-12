@@ -188,9 +188,15 @@
 
 
         <div class="liveshow__container--body__product--list">
+        <div class="firstProduct ">
+        <div class="firstProduct__content">
+        <div class=" firstProduct__content--list">
             <?php
             get_template_part('templates/template-liveshow/archive', 'liveshow');
             ?>
+        </div>
+        </div>
+    </div>
         </div>
 
 
