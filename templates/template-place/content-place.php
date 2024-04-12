@@ -186,7 +186,7 @@ if (have_posts()) {
                                 </div>
                                 <div class="detailHotel__info--summary__left--top__score">
                                     <span>Rất tốt</span>
-                                    <span>12 Bình luận</span>
+                                    <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                 </div>
                             </div>
                             <div class="detailHotel__info--summary__left--bot">
