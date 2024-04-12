@@ -187,22 +187,12 @@
         </div>
 </footer>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail-tour.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/hotel.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/liveshow.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/pagination.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/user_booking.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/user_settings.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/user.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/voucher.js"></script>
 
 </body>
 

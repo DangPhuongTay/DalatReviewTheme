@@ -32,7 +32,10 @@ get_header(); ?>
 
 
 <?php ?>
+
+
+
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
-
+<?php get_footer(); ?> <?php ?>

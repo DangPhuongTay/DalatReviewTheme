@@ -2,7 +2,7 @@
 <div class="fourProductList__wrapper--item">
     <a href="<?php the_permalink(); ?>">
         <div class="fourProductList__wrapper--img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-sale-banner-img-1.png">
+        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="">
         </div>
         <div class="fourProductList__wrapper--main">
             <div class="fourProductList__wrapper--info">
@@ -24,26 +24,10 @@
                     <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
                     <div class="fourProductList__wrapper--info__count" onclick="btnDetailHotelRate()">47 Bình luận</div>
                 </div>
-                <div class="fourProductList__wrapper--info__ellipsis">
-                    <ion-icon name="location-outline"></ion-icon>
-                    <?php
-                    foreach ($product->attributes as $taxonomy => $attribute) {
-                        foreach ($attribute->get_terms() as $term) {
-                            if ($term->taxonomy == 'pa_address') {
-                                ?>
-                                <div class="hotel__right--ellipsis">
-                                    <ion-icon name="location-outline"></ion-icon>
-                                    <span class="hotel__right--location">
-                                        <?php echo $term->name; ?>
-                                    </span>
-                                </div>
-                                <?php
-                            } else {
-                                echo '';
-                            }
-                        }
-                    }
-                    ?>
+                <div class="fourProductList__wrapper--info__ellipsis text__overflow--main">
+                    <!-- <ion-icon name="location-outline"></ion-icon> -->
+                    <?php echo $product->get_short_description(); ?>
+
                 </div>
                 <div class="fourProductList__wrapper--info__tag">
                     <?php

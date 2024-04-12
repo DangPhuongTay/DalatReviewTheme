@@ -878,5 +878,6 @@
     </div>
 
 </div>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/user_booking.js"></script>
 
 <?php get_footer();?>
