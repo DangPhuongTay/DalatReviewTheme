@@ -41,7 +41,7 @@
                     <?php
                     foreach ($product->attributes as $taxonomy => $attribute) {
                         foreach ($attribute->get_terms() as $term) {
-                            if ($term->taxonomy == 'pa_address') {
+                            if ($term->taxonomy == 'pa_dia-chi') {
                                 ?>
                                 <div class="hotel__right--ellipsis">
                                     <ion-icon name="location-outline"></ion-icon>
@@ -85,8 +85,7 @@
                     </div>
                     <div class="hotel__right--booking">
                         <div class="hotel__right--booking__tag">
-                            <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
-                            <span>700+ Khách đã đặt</span>
+                            <span class="text__overflow--main"><?php echo $product->get_short_description(); ?></span>
                         </div>
                     </div>
                 </div>
