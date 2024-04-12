@@ -35,11 +35,15 @@
 
             </div>
         </div>
-        <div class="liveshow__container--body__menu">
-        <div class="liveshow__container--body__menu--wrap">
-                <div class="liveshow__container--body__menu--title">Loc</div>
 
 
+                <?php             
+                function request() {
+                    global $wp;
+                    $url = $wp->request;
+                    $requesturl = explode("/",  $url);
+                    return $requesturl[0];
+                } ?>
                 <?php
                 $taxonomy = 'product_cat';
                 $orderby = 'name';
@@ -61,8 +65,10 @@
                 $all_categories = get_categories($args);
 
                 foreach ($all_categories as $cat) {
-                    if ( $cat->term_id != 24) { ?>
-           
+                    if ( $cat->term_id != 24 && $cat->slug == request()) { ?>
+                   <div class="liveshow__container--body__menu">
+        <div class="liveshow__container--body__menu--wrap">
+                <div class="liveshow__container--body__menu--title">Danh mục</div>
                         
                         <?php
                         $category_id = $cat->term_id;
@@ -95,14 +101,17 @@
                             <?php }
                             ?> </div></div><?php
                         }
-                        
+                        ?>
+                                </div>
+                            </div>
+                       
+                        <?php
                     }
+
                 }
                 ?>
 
-            </div>
-        </div>
-    </div>
+</div>     
     <div class="liveshow__container--body__product">
         <div class="liveshow__container--body__product--filter">
             <div class="liveshow__container--body__product--filter__price--wrap">
@@ -127,7 +136,7 @@
                 $all_categories = get_categories($args);
 
                 foreach ($all_categories as $cat) {
-                    if ( $cat->term_id != 24) { ?>
+                    if ( $cat->term_id != 24 ) { ?>
                         <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub()"> 
                             <div class="cart__container--top__left--all__left--check"><a href="<?php echo home_url(); ?>/<?php echo $cat->slug ?>"><?php echo $cat->name ?></a></div>
                         </div>
@@ -168,13 +177,7 @@
                 }
 
                 ?>
-                <?php             
-                function request() {
-                    global $wp;
-                    $url = $wp->request;
-                    $requesturl = explode("/",  $url);
-                    return $requesturl[0];
-                } ?>
+
                 <div class="liveshow__container--body__product--filter__price--content">
           
                 
