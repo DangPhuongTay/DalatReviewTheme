@@ -33,7 +33,7 @@
                             <span>5</span>
                         </div>
                         <div class="hotel__right--review__desc">
-                        <?php echo $rating_count = $product->get_rating_count(); ?>
+                       
                         </div>
                         <div class="hotel__right--review__count"><?php echo $review_count = $product->get_review_count(); ?> Bình luận</div>
                     </div>

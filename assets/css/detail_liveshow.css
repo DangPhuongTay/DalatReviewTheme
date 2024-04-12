@@ -23,7 +23,7 @@
 .detail__liveshow--ticket__right img{
     width: 100%;
     height: 100%;
-    object-fit: cover ;
+    object-fit: cover;
 }
 .detail__liveshow--ticket::before{
     content: '';
@@ -193,17 +193,14 @@
     flex-direction: column;
     gap: 10px;
 }
-.detail__liveshow--content__right--item:hover{
-    background: var(--color-background-17);
-}
+
 .detail__liveshow--content__right--item{
     margin: 5px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--color-text-6) !important;
-    background: var(--color-background-7);
-    padding: 15px 20px;
+    color: var(--color-text-0) !important;
+    padding: 5px;
     border-radius: var(--border-radius-size-2);
 }
 .detail__liveshow--content__right--item-btn{

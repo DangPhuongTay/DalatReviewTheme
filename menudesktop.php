@@ -262,7 +262,7 @@
                         </div>
                     </li>
                     <li class="header__bottom--listlink__category5">
-                        <a href="<?php echo home_url() ?>/vehicle">
+                        <a href="<?php echo home_url() ?>/phuong-tien">
                             Thuê xe
                         </a>
                         <div class="header__bottom--listlink__category5--list shadow">

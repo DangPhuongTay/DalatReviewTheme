@@ -74,8 +74,7 @@
                 echo __( 'No products found' );
             }
         ?></div>
-        <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: end;">
-        
+        <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
         <?php previous_posts_link( '<div class="liveshow__container--body__product--list__page--item">
                   <ion-icon name="chevron-back"></ion-icon>
                 </div>', $loop->max_num_pages); ?> 
