@@ -21,17 +21,17 @@
                                         <span class="slash">/</span>
                                         <span>5</span>
                                     </div>
-                                    <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                                    <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
+                                    <!-- <div class="fourProductList__wrapper--info__desc">Rất tốt</div> -->
+                                    <div class="fourProductList__wrapper--info__count"><?php echo $review_count = $product->get_review_count(); ?>  Bình luận</div>
                                 </div>
                                 <?php
                     foreach ($product->attributes as $taxonomy => $attribute) {
                         foreach ($attribute->get_terms() as $term) {
-                            if ($term->taxonomy == 'pa_address') {
+                            if ($term->taxonomy == 'pa_dia-chi') {
                                 ?>
                                 <div class="fourProductList__wrapper--info__ellipsis">
-                                    <!-- <ion-icon name="location-outline"></ion-icon> -->
                                     <span class="fourProductList__wrapper--info__location">
+                                        <ion-icon name="location-outline"></ion-icon>
                                     <?php echo $term->name; ?>
                                     </span>
                                 </div>
