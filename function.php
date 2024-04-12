@@ -1,4 +1,16 @@
 <?php
+add_filter("woocommerce_checkout_fields", "remove_billing_fields");
+function remove_billing_fields($fields) {
+
+    unset($fields["billing"]["billing_company"]);
+    unset($fields["billing"]["billing_address_1"]);
+    unset($fields["billing"]["billing_address_2"]);
+    unset($fields["billing"]["billing_city"]);
+    unset($fields["billing"]["billing_postcode"]);
+    unset($fields["billing"]["billing_country"]);
+    unset($fields["billing"]["billing_state"]);
+    return $fields;
+}
 add_action( 'woocommerce_product_query', 'zero_price_products' );
 function zero_price_products( $q ){
     $meta_query = $q->get( 'meta_query' );

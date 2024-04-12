@@ -1,4 +1,4 @@
-
+const btnfiltermb = document.querySelector('.total__filter--btns');
 const btnfilter = document.querySelector('.total__filter--btn');
 const tourBody = document.querySelector('body');
 // const primaryDropdownHidden = document.querySelector('.primary__dropdown--content');
@@ -17,6 +17,10 @@ function btnReviewTour(){
   tourBody.classList.add('tourBlur')  
 }
 btnfilter.addEventListener('click', ()=>{
+  tourBody.classList.toggle('filterBox');
+  console.log(1);
+})
+btnfiltermb.addEventListener('click', ()=>{
   tourBody.classList.toggle('filterBox');
   console.log(1);
 })

@@ -104,7 +104,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_short_description', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_short_description() ), $cart_item, $cart_item_key ) );
 						}
 
-						do_action( 'woocommerce_after_cart_item_short_description', $cart_item, $cart_item_key ); ?> </span>
+						do_action( 'woocommerce_after_cart_item_description', $cart_item, $cart_item_key ); ?> </span>
                                   
                     </div>
                                 </div>

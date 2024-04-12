@@ -551,7 +551,9 @@
     border-radius: var(--border-radius-size-1);
     border: 2px solid var(--color-background-3);
   }
-  
+  .woocommerce-checkout-review-order{
+    width: 100%;
+  }
   /* On mouse-over, add a grey background color */
   .cart__container--top__left--all__left--check:hover input ~ .checkmark {
     background-color: #eee;
