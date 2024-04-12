@@ -508,7 +508,7 @@
 .home__contact--banner__container--header p,
 .home__info--banner__container--header p {
     font-size: var(--size-text-10);
-    margin-bottom: 29px;
+    margin-bottom: 29px !important;
 }
 
 .home__info--banner__container--list {
