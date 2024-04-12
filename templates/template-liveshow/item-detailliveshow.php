@@ -15,6 +15,7 @@
         <div class="detail__liveshow--content__right--item__price numberVnd">
              <?php echo $term->description ?>
         </div>
+        
         </div>
           <?php
     }else{

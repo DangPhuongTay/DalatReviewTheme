@@ -400,7 +400,7 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     }
     .liveshowMobile__fitter--input input{
         width: 100%;
-        border: none !important;
+        border: none;
     }
     .liveshowMobile__fitter--icon {
         align-items: center;

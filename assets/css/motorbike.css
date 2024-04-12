@@ -7,13 +7,13 @@
 
 .motorbike{
     width: 100%;
-    margin-top: 65px;
+    margin-top: 31px;
 }
 
 .motorbike__container--banner{
     position: relative;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     display: flex;
     align-items: end;
 }
