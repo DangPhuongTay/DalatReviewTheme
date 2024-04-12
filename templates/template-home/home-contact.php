@@ -5,10 +5,11 @@
             </div>
             <div class="home__contact--banner__container--list">
                 <div class="home__contact--banner__container--content">
-                    <div class="home__contact--banner__container--content__info">
+                    <div class="home__contact--banner__container--content__info" >
                         <p>Để lại thông tin liên hệ của bạn để được tư vấn thêm</p>
                         <span>Hệ thống tư vấn trực tuyến của Đà Lạt Review tất tần tật giúp bạn tìm ra các trải nghiệm
                             du lịch Đà Lạt phù hợp với bản thân.</span>
+                            <img src="" />
                     </div>
                     <form action="#">
                         <input type="text" placeholder="Nhập tên của bạn">
