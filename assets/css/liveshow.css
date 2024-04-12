@@ -305,7 +305,7 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 }
 
 
-.liveshow__container--body__menu--item__dropdown{
+.liveshow__container--body__menu--item__dropdown {
     padding-left: 15px;
 }
 
@@ -320,10 +320,11 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     background-color: var(--color-background-6);
 }
 
-.firstProduct__content--list__item{
+.firstProduct__content--list__item {
     min-height: 60px;
 }
-.liveshow__container--body__product--list .firstProduct__content--list__item{
+
+.liveshow__container--body__product--list .firstProduct__content--list__item {
 
     margin-bottom: 15px;
 }
