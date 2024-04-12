@@ -8,7 +8,7 @@
                 'post_type' => 'product',
                 'posts_per_page' =>4,
                 'paged' => $paged,
-				
+				'product_tag' => 'sale',
                 );
             $loop = new WP_Query( $args );
             $count = $loop->found_posts;;
