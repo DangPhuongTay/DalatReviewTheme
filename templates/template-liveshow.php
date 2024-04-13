@@ -26,6 +26,7 @@ get_header(); ?>
   <?php wc_get_template('templates/template-liveshow/liveshow-container-body.php'); ?>
     
 </section>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/liveshow.js"></script>
