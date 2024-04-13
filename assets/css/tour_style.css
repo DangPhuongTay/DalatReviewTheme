@@ -28,6 +28,7 @@
   background: var(--color-background-6);
   border-radius: var(--border-radius-size-4);
   padding: 20px;
+  z-index: 100;
 }
 body.filterBox .total__filter--list{
   display: block;

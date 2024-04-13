@@ -85,4 +85,6 @@ if (have_posts()) {
         <?php
     }
 }
+?>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script><?php
 get_footer(); ?>

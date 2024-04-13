@@ -77,3 +77,8 @@
 .vehicle__pagging{
     margin-bottom: 30px;
 }
+.motorbike__fitter--price .total__filter--btn{
+    background-color: var(--color-background-6);
+    opacity: .8;
+
+}

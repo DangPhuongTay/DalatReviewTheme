@@ -113,7 +113,7 @@ get_header(); ?>
                 <p>Sản phẩm nổi bật</p>
             </div>
             <?php
-            get_template_part('templates/template-home/archive', 'product'); ?>
+            get_template_part('templates/template-home/archive', 'new'); ?>
         </div>
 
     </div>
@@ -139,4 +139,7 @@ get_header(); ?>
     <?php wc_get_template('templates/template-home/home-firstTagMobile.php'); ?>
 
 </section>
+
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home.js"></script>
+
 <?php get_footer(); ?>
