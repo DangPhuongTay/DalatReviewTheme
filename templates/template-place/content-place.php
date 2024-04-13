@@ -181,11 +181,10 @@ if (have_posts()) {
                         <div class="detailHotel__info--summary__left" onclick="btnDetailHotelRate()">
                             <div class="detailHotel__info--summary__left--top">
                                 <div class="detailHotel__info--summary__left--top__rating">
-                                    <span>4.3</span>
-                                    <span>/5</span>
+                                    <span>Đánh giá</span>
                                 </div>
                                 <div class="detailHotel__info--summary__left--top__score">
-                                    <span>Rất tốt</span>
+                                   
                                     <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                 </div>
                             </div>
@@ -414,7 +413,7 @@ if (have_posts()) {
                                                     <div
                                                         class="detailHotel__list--body__reviews--content__overview--info__fomart">
                                                         <p>Tuyệt vời</p>
-                                                        <span>1 Bình luận</span>
+                                                        <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                     </div>
                                                 </div>
                                                 <div class="detailHotel__list--body__reviews--content__overview--category">
@@ -522,7 +521,7 @@ if (have_posts()) {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="detailHotel__list--body__reviews">
+                                <!-- <div class="detailHotel__list--body__reviews">
                                     <div class="detailHotel__list--header">
                                         <div class="header__list--header__title">
                                             <h2>Đánh giá</h2>
@@ -539,7 +538,7 @@ if (have_posts()) {
                                                 </div>
                                                 <div class="detailHotel__list--body__reviews--content__overview--info__fomart">
                                                     <p>Tuyệt vời</p>
-                                                    <span>1 Bình luận</span>
+                                                    <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                 </div>
                                             </div>
                                             <div class="detailHotel__list--body__reviews--content__overview--category">
@@ -636,15 +635,10 @@ if (have_posts()) {
                                             </div>
                                         </div>
                                         <div class="" onclick="btnDetailHotelRate()">
-                                            <?php
-                                            $number_of_reviews = 1;
-                                            $args = array('number' => $number_of_reviews, 'post_id' => $product->id);
-                                            $comments = get_comments($args);
-                                            wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
-                                            ?>
+            
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- <div class="detailHotel__list--body__detail">
                                                     <div class="detailHotel__list--header">

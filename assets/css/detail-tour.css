@@ -21,6 +21,7 @@ input[type="number"] {
     display: inline-flex;
   }
   
+  
   .number-input,
   .number-input * {
     box-sizing: border-box;

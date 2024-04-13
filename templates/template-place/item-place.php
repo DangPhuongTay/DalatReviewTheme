@@ -98,7 +98,7 @@
                 <div class="hotel__right--price__btn firstBtn">
                     Xem chi tiết
                 </div>
-                <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
+                <div class="hotel__right--price__date">Dựa trên giá cả <?php the_date(); ?></div>
                 </div>
         </div>
     </a>
