@@ -7,9 +7,11 @@
             </div>
             <div class="firstProduct__info">
                 <div class="firstProduct__info--top">
+                  <div class="firstProduct__info--top__title">
                     <?php
                     the_title();
                     ?></p>
+                  </div>
                     <div class="firstProduct__info--top__score">
                         <div class="firstProduct__info--top__score--star">
                             <div class="firstProduct__info--top__score--star__icon">
@@ -38,6 +40,7 @@
                         <div class="tagging__box">
                             <div class="tagging__tag">
                                 <p><?php the_tags(); ?></p>
+                                Ban chay
                             </div>
                         </div>
                     </div>

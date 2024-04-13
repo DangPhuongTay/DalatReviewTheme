@@ -31,15 +31,16 @@
                         <span firstProduct__info--top__score--booked__number>1K+
                             Đã được đặt </span>
                         <!-- </div> -->
-                        <!-- <div class="firstProduct__info--top__desc text__overflow--main">
+                        <div class="firstProduct__info--top__desc text__overflow--main">
                         <?php echo $product->get_short_description(); ?>
-                    </div> -->
+                    </div>
                     </div>
                     <!-- tag -->
                     <div class="tagging__wrap">
                         <div class="tagging__box">
                             <div class="tagging__tag">
                                 <p><?php the_tags(); ?></p>
+                                Ban chay
                             </div>
                         </div>
                     </div>
