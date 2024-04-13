@@ -15,12 +15,12 @@
  * @version 8.1.0
  */
 
-defined( 'ABSPATH' ) || exit;
-
+defined( 'ABSPATH' ) || exit; 
 if ( ! wp_doing_ajax() ) {
 	do_action( 'woocommerce_review_order_before_payment' );
 }
-?>	<?php if ( WC()->cart->needs_payment() ) : ?>
+?>
+<?php if ( WC()->cart->needs_payment() ) : ?>
 	<ul class="wc_payment_methods payment_methods methods">
 		<?php
 		if ( ! empty( $available_gateways ) ) {
@@ -36,19 +36,16 @@ if ( ! wp_doing_ajax() ) {
 	</ul>
 <?php endif; ?>
 <div id="payment" style="background: none;">
-
 	<div class="">
-
 		<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 		<?php echo apply_filters( 'woocommerce_order_button_html', '<button style="width:100%;" type="submit" class="firstBtn' . esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ) . '" name="woocommerce_checkout_place_order" id="place_order" >Xác nhận thanh toán</button>' ); // @codingStandardsIgnoreLine ?>
 
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
-
+		
 		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
 	</div>
 </div>
-<?php
-if ( ! wp_doing_ajax() ) {
-	do_action( 'woocommerce_review_order_after_payment' );
-}
+<?php do_action( 'woocommerce_review_order_after_payment' ); ?>
+	
+

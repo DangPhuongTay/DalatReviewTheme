@@ -327,11 +327,10 @@ if (have_posts()) {
         </section>
         </section>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
+
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail-tour.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>
         <?php
 
     }
