@@ -17,21 +17,21 @@
                         </span>
                         <span class="hotel__right--text">Golf Valley Hotel</span>
                         <span>
-                            <span class="hotel__right--stars">
+                            <!-- <span class="hotel__right--stars">
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
-                            </span>
+                            </span> -->
                         </span>
 
                     </div>
                     <div class="hotel__right--review">
-                        <div class="hotel__right--review__score">
+                        <!-- <div class="hotel__right--review__score">
                             <span>4.4</span>
                             <span class="slash">/</span>
                             <span>5</span>
-                        </div>
+                        </div> -->
                         <div class="hotel__right--review__desc">
                        
                         </div>

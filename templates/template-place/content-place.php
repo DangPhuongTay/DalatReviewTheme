@@ -125,9 +125,9 @@ if (have_posts()) {
                             <h1>
                                 <?php the_title() ?>
                             </h1>
+                            <!-- <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon> -->
                         </div>
                         <div class="detailHotel__info--wapper__right">
                             <p class="detailHotel__info--wapper__right--name">
