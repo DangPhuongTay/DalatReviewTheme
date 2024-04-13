@@ -145,8 +145,6 @@
     margin: 15px 0 0 10px;
 }
 
-.liveshow__container--body__menu--list__item--form {}
-
 .liveshow__container--body__menu--list__item--checkbox {
     background-color: var(--color-background-7);
 }
