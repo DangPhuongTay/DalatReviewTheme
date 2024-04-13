@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<ul class="order_details col-12">
+<ul class="order_details">
 	<li class="order">
 		<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
 		<strong><?php echo esc_html( $order->get_order_number() ); ?></strong>
@@ -44,3 +44,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php do_action( 'woocommerce_receipt_' . $order->get_payment_method(), $order->get_id() ); ?>
 
 <div class="clear"></div>
+
