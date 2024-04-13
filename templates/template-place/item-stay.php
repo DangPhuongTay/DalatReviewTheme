@@ -9,18 +9,18 @@
                                 <div class="fourProductList__wrapper--info__title">
                                     <span><?php the_title(); ?></span>
                                     <span class="fourProductList__wrapper--stars">
+                                        <!-- <ion-icon name="star" class="icon__star"></ion-icon>
                                         <ion-icon name="star" class="icon__star"></ion-icon>
                                         <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
-                                        <ion-icon name="star" class="icon__star"></ion-icon>
+                                        <ion-icon name="star" class="icon__star"></ion-icon> -->
                                     </span>
                                 </div>
                                 <div class="fourProductList__wrapper--info__review">
-                                    <div class="fourProductList__wrapper--info__score">
+                                    <!-- <div class="fourProductList__wrapper--info__score">
                                         <span>4.4</span>
                                         <span class="slash">/</span>
                                         <span>5</span>
-                                    </div>
+                                    </div> -->
                                     <!-- <div class="fourProductList__wrapper--info__desc">Rất tốt</div> -->
                                     <div class="fourProductList__wrapper--info__count"><?php echo $review_count = $product->get_review_count(); ?>  Bình luận</div>
                                 </div>
