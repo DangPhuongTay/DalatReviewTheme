@@ -7,12 +7,7 @@
                 nữa</h2>
         </div>
         <div class="tour__banner--search">
-            <div class="tour__banner--search__icon">
-                <ion-icon name="search-outline"></ion-icon>
-            </div>
-            <div class="tour__banner--search__input">
                 <?php wc_get_template('templates/template-search/searchtour.php'); ?>
-            </div>
         </div>
     </div>
 </div>
