@@ -535,7 +535,7 @@ body.active .primary__dropdown--content {
 }
 .firstProduct__info--top__desc{
   margin-top: 10px;
-  margin-bottom: -5px;
+  margin-bottom: 2px;
 }
 .sep {
   font-size: 5px;
