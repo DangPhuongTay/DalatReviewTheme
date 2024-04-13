@@ -7,33 +7,33 @@
             </div>
             <div class="firstProduct__info">
                 <div class="firstProduct__info--top">
-                  <div class="firstProduct__info--top__title">
-                    <?php
-                    the_title();
-                    ?></p>
-                  </div>
+                    <div class="firstProduct__info--top__title">
+                        <?php
+                        the_title();
+                        ?></p>
+                    </div>
                     <div class="firstProduct__info--top__score">
-                        <div class="firstProduct__info--top__score--star">
+                        <!-- <div class="firstProduct__info--top__score--star">
                             <div class="firstProduct__info--top__score--star__icon">
                                 <ion-icon name="star"></ion-icon>
                             </div>
                             <div class="firstProduct__info--top__score--star__number">
                                 <span>4.9</span>
                             </div>
-                        </div>
+                        </div> -->
                         <span
-                            class="firstProduct__info--top__score--review">(<?php echo $review_count = $product->get_review_count(); ?>)</span>
+                            class="firstProduct__info--top__score--review"><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                         <!-- sep -->
-                        <div class="sep">
+                        <!-- <div class="sep">
                             <ion-icon name="ellipse"></ion-icon>
-                        </div>
+                        </div> -->
                         <!-- <div class="firstProduct__info--top__score--booked"> -->
-                        <span firstProduct__info--top__score--booked__number>1K+
-                            Đã được đặt </span>
+                        <!-- <span firstProduct__info--top__score--booked__number>1K+
+                            Đã được đặt </span> -->
                         <!-- </div> -->
-                        <!-- <div class="firstProduct__info--top__desc text__overflow--main">
-                        <?php echo $product->get_short_description(); ?>
-                    </div> -->
+                        <div class="firstProduct__info--top__desc text__overflow--main">
+                            <?php echo $product->get_short_description(); ?>
+                        </div>
                     </div>
                     <!-- tag -->
                     <div class="tagging__wrap">
