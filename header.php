@@ -17,6 +17,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/404.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/blog.css">
@@ -39,7 +40,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sale_banner.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/secondDropdown.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/secondProductList.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tour_style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_booking.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_credit.css">

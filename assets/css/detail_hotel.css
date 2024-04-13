@@ -154,7 +154,7 @@
 .detailHotel__info--summary {
     display: flex;
     align-items: center;
-    min-height: 140px;
+    height: 140px;
     min-width: 0;
     margin-bottom: 10px;
 }
@@ -172,15 +172,16 @@
     margin-right: 8px;
     flex: 50%;
     max-width: 50%;
+    height: 100%;
 }
 
 .detailHotel__info--summary__left--top {
     display: flex;
 }
 
-.detailHotel__info--summary__left--top__rating span:first-child,
+.detailHotel__info--summary__left--top__rating span,
 .detailHotel__list--body__reviews--content__overview--info__score span:first-child {
-    font-size: 44px;
+    font-size: 25px;
     line-height: 1.32;
     font-weight: 600;
 }
@@ -197,7 +198,7 @@
     font-weight: 600;
 }
 
-.detailHotel__info--summary__left--top__rating span:last-child,
+
 .detailHotel__info--summary__left--top__score span:last-child,
 .detailHotel__list--body__reviews--content__overview--info__score span:last-child {
     color: var(--color-text-11);
