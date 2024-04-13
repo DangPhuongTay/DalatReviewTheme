@@ -90,19 +90,35 @@ body.filterBox .total__filter--list__mb{
   background-color: var(--color-background-12);
 }
 
+.tour__banner--search{
+  position: relative;
+}
 .tour__banner--search__icon {
   padding: 0px 20px 0 20px;
   display: flex;
   align-items: center;
+  height: 24px;
 }
 
 .tour__banner--search__icon ion-icon {
   width: 24px;
   height: 24px;
+  position: absolute;
+    top: 50%;
+    font-size: var(--size-text-6);
+    transform: translateY(-50%);
+    color: var(--color-text-1);
 }
 
+.tour__banner--search__input {
+  position: relative;
+  margin-left: 10px;
+  width: 90%;
+}
 .tour__banner--search__input input {
   font-size: var(--size-text-5);
+  border: none;
+  width: 90%;
 
 }
 
