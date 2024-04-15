@@ -221,7 +221,7 @@ if (have_posts()) {
                         <div class="detailHotel__list--body">
                             <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là
                                 mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p>
-                            <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
+                            <!-- <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
                             <div class="detailHotel__list--body__checkbox">
                                 <div class="detailHotel__list--body__checkbox--group">
                                     <input type="checkbox" id="checkbox--group">
@@ -230,7 +230,7 @@ if (have_posts()) {
                                         <p>Ưu đãi của khách sạn(8)</p>
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="detailHotel__list--body__select">
                                 <div class="detail__list--body__select--rom">
                                     <div class="primary__dropdown">
@@ -251,9 +251,9 @@ if (have_posts()) {
 
                                     </div>
                                 </div>
-                                <div class="detail__list--body--select__tip">
+                                <!-- <div class="detail__list--body--select__tip">
                                     Có <b>4</b> mức giá cho loại phòng này
-                                </div>
+                                </div> -->
                             </div>
                             <div class="detailHotel__list--body__list--wrapper">
                                 <div class="detailHotel__list--body__list--wrapper__icon">
@@ -416,7 +416,7 @@ if (have_posts()) {
                                                         <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                     </div>
                                                 </div>
-                                                <div class="detailHotel__list--body__reviews--content__overview--category">
+                                                <!-- <div class="detailHotel__list--body__reviews--content__overview--category">
                                                     <div
                                                         class="detailHotel__list--body__reviews--content__overview--category__item">
                                                         <div>Vị trí</div>
@@ -493,10 +493,10 @@ if (have_posts()) {
                                                                 5.0</div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
 
                                             </div>
-                                            <div class="detailHotel__list--body__reviews--content__swiper">
+                                            <!-- <div class="detailHotel__list--body__reviews--content__swiper">
                                                 <div class="detailHotel__list--body__reviews--content__swiper--item">
                                                     <div class="detailHotel__list--body__reviews--content__swiper--items">
                                                         Tất cả
@@ -509,7 +509,7 @@ if (have_posts()) {
                                                     <div class="detailHotel__list--body__reviews--content__swiper--items">
                                                         3.0+</div>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                             <?php
                                             $args = array('post_id' => $product->id);
@@ -893,13 +893,13 @@ if (have_posts()) {
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__item">
-                                            <a href="<?php echo home_url(); ?>/place">Hotel</a>
+                                            <a href="<?php echo home_url(); ?>/place">Place</a>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__divider">
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__item">
-                                            <a class="last__link" href="#">Rose Milano Villa</a>
+                                            <a class="last__link" href="#"><?php the_title(); ?></a>
                                         </span>
                                     </div>
                                 </div>
@@ -983,33 +983,8 @@ if (have_posts()) {
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="home__contact--banner">
-                                    <div class="home__contact--banner__container">
-                                        <div class="home__contact--banner__container--list">
-                                            <div class="home__contact--banner__container--content">
-                                                <div class="home__contact--banner__container--content__info">
-                                                    <p>Để lại thông tin liên hệ của bạn để được tư vấn thêm</p>
-                                                    <span>Hệ thống tư vấn trực tuyến của Đà Lạt Review tất tần
-                                                        tật giúp bạn tìm ra
-                                                        các trải nghiệm du lịch Đà Lạt phù hợp với bản
-                                                        thân.</span>
-                                                </div>
-                                                <form action="#">
-                                                    <input type="text" placeholder="Nhập tên của bạn">
-                                                    <input type="text" placeholder="Nhập sđt hoặc email">
-                                                </form>
-                                                <button><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button>
-                                            </div>
-                                            <div class="home__contact--banner__container--list__img">
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact-banner-img-1.png"
-                                                    alt="img">
-                                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/contact-banner.png"
-                                                    alt="">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                    <!-- home contact banner -->
+                                 <?php wc_get_template('templates/template-home/home-contact.php'); ?>
                             </div>
                         </div>
                     </div>

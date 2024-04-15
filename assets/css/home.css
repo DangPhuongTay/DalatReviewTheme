@@ -57,6 +57,7 @@
     font-weight: bolder;
     padding: 10px 9px;
     border-radius: var(--border-radius-size-6);
+    text-transform: capitalize;
 }
 
 .header__bottom--listlink__category6,
