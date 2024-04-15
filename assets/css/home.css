@@ -174,7 +174,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding:0 30px;
+    padding: 0 30px;
     gap: 20px;
     border-right: 1px solid var(--color-background-12);
 }
@@ -838,4 +838,13 @@
         font-weight: 600;
     }
 
+}
+
+.tag__home {
+    display: inline-flex;
+}
+
+.tag__home span {
+    font-size: 28px;
+    font-weight: 350;
 }
