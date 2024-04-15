@@ -42,7 +42,7 @@
                                     ?>
                                     <ul class="header__bottom--listlink__allcategory--list__item">
                                         <div class="header__bottom--listlink__allcategory--list__item--title">
-                                            <a href=" <?php echo home_url() ?>/<?php echo $cat->name ?>">
+                                            <a href=" <?php echo home_url() ?>/<?php echo $cat->slug ?>">
                                                 <?php echo $cat->name ?>
                                             </a>
                                         </div>
@@ -66,7 +66,7 @@
                                                 foreach ($sub_cats as $sub_category) {
                                                     ?>
 
-                                                    <p> <a href=" <?php echo home_url() ?>/<?php echo $sub_category->name ?>">
+                                                    <p> <a href=" <?php echo home_url() ?>/<?php echo $sub_category->slug ?>">
                                                             <?php echo $sub_category->name ?><ion-icon
                                                                 name="chevron-forward"></ion-icon>
                                                         </a> </p>
