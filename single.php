@@ -1,7 +1,6 @@
 <?php
 
 get_header();
-    
     function slug(){
         global $product;
         global $post; 
@@ -31,5 +30,4 @@ get_header();
     }
     get_template_part('templates/template-'.slug().'/content',slug());
     get_footer();
-
 ?>
