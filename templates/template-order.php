@@ -111,6 +111,37 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+        <div class="orderpage__container--wrapper">
+            <div class="orderTicket__wrapper">
+                <div class="orderTicket__box">
+                    <div class="orderTicket__header">
+                        <div class="orderTicket__header--avt">
+                            
+                        </div>
+                        <div class="orderTicket__header--content">
+                            <div class="orderTicket__header--content__top">
+                                <div class="orderTicket__header--content__header">
+                                    THUÊ XE MÁY GIÁ RẺ TẠI ĐÀ LẠT
+                                </div>
+                                <div class="orderTicket__header--content__amount">
+                                    01
+                                </div>
+                            </div>
+                            <div class="orderTicket__header--content__bottom">
+                                Quý khách thường lo lắng, thường thắc mắc thuê xe máy Đà Lạt giá bao nhiêu?
+                                 Sau đây là bảng giá thuê xe máy ở Đà Lạt áp dụng cho ngày thường và đặt trước.
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="orderTicket__bottom">
+                        100.000 d
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </body>
 <div class="found" style="flex-direction: row;">

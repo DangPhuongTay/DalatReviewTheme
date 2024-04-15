@@ -94,3 +94,48 @@ font-size: 25px;
     display: flex;
     justify-content: space-between;
 }
+
+/* ticket  */
+
+.orderpage__container--wrapper{
+
+}
+.orderTicket__wrapper{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(151, 151, 151);
+}
+.orderTicket__box{
+padding: 20px;
+}
+.orderTicket__header{
+    display: flex;
+}
+.orderTicket__header--avt{
+    min-width: 60px;
+    height: 60px;
+    background-color: #bbb;
+}
+.orderTicket__header--content{
+    margin-left: 10px;
+}
+.orderTicket__header--content__top{
+display: flex;
+justify-content: space-between;
+}
+.orderTicket__header--content__header{
+    font-weight: bold;
+}
+.orderTicket__header--content__amount{
+    padding: 10px;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+}
+.orderTicket__header--content__bottom{
+  width: 80%;
+}
+.orderTicket__bottom{
+display: flex;
+width: 100%;
+justify-content: end;
+}
