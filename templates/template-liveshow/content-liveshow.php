@@ -95,12 +95,15 @@ if (have_posts()) {
                     ?> 
                     
                         <div class="detail__liveshow--content__right--item-btn">
-                        <?php wc_get_template('loop/add-to-cart.php'); ?> 
+                        //popup
+                        
                         </div>
                     </div>
                     
                 </div>
             </div>
+
+
 
         </section>
 
