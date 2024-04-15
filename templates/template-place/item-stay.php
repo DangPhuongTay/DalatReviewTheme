@@ -64,8 +64,7 @@
                                 <div class="fourProductList__wrapper--price__info">
                                     <?php echo $product->get_price_html(); ?>
                                 </div>
-                                <div class="fourProductList__wrapper--price__desc">Giá một đêm bao gồm thuế</div>
-                            </div>
+                            </div>#
                         </div>
                     </a>
                 </div>
