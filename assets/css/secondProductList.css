@@ -125,7 +125,7 @@
     color: var(--color-text-11);
 }
 .hotel__right--booking__tag span{
-    color: var(--color-text-1);
+    color: var(--color-text-11);
     font-size: var(--size-text-4);
 }
 .hotel__right--price{

@@ -9,6 +9,42 @@
   position: relative;
 }
 
+.total__filter--list__mb {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: -30px;
+  top: 100%;
+  background: var(--color-background-6);
+  border-radius: var(--border-radius-size-4);
+  padding: 20px;
+  z-index: 100;
+}
+
+.total__filter--list {
+  display: none;
+  position: absolute;
+  width: 500px;
+  right: 0;
+  top: 110%;
+  background: var(--color-background-6);
+  border-radius: var(--border-radius-size-4);
+  padding: 20px;
+  z-index: 100;
+}
+
+body.filterBox .total__filter--list {
+  display: block;
+}
+
+body.filterBox .total__filter--list__mb {
+  display: block;
+}
+
+.search__filter--right {
+  position: relative;
+}
+
 .tour__banner--background {
   position: absolute;
   top: 0;
@@ -46,23 +82,55 @@
   background-color: var(--color-background-6);
 }
 
-.quick__filter--entry__content--right{
-  
+
+.filter__price select {
+  width: fit-content;
+  padding: 8px 13px;
+  border: none;
+}
+
+.total__filter--btns span {
+  border: 1px solid var(--color-text-2);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.filter__price form :hover {
+  background-color: var(--color-background-12);
+  >>>>>>>main
+}
+
+.tour__banner--search {
+  position: relative;
 }
 
 .tour__banner--search__icon {
   padding: 0px 20px 0 20px;
   display: flex;
   align-items: center;
+  height: 24px;
 }
 
 .tour__banner--search__icon ion-icon {
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 50%;
+  font-size: var(--size-text-6);
+  transform: translateY(-50%);
+  color: var(--color-text-1);
+}
+
+.tour__banner--search__input {
+  position: relative;
+  margin-left: 10px;
+  width: 90%;
 }
 
 .tour__banner--search__input input {
   font-size: var(--size-text-5);
+  border: none;
+  width: 90%;
 
 }
 
@@ -90,18 +158,33 @@
   }
 }
 
+@media only screen and (max-width:1280px) {
+  .image_empty {
+    min-height: 631px;
+    max-height: 621px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 1060px) {
   .tour__banner {
     display: none;
   }
 
+  .total__filter--list {
+    display: none;
+  }
+
   .tourMobile__category {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 
   .tourMobile__categoryTop {
     display: block;
-    margin-top: 80px;
   }
 
   .tourMobile__category--list {
@@ -144,5 +227,16 @@
     border: 1px solid transparent;
     font-size: var(--size-text-4);
     margin-right: 8px;
+  }
+
+  .tourMobile__categoryBot {
+    position: relative;
+    margin: 30px 30px 0 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .firstProduct__content--list {
+    justify-content: center;
   }
 }

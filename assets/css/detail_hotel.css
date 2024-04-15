@@ -4,7 +4,8 @@
 
 /* empty img */
 .image_empty{
-    min-height: 636px;
+    min-height: 650px;
+    max-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,6 +72,8 @@
     overflow: hidden;
 }
 
+
+
 .detailHotel__img--right .woocommerce-product-gallery__image {
     width: calc(50% - 5px) !important;
     height: 20vh;
@@ -79,11 +82,13 @@
 .detailHotel__img--right .woocommerce-product-gallery__image a {
     width: 100% !important;
     height: 20vh;
+    pointer-events: none;
 }
 
 .detailHotel__img--right .woocommerce-product-gallery__image a img {
     width: 100% !important;
     height: 20vh;
+    pointer-events: none;
 }
 
 .detailHotel__info {
@@ -149,7 +154,7 @@
 .detailHotel__info--summary {
     display: flex;
     align-items: center;
-    min-height: 140px;
+    height: 140px;
     min-width: 0;
     margin-bottom: 10px;
 }
@@ -167,15 +172,16 @@
     margin-right: 8px;
     flex: 50%;
     max-width: 50%;
+    height: 100%;
 }
 
 .detailHotel__info--summary__left--top {
     display: flex;
 }
 
-.detailHotel__info--summary__left--top__rating span:first-child,
+.detailHotel__info--summary__left--top__rating span,
 .detailHotel__list--body__reviews--content__overview--info__score span:first-child {
-    font-size: 44px;
+    font-size: 25px;
     line-height: 1.32;
     font-weight: 600;
 }
@@ -192,7 +198,7 @@
     font-weight: 600;
 }
 
-.detailHotel__info--summary__left--top__rating span:last-child,
+
 .detailHotel__info--summary__left--top__score span:last-child,
 .detailHotel__list--body__reviews--content__overview--info__score span:last-child {
     color: var(--color-text-11);
@@ -1346,8 +1352,10 @@ body.MapCarForm {
         right: -70%;
     }
 }
-
 @media (max-width: 800px) {
+    .woocommerce-product-gallery__image a{
+        pointer-events: none;
+    }
     .detail__hotel--wrap .hotelMobile__fitter {
         display: none !important;
     }
@@ -1364,14 +1372,12 @@ body.MapCarForm {
         padding-bottom: 75%;
         overflow: hidden;
     }
-
     .detailHotel {
         position: relative;
         background: #fff;
         z-index: 1;
         border-radius: 20px;
     }
-
     .hotel__fitter,
     .detailHotel__top--link ion-icon,
     .detailHotel__img,

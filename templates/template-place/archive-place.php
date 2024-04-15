@@ -1,22 +1,71 @@
+
 <div class="hotel__right--item">
 <?php
-            global $paged;
+    global $paged;
 
             $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
             add_filter( 'woocommerce_catalog_orderby', 'swat_sort_by_title' );
-            function request() {
-                global $wp;
-                $url = $wp->request;
-                $requesturl = explode("/",  $url);
-                return $requesturl[0];
+
+            if (isset($_GET['price'])) {
+                $variable = $_GET['price'];
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    'orderby'=>'price',
+                    'order'=>$variable,
+                    );
+            }elseif (isset($_GET['minprice']) && isset($_GET['maxprice'])) {
+
+                $args = array(
+                    'post_type' => 'product',
+                    'posts_per_page' =>8,
+                    'paged' => $paged,
+                    'product_cat' => request(),
+                    'meta_query' => array( 
+                        'relation' => 'AND',
+                            array(
+                                    'key'       => '_price',
+                                    'compare'   => '<=',
+                                    'type'    => 'numeric',
+                                    'value'     => $_GET['maxprice'],
+                            ),
+                            array(
+                                'key'       => '_price',
+                                'compare'   => '>=',
+                                'type'    => 'numeric',
+                                'value'     => $_GET['minprice'],
+                            ),
+           
+                            
+                     ),
+                    );
+                } elseif (isset($_GET['pricehight'])) {
+                    $args = array(
+                        'post_type' => 'product',
+                        'posts_per_page' =>8,
+                        'paged' => $paged,
+                        'product_cat' => request(),
+                        'meta_query' => array( 
+                            'relation' => 'AND',
+                                array(
+                                        'key'       => '_price',
+                                        'compare'   => '>=',
+                                        'type'    => 'numeric',
+                                        'value'     => $_GET['pricehight'],
+                                ),));
+                    }else {
+                    $args = array(
+                        'post_type' => 'product',
+                        'posts_per_page' =>8,
+                        'paged' => $paged,
+                        'product_cat' => request(),
+                        
+                        ); 
             }
+
             
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 10,
-                'paged' => $paged,
-                'product_cat' => request()
-                );
             $loop = new WP_Query( $args );
             $count = $loop->found_posts;;
             if ( $loop->have_posts() ) {
@@ -26,7 +75,7 @@
                 get_template_part('templates/template-place/item', 'place');
                 endwhile;
             } else {
-                echo __( 'No products found' );
+                echo __( 'Không có sản phẩm nào' );
             }
         ?>
 </div>
@@ -51,6 +100,5 @@
                 </div>', $loop->max_num_pages) ?>
        
         </div>
-        <?php wc_get_template('loop/pagination.php'); ?> 
     <?php wp_reset_postdata(); ?>
             

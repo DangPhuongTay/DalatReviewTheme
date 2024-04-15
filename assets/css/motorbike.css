@@ -7,13 +7,13 @@
 
 .motorbike{
     width: 100%;
-    margin-top: 65px;
+    margin-top: 31px;
 }
 
 .motorbike__container--banner{
     position: relative;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     display: flex;
     align-items: end;
 }
@@ -73,4 +73,12 @@
     height: 100%;
     background: var(--color-background-7);
     border-radius: var(--border-radius-size-3);
+}
+.vehicle__pagging{
+    margin-bottom: 30px;
+}
+.motorbike__fitter--price .total__filter--btn{
+    background-color: var(--color-background-6);
+    opacity: .8;
+
 }

@@ -37,12 +37,12 @@
 
                             <?php
                             foreach ($all_categories as $cat) {
-                                if ($cat->category_parent == 0) {
+                                if ($cat->category_parent == 0 && $cat->term_id != 24) {
                                     $category_id = $cat->term_id;
                                     ?>
                                     <ul class="header__bottom--listlink__allcategory--list__item">
                                         <div class="header__bottom--listlink__allcategory--list__item--title">
-                                            <a href=" <?php echo home_url() ?>/<?php echo $cat->name ?>">
+                                            <a href=" <?php echo home_url() ?>/<?php echo $cat->slug ?>">
                                                 <?php echo $cat->name ?>
                                             </a>
                                         </div>
@@ -66,7 +66,7 @@
                                                 foreach ($sub_cats as $sub_category) {
                                                     ?>
 
-                                                    <p> <a href=" <?php echo home_url() ?>/<?php echo $sub_category->name ?>">
+                                                    <p> <a href=" <?php echo home_url() ?>/<?php echo $sub_category->slug ?>">
                                                             <?php echo $sub_category->name ?><ion-icon
                                                                 name="chevron-forward"></ion-icon>
                                                         </a> </p>
@@ -229,7 +229,7 @@
                                     );
                                     $all_categories = get_categories($args);
                                     foreach ($all_categories as $cat) {
-                                        if ($cat->name == 'place') {
+                                        if ($cat->slug == 'place') {
                                             $category_id = $cat->term_id;
                                             $args2 = array(
                                                 'taxonomy' => $taxonomy,
@@ -287,7 +287,7 @@
                                     );
                                     $all_categories = get_categories($args);
                                     foreach ($all_categories as $cat) {
-                                        if ($cat->name == 'vehicle') {
+                                        if ($cat->slug == 'vehicle') {
                                             $category_id = $cat->term_id;
                                             $args2 = array(
                                                 'taxonomy' => $taxonomy,

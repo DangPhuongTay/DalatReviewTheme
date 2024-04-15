@@ -25,7 +25,7 @@
                     <?php
                     foreach ($product->attributes as $taxonomy => $attribute) {
                         foreach ($attribute->get_terms() as $term) {
-                            if ($term->taxonomy == 'pa_popular') {
+                            if ($term->taxonomy == 'pa_tam-nhin') {
                                 ?>
 
 
@@ -63,7 +63,7 @@
                 $nub = 0;
                 foreach ($product->attributes as $taxonomy => $attribute) {
                     foreach ($attribute->get_terms() as $term) {
-                        if ($term->taxonomy == 'pa_facility' && $nub < 4) {
+                        if ($term->taxonomy == 'pa_tien-ich' && $nub < 4) {
                             $nub = $nub + 1;
                             ?>
 
@@ -100,7 +100,7 @@
                             <?php
                             foreach ($product->attributes as $taxonomy => $attribute) {
                                 foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_facility') {
+                                    if ($term->taxonomy == 'pa_tien-ich') {
                                         ?>
                                         <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
                                             <ion-icon name="car-sport-outline"></ion-icon>

@@ -17,19 +17,13 @@ get_header(); ?>
     <?php wc_get_template('templates/template-tour/tour-search-filter.php'); ?>
     <!-- firstProduct -->
     <?php wc_get_template('templates/template-tour/tour-firstProduct.php'); ?>
-   
-    <div class="breakCrumb ">
-        <div class="breakCrumb__list">
-            <a href="http://localhost/wordpress/" class="breakCrumb__list--item">Trang chủ</a>
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-            <a href="#" class="breakCrumb__list--item">Đà Lạt</a>
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-            <a href="#" class="breakCrumb__list--item">Tour & Trải
-                nghiệm</a>
-        </div>
-    </div>
+
     <!--! firstReview -->
-    <?php wc_get_template('templates/template-tour/tour-firstReview.php'); ?>
+
+
+       <!--! firstReview -->
+    
+
 
     <!--! hightlightProduct -->
     <?php wc_get_template('templates/template-tour/tour-hightlightProduct.php'); ?>
@@ -37,7 +31,12 @@ get_header(); ?>
 </div>
 
 
-<?php
+<?php ?>
 
-
-get_footer(); ?>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/tour.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_tour.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/range-slider.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/format_number.js"></script>
+<?php get_footer(); ?> <?php ?>

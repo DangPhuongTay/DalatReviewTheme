@@ -17,23 +17,23 @@
                         </span>
                         <span class="hotel__right--text">Golf Valley Hotel</span>
                         <span>
-                            <span class="hotel__right--stars">
+                            <!-- <span class="hotel__right--stars">
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
                                 <ion-icon name="star" class="icon__star"></ion-icon>
-                            </span>
+                            </span> -->
                         </span>
 
                     </div>
                     <div class="hotel__right--review">
-                        <div class="hotel__right--review__score">
+                        <!-- <div class="hotel__right--review__score">
                             <span>4.4</span>
                             <span class="slash">/</span>
                             <span>5</span>
-                        </div>
+                        </div> -->
                         <div class="hotel__right--review__desc">
-                        <?php echo $rating_count = $product->get_rating_count(); ?>
+                       
                         </div>
                         <div class="hotel__right--review__count"><?php echo $review_count = $product->get_review_count(); ?> Bình luận</div>
                     </div>
@@ -41,7 +41,7 @@
                     <?php
                     foreach ($product->attributes as $taxonomy => $attribute) {
                         foreach ($attribute->get_terms() as $term) {
-                            if ($term->taxonomy == 'pa_address') {
+                            if ($term->taxonomy == 'pa_dia-chi') {
                                 ?>
                                 <div class="hotel__right--ellipsis">
                                     <ion-icon name="location-outline"></ion-icon>
@@ -61,7 +61,6 @@
                 </div>
                 <div class="hotel__right--tag">
                     <div class="hotel__right--tag__wrap">
-                            
                         <?php
                         foreach ($product->attributes as $taxonomy => $attribute) {
                             foreach ($attribute->get_terms() as $term) {
@@ -86,8 +85,7 @@
                     </div>
                     <div class="hotel__right--booking">
                         <div class="hotel__right--booking__tag">
-                            <img src="https://pics.freeicons.io/uploads/icons/png/8661800331595601827-512.png" alt="">
-                            <span>700+ Khách đã đặt</span>
+                            <span class="text__overflow--main"><?php echo $product->get_short_description(); ?></span>
                         </div>
                     </div>
                 </div>
@@ -96,13 +94,12 @@
                 <div class="hotel__right--price__info">
                     <?php echo $product->get_price_html(); ?>
                 </div>
-                <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
+                <!-- <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div> -->
                 <div class="hotel__right--price__btn firstBtn">
                     Xem chi tiết
                 </div>
-                <div class="hotel__right--price__date">Dựa trên giá cả 18/2</div>
-         
+                <div class="hotel__right--price__date">Dựa trên giá cả <?php the_date(); ?></div>
+                </div>
         </div>
     </a>
-   <?php wc_get_template( 'loop/add-to-cart.php' ); ?>
 </div>

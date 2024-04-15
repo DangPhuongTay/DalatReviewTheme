@@ -17,16 +17,6 @@
                     </div>
                     <div class="header__top--right">
                         <ul>
-                            <li>
-                                <a href="#" class="header__top--right__item">
-                                    Trợ giúp
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="header__top--right__item">
-                                    Xem gần đây
-                                </a>
-                            </li>
                             <li class="logout">
                                 <div class="header__top--right__item logout">
                                     Đăng xuất
@@ -53,7 +43,7 @@
                     </div>
                     <div class="header__top--right__mobile">
                         <div class="header__top--right__mobile--item">
-                            <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                            <a href="<?php echo home_url() ?>/search-moblie"><ion-icon name="search-outline"></ion-icon></a>
                         </div>
                         <div class="header__top--right__mobile--item">
                             <a href="cart"><ion-icon name="cart-outline"></ion-icon></a>
@@ -102,7 +92,7 @@
                             $image = wp_get_attachment_url($thumbnail_id);
                     ?>
 
-                            <li><a href="tour"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a></li>
+                            <li><a href="<?php echo home_url() ?>/<?php echo $cat->slug ?>"><img src=" <?php echo $image; ?>" alt="img"><span><?php echo $cat->name ?></span></a></li>
                             <?php
 
 
@@ -126,7 +116,7 @@
                                     $image = wp_get_attachment_url($thumbnail_id);
                             ?>
 
-                                    <li><a href="tour"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
+                                    <li><a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>"><img src="<?php echo $image; ?>" alt="img"><span><?php echo  $sub_category->name; ?></span></a></li>
                     <?php
                                 }
                             }
@@ -239,7 +229,7 @@
                 </div>
             </div>
         </div>
-        <div class="header__container--chatcall">
+        <!-- <div class="header__container--chatcall">
             <div class="header__box--chatcall">
 
                 <p><ion-icon name="chatbubbles-outline" onclick="openChat()"></ion-icon></p>
@@ -291,5 +281,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>

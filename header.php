@@ -17,6 +17,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/404.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/blog.css">
@@ -39,7 +40,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sale_banner.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/secondDropdown.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/secondProductList.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tour_style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_booking.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_credit.css">
@@ -49,9 +49,11 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_wishList.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/voucher.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/range-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <?php wp_head(); ?>
 </head>
 <?php get_template_part('menu'); ?>
+
 
 

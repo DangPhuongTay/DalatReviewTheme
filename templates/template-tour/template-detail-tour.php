@@ -19,7 +19,7 @@
         <div class="detail__tour--container">
             <div class="detail__tour--header">
                 <div class="detail__tour--header__link">
-                    <a href="home">Trang chủ</a> > <a href="">Vé tham quan</a> > <a href="">Vé tham quan Săn Mây Cầu Gỗ – BÌNH MINH</a>
+                  
                 </div>
                 <div class="detail__tour--header__title">
                     VÉ THAM QUAN SĂN MÂY CẦU GỖ – BÌNH MINH
@@ -465,7 +465,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                                         <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
                                     </div>
                                     <div class="fourProductList__wrapper--info__ellipsis">
-                                        <ion-icon name="location-outline"></ion-icon>
+                                        <!-- <ion-icon name="location-outline"></ion-icon> -->
                                         <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
                                     </div>
                                     <div class="fourProductList__wrapper--info__tag">
@@ -516,7 +516,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                                         <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
                                     </div>
                                     <div class="fourProductList__wrapper--info__ellipsis">
-                                        <ion-icon name="location-outline"></ion-icon>
+                                        <!-- <ion-icon name="location-outline"></ion-icon> -->
                                         <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
                                     </div>
                                     <div class="fourProductList__wrapper--info__tag">
@@ -567,7 +567,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                                         <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
                                     </div>
                                     <div class="fourProductList__wrapper--info__ellipsis">
-                                        <ion-icon name="location-outline"></ion-icon>
+                                        <!-- <ion-icon name="location-outline"></ion-icon> -->
                                         <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
                                     </div>
                                     <div class="fourProductList__wrapper--info__tag">
@@ -618,7 +618,7 @@ Khi tải ứng dụng Đà Lạt Review Tất Tần Tật bạn sẽ nhận đ�
                                         <div class="fourProductList__wrapper--info__count">47 Bình luận</div>
                                     </div>
                                     <div class="fourProductList__wrapper--info__ellipsis">
-                                        <ion-icon name="location-outline"></ion-icon>
+                                        <!-- <ion-icon name="location-outline"></ion-icon> -->
                                         <span class="fourProductList__wrapper--info__location"> 2.1km từ Trung tâm thành phố,Đà Lạt</span>
                                     </div>
                                     <div class="fourProductList__wrapper--info__tag">

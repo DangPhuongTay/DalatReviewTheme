@@ -111,6 +111,7 @@ if (have_posts()) {
 
                                 <?php
                                 echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($attachment_id), $attachment_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+                             
                                 ?>
 
                                 <?php
@@ -124,9 +125,9 @@ if (have_posts()) {
                             <h1>
                                 <?php the_title() ?>
                             </h1>
+                            <!-- <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon> -->
                         </div>
                         <div class="detailHotel__info--wapper__right">
                             <p class="detailHotel__info--wapper__right--name">
@@ -180,12 +181,11 @@ if (have_posts()) {
                         <div class="detailHotel__info--summary__left" onclick="btnDetailHotelRate()">
                             <div class="detailHotel__info--summary__left--top">
                                 <div class="detailHotel__info--summary__left--top__rating">
-                                    <span>4.3</span>
-                                    <span>/5</span>
+                                    <span>Đánh giá</span>
                                 </div>
                                 <div class="detailHotel__info--summary__left--top__score">
-                                    <span>Rất tốt</span>
-                                    <span>12 Bình luận</span>
+                                   
+                                    <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                 </div>
                             </div>
                             <div class="detailHotel__info--summary__left--bot">
@@ -413,7 +413,7 @@ if (have_posts()) {
                                                     <div
                                                         class="detailHotel__list--body__reviews--content__overview--info__fomart">
                                                         <p>Tuyệt vời</p>
-                                                        <span>1 Bình luận</span>
+                                                        <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                     </div>
                                                 </div>
                                                 <div class="detailHotel__list--body__reviews--content__overview--category">
@@ -521,7 +521,7 @@ if (have_posts()) {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="detailHotel__list--body__reviews">
+                                <!-- <div class="detailHotel__list--body__reviews">
                                     <div class="detailHotel__list--header">
                                         <div class="header__list--header__title">
                                             <h2>Đánh giá</h2>
@@ -538,7 +538,7 @@ if (have_posts()) {
                                                 </div>
                                                 <div class="detailHotel__list--body__reviews--content__overview--info__fomart">
                                                     <p>Tuyệt vời</p>
-                                                    <span>1 Bình luận</span>
+                                                    <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                 </div>
                                             </div>
                                             <div class="detailHotel__list--body__reviews--content__overview--category">
@@ -635,15 +635,10 @@ if (have_posts()) {
                                             </div>
                                         </div>
                                         <div class="" onclick="btnDetailHotelRate()">
-                                            <?php
-                                            $number_of_reviews = 1;
-                                            $args = array('number' => $number_of_reviews, 'post_id' => $product->id);
-                                            $comments = get_comments($args);
-                                            wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
-                                            ?>
+            
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <!-- <div class="detailHotel__list--body__detail">
                                                     <div class="detailHotel__list--header">
@@ -888,6 +883,7 @@ if (have_posts()) {
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="detailHotel__list--body__link">
                                     <div class="detailHotel__list--body__link--inner">
                                         <span class="detailHotel__list--body__link--inner__item">
@@ -897,7 +893,7 @@ if (have_posts()) {
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__item">
-                                            <a href="<?php echo home_url(); ?>/hotel">Khách sạn</a>
+                                            <a href="<?php echo home_url(); ?>/place">Hotel</a>
                                         </span>
                                         <span class="detailHotel__list--body__link--inner__divider">
                                             <ion-icon name="chevron-forward-outline"></ion-icon>

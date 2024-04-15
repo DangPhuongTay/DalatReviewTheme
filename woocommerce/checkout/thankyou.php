@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div class="woocommerce-order">
 
-	<?php
+	<?php 
 	if ( $order ) :
 
 		do_action( 'woocommerce_before_thankyou', $order->get_id() );

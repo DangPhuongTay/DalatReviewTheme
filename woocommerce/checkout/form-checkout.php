@@ -19,7 +19,7 @@
 
 <?php
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+	exit;coupon;
 }
 $checkout = WC()->checkout();
 do_action( 'woocommerce_before_checkout_form', $checkout );
@@ -32,7 +32,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+<form name="checkout" style="padding: 10px 0 30px 0;" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 <div class="checkouttour__container">
     <div class="checkouttour__container--left">
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
@@ -49,7 +49,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			</div>
 		</div>
 
-		<?php do_action( 'Additional information' ); ?>
+		
 
 	<?php endif; ?>
 	
@@ -80,15 +80,18 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		justify-content: space-between;
 		padding: 5px 0;
 	}
-	.woocommerce-additional-fields__field-wrapper .form-row span,
-	.woocommerce-additional-fields__field-wrapper .form-row lable,
-	.woocommerce-billing-fields__field-wrapper .form-row span,
-	.woocommerce-billing-fields__field-wrapper .form-row lable{
-		width: 50%;
+
+	.woocommerce-billing-fields__field-wrapper .form-row span{
+		width: 70%;
 		display: flex;
  		align-items: center;
 	}
-	.woocommerce-additional-fields__field-wrapper .form-row span textarea,
+	.woocommerce-billing-fields__field-wrapper .form-row lable{
+		width: 30%;
+		display: flex;
+ 		align-items: center;
+	}
+	.woocommerce-billing-fields__field-wrapper .form-row span textarea,
 	.woocommerce-billing-fields__field-wrapper .form-row span input,
 	.woocommerce-billing-fields__field-wrapper .form-row span select{
 		resize: none;
@@ -98,8 +101,12 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
     	border-radius: var(--border-radius-size-1);
 		outline:none;
 	}
-	.woocommerce-additional-fields__field-wrapper .form-row span textarea{
+	.woocommerce-billing-fields__field-wrapper .form-row span textarea{
 		height: 150px;
+	}
+	.woocommerce-additional-fields__field-wrapper,
+	.woocommerce-billing-fields__field-wrapper .form-row .optional{
+		display:none;
 	}
 </style>
 

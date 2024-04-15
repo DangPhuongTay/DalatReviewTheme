@@ -20,9 +20,9 @@
             <div class="cart__container--top">
                 <div class="cart__container--top__left">
                     <div class="cart__container--top__left--all">
-						<h5>
+						<h6 style="color:#444">
 						Sản phẩm đã thêm vào giỏ hàng
-						</h5>
+						</h6>
                     </div>
                     
 <?php
@@ -91,8 +91,22 @@ do_action( 'woocommerce_before_cart' ); ?>
 							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 						}
 						?></p>
-                                        <span>[Vé QR Code - Vào Cửa Trực Tiếp] Vé Cáp Treo Nữ Hoàng</span>
-                                    </div>
+                                        <span>
+                                            <?php
+                          if ( ! $product_permalink ) {
+							echo wp_kses_post( $product_short_description . '&nbsp;' );
+						} else {
+							/**
+							 * This filter is documented above.
+							 *
+							 * @since 2.1.0
+							 */
+							echo wp_kses_post( apply_filters( 'woocommerce_cart_item_short_description', sprintf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $_product->get_short_description() ), $cart_item, $cart_item_key ) );
+						}
+
+						do_action( 'woocommerce_after_cart_item_description', $cart_item, $cart_item_key ); ?> </span>
+                                  
+                    </div>
                                 </div>
                                 <div class="cart__container--top__left--list__item--top__quality">
                                     <!-- <span>Người lớn</span> -->
@@ -140,6 +154,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 										esc_attr( $_product->get_sku() )
 									),
 									$cart_item_key
+                                    
 								);
 							?></button>
                                 </div>
@@ -165,7 +180,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		<div class="cart__container--top__right">
 		<?php wc_get_template('cart/cart-totals.php'); ?>
           <div class="cart__container--top__right--sum">
-                        <span><?php esc_html_e( '', 'woocommerce' ); ?></th>
+                        <span style="color:#444"><?php esc_html_e( '', 'woocommerce' ); ?></th>
 			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td></span>
                     </div>
                     <div class="art__container--top__right--btn firstBtn">
@@ -177,639 +192,38 @@ do_action( 'woocommerce_before_cart' ); ?>
                 <div class="cart__container--bottom__header">
                     <span>Thường được đặt với</span>
                 </div>
-                <!-- <div class="firstProduct row-max-width">
+                <div class="firstProduct row-max-width">
                     <div class="firstProduct__content container-fluid">
                         <div class="firstProduct__content--list row">
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct2.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Trải Nghiệm Canyoning
-                                                    Vượt Thác Datanla</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.9</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">(
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">120
-                                                    </span>)</span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>1K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--box">
-                                                    <div
-                                                        class="firstProduct__info--bottom__content--box__price">
-                                                        <span>đ 1,890,000</span>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--bottom__content--box__underline">
-                                                        <span>đ 2,050,000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--bottom__tagging tagging__wrap">
-                                                <div
-                                                    class="tagging__box firstProduct__info--bottom__tagging--box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                                                            sách đảm bảo về
-                                                            giá</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Đi Xe Trượt Thác Datanla
-                                                    New Alpine Tại Đà Lạt</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.5</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">1,485</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>50K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Bán
-                                                            chạy</span>
-                                                    </div>
-                                                </div>
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hoàn
-                                                            tiền dễ dàng</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 245,000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct3.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Da Lat Conquer Langbiang
-                                                    Mountain, Datanla Waterfall Day
-                                                    Tour with Optional Lumiere
-                                                    Visit</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.6</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">265
-                                                    </span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>3K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 450,000</span>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--bottom__tagging tagging__wrap">
-                                                <div
-                                                    class="tagging__box firstProduct__info--bottom__tagging--box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                                                            sách đảm bảo về
-                                                            giá</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct4.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Tour Săn Mây và Ngắm
-                                                    Bình Minh Tại Đà Lạt</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.5</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">142</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>2K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 400,000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="firstProduct__content--list row">
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct5.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Trải Nghiệm Đu Dây High
-                                                    Rope Course Đà Lạt</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.8</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">407</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>10K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Bán
-                                                            chạy</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 460,000</span>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--bottom__tagging tagging__wrap">
-                                                <div
-                                                    class="tagging__box firstProduct__info--bottom__tagging--box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                                                            sách đảm bảo về
-                                                            giá</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct6.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Trải nghiệm trượt
-                                                    Zipline xuyên rừng tại Datanla
-                                                    Đà Lạt </a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.7</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">57</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>1K+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 1,000,000</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct7.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Tour ngày tham quan
-                                                    ngoại ô Đà Lạt với tuỳ chọn tham
-                                                    quan Vườn ánh sáng Lumiere Đà
-                                                    Lạt</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.7</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">93</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>800+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--price">
-                                                    <span>đ 550,000</span>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--bottom__tagging tagging__wrap">
-                                                <div
-                                                    class="tagging__box firstProduct__info--bottom__tagging--box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">Chính
-                                                            sách đảm bảo về
-                                                            giá</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="firstProduct__content--list__item col-sm-3 ">
-                                <div
-                                    class="firstProduct__content--list__item--wrap">
-                                    <div class="firstProduct__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tourProduct8.webp"
-                                            alt="tourProduct">
-                                    </div>
-                                    <div class="firstProduct__info">
-                                        <div class="firstProduct__info--top">
-                                            <div
-                                                class="firstProduct__info--top__title">
-                                                <a href="#">Tour Nửa Ngày Chèo SUP
-                                                    Trên Hồ Tuyền Lâm</a>
-                                            </div>
-                                            <div
-                                                class="firstProduct__info--top__score">
-                                                <div
-                                                    class="firstProduct__info--top__score--star">
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__icon">
-                                                        <ion-icon
-                                                            name="star"></ion-icon>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--top__score--star__number">
-                                                        <span>4.8</span>
-                                                    </div>
-                                                </div>
-                                                <span
-                                                    class="firstProduct__info--top__score--review">
-                                                    (
-                                                    <span
-                                                        class="firstProduct__info--top__score--review__number">39</span>
-                                                    )
-                                                </span>
-                                                <div class="sep">
-                                                    <ion-icon
-                                                        name="ellipse"></ion-icon>
-                                                </div>
-                                                <div
-                                                    class="firstProduct__info--top__score--booked">
-                                                    <span
-                                                        firstProduct__info--top__score--booked__number>800+
-                                                        Đã được đặt </span>
-                                                </div>
-                                            </div>
-                                            <div class="tagging__wrap">
-                                                <div class="tagging__box">
-                                                    <div class="tagging__tag">
-                                                        <span
-                                                            class="tagging__tag--text">Hướng
-                                                            dẫn tiếng Việt</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="firstProduct__info--bottom">
-                                            <div
-                                                class="firstProduct__info--bottom__content">
-                                                <div
-                                                    class="firstProduct__info--bottom__content--box">
-                                                    <div
-                                                        class="firstProduct__info--bottom__content--box__price">
-                                                        <span>đ 500,000</span>
-                                                    </div>
-                                                    <div
-                                                        class="firstProduct__info--bottom__content--box__underline">
-                                                        <span>đ 540,000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        
+        <?php
+            global $paged;
+
+            $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => 8,
+                'paged' => $paged,
+                );
+            $loop = new WP_Query( $args );
+            $count = $loop->found_posts;;
+            if ( $loop->have_posts() ) {
+                
+                while ( $loop->have_posts() ) : $loop->the_post();
+               
+                get_template_part('templates/template-liveshow/item', 'liveshow');
+                endwhile;
+            } else {
+                echo __( 'No products found' );
+            }
+        ?></div>
+
+    <?php wp_reset_postdata(); ?>
+            
                         </div>
                     </div>
-                </div> -->
+                </div> 
             </div>
         </div>
     </section> 
