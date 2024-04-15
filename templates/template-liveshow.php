@@ -16,8 +16,8 @@ get_header(); ?>
  
   <div class="liveshow__container">
     <div class="liveshow__container--link">
-      <a class="liveshow__container--link__return1" href="<?php home_url( ); ?>">Trang chủ > </a>
-      <a class="liveshow__container--link__return2" href="">Vé LiveShow</a>
+      <a class="liveshow__container--link__return1" href="<?php echo home_url();?>">Trang chủ > </a>
+      <a class="liveshow__container--link__return2" href="<?php echo home_url();?>/liveshow">Vé LiveShow</a>
 
     </div>
     <!--  -->
