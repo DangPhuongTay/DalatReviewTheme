@@ -43,7 +43,7 @@
                     </div>
                     <div class="header__top--right__mobile">
                         <div class="header__top--right__mobile--item">
-                            <a href=""><ion-icon name="search-outline"></ion-icon></a>
+                            <a href="<?php echo home_url() ?>/search-moblie"><ion-icon name="search-outline"></ion-icon></a>
                         </div>
                         <div class="header__top--right__mobile--item">
                             <a href="cart"><ion-icon name="cart-outline"></ion-icon></a>
