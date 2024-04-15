@@ -1,6 +1,7 @@
 .orderpage__container{
-    max-width: 1280px;
+    
     margin: 0 auto;
+    margin-top: 29px;
    background-color:#f7f7f7;
 }
 .orderpage__container--wrapper{

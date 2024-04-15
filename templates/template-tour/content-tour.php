@@ -301,7 +301,7 @@ if (have_posts()) {
                         </div>
                         <div class="detail__tour--content__left--contact">
                             <p>Bạn thắc mắc về dịch vụ này? Chat với tôi!</p>
-                            <a href="" class="detail__tour--content__left--contact__btn secondBtn"><ion-icon
+                            <a href="https://zalo.me/dalatreview" class="detail__tour--content__left--contact__btn secondBtn"><ion-icon
                                     name="chatbubbles"></ion-icon> <span>Chat với chúng tôi</span></a>
                         </div>
                         <div class="detail__tour--content__left--header">
