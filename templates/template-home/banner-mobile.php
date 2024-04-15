@@ -29,7 +29,7 @@
                             $image = wp_get_attachment_url($thumbnail_id);
                     ?>
 
-                            <a  href="<?php echo home_url() ?>/<?php echo $cat->name ?>"><img src=" <?php echo $image; ?>" alt="img">
+                            <a  href="<?php echo home_url() ?>/<?php echo $cat->slug ?>"><img src=" <?php echo $image; ?>" alt="img">
                                 <span><?php echo $cat->name ?></span>
                             </a>
                             <?php
