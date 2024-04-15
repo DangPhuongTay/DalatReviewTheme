@@ -364,7 +364,6 @@ body.InfoCarForm{
         margin-bottom: 20px;
     }
     .detail__car--container__item{
-        width: 500px;
         padding: 10px;
         box-shadow: none;
         scroll-snap-align: start;
