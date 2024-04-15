@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <div class="tour">
     <br />
     <br />
@@ -78,7 +79,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- button policy -->
-                                                <div class="firstProduct__info--bottom__tagging tagging__wrap">
+                                                <!-- <div class="firstProduct__info--bottom__tagging tagging__wrap">
                                                     <div class="tagging__box firstProduct__info--bottom__tagging--box">
                                                         <div class="tagging__tag">
                                                             <span
@@ -87,7 +88,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -106,9 +107,34 @@
                         <a class="found__link" href="<?php echo home_url(); ?>">Quay lại trang chủ</a>
                     </div>
                 <?php } ?>
+
             </div>
+            <?php global $loop; ?>
+            <?php global $count; ?>
+
+            <?php previous_posts_link('<div class="liveshow__container--body__product--list__page--item">
+                  <ion-icon name="chevron-back"></ion-icon>
+                </div>', $loop->max_num_pages); ?></li>
+
+            <?php
+
+            // echo ceil($count/4);
+            for ($x = 1; $x <= ceil($count / $loop->max_num_pages); $x++) {
+                ?>
+                <a href="<?php echo home_url(); ?>/page/<?php echo $x; ?>" class="">
+                    <div class="liveshow__container--body__product--list__page--item"><?php echo $x; ?></div>
+                </a>
+                <?php
+            }
+
+            ?>
+            <?php next_posts_link('<div class="liveshow__container--body__product--list__page--item">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>', $loop->max_num_pages) ?></li>
         </div>
     </div>
 
+    <?php wp_reset_postdata(); ?>
 </div>
+
 <?php get_footer(); ?>
