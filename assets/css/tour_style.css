@@ -46,14 +46,8 @@
   background-color: var(--color-background-6);
 }
 
-.filter__price select {
-  width: fit-content;
-  padding: 8px 13px;
-  border: none;
-}
-
-.filter__price form :hover {
-  background-color: var(--color-background-12);
+.quick__filter--entry__content--right{
+  
 }
 
 .tour__banner--search__icon {
