@@ -10,11 +10,8 @@
                     <div class="detailHotel__list--body__list--wrap__item--left__img--main__1">
                         <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="">
                     </div>
-
                 </div>
-
             </div>
-
             <div class="detailHotel__list--body__list--wrap__item--left__popular">
                 <div class="detailHotel__list--body__list--wrap__item--left__popular--name">
                     <p>
@@ -58,7 +55,6 @@
             </div>
 
             <div class="detailHotel__list--body__list--wrap__item--left__facility">
-
                 <?php
                 $nub = 0;
                 foreach ($product->attributes as $taxonomy => $attribute) {
@@ -80,7 +76,6 @@
                     }
                 }
                 ?>
-
             </div>
         </div>
         <div class="detailHotel__list--body__list--wrap__item--right">
@@ -96,37 +91,35 @@
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </div>
                         <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate">
-                            <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__wraper">
-                            <?php
-                            foreach ($product->attributes as $taxonomy => $attribute) {
-                                foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_tien-ich') {
-                                        ?>
-                                        <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
-                                            <ion-icon name="car-sport-outline"></ion-icon>
-                                            <span>
-                                                <?php echo $term->name; ?>
-                                            </span>
-                                        </div>
-                                        <?php
-                                    } else {
-                                        echo '';
+                            <div
+                                class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__wraper">
+                                <?php
+                                foreach ($product->attributes as $taxonomy => $attribute) {
+                                    foreach ($attribute->get_terms() as $term) {
+                                        if ($term->taxonomy == 'pa_tien-ich') {
+                                            ?>
+                                            <div
+                                                class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
+                                                <ion-icon name="car-sport-outline"></ion-icon>
+                                                <span>
+                                                    <?php echo $term->name; ?>
+                                                </span>
+                                            </div>
+                                            <?php
+                                        } else {
+                                            echo '';
+                                        }
                                     }
                                 }
-                            }
-                            ?>
+                                ?>
                             </div>
-                            
-
                             <div class="detailHotel__list--body__list--wrap__item--right__body--info__left--name">
                                 <span>Mô tả</span>
                                 <ion-icon name="chevron-forward-outline"></ion-icon>
                             </div>
-
                             <div>
                                 <?php echo $product->get_description(); ?>
                             </div>
-
                         </div>
                     </div>
                     <div class="detailHotel__list--body__list--wrap__item--right__body--info__right">
@@ -136,18 +129,14 @@
                                 <div
                                     class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc">
                                     <?php echo $product->get_price_html(); ?>
-                                    
-                                </div>
-                                <div
-                                    class="detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--tip">
-                                    Giá 1 đêm đã bao gồm thuế 
                                 </div>
                             </div>
-                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?></a> </div>
+                            <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?></a>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     </div>
+</div>
