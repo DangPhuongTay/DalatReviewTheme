@@ -88,7 +88,7 @@ body.filterBox .total__filter--list__mb{
 }
 .filter__price form :hover {
   background-color: var(--color-background-12);
-}
+
 
 .tour__banner--search{
   position: relative;
