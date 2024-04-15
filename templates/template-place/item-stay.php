@@ -64,7 +64,7 @@
                                 <div class="fourProductList__wrapper--price__info">
                                     <?php echo $product->get_price_html(); ?>
                                 </div>
-                            </div>#
+                            </div>
                         </div>
                     </a>
                 </div>
