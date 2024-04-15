@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <!-- button policy -->
-                        <div class="firstProduct__info--bottom__tagging tagging__wrap">
+                        <!-- <div class="firstProduct__info--bottom__tagging tagging__wrap">
                             <div class="tagging__box firstProduct__info--bottom__tagging--box">
                                 <div class="tagging__tag">
                                     <span class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">
@@ -61,7 +61,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

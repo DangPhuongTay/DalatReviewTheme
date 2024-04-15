@@ -39,8 +39,19 @@
                     <div class="tagging__wrap">
                         <div class="tagging__box">
                             <div class="tagging__tag">
-                                <p><?php the_tags(); ?></p>
-                                Ban chay
+                                <p><?php the_tags('Tags: ',','); ?></p>
+                                <!-- <?php
+$tag = wp_get_post_tags(get_the_ID());
+$t = $tag[0];
+if ($t) {
+$r = new WP_Query(array('posts_per_page'=> 8, 'post__not_in'=> array( get_the_ID() ), 'tag'=> $t->slug ));
+while ( $r->have_posts()): $r->the_post();
+echo '<li><a href="'.get_permalink().'">'.get_the_title().'</a></li>';
+endwhile;
+echo '</ol>';
+wp_reset_postdata();
+}
+?> -->
                             </div>
                         </div>
                     </div>
@@ -53,7 +64,7 @@
                             </div>
                         </div>
                         <!-- button policy -->
-                        <div class="firstProduct__info--bottom__tagging tagging__wrap">
+                        <!-- <div class="firstProduct__info--bottom__tagging tagging__wrap">
                             <div class="tagging__box firstProduct__info--bottom__tagging--box">
                                 <div class="tagging__tag">
                                     <span class="tagging__tag--text firstProduct__info--bottom__tagging--box__text">
@@ -61,7 +72,7 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

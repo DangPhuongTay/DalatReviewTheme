@@ -94,7 +94,7 @@
                 <div class="hotel__right--price__info">
                     <?php echo $product->get_price_html(); ?>
                 </div>
-                <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div>
+                <!-- <div class="hotel__right--desc">Giá một đêm bao gồm thuế</div> -->
                 <div class="hotel__right--price__btn firstBtn">
                     Xem chi tiết
                 </div>
