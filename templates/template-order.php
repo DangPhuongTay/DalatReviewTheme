@@ -17,7 +17,7 @@ get_header(); ?>
             <div class="orderpage__container--wrapper__header">
                 Thanh toán hoàn tất
             </div>
-            <div class="orderpage__container--wrapper__body">
+            <div class="orderpage__container--wrapper__body shadow">
                 <div class="orderpage__container--wrapper__content">
                     <div class="orderpage__container--wrapper__banner banner_left">
                         <div class="orderpage__container--wrapper__banner--box">
