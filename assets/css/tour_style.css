@@ -8,7 +8,8 @@
   margin-bottom: 20px;
   position: relative;
 }
-.total__filter--list__mb{
+
+.total__filter--list__mb {
   display: none;
   position: absolute;
   width: 100vw;
@@ -19,7 +20,8 @@
   padding: 20px;
   z-index: 100;
 }
-.total__filter--list{
+
+.total__filter--list {
   display: none;
   position: absolute;
   width: 500px;
@@ -30,15 +32,19 @@
   padding: 20px;
   z-index: 100;
 }
-body.filterBox .total__filter--list{
+
+body.filterBox .total__filter--list {
   display: block;
 }
-body.filterBox .total__filter--list__mb{
+
+body.filterBox .total__filter--list__mb {
   display: block;
 }
-.search__filter--right{
+
+.search__filter--right {
   position: relative;
 }
+
 .tour__banner--background {
   position: absolute;
   top: 0;
@@ -76,23 +82,27 @@ body.filterBox .total__filter--list__mb{
   background-color: var(--color-background-6);
 }
 
+
 .filter__price select {
   width: fit-content;
   padding: 8px 13px;
   border: none;
 }
-.total__filter--btns span{ 
+
+.total__filter--btns span {
   border: 1px solid var(--color-text-2);
   padding: 5px 15px;
   border-radius: 10px;
 }
+
 .filter__price form :hover {
   background-color: var(--color-background-12);
+}
 
-
-.tour__banner--search{
+.tour__banner--search {
   position: relative;
 }
+
 .tour__banner--search__icon {
   padding: 0px 20px 0 20px;
   display: flex;
@@ -104,10 +114,10 @@ body.filterBox .total__filter--list__mb{
   width: 24px;
   height: 24px;
   position: absolute;
-    top: 50%;
-    font-size: var(--size-text-6);
-    transform: translateY(-50%);
-    color: var(--color-text-1);
+  top: 50%;
+  font-size: var(--size-text-6);
+  transform: translateY(-50%);
+  color: var(--color-text-1);
 }
 
 .tour__banner--search__input {
@@ -115,6 +125,7 @@ body.filterBox .total__filter--list__mb{
   margin-left: 10px;
   width: 90%;
 }
+
 .tour__banner--search__input input {
   font-size: var(--size-text-5);
   border: none;
@@ -135,7 +146,7 @@ body.filterBox .total__filter--list__mb{
 }
 
 @media only screen and (max-width: 1100px) {
-  
+
   .tour__banner--wrap,
   .search__filter--wrap,
   .firstProduct,
@@ -145,7 +156,8 @@ body.filterBox .total__filter--list__mb{
     max-width: 1000px !important;
   }
 }
-@media only screen and (max-width:1280px){
+
+@media only screen and (max-width:1280px) {
   .image_empty {
     min-height: 631px;
     max-height: 621px;
@@ -153,15 +165,18 @@ body.filterBox .total__filter--list__mb{
     align-items: center;
     justify-content: center;
     object-fit: cover;
+  }
 }
-}
+
 @media only screen and (max-width: 1060px) {
   .tour__banner {
     display: none;
   }
-  .total__filter--list{
+
+  .total__filter--list {
     display: none;
   }
+
   .tourMobile__category {
     display: flex;
     justify-content: space-between;
@@ -212,13 +227,15 @@ body.filterBox .total__filter--list__mb{
     font-size: var(--size-text-4);
     margin-right: 8px;
   }
-  .tourMobile__categoryBot{
+
+  .tourMobile__categoryBot {
     position: relative;
     margin: 30px 30px 0 0;
   }
 }
+
 @media only screen and (max-width: 660px) {
-  .firstProduct__content--list{
+  .firstProduct__content--list {
     justify-content: center;
   }
 }
