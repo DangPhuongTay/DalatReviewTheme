@@ -17,6 +17,22 @@ get_header(); ?>
             <div class="orderpage__container--wrapper__header">
                 Thanh toán hoàn tất
             </div>
+
+            <?php
+          $slug_request = $wp->request;
+          $requestid = explode("/",  $slug_request);
+          $order = wc_get_order($requestid[2]);
+          $order_data = $order->get_data();
+          $order_total = $order_data['total'];
+  
+          $order_billing_first_name = $order_data['billing']['first_name'];
+          $order_billing_phone = $order_data['billing']['phone'];
+          $order_billing_email = $order_data['billing']['email'];
+          $order_billing_address_1 = $order_data['billing']['address_1'];
+          $order_billing_date_in = $order->get_meta('billing_date_out');
+          $order_billing_date_out = $order->get_meta('billing_date_in');
+          $order_billing_note = $order->get_meta('billing_note');
+          ?>
             <div class="orderpage__container--wrapper__body shadow">
                 <div class="orderpage__container--wrapper__content">
                     <div class="orderpage__container--wrapper__banner banner_left">
@@ -89,22 +105,69 @@ get_header(); ?>
                             </div>
                             <hr class="dashes__ruler">
                             <div class="orderpage__container--wrapper__banner--box__body">
-                                <div class="orderpage__container--wrapper__banner--box__body--content top">
-                                    <div>Giỏ hàng:</div>
-                                    <div>số lượng</div>
-                                    <div>Thành viên</div>
-                                </div>
+                            <?php
+                                    $slug_request = $wp->request;
+                                    $requestid = explode("/",  $slug_request);
+                                    $order = wc_get_order($requestid[2]);
+                                    $order_data = $order->get_data();
+                                    $order_total = $order_data['total'];
+                                    $text_order_list='';
+                                      // Iterating through each WC_Order_Item_Product objects
+                                      foreach ($order->get_items() as $item_key => $item ):
+                                      
+                                          ## Using WC_Order_Item methods ##
+                                      
+                                          // Item ID is directly accessible from the $item_key in the foreach loop or
+                                          $item_id = $item->get_id();
+                            
+                                          ## Using WC_Order_Item_Product methods ##
+                                      
+                                          $product      = $item->get_product(); // Get the WC_Product object
+                                      
+                                          $product_id   = $item->get_product_id(); // the Product id
+                                          $variation_id = $item->get_variation_id(); // the Variation id
+                                      
+                                          $item_type    = $item->get_type(); // Type of the order item ("line_item")
+                                      
+                                          $item_name    = $item->get_name(); // Name of the product
+                                          $quantity     = $item->get_quantity();  
+                                          $tax_class    = $item->get_tax_class();
+                                          $line_subtotal     = $item->get_subtotal(); // Line subtotal (non discounted)
+                                          $line_subtotal_tax = $item->get_subtotal_tax(); // Line subtotal tax (non discounted)
+                                          $line_total        = $item->get_total(); // Line total (discounted)
+                                          $line_total_tax    = $item->get_total_tax(); // Line total tax (discounted)
+                                      
+                                          ## Access Order Items data properties (in an array of values) ##
+                                          $item_data    = $item->get_data();
+                                      
+                                          $product_name = $item_data['name'];
+                                          $product_id   = $item_data['product_id'];
+                                          $variation_id = $item_data['variation_id'];
+                                          $quantity     = $item_data['quantity'];
+                                          $tax_class    = $item_data['tax_class'];
+                                          $line_subtotal     = $item_data['subtotal'];
+                                          $line_subtotal_tax = $item_data['subtotal_tax'];
+                                          $line_total        = $item_data['total'];
+                                          $line_total_tax    = $item_data['total_tax'];
+                                      
+                                          // Get data from The WC_product object using methods (examples)
+                                          $product        = $item->get_product(); // Get the WC_Product object
+                                      
+                                          $product_type   = $product->get_type();
+                                          $product_sku    = $product->get_sku();
+                                          $product_price  = $product->get_price();
+                                          $stock_quantity = $product->get_stock_quantity();
+                                          $text_order_item = $product_name.'x'.$quantity.'='.$line_subtotal;
+                                          $text_order_list =$text_order_list.$text_order_item.', '  ;
+                                        ?>
+                                            <div class="orderpage__container--wrapper__banner--box__body--content top">
+                                                <div>Giỏ hàng:</div>
+                                                <div>số lượng</div>
+                                                <div>Thành viên</div>
+                                            </div>
+                                <?php
+                            endforeach;?>
 
-                                <div class="orderpage__container--wrapper__banner--box__body--content__cart">
-                                    <div
-                                        class="orderpage__container--wrapper__banner--box__body--content__cart--detail">
-                                        Vé Lulolala Show Hà Nhi 05/11
-                                    </div>
-                                    <div class="orderpage__container--wrapper__banner--box__body--content__cart--desc">
-                                        <span>x1</span>
-                                        <div>Giá: 750.000 đ</div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -270,5 +333,5 @@ get_header(); ?>
                             </script>
     </div>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script> 
-<?php  ?>
+
 
