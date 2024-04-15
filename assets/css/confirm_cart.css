@@ -1,0 +1,95 @@
+.orderpage__container{
+    max-width: 1280px;
+    margin: 0 auto;
+   background-color:#f7f7f7;
+}
+.orderpage__container--wrapper{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.orderpage__container--wrapper__header{
+margin-bottom: 20px;
+font-size: 25px;
+
+}
+.orderpage__container--wrapper__body{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(151, 151, 151);
+}
+.orderpage__container--wrapper__content{
+    width: 100%;
+    display: flex;
+}
+.orderpage__container--wrapper__content .banner_bottom{
+    width: 100%;
+}
+
+.orderpage__container--wrapper__banner{
+    min-height: 250px;
+    width: 50%;
+}
+
+.orderpage__container--wrapper__body .banner_left{
+    margin-right: 20px;
+}
+
+.orderpage__container--wrapper__banner--box{
+    padding: 30px 40px 0 30px;
+}
+.orderpage__container--wrapper__banner--box .dashes__ruler{
+    border-top: 3px dashed #bbb;
+}
+.orderpage__container--wrapper__banner--box__header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.orderpage__container--wrapper__banner--box__header .banner__box{
+    font-weight: bolder;
+}
+.orderpage__container--wrapper__banner--box__header .button__box:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+.orderpage__container--wrapper__banner--box__body .top{
+    font-weight: bold;
+}
+
+.orderpage__container--wrapper__banner--box__body--content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.orderpage__container--wrapper__banner--box__body--content textarea{
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/* cart */
+.orderpage__container--wrapper__banner--box__body--content__cart{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.orderpage__container--wrapper__banner--box__body--content__cart--detail{
+    font-weight: bold;
+   
+}
+.orderpage__container--wrapper__banner--box__body--content__cart--desc{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
