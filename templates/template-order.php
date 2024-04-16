@@ -210,10 +210,10 @@ get_header(); ?>
                         <div class="orderTicket__header--content">
                             <div class="orderTicket__header--content__top">
                                 <div class="orderTicket__header--content__header">
-                                <?php echo $order_billing_first_name;?></p>
+                              <?php echo $product_name;?>
                                 </div>
                                 <div class="orderTicket__header--content__amount">
-                                <?php echo $quantity;?>
+                               <?php echo $quantity;?>
                                 </div>
                             </div>
                             <div class="orderTicket__header--content__bottom">
@@ -225,7 +225,7 @@ get_header(); ?>
                     </div>
                     <hr>
                     <div class="orderTicket__bottom">
-                        100.000 d
+                     Tổng tiền: <?php echo $order_total;?>
                     </div>
                 </div>
             </div>
