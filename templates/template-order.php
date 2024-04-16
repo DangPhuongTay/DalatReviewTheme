@@ -15,9 +15,12 @@ get_header(); ?>
     <div class="orderpage__container">
         <div class="orderpage__container--wrapper">
             <div class="orderpage__container--wrapper__header">
-                Thanh toán hoàn tất
+                <span>Thanh toán hoàn tất</span>
+                <a href="/wordpress" class="orderpage__container--wrapper__header--button">
+                <button>Xác nhận</button>
+                </a>
             </div>
-
+          
             <?php
           $slug_request = $wp->request;
           $requestid = explode("/",  $slug_request);
@@ -48,7 +51,7 @@ get_header(); ?>
                                         Tên:
                                     </div>
                                     <div class="orderpage__container--wrapper__banner--box__body--content--right">
-                                        Nguyễn Văn A
+                                       <?php echo $order_billing_first_name;?></p>
                                     </div>
                                 </div>
                                 <div class="orderpage__container--wrapper__banner--box__body--content bottom">
@@ -56,7 +59,7 @@ get_header(); ?>
                                         Email
                                     </div>
                                     <div class="orderpage__container--wrapper__banner--box__body--content--right">
-                                        ANguyenVan@gmail.com
+                                    <?php  echo $order_billing_email;?>
                                     </div>
                                 </div>
                                 <div class="orderpage__container--wrapper__banner--box__body--content bottom">
@@ -64,7 +67,7 @@ get_header(); ?>
                                         Số điện thoại
                                     </div>
                                     <div class="orderpage__container--wrapper__banner--box__body--content--right">
-                                        0389679765
+                                    <?php echo $order_billing_phone;?>
                                     </div>
                                 </div>
                             </div>
@@ -79,14 +82,17 @@ get_header(); ?>
                             <hr class="dashes__ruler">
                             <div class="orderpage__container--wrapper__banner--box__body">
                                 <div class="orderpage__container--wrapper__banner--box__body--content top">
-                                    10 Lý thường kiệt, phường 8, TP.Đà Lạt
+                                <?php echo $order_billing_address_1;?>
                                 </div>
                                 <div class="orderpage__container--wrapper__banner--box__body--content top">
                                     Note:
+                                    
                                 </div>
                                 <div class="orderpage__container--wrapper__banner--box__body--content bottom">
                                     <textarea disabled
-                                        placeholder="Em check in sớm 1h, anh chị sắp xếp giúp em nhé !!"></textarea>
+                                        placeholder="Chưa ghi nhận có ghi chú">
+                                        <?php echo $order_billing_note;?>
+                                    </textarea>
 
                                 </div>
                             </div>
@@ -160,14 +166,34 @@ get_header(); ?>
                                           $text_order_item = $product_name.'x'.$quantity.'='.$line_subtotal;
                                           $text_order_list =$text_order_list.$text_order_item.', '  ;
                                         ?>
-                                            <div class="orderpage__container--wrapper__banner--box__body--content top">
-                                                <div>Giỏ hàng:</div>
-                                                <div>số lượng</div>
-                                                <div>Thành viên</div>
-                                            </div>
-                                <?php
-                            endforeach;?>
-
+                                               
+                                           
+                                         
+                                    <div class="orderpage__container--wrapper__banner--box__body--content">   
+                                    <div
+                                        class="orderpage__container--wrapper__banner--box__body--content__cart--detail">
+                                        <div class="">Giỏ hàng</div>
+                                        <?php echo $product_name;?>
+                                    </div>
+                                    <div
+                                        class="orderpage__container--wrapper__banner--box__body--content__cart--detail">
+                                        <div class="">Số lượng</div>
+                                        x <?php echo $quantity;?>
+                                    </div>
+                                    <div
+                                        class="orderpage__container--wrapper__banner--box__body--content__cart--detail">
+                                        <div class="">Đơn giá</div>
+                                        <?php echo $product_price;?>
+                                    </div>
+                                    <div
+                                        class="orderpage__container--wrapper__banner--box__body--content__cart--detail">
+                                        <div class="">Thành tiền</div>
+                                        </span><?php echo $order_total;?>
+                                    </div> 
+                                    </div>
+                                </div>
+                                           <?php
+                                  endforeach;?>
                             </div>
                         </div>
                     </div>
@@ -184,15 +210,14 @@ get_header(); ?>
                         <div class="orderTicket__header--content">
                             <div class="orderTicket__header--content__top">
                                 <div class="orderTicket__header--content__header">
-                                    THUÊ XE MÁY GIÁ RẺ TẠI ĐÀ LẠT
+                                <?php echo $order_billing_first_name;?></p>
                                 </div>
                                 <div class="orderTicket__header--content__amount">
-                                    01
+                                <?php echo $quantity;?>
                                 </div>
                             </div>
                             <div class="orderTicket__header--content__bottom">
-                                Quý khách thường lo lắng, thường thắc mắc thuê xe máy Đà Lạt giá bao nhiêu?
-                                 Sau đây là bảng giá thuê xe máy ở Đà Lạt áp dụng cho ngày thường và đặt trước.
+                            <?php echo $line_subtotal;?>
                             </div>
                            
                         </div>

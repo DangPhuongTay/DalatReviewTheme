@@ -12,9 +12,28 @@
 }
 
 .orderpage__container--wrapper__header{
-margin-bottom: 20px;
-font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 25px;
 
+}
+.orderpage__container--wrapper__header--button{
+    padding: 2px;
+    font-size: 15px;
+ 
+}
+.orderpage__container--wrapper__header--button button{
+    background-color: white;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+    padding: 12px;
+}
+.orderpage__container--wrapper__header--button button:hover{
+    color: orangered;
+    background-color: #ececec;
+    border: none;
 }
 .orderpage__container--wrapper__body{
     background-color: white;
@@ -56,7 +75,7 @@ font-size: 25px;
     text-decoration: underline;
     color: orangered;
 }
-.orderpage__container--wrapper__banner--box__body .top{
+.orderpage__container--wrapper__banner--box__body--content__cart--detail .top{
     font-weight: bold;
 }
 
@@ -95,7 +114,7 @@ font-size: 25px;
     justify-content: space-between;
 }
 
-/* ticket  */
+/* tic  ket  */
 
 .orderpage__container--wrapper{
 
