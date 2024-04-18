@@ -77,6 +77,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </a>
     </div>
 </div>
