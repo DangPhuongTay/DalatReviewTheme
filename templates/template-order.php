@@ -10,6 +10,7 @@
  */
 
 get_header(); ?>
+
 <div class="found" style="flex-direction: row;">
   <div style="width: 50%; height: 50vh;  align-items: start;">
         <?php
