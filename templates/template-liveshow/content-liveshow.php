@@ -103,6 +103,12 @@ if (have_posts()) {
                         </div>
                  
                         <div class="popup__detailLiveshow">
+                        <div class="popup__title">
+                            <h3>Danh sách các loại vé</h3>
+                        </div>
+                        <div class="popup__close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
                         <?php 
                         
                         get_template_part('templates/template-liveshow/archive','detailliveshow');  

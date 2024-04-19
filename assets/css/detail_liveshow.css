@@ -274,7 +274,7 @@ body.listDetailLiveShowPopup {
     padding: 0 20px;
     padding-top: 30px;
     padding-bottom: 20px;
-    width: 80%;
+    width: 50%;
     z-index: 1005;
 }
 .popup__title h3 {
