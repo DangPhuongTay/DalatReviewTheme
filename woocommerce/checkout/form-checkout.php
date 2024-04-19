@@ -60,6 +60,7 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 	<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 	</div>
 </form>
+
 <style>
 	.woocommerce-additional-fields__field-wrapper,
 	.woocommerce-billing-fields__field-wrapper{

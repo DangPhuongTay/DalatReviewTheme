@@ -21,13 +21,15 @@ if ( ! wp_doing_ajax() ) {
 	do_action( 'woocommerce_review_order_before_payment' );
 }
 ?>
-<div id="payment" class="woocommerce-checkout-payment">
+<form action="<?php echo home_url(); ?>" id="payment" method="post">
 	<?php if ( WC()->cart->needs_payment() ) : ?>
 		<ul class="wc_payment_methods payment_methods methods">
 			<?php
 			if ( ! empty( $available_gateways ) ) {
-				foreach ( $available_gateways as $gateway ) {
-					wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
+				foreach ( $available_gateways as $gateway ) { ?>
+					<li style="display:none;" class="wc_payment_method payment_method_<?php echo esc_attr( $gateway->id ); ?>">
+						<input id="payment_method_<?php echo esc_attr( $gateway->id ); ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr( $gateway->id ); ?>" <?php checked( $gateway->chosen, true ); ?> data-order_button_text="<?php echo esc_attr( $gateway->order_button_text ); ?>" />
+				</li>	<?php
 				}
 			} else {
 				echo '<li>';
@@ -37,17 +39,16 @@ if ( ! wp_doing_ajax() ) {
 			?>
 		</ul>
 	<?php endif; ?>
-	<div class="form-row place-order">
-
+	
 		<?php do_action( 'woocommerce_review_order_before_submit' ); ?>
 
 		<?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt' . esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ) . '" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine ?>
 
-		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
+		<?php wp_nonce_field( 'woocommerce-process_checkout' ); ?>
+
 		<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
 
-		
-	</div>
+	</form>	
 </div>
 <?php
 if ( ! wp_doing_ajax() ) {

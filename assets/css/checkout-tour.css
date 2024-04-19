@@ -114,9 +114,15 @@
 }
 .checkouttour__container--left{
     width: 65%;
-    padding: 20px 0;
+    padding: 20px;
     background: var(--color-background-6);
     border-radius: var(--border-radius-size-4);
+}
+.woocommerce-billing-fields h4{
+    padding: 10px 0;
+}
+.order_review_heading{
+    padding: 10px 0;
 }
 .checkouttour__container--right{
     width: 32%;

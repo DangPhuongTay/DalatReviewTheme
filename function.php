@@ -31,22 +31,12 @@ function zero_price_products( $q ){
     function mytheme_add_woocommerce_support() {
         add_theme_support( 'woocommerce' );
     }
-    add_action( 'template_redirect', 'check_thankyou_order_key' );
-    function check_thankyou_order_key() {
-        if( is_wc_endpoint_url('order-received') && isset($_GET['key']) ) {
-            global $wp;
+    add_action( 'template_redirect', 'define_default_payment_gateway' );
+    function define_default_payment_gateway(){
+        if( is_checkout() && ! is_wc_endpoint_url() ) {
+            $default_payment_id = 'payment_method_euplatesc';
     
-            $order_id  = absint( $wp->query_vars['order-received'] );
-            $order     = wc_get_order( $order_id );
-    
-            if( $order->get_order_key() != wc_clean($_GET['key']) ){
-                // Display a custom error notice
-                wc_add_notice( __('Oups! The order key is invalid…', 'woocommerce'), 'error');
-    
-                // Optionally redirect to shop page (uncomment code below)
-                // wp_redirect( get_permalink( wc_get_page_id( 'shop' ) ) );
-                // exit();
-            }
+            WC()->session->set( 'chosen_payment_method', $default_payment_id );
         }
     }
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support');

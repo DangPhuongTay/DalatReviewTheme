@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 	<tbody>
-	<h4  id="order_review_heading"><?php esc_html_e( 'Thông tin đơn hàng', 'woocommerce' ); ?></h4>
+	<h4 id="order_review_heading" style="padding:10px 0;"><?php esc_html_e( 'Thông tin đơn hàng', 'woocommerce' ); ?></h4>
 		<?php
 		do_action( 'woocommerce_review_order_before_cart_contents' );
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
