@@ -33,8 +33,9 @@
                                 </div>
                             </li> -->
                             <li>
-                                <a href="<?php echo home_url() ?>/cart-2" class="header__top--right__cart">
+                                <a href="<?php echo wc_get_cart_url() ?>" class="header__top--right__cart">
                                     <ion-icon name="cart-outline"></ion-icon>
+                                    <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
                             </li> 
                             <li>
