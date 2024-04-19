@@ -206,9 +206,9 @@ get_header(); ?>
             <div class="orderTicket__wrapper">
                 <div class="orderTicket__box">
                     <div class="orderTicket__header">
-                        <div class="orderTicket__header--avt">
+                        <img class="orderTicket__header--avt" style='background:url(<?php echo get_the_post_thumbnail_url($product_id);?>)'>
                             
-                        </div>
+                        </img>
                         <div class="orderTicket__header--content">
                             <div class="orderTicket__header--content__top">
                                 <div class="orderTicket__header--content__header">
