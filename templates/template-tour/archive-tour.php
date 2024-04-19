@@ -93,7 +93,7 @@
 
     for ($x = 1; $x <= $loop->max_num_pages; $x++) {
         ?>
-        <a href="<?php echo home_url(); ?>/<?php request(); ?>/page/<?php echo $x; ?>" class="">
+        <a href="<?php echo home_url(); ?>/<?php echo request(); ?>/page/<?php echo $x; ?>" class="">
             <div class="liveshow__container--body__product--list__page--item"><?php echo $x; ?></div>
         </a>
         <?php
