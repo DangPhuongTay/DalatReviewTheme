@@ -79,7 +79,6 @@
 .detail__liveshow--ticket__right{
     width: 50%;
     position: relative;
-    z-index: 2;
 }
 .detail__liveshow--ticket__left--local,
 .detail__liveshow--ticket__left--time,
@@ -249,6 +248,10 @@ body.listDetailLiveShowPopup .popup__detailLiveshow{
 body.listDetailLiveShowPopup .detail__liveshow--blur{
     display: block;
 }
+body.listDetailLiveShowPopup .detail__liveshow--ticket::before {
+    z-index: 0;
+}
+
 body.listDetailLiveShowPopup {
     overflow: hidden;
 }

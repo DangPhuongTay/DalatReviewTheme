@@ -33,7 +33,7 @@
                                 </div>
                             </li> -->
                             <li>
-                                <a href="" class="header__top--right__cart">
+                                <a href="<?php echo home_url() ?>/cart-2" class="header__top--right__cart">
                                     <ion-icon name="cart-outline"></ion-icon>
                                 </a>
                             </li> 
