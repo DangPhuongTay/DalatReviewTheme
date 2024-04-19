@@ -180,10 +180,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__thongBao--info">
-                <a href="https://www.dmca.com/Protection/Status.aspx?ID=09844cd5-429f-464d-be00-1437024cd892">
-                    <img src="../assets/img/footer_dmca_icon.png" alt="" srcset=""></a>
-            </div>
+
         </div>
 </footer>
 
