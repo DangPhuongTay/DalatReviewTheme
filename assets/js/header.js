@@ -12,9 +12,9 @@ const btnOpenLoginSignForm = document.querySelector('.open__login--signup__form 
 const btnTransEmailLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--email');
 const btnTransNumberLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--numberphone');
 
-window.onload=function(){
-    mobileMenuBtn.addEventListener('click',mobileMenu);
-}
+// window.onload=function(){
+//     mobileMenuBtn.addEventListener('click',mobileMenu);
+// }
 
 function mobileMenu() {
     headerBody.classList.toggle('active');
@@ -40,26 +40,26 @@ btnLogin1.addEventListener('click',()=>{
     headerBody.classList.add('checker');
     headerBody.classList.remove('LoginSignUpForm');
 })
-btnLogout.addEventListener('click',()=>{
-    headerBody.classList.remove('checker');
-    headerBody.classList.remove('LoginSignUpForm');
-})
-
+// btnLogout.addEventListener('click',()=>{
+//     headerBody.classList.remove('checker');
+//     headerBody.classList.remove('LoginSignUpForm');
+// })
 btnOpenLoginSignForm.addEventListener('click',()=>{
     headerBody.classList.add('LoginSignUpForm');
 })
-btnOpenLoginSignFormPc1.addEventListener('click',()=>{
-    headerBody.classList.add('LoginSignUpForm');
-})
-btnOpenLoginSignFormPc2.addEventListener('click',()=>{
-    headerBody.classList.add('LoginSignUpForm');
-})
-btnCloseLoginSignForm.addEventListener('click',()=>{
-    headerBody.classList.remove('LoginSignUpForm');
-})
-btnTransEmailLoginSignForm.addEventListener('click',()=>{
-    headerBody.classList.add('TransLoginSignForm');
-})
-btnTransNumberLoginSignForm.addEventListener('click',()=>{
-    headerBody.classList.remove('TransLoginSignForm');
-})
+// btnOpenLoginSignFormPc1.addEventListener('click',()=>{
+//     headerBody.classList.add('LoginSignUpForm');
+// })
+// btnOpenLoginSignFormPc2.addEventListener('click',()=>{
+//     headerBody.classList.add('LoginSignUpForm');
+// })
+// btnCloseLoginSignForm.addEventListener('click',()=>{
+//     headerBody.classList.remove('LoginSignUpForm');
+// })
+// btnTransEmailLoginSignForm.addEventListener('click',()=>{
+//     headerBody.classList.add('TransLoginSignForm');
+// })
+// btnTransNumberLoginSignForm.addEventListener('click',()=>{
+//     headerBody.classList.remove('TransLoginSignForm');
+// })
+

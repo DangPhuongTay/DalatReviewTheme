@@ -106,40 +106,60 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						do_action( 'woocommerce_after_cart_item_description', $cart_item, $cart_item_key ); ?> </span>
                                   
-                    </div>
-                                </div>
-                                <div class="cart__container--top__left--list__item--top__quality">
-                                    <!-- <span>Người lớn</span> -->
-                                    <div class="number-input">
-                                        <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button> -->
-										<?php
-						if ( $_product->is_sold_individually() ) {
-							$min_quantity = 1;
-							$max_quantity = 1;
-						} else {
-							$min_quantity = 0;
-							$max_quantity = $_product->get_max_purchase_quantity();
-						}
+								</div>
+											</div>
+											<div class="cart__container--top__left--list__item--top__quality">
+												<div class="number-input ">
+													<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+													<?php
+												if ( $_product->is_sold_individually() ) {
+													$min_quantity = 1;
+													$max_quantity = 1;
+												} else {
+													$min_quantity = 0;
+													$max_quantity = $_product->get_max_purchase_quantity();
+												}
 
-						$product_quantity = woocommerce_quantity_input(
-							array(
-								'input_name'   => "cart[{$cart_item_key}][qty]",
-								'input_value'  => $cart_item['quantity'],
-								'max_value'    => $max_quantity,
-								'min_value'    => $min_quantity,
-								'product_name' => $product_name,
-							),
-							$_product,
-							false
-						);
+												$product_quantity = woocommerce_quantity_input(
+													array(
+														'input_name'   => "cart[{$cart_item_key}][qty]",
+														'input_value'  => $cart_item['quantity'],
+														'max_value'    => $max_quantity,
+														'min_value'    => $min_quantity,
+														'product_name' => $product_name,
+													),
+													$_product,
+													false
+												);
 
-						echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
-						?>
-                                        <!-- <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button> -->
+									echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
+									?>
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                                       </div>
                                     
                                 </div>
-                            </div>
+
+								<button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+								<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+								<script type="text/javascript">
+										var timeout;
+
+										jQuery( function( $ ) {
+											$('.woocommerce').on('change', 'input.qty', function(){
+
+												if ( timeout !== undefined ) {
+													clearTimeout( timeout );
+												}
+
+												timeout = setTimeout(function() {
+													$("[name='update_cart']").trigger("click");
+												}, 1000 );
+
+											});
+										} );
+								</script>
+							
+							</div>
                             <div class="cart__container--top__left--list__item--bottom">
                                 <div class="cart__container--top__left--list__item--bottom__option">
                                     <button><?php
