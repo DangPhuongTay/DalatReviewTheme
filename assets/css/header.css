@@ -123,7 +123,12 @@ header {
     border-radius: var(--border-radius-size-5);
     cursor: pointer;
 }
-
+.header__top--right__cart ion-icon{
+    font-size: 30px;
+}
+.header__top--right__cart ion-icon:hover{
+    color: var(--color-background-7);
+}
 .header__top--right__itemlast {
     cursor: pointer;
     padding: 12px 13px;
