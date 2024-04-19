@@ -23,7 +23,6 @@
 .detail__liveshow--ticket__right img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .detail__liveshow--ticket::before{
     content: '';
@@ -33,7 +32,7 @@
     background: var(--color-background-2);
     border-radius: var(--border-radius-size-6);
     bottom: -60px;
-    left: 34.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
@@ -45,12 +44,11 @@
     background: var(--color-background-2);
     border-radius: var(--border-radius-size-6);
     top: 0px;
-    left: 34.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
 }
 .detail__liveshow--ticket{
-    max-height: 440px;
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
@@ -79,12 +77,13 @@
     padding: 20px 35px 20px 20px;
 }
 .detail__liveshow--ticket__right{
-    width: 100%;
+    width: 50%;
     position: relative;
     z-index: 2;
 }
 .detail__liveshow--ticket__left--local,
-.detail__liveshow--ticket__left--time{
+.detail__liveshow--ticket__left--time,
+.detail__liveshow--ticket__left--desc{
     padding: 5px 10px;
     color: var(--color-text-2);
 }
@@ -165,7 +164,7 @@
 .detail__liveshow--content__right{
     width: 30%;
     position: sticky;
-    top: 7%;
+    top: 80px;
 }
 .detail__liveshow--content__left--header{
     font-size: var(--size-text-6);
@@ -193,28 +192,13 @@
     flex-direction: column;
     gap: 10px;
 }
-
-.detail__liveshow--content__right--item{
-    margin: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--color-text-0) !important;
-    padding: 5px;
-    border-radius: var(--border-radius-size-2);
+.detail__liveshow--content__right--item a:hover{
+    background: var(--color-background-17);
 }
-.detail__liveshow--content__right--item-btn{
-    width: 100%;
+.detail__liveshow--content__right--item a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.detail__liveshow--content__right--item-btn a{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    text-align: center;
     color: var(--color-text-6) !important;
     background: var(--color-background-7);
     padding: 15px 20px;
@@ -227,6 +211,91 @@
     font-weight: 600;
 }
 
+.detail__liveshow--content__right--item, .popup__item{
+    color: var(--color-text-6) !important;
+    background: var(--color-background-7);
+    padding: 15px 20px;
+    border-radius: var(--border-radius-size-1);
+    cursor: pointer;
+}
+.detail__liveshow--content__right--item span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail__liveshow--content__right--item:hover, .popup__item:hover{
+    background: var(--color-background-17);
+}
+
+/* popup */
+.popup__detailLiveshow .popup__item{
+    position: relative;
+    z-index: 100;
+
+}
+.popup__detailLiveshow .popup__item a{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: red;
+}
+body.listDetailLiveShowPopup .popup__detailLiveshow{
+    display: block;
+}
+body.listDetailLiveShowPopup .detail__liveshow--blur{
+    display: block;
+}
+body.listDetailLiveShowPopup {
+    overflow: hidden;
+}
+.detail__liveshow--blur{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: var(--color-background-1);
+    z-index: 1004;
+    opacity: .5;
+}
+.popup__detailLiveshow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-background-6);
+    border-radius: 20px;
+    padding: 0 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 50%;
+    z-index: 1005;
+}
+.popup__title h3 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-text-22);
+}
+.popup__item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.popup__close{
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
 
 @media only screen and (max-width:1200px) {
     .detail__liveshow--ticket__box,
@@ -248,7 +317,7 @@
         width: 100%;
     }
 }
-@media only screen and (max-width:850px){
+@media only screen and (max-width:800px){
     .detail__liveshow--ticket::after,
     .detail__liveshow--ticket::before,
     .detail__liveshow--ticket__right::before{

@@ -12,6 +12,7 @@ if (have_posts()) {
                             <div class="detail__liveshow--ticket__left--title">
                                 <?php the_title(); ?>
                             </div>
+                            
                             <div class="detail__liveshow--ticket__left--time">
                                 <ion-icon name="calendar-clear-outline"></ion-icon>
                                 <?php
@@ -58,6 +59,10 @@ if (have_posts()) {
                                     } ?>
                                 </p>
                             </div>
+                            <div class="detail__liveshow--ticket__left--desc">
+                                <?php echo  $product->get_short_description (); ?>
+                            </div>
+                            
                         </div>
 
                         <div class="detail__liveshow--ticker__left--bottom">
@@ -89,14 +94,25 @@ if (have_posts()) {
                         <div class="detail__liveshow--content__left--header">
                             Danh sách vé
                         </div>
-                        <?php 
-
-                    get_template_part('templates/template-liveshow/item','detailliveshow');  
-                    ?> 
+                   
                     
-                        <div class="detail__liveshow--content__right--item-btn">
-                        //popup
+                   
+                        <div class="detail__liveshow--blur"></div>                        
+                        <div class="detail__liveshow--content__right--item">
+                            <span>Chọn các loại vé khác</span>
+                        </div>
+                 
+                        <div class="popup__detailLiveshow">
+                        <div class="popup__title">
+                            <h3>Danh sách các loại vé</h3>
+                        </div>
+                        <div class="popup__close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                        <?php 
                         
+                        get_template_part('templates/template-liveshow/archive','detailliveshow');  
+                        ?> 
                         </div>
                     </div>
                     
@@ -107,6 +123,7 @@ if (have_posts()) {
 
         </section>
 
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailLiveshow.js"></script>
         <?php
     }
 }
