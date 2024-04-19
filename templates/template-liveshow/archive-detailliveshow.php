@@ -1,23 +1,27 @@
-<div class="detail__liveshow--content__right--list">
-    <?php 
-    function request() {
-        global $wp;
-        $current_url = trailingslashit(home_url($wp->request));
-        return $wp->request;
-    }
-    $args = array(
-    'post_type'      => 'product',
-    'posts_per_page' => 10,
-    'product_cat'    => request()
+<?php
+function request()
+{
+    global $wp;
+    $url = $wp->request;
+    $requesturl = explode("/", $url);
+    return $requesturl[0];
+}
+
+$args = array(
+    'post_type' => 'product',
+    'posts_per_page' => 6,
+    'product_tag' => request()
 );
 ?>
 <?php $getposts = new WP_query($args); ?>
-<?php global $wp_query; $wp_query->in_the_loop = true; ?>
+<?php global $wp_query;
+$wp_query->in_the_loop = true; ?>
 
-<?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-<?php 
+<?php while ($getposts->have_posts()):
+    $getposts->the_post(); ?>
+    <?php
 
-get_template_part('templates/template-liveshow/item','detailliveshow');  
+    get_template_part('templates/template-liveshow/item', 'detailliveshow');
 ?>
-<?php endwhile; wp_reset_postdata(); ?>                    
-</div>
+<?php endwhile;
+wp_reset_postdata(); ?>

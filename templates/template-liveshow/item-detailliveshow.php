@@ -1,27 +1,17 @@
 <?php global $product; ?>
 
- 
-  <?php
-                                    
-  foreach ($product->attributes as $taxonomy => $attribute) {
-  foreach ($attribute->get_terms() as $term) {
-  if($term ->taxonomy == 'pa_loai-ve'){
-        
-          ?>
-          <div class="detail__liveshow--content__right--item">
-          <div class="detail__liveshow--content__right--item__name">
-            <?php echo $term->name ?>
-        </div>
-        <div class="detail__liveshow--content__right--item__price numberVnd">
-             <?php echo $term->description ?>
-        </div>
-        
-        </div>
-          <?php
-    }else{
-      echo '';
-        }
-      }
-} ?>
-
-
+  <div class="popup__title">
+    <h3>Danh sách các loại vé</h3>
+  </div>
+  <div class="popup__close">
+    <ion-icon name="close-outline"></ion-icon>
+  </div>
+  <div class="popup__item">
+    <div class="popup__item--name">
+      <?php the_title(); ?>
+    </div>
+    <div class="popup__item--price">
+      <span><?php echo $product->get_price_html(); ?></span>
+    </div>
+    <?php wc_get_template('loop/add-to-cart.php'); ?>
+    </div>
