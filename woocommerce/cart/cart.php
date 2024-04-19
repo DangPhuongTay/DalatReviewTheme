@@ -183,7 +183,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                         <span style="color:#444"><?php esc_html_e( '', 'woocommerce' ); ?></th>
 			<td data-title="<?php esc_attr_e( 'Total', 'woocommerce' ); ?>"><?php wc_cart_totals_order_total_html(); ?></td></span>
                     </div>
-                    <div class="art__container--top__right--btn firstBtn">
+                    <div class="cart__container--top__right--btn firstBtn">
 						<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
                     </div>
                 </div>
