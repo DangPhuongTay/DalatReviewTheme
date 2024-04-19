@@ -130,10 +130,14 @@ padding: 20px;
 .orderTicket__header{
     display: flex;
 }
-.orderTicket__header--avt{
-    min-width: 60px;
-    height: 60px;
-    background-color: #bbb;
+.orderTicket__header--avt {
+   
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.orderTicket__header--avt img{
+    max-width: 100%;
+    max-height: 100%;
 }
 .orderTicket__header--content{
     margin-left: 10px;
