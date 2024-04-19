@@ -100,9 +100,11 @@ input[type="number"] {
     font-weight: 600;
 }
 .art__container--top__right--btn a{
+.cart__container--top__right--btn a{
+
   color: var(--color-text-6);
 }
-.art__container--top__right--btn{
+.cart__container--top__right--btn{
     width: 100%;
 
     cursor: pointer;

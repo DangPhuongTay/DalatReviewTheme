@@ -259,7 +259,7 @@
                                 <ion-icon name="star"></ion-icon>
                                 <ion-icon name="star"></ion-icon>
                             </div>
-                            <span>2 <span>Bình chọn</span></span>
+                            <span>2<span>Bình chọn</span></span>
                         </div>
                         <div class="detail__tour--content__left--rate__first--list">
                             <div class="detail__tour--content__left--rate__first--item">

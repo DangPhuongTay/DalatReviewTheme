@@ -77,9 +77,11 @@
                 </div>
               </div>
             </div>
+            <a href="checkout-tour.html">
             <div class="detail__car--info__btn">
-                <a href="checkout-tour.html">THANH TOÁN</a>
+              THANH TOÁN
             </div>
+            </a>
         </div>
         <div class="detail__car--map">
             <div class="detail__car--map__header">
