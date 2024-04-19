@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/header.css">
@@ -48,7 +48,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_settings_password.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user_wishList.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/user.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/voucher.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/range-slider.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/confirm_cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
