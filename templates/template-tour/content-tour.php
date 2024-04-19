@@ -80,8 +80,8 @@ if (have_posts()) {
                     <div class="detail__tour--img__left">
                         <img src="<?php echo get_the_post_thumbnail_url(
                             get_the_ID(),
-                            'thumnail',
-                            array('class' => 'thumnail')
+                            'thumbnail',
+                            array('class' => 'thumbnail')
                         ); ?>   " alt="">
                     </div>
                     <div class="detail__tour--img__right">

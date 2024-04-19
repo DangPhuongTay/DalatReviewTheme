@@ -100,11 +100,12 @@
                     <div class="cart__container--top__right--sum">
                         <span>đ</span><span>1,723,500</span>
                     </div>
+                     <a href="checkout-tour.html">
                     <div class="art__container--top__right--btn firstBtn">
-                        <a href="checkout-tour.html">
                             Thanh toán
-                        </a>
+                      
                     </div>
+                      </a>
                 </div>
             </div>
             <div class="cart__container--bottom">

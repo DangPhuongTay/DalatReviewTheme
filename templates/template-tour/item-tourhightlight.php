@@ -2,7 +2,7 @@
 <?php global $product; ?>
     <div class="hightlightProduct__content--list d-flex align-items-center">
                                     <div class="hightlightProduct__content--list__item--wrap">
-<a href="<?php the_permalink(); ?>">
+                                            <a href="<?php the_permalink(); ?>">
                                         
                                         <div class="hightlightProduct__img">
                                             <?php echo get_the_post_thumbnail(get_the_ID(), 'thumnail', array( 'class' =>'thumnail') ); ?>
