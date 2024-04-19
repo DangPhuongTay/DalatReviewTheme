@@ -17,7 +17,7 @@
                     </div>
                     <div class="header__top--right">
                         <ul>
-                            <li class="logout">
+                            <!-- <li class="logout">
                                 <div class="header__top--right__item logout">
                                     Đăng xuất
                                 </div>
@@ -31,7 +31,12 @@
                                 <div class="header__top--right__itemlast check__login">
                                     Đăng nhập
                                 </div>
-                            </li>
+                            </li> -->
+                            <li>
+                                <a href="" class="header__top--right__cart">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </a>
+                            </li> 
                             <li>
                                 <div class="header__top--right__item--checker">
                                     <a href="user-voucher">
