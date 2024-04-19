@@ -52,22 +52,7 @@ defined( 'ABSPATH' ) || exit;
 			<span><?php wc_cart_totals_subtotal_html(); ?></span>
 		</p>
 
-		<?php foreach ( WC()->cart->get_coupons() as $code => $coupon ) : ?>
-			<tr class="cart-discount coupon-<?php echo esc_attr( sanitize_title( $code ) ); ?>">
-				<th><?php wc_cart_totals_coupon_label( $coupon ); ?></th>
-				<td><?php wc_cart_totals_coupon_html( $coupon ); ?></td>
-			</tr>
-		<?php endforeach; ?>
 
-		<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-
-			<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
-
-			<?php wc_cart_totals_shipping_html(); ?>
-
-			<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
-
-		<?php endif; ?>
 
 		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
 			<tr class="fee">
@@ -75,9 +60,6 @@ defined( 'ABSPATH' ) || exit;
 				<td><?php wc_cart_totals_fee_html( $fee ); ?></td>
 			</tr>
 		<?php endforeach; ?>
-
-
-
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 		<p class="order-total">

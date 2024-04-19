@@ -16,37 +16,54 @@
                     </form> -->
                     <form id="test-form" method="GET" action="<?php echo home_url(); ?>/">
                         <input type="text" name="name" placeholder="Họ và Tên"/>
-                        <input type="text" name="sdt" placeholder="Số Điện Thoại"/>
-                        <button type="submit"id="submit-form"><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button>
+                        <input id="mobile" type="number" name="sdt" placeholder="Số Điện Thoại"/>
+                        <button class="checkmobile" type="submit"id="submit-form"><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button>
                     </form>
                     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-                            <script type="text/javascript">
-                            $(document).ready(function()
-                            { 
-                            var submit = $("button[type='submit']");
-                            submit.click(function()
-                                        {
-                                            var data = $('form#test-form').serialize();
-                                            console.log(data);
-                                            $.ajax({
-                                                        type : 'GET', 
-                                                        url : 'https://script.google.com/macros/s/AKfycbx7XgM7pRC7lGsUSTXsJ6DTHmdvVpe8C_pfcio83D8N-mUmRx-uz0io99szR-44CCwe/exec',
-                                                        dataType:'json',
-                                                        crossDomain : true,
-                                                        data : data,
-                                                        success : function(data)
-                                                    { 
-                                            if(data == 'false') 
+                    <script type="text/javascript">
+                            $(document).ready(function() {
+                                $('body').on('click','.checkmobile', function() {
+                                var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+                                var mobile = $('#mobile').val();
+                                if(mobile !==''){
+                                    if (vnf_regex.test(mobile) == false) 
+                                    {
+                                        alert('Số điện thoại của bạn không đúng định dạng!');
+                                        return false;
+                                    }else{
+                                        var submit = $("button[type='submit']");
+                                        submit.click(function()
                                                     {
-                                                        alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
-                                                    }else{
-                                                        alert('Cảm ơn bạn rất nhiều!');
+                                                        
+                                                        var data = $('form#test-form').serialize();
+                                                        console.log(data);
+                                                        $.ajax({
+                                                                    type : 'GET', 
+                                                                    url : 'https://script.google.com/macros/s/AKfycbx7XgM7pRC7lGsUSTXsJ6DTHmdvVpe8C_pfcio83D8N-mUmRx-uz0io99szR-44CCwe/exec',
+                                                                    dataType:'json',
+                                                                    crossDomain : true,
+                                                                    data : data,
+                                                                    success : function(data)
+                                                                { 
+                                                        if(data == 'false') 
+                                                                {
+                                                                    alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
+                                                                }else{
+                                                                    alert('Cảm ơn bạn rất nhiều!');
+                                                                }
                                                     }
-                                        }
+                                            }); 
+                                          
+                                        });
+                                        return false;
+                                    }
+                                }else{
+                                    alert('Bạn chưa điền số điện thoại!');
+                                    return false;
+                                }
                                 });
-                                return false;
                             });
-                            });
+
                             </script>
                     <!-- <button><span>Gửi ngay</span> <ion-icon name="paper-plane"></ion-icon></button> -->
                 </div>
