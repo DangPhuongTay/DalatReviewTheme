@@ -20,10 +20,12 @@
             <div class="detail__tour--content__left--header">Kết quả tìm kiếm: <?php echo get_query_var('s') ?></div>
             <div class="firstProduct__content">
                 <div class="firstProduct__content--list">
+                    <?php get_tempplate ?>
                     <?php
                     while ($the_query->have_posts()) {
                         $the_query->the_post();
                         ?>
+                        
                         <div class="firstProduct__content--list__item">
                             <div class="firstProduct__content--list__item--wrap">
                                 <a href="<?php the_permalink(); ?>" class="firstProduct__content--list__item--wrap__link">
@@ -101,7 +103,6 @@
                     }
         } else {
             ?>
-
                     <div class="found">
                         <h4 style='color:#000'>Không tìm thấy kết quả ?</h4>
                         <a class="found__link" href="<?php echo home_url(); ?>">Quay lại trang chủ</a>
@@ -109,32 +110,11 @@
                 <?php } ?>
 
             </div>
-            <?php global $loop; ?>
-            <?php global $count; ?>
-
-            <?php previous_posts_link('<div class="liveshow__container--body__product--list__page--item">
-                  <ion-icon name="chevron-back"></ion-icon>
-                </div>', $loop->max_num_pages); ?></li>
-
-            <?php
-
-            // echo ceil($count/4);
-            for ($x = 1; $x <= ceil($count / $loop->max_num_pages); $x++) {
-                ?>
-                <a href="<?php echo home_url(); ?>/page/<?php echo $x; ?>" class="">
-                    <div class="liveshow__container--body__product--list__page--item"><?php echo $x; ?></div>
-                </a>
-                <?php
-            }
-
-            ?>
-            <?php next_posts_link('<div class="liveshow__container--body__product--list__page--item">
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </div>', $loop->max_num_pages) ?></li>
-        </div>
+            
     </div>
+</div>
 
-    <?php wp_reset_postdata(); ?>
+<?php wp_reset_postdata(); ?>
 </div>
 
 <?php get_footer(); ?>

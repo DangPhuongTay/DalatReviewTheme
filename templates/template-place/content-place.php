@@ -904,12 +904,12 @@ if (have_posts()) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="detailHotel__list--footer">
+                            <!-- <div class="detailHotel__list--footer">
                                 <div class="firstTag__internal--wrap">
                                     <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !
                                     </h2>
 
-                                    <!-- module-banner -->
+                                    
                                     <div class="firstTag__internal--content">
                                         <h3 class="firstTag__internal--header">
                                             Trải nghiệm tuyệt vời tại Đà Lạt
@@ -983,9 +983,9 @@ if (have_posts()) {
                                         </ul>
                                     </div>
                                 </div>
-                                    <!-- home contact banner -->
-                                 <?php wc_get_template('templates/template-home/home-contact.php'); ?>
-                            </div>
+                                 
+                            </div> -->
+                            <?php wc_get_template('templates/template-home/home-contact.php'); ?>
                         </div>
                     </div>
             </section>
