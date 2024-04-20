@@ -6,7 +6,7 @@
 ============================================== */
 
 .home {
-    margin-top: 61px;
+    margin-top: 10px;
 
 }
 
@@ -424,8 +424,7 @@
 }
 
 .home__banner--mobile {
-
-
+    max-width: 540px;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .08);
     margin-left: auto;
     margin-right: auto;
@@ -479,7 +478,7 @@
     width: 100%;
     background: var(--color-background-6);
     border-radius: var(--border-radius-size-5);
-    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
     padding: 0 15px;
 }
 
@@ -747,7 +746,6 @@
     }
 
     .home__banner--mobile {
-        width: 80%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -755,18 +753,22 @@
     }
 
     .home__banner--mobile__top {
-        padding: 0 50px;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .home__banner--mobile__top a {
-
         display: flex;
         flex-direction: column;
         justify-content: center;
+        
     }
 
     .home__banner--mobile__top img {
         width: 60px;
+        height: 60px;
+        border-radius: 25%;
+        background-color: var(--color-background-3);
     }
 
     .home__slider {
@@ -787,7 +789,11 @@
     .home__search--box__input {
         border: none;
     }
-
+    .home__search--box {
+        margin: 0 10px 10px 10px;
+ 
+    }
+    
     .home__search--box__mobile {
         display: flex;
         align-items: center;
@@ -809,11 +815,6 @@
     }
 
 
-
-    .home__banner--mobile__top {
-        padding: 0;
-        justify-content: center;
-    }
 
     .header__content--bottom {
         padding-left: 15px;

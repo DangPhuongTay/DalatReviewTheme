@@ -121,18 +121,18 @@ get_header(); ?>
 
     <div class="firstTag__internal--desktop">
         <div class="firstTag__internal--wrap">
-            <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !</h2>
+            <!-- <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !</h2> -->
 
             <!-- module-banner -->
-            <div class="firstTag__internal--content">
+            <!-- <div class="firstTag__internal--content">
 
                 <h3 class="firstTag__internal--header">
                     Trải nghiệm tuyệt vời tại Đà Lạt
-                </h3>
+                </h3> -->
                 <?php
                 get_template_part('templates/template-home/first', 'tag'); ?>
 
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 

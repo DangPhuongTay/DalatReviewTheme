@@ -4,9 +4,13 @@ get_header();
     function slug(){
         global $product;
         global $post; 
-        $termproduct = get_the_terms($product->term_id, 'product_cat');
-        $termpost = get_the_terms($post->term_id, 'category');
-        if($termproduct){
+        if($product){
+            $termproduct = get_the_terms($product->term_id, 'product_cat');
+        }
+        if($post){
+            $termpost = get_the_terms($post->term_id, 'category');
+        }
+        if($product){
             foreach ($termproduct as $term) {
                 $cat_parent_id = $term->parent;
                 if($cat_parent_id == 0){

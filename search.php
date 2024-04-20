@@ -12,6 +12,7 @@
             'post_type' => 'product',
             'posts_per_page' => 8,
             'paged' => $paged,
+            'post_status'=>'publish'
         );
         // The Query
         $the_query = new WP_Query($args);

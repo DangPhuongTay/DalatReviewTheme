@@ -255,6 +255,9 @@ input[type="number"] {
     gap: 15px;
     margin-right: 10px
   }
+  .cart__container--top__left--list__item--top__quality{
+    gap: 5px;
+  }
   .cart__container--top__left--list__item--top__info img{
     width: 88px;
     height: 88px;
@@ -401,6 +404,9 @@ input[type="number"] {
         border-radius: var(--border-radius-size-1);
         object-fit: cover;
     }
+    .cart__container--top__left--list__item--top__quality{
+      margin-top: 10px;
+    }
     .cart__container--top__right{
         position: fixed;
         bottom: -1px;
@@ -412,5 +418,13 @@ input[type="number"] {
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
         -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
         -moz-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    }
+    .cart__container--top__left--list__item--bottom__price{
+      font-weight: 600;
+      font-size: var(--size-text-4);
+    }
+    .cart__container--top__left--list__item--top__info--text span a{
+      font-size: var(--size-text-4);
+      color: var(--color-background-2) !important;
     }
   }

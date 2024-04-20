@@ -49,8 +49,15 @@ if (have_posts()) {
             <div class="detail__tour--container">
                 <div class="detail__tour--header">
                     <div class="detail__tour--header__link">
-                        <a href="">Trang chủ</a> > <a href="">Vé tham quan</a> > <a href="">Vé tham quan Săn Mây Cầu Gỗ – BÌNH
-                            MINH</a>
+                    <?php 
+                            $category = get_the_terms($product->term_id, 'product_cat'); 
+                        
+                            foreach ($category as $term) {
+                                    $categoryname = $term->name;
+                                    $categoryslug = $term->slug;
+                            }
+                        ?>
+                        <a href="<?php echo home_url( );?>">Trang chủ</a> > <a href="<?php echo $categoryslug; ?>"> <?php echo $categoryname ?></a>> <a href=""> <?php the_title(); ?></a>
                     </div>
                     <div class="detail__tour--header__title">
                         <?php the_title(); ?>

@@ -12,19 +12,35 @@
     gap: 20px;
     overflow: hidden;
 }
+
 .home__sale--banner__container--list__item:hover{
     transform: translateY(-2%);
 }
 .home__sale--banner__container--list__item{
-    width: 370px;
+    position: relative;
     border-radius: var(--border-radius-size-3);
     transition: all ease .1s;
 }
+.home__sale--banner__container--list__item--text{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: var(--color-text-6);
+    background: rgba(0, 0, 0,.35);
+    border-radius: 19px;
+    padding: 10px 20px;
+    width: 70%;
+    font-weight: bold;
+}
 .home__sale--banner__container--list__item a img{
-    width: 370px;
+    height: 170px;
+    object-fit: cover;
     border-radius: var(--border-radius-size-3);
 }
-
+.home__sale--banner__container--list__item a{
+    width: 370px;
+    
+}
 
  @media only screen and (max-width: 1400px) {
     

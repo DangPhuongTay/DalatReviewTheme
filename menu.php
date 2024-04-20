@@ -54,9 +54,9 @@
                         <div class="header__top--right__mobile--item">
                             <a href="cart"><ion-icon name="cart-outline"></ion-icon></a>
                         </div>
-                        <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
+                        <!-- <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
                             <ion-icon name="person-outline"></ion-icon>
-                        </div>
+                        </div> -->
                         <div class="header__top--right__item--checker">
                             <a href="user-voucher">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">

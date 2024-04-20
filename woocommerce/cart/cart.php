@@ -31,7 +31,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
-
+<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 						<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
 			<?php
@@ -106,11 +106,11 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						do_action( 'woocommerce_after_cart_item_description', $cart_item, $cart_item_key ); ?> </span>
                                   
-								</div>
-											</div>
+								
+											
 											<div class="cart__container--top__left--list__item--top__quality">
 												<div class="number-input ">
-													<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+											
 													<?php
 												if ( $_product->is_sold_individually() ) {
 													$min_quantity = 1;
@@ -131,15 +131,19 @@ do_action( 'woocommerce_before_cart' ); ?>
 													$_product,
 													false
 												);
-
-									echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
+												echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
+									
 									?>
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                     	<?php do_action( 'woocommerce_after_cart_table' ); ?>
+									<?php do_action( 'woocommerce_cart_actions' ); ?>
                                       </div>
-                                    
+									 
+								<button type="submit" style="margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
+								</div>
+									  </div>
                                 </div>
 
-								<button type="submit" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
 								<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 								<script type="text/javascript">
 										var timeout;
@@ -150,10 +154,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 												if ( timeout !== undefined ) {
 													clearTimeout( timeout );
 												}
-
 												timeout = setTimeout(function() {
 													$("[name='update_cart']").trigger("click");
-												}, 1000 );
+													console.log(1)
+												}, 500 );
 
 											});
 										} );
@@ -179,10 +183,14 @@ do_action( 'woocommerce_before_cart' ); ?>
 							?></button>
                                 </div>
                                 <div class="cart__container--top__left--list__item--bottom__price">
-                                    <span>							<?php
-								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
-							?></span>
-							</div>
+                                    <span>
+										Đơn giá: <?php echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.?>
+									</span>
+									-
+									<span>
+										Tổng giá: <?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.?>
+									</span>
+								</div>
 						</div>
                 	</div>
 					
@@ -249,7 +257,9 @@ do_action( 'woocommerce_before_cart' ); ?>
     </section> 
 	</table>
 	
-	<?php do_action( 'woocommerce_after_cart_table' ); ?>
+
+
+<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
 </form>
 													
 
