@@ -19,7 +19,6 @@ $args = array( 'limit' => -1, 'type' => 'shop_order');
 $orders = wc_get_orders($args);
 foreach ($orders as $order) {
 // Access order details here
-echo 'Order ID: ' . $order->get_id();
 $order_data = $order->get_data();
 $order_total = $order_data['total'];
 $order_billing_first_name = $order_data['billing']['first_name'];
