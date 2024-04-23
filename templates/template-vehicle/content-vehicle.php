@@ -36,7 +36,7 @@ if (have_posts()) {
                             <?php
                             foreach ($product->attributes as $taxonomy => $attribute) {
                                 foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_address') {
+                                    if ($term->taxonomy == 'pa_dia-chi') {
                                         echo $term->name;
                                     } else {
                                         echo '';

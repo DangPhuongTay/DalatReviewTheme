@@ -50,10 +50,11 @@
                     </div>
                     <div class="header__top--right__mobile">
                         <div class="header__top--right__mobile--item">
-                            <a href="<?php echo home_url() ?>/search-moblie"><ion-icon name="search-outline"></ion-icon></a>
+                            <a href="<?php echo home_url() ?>/search-mobile"><ion-icon name="search-outline"></ion-icon></a>
                         </div>
                         <div class="header__top--right__mobile--item">
-                            <a href="cart"><ion-icon name="cart-outline"></ion-icon></a>
+                            <a href="<?php echo wc_get_cart_url() ?>"><ion-icon name="cart-outline"></ion-icon>
+                            <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span></a>
                         </div>
                         <!-- <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
                             <ion-icon name="person-outline"></ion-icon>
