@@ -319,8 +319,19 @@ body.listDetailLiveShowPopup {
     .detail__liveshow--content__right{
         width: 100%;
     }
+
 }
 @media only screen and (max-width:800px){
+    .detail__liveshow--content__right{
+        position: fixed;
+        top: calc(100vh - 140px);
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        
+        background-color: var(--color-background-6); 
+    }
     .detail__liveshow--ticket::after,
     .detail__liveshow--ticket::before,
     .detail__liveshow--ticket__right::before{
