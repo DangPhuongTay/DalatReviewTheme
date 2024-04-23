@@ -63,7 +63,10 @@ get_header(); ?>
         <div class="home__sale--banner__container">
             <div class="home__sale--banner__container--header">
                 <p>Ưu đãi hấp dẫn</p>
+  
             </div>
+
+
             <?php get_template_part('templates/template-home/archive', 'voucher'); ?>
 
         </div>

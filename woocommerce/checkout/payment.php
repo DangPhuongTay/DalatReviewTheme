@@ -50,7 +50,10 @@ if ( ! wp_doing_ajax() ) {
 
 	</form>	
 </div>
+
+    </div>
 <?php
 if ( ! wp_doing_ajax() ) {
 	do_action( 'woocommerce_review_order_after_payment' );
 }
+        
