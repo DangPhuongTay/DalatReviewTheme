@@ -52,6 +52,5 @@ function zero_price_products( $q ){
     //     add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 
         
-        
     
 ?>
