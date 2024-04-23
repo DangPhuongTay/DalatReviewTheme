@@ -4,6 +4,7 @@
 
     $args = array(
 'post_type'      => 'product',
+'post_status'=>'publish',
 'posts_per_page' => 5,
 'product_cat'    => request()
 );

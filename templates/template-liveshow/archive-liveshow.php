@@ -8,6 +8,7 @@
                 $variable = $_GET['price'];
                 $args = array(
                     'post_type' => 'product',
+                    'post_status'=>'publish',
                     'posts_per_page' =>8,
                     'paged' => $paged,
                     'product_cat' => request(),
@@ -18,6 +19,7 @@
 
                 $args = array(
                     'post_type' => 'product',
+                    'post_status'=>'publish',
                     'posts_per_page' =>8,
                     'paged' => $paged,
                     'product_cat' => request(),
@@ -42,6 +44,7 @@
                 } elseif (isset($_GET['pricehight'])) {
                     $args = array(
                         'post_type' => 'product',
+                        'post_status'=>'publish',
                         'posts_per_page' =>8,
                         'paged' => $paged,
                         'product_cat' => request(),
@@ -56,6 +59,7 @@
                     }else {
                     $args = array(
                         'post_type' => 'product',
+                        'post_status'=>'publish',
                         'posts_per_page' =>6,
                         'paged' => $paged,
                         'product_cat' => request(),
