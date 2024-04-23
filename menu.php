@@ -130,35 +130,6 @@
                     }
                     ?>
                 </ul>
-
-
-
-                <!-- <ul>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-1.png" alt="img"><span>Tour</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-4.png" alt="img"><span>Tour đi biển</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-5.png" alt="img"><span>Hoạt động cắm trại</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-6.png" alt="img"><span>Trải nghiệm văn hóa</span></a></li>
-                    <li><a href="liveshow"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-7.png" alt="img"><span>Công viên giải trí</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
-                    <li><a href="liveshow"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a></li>
-                    <li><a href="liveshow"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-10.png" alt="img"><span>Công viên và vườn Bác thảo</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-1.png" alt="img"><span>Tour</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-2.png" alt="img"><span>Vé Đạp Vịt</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-3.png" alt="img"><span>Mát xa người mù</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-4.png" alt="img"><span>Tour đi biển</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-5.png" alt="img"><span>Hoạt động cắm trại</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-6.png" alt="img"><span>Trải nghiệm văn hóa</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-7.png" alt="img"><span>Công viên giải trí</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-8.png" alt="img"><span>Bể bơi</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-9.png" alt="img"><span>Viện bảo tàng</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-10.png" alt="img"><span>Công viên và vườn Bác thảo</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-11.png" alt="img"><span>Trại thú cưng</span></a></li>
-                    <li><a href="tour"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/header-icon-12.png" alt="img"><span>Cáp treo</span></a></li>
-                </ul> -->
             </div>
         </div>
         <div class="header__background--blur">
