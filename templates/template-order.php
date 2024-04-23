@@ -336,8 +336,6 @@ get_header(); ?>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
                             <script type="text/javascript">
                               
-
-                                          console.log(1);
                                             var data = "name=<?php echo $order_billing_first_name ?>&&phone=<?php echo $order_billing_phone ?>&&email=<?php echo $order_billing_email ?>&&address=<?php echo $order_billing_address_1 ?>&&order=<?php echo $text_order_list ?>&&total=<?php echo $order_total ?>";
                                             console.log(data);
                                             $.ajax({
