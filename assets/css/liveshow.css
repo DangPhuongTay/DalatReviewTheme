@@ -346,7 +346,9 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 }
 
 @media (max-width: 750px) {
-
+    .liveshow__container--body__product--list{
+        width: 100%;
+    }
     .liveshow__banner,
     .liveshow__container--link,
     .liveshow__container--body__wrap {
