@@ -39,12 +39,12 @@
                                     <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
 
-                            </li> 
-                         
+                            </li>
 
-                                <div class="minicart__item--product shadow">
-                                    <?php woocommerce_mini_cart(); ?>
-                                </div>
+
+                            <div class="minicart__item--product shadow">
+                                <?php woocommerce_mini_cart(); ?>
+                            </div>
                             </li>
 
                             <style>
@@ -163,7 +163,7 @@
                         </div>
                         <div class="header__top--right__mobile--item">
                             <a href="<?php echo wc_get_cart_url() ?>"><ion-icon name="cart-outline"></ion-icon>
-                            <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span></a>
+                                <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span></a>
                         </div>
                         <!-- <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
                             <ion-icon name="person-outline"></ion-icon>
