@@ -6,6 +6,7 @@
             $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
             $args = array(
                 'post_type' => 'product',
+                'post_status'=>'publish',
                 'posts_per_page' =>4,
                 'paged' => $paged,
 				'product_tag' => 'sale',
