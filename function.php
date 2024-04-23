@@ -41,6 +41,14 @@ function zero_price_products( $q ){
     }
     add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support');
 
+
+    //         wp_deregister_script('jquery');
+    //         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
+        
+    //     }
+    //     add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
+
+
         
     
 ?>

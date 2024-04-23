@@ -1,6 +1,7 @@
 <?php 
                             $args = array(
                         'post_type'      => 'product',
+                        'post_status'=>'publish',
                         'posts_per_page' => 4,
                         'product_cat'    => 'place'
                     );
