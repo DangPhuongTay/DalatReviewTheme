@@ -39,12 +39,14 @@
                                     <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
 
+
                             </li>
 
 
                             <div class="minicart__item--product shadow">
                                 <?php woocommerce_mini_cart(); ?>
                             </div>
+
                             </li>
 
                             <style>
@@ -57,18 +59,34 @@
                                 }
 
                                 .minicart__item--product {
+                                    visibility: hidden;
                                     position: absolute;
-                                    top: 100%;
-                                    right: 0%;
+                                    top: 110%;
+                                    right: -15%;
                                     background-color: white;
                                     width: 400px;
                                     border-radius: 24px;
-
                                     display: flex;
                                     justify-content: center;
                                     flex-direction: column;
                                     padding: 15px;
+                                    z-index: 100;
 
+                                }
+
+                                .minicart__item::before {
+                                    position: absolute;
+                                    content: '';
+                                    top: 90%;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 30px;
+                                    background: transparent;
+                                    z-index: 2;
+                                }
+
+                                .minicart__item:hover .minicart__item--product {
+                                    visibility: visible;
                                 }
 
                                 .minicart__item--product img {
@@ -135,16 +153,6 @@
 
                                 .minicart__item--product p strong {
                                     margin-right: 10px;
-                                }
-
-                                .minicart__item :hover+.minicart__item--product {
-                                    position: absolute;
-                                    display: block;
-                                }
-
-                                .minicart__item--product {
-
-                                    display: none;
                                 }
                             </style>
 
