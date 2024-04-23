@@ -232,6 +232,7 @@ do_action( 'woocommerce_before_cart' ); ?>
             $args = array(
                 'post_type' => 'product',
                 'posts_per_page' => 8,
+				'post_status'=>'publish',
                 'paged' => $paged,
                 );
             $loop = new WP_Query( $args );

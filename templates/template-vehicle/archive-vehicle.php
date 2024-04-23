@@ -8,6 +8,7 @@
         $variable = $_GET['price'];
         $args = array(
             'post_type' => 'product',
+            'post_status'=>'publish'
             'posts_per_page' =>8,
             'paged' => $paged,
             'product_cat' => request(),
@@ -18,6 +19,7 @@
 
         $args = array(
             'post_type' => 'product',
+            'post_status'=>'publish'
             'posts_per_page' =>8,
             'paged' => $paged,
             'product_cat' => request(),
@@ -45,6 +47,7 @@
                 'posts_per_page' =>8,
                 'paged' => $paged,
                 'product_cat' => request(),
+                'post_status'=>'publish'
                 'meta_query' => array( 
                     'relation' => 'AND',
                         array(

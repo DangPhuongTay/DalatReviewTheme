@@ -38,6 +38,7 @@
                                     <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
                             </li> 
+                         
                             <li>
                                 <div class="header__top--right__item--checker">
                                     <a href="user-voucher">
