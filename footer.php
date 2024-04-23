@@ -41,7 +41,7 @@
                     </div>
                     <div class="footer__banner--content">
                         <ul class="footer__listUnit">
-                            <li><a href="http://reviewsapa.com/">Sapa Review Tất Tần Tật</a></li>
+                            <li><a href="https://sapareview.vn/">Sapa Review Tất Tần Tật</a></li>
                             <li><a href="">Đà Lạt Review Tất Tần Tật</a></li>
                             <li><a href="https://www.tiktok.com/@dalatreviewtattantat">TikTok Đà Lạt Review Tất Tần
                                     Tật</a></li>
@@ -61,9 +61,7 @@
                     Bản đồ
                 </div>
                 <div class="footer__banner--content">
-                    <iframe class="footer__map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
