@@ -40,12 +40,10 @@
                                 </a>
 
 
-                            </li>
 
-
-                            <div class="minicart__item--product shadow">
-                                <?php woocommerce_mini_cart(); ?>
-                            </div>
+                                <div class="minicart__item--product shadow">
+                                    <?php woocommerce_mini_cart(); ?>
+                                </div>
 
                             </li>
 
@@ -64,7 +62,7 @@
                                     top: 110%;
                                     right: -15%;
                                     background-color: white;
-                                    width: 400px;
+
                                     border-radius: 24px;
                                     display: flex;
                                     justify-content: center;
@@ -131,6 +129,10 @@
 
                                 .minicart__item--product ul li .quantity {
                                     margin-left: 5px !important;
+                                    width: 150px;
+                                    display: flex;
+                                    justify-content: end;
+                                    flex-wrap: nowrap;
                                 }
 
                                 .minicart__item--product p {
