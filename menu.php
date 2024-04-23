@@ -16,6 +16,7 @@
                         </div>
                     </div>
                     <div class="header__top--right">
+
                         <ul>
                             <!-- <li class="logout">
                                 <div class="header__top--right__item logout">
@@ -32,15 +33,123 @@
                                     Đăng nhập
                                 </div>
                             </li> -->
-                            <li>
+                            <li class="minicart__item">
                                 <a href="<?php echo wc_get_cart_url() ?>" class="header__top--right__cart">
                                     <ion-icon name="cart-outline"></ion-icon>
                                     <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
+
                             </li> 
                          
+
+                                <div class="minicart__item--product shadow">
+                                    <?php woocommerce_mini_cart(); ?>
+                                </div>
+                            </li>
+
+                            <style>
+                                .header__top--right ul {
+                                    align-items: flex-start;
+                                }
+
+                                .minicart__item {
+                                    position: relative;
+                                }
+
+                                .minicart__item--product {
+                                    position: absolute;
+                                    top: 100%;
+                                    right: 0%;
+                                    background-color: white;
+                                    width: 400px;
+                                    border-radius: 24px;
+
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    padding: 15px;
+
+                                }
+
+                                .minicart__item--product img {
+                                    width: 50px;
+                                    height: 40px;
+                                    margin-right: 10px;
+                                    border-radius: 12px;
+
+                                }
+
+                                .minicart__item--product ul li a p {
+                                    font-size: 14px;
+                                    display: -webkit-box;
+                                    width: 200px;
+                                    margin-bottom: 8px;
+                                    white-space: normal;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+
+                                }
+
+                                .minicart__item--product ul {
+                                    display: flex;
+                                    flex-direction: column;
+
+
+
+                                }
+
+                                .minicart__item--product ul li a {
+                                    margin-left: 5px;
+                                    display: flex;
+
+                                }
+
+                                .minicart__item--product ul li {
+                                    display: flex;
+                                    margin-top: 10px !important;
+                                }
+
+                                .minicart__item--product ul li .quantity {
+                                    margin-left: 5px !important;
+                                }
+
+                                .minicart__item--product p {
+                                    display: flex;
+                                    justify-content: flex-end !important;
+                                }
+
+                                .minicart__item--product .btn__minicart {
+                                    padding: 4px;
+                                    background-color: var(--color-background-7);
+                                    border-radius: 8px;
+                                    margin-left: 67%;
+                                    margin-top: 10px;
+                                    display: flex;
+                                    justify-content: center !important;
+                                    width: 120px;
+                                    color: var(--color-text-6) !important;
+
+                                }
+
+                                .minicart__item--product p strong {
+                                    margin-right: 10px;
+                                }
+
+                                .minicart__item :hover+.minicart__item--product {
+                                    position: absolute;
+                                    display: block;
+                                }
+
+                                .minicart__item--product {
+
+                                    display: none;
+                                }
+                            </style>
+
                             <li>
-                                <div class="header__top--right__item--checker">
+                                <div class=" header__top--right__item--checker">
                                     <a href="user-voucher">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/user_avatar.png" alt="">
                                     </a>
