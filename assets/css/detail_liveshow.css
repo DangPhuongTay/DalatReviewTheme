@@ -356,4 +356,7 @@ body.listDetailLiveShowPopup {
     .detail__liveshow--content__right--list{
         gap: 7px;
     }
+    .popup__detailLiveshow{
+        width: 100%;
+    }
 }
