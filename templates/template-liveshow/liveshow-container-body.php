@@ -28,7 +28,7 @@
                                 <input class="range__input" value="200000" min="200000" name="minprice" max="5000000" step="100000" type="range" >
                                 <input class="range__input"  value="5000000" min="200000" name="maxprice" max="5000000" step="100000" type="range">
                             </section>
-                            <input class="range__submit" type="submit" onChange="this.form.submit();">
+                            <input class="range__submit" type="submit" value="Tìm" onChange="this.form.submit();">
                             </div>
 
                         </form>
