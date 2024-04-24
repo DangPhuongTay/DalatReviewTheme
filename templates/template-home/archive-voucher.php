@@ -1,6 +1,7 @@
 <div class="home__sale--banner__container--list">
 <?php 
 	$args = array(
+		'post_type' => 'sale', 
 		'post_status' => 'publish', // Chỉ lấy những bài viết được publish
 		'showposts' => 4, // số lượng bài viết
 	);

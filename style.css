@@ -975,6 +975,11 @@ body.tourfirstQuestion #fifthQuestion__btn {
   flex-wrap: wrap;
 }
 
-.comment-text {
-  margin-left: 10px;
+.alignnone {
+  border-radius: 20px;
+}
+img{
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
 }

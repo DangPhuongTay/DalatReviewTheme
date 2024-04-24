@@ -4,6 +4,9 @@
     Creact at: 21/2/2024
     Update at: 2/2/2024
 ============================================== -->
+<?php
+ global $theme_path;
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -16,7 +19,7 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo $theme_path; ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slide_img.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/header.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/404.css">
