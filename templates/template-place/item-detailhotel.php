@@ -26,7 +26,7 @@
             <div class="detailHotel__list--body__list--wrap__item--left__popular">
                 <div class="detailHotel__list--body__list--wrap__item--left__popular--name">
                     <p>
-                        <?php  ?>
+                        <?php echo the_title() ?>
                     </p>
                 </div>
                 <div class="detailHotel__list--body__list--wrap__item--left__popular--platform__wrap">
@@ -56,7 +56,7 @@
                 <div class="detailHotel__list--body__list--wrap__item--left__popular--price">
                     <div class="detailHotel__list--body__list--wrap__item--left__popular--price__amount">
                         Từ <div class="detailHotel__list--body__list--wrap__item--left__popular--price__format">
-                            đ <b>20XXXX</b>
+                                <?php echo $product->get_price_html(); ?>
                         </div>
                     </div>
                 </div>

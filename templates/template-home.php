@@ -50,7 +50,7 @@ get_header(); ?>
 
                 <?php wc_get_template('templates/template-home/banner-mobile.php'); ?>
 
-                <a href="#" class="home__banner--mobile__bottom">
+                <a href="#" class="home__banner--mobile__bottom" onclick="mobileMenu()">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-moblie-all-category.png"
                         alt="img">
                     <span>Tất cả các mục</span>
