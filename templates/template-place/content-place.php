@@ -159,7 +159,7 @@ if (have_posts()) {
                             $nub = 0;
                             foreach ($product->attributes as $taxonomy => $attribute) {
                                 foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_tien-ich' && $nub < 2) {
+                                    if ($term->taxonomy == 'pa_service' && $nub < 2) {
                                         $nub = $nub + 1;
                                         ?>
 
