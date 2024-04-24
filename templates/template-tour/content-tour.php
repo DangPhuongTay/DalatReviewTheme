@@ -7,10 +7,10 @@ if (have_posts()) {
 
 
         <div class="slide__img--box">
-                <div class="container__slides">
+            <div class="container__slides">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="image_empty">
-                <?php if (!function_exists('wc_get_gallery_image_html')) {
+                    <?php if (!function_exists('wc_get_gallery_image_html')) {
                         return;
                     }
                     $attachment_ids = $product->get_gallery_image_ids();
@@ -30,34 +30,35 @@ if (have_posts()) {
                         }
                     } ?>
 
-                </div>   
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
                 </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
             </div>
+        </div>
         <section class="detail__tour">
             <div class="detail__tour--content__right--mobile shadow">
-                <p><span>đ</span> <span class="detail__tour--content__right--price">245.000</span></p>
-                <button class="detail__tour--content__right--btn firstBtn">
-                    CHỌN DỊCH VỤ
-                </button>
+            <p><span>đ</span> <span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span></p>
+                <div class="detail__tour--content__right--mobile__btn firstBtn">
+                    <?php wc_get_template('loop/add-to-cart.php'); ?>
+                </div>
             </div>
             <div class="detail__tour--container">
                 <div class="detail__tour--header">
                     <div class="detail__tour--header__link">
-                    <?php 
-                            $category = get_the_terms($product->term_id, 'product_cat'); 
-                        
-                            foreach ($category as $term) {
-                                    $categoryname = $term->name;
-                                    $categoryslug = $term->slug;
-                            }
+                        <?php
+                        $category = get_the_terms($product->term_id, 'product_cat');
+
+                        foreach ($category as $term) {
+                            $categoryname = $term->name;
+                            $categoryslug = $term->slug;
+                        }
                         ?>
-                        <a href="<?php echo home_url( );?>">Trang chủ</a> > <a href="<?php echo $categoryslug; ?>"> <?php echo $categoryname ?></a>> <a href=""> <?php the_title(); ?></a>
+                        <a href="<?php echo home_url(); ?>">Trang chủ</a> > <a href="<?php echo $categoryslug; ?>">
+                            <?php echo $categoryname ?></a>> <a href=""> <?php the_title(); ?></a>
                     </div>
                     <div class="detail__tour--header__title">
                         <?php the_title(); ?>
@@ -200,7 +201,7 @@ if (have_posts()) {
                                 </div>
                             </div>
                         </div> -->
- <div class="detail__tour--content__left--header">
+                        <div class="detail__tour--content__left--header">
                             Về dịch vụ này
                         </div>
                         <div class="detail__tour--content__left--service">
@@ -289,18 +290,18 @@ if (have_posts()) {
                             </div>
                         </div>
                     </div>-->
-                       
+
                         <div class="detail__tour--content__left--header">
                             Đánh giá
                         </div>
-                        <div class="detail__tour--content__left--rate__second">                           
+                        <div class="detail__tour--content__left--rate__second">
                             <div class="detail__tour--content__left--rate__second--list">
                                 <?php
                                 $args = array('post_id' => $product->id);
                                 $comments = get_comments($args);
                                 wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
                                 ?>
-    
+
                             </div>
                         </div>
                         <div class="detail__tour--content__left--header">
@@ -308,7 +309,8 @@ if (have_posts()) {
                         </div>
                         <div class="detail__tour--content__left--contact">
                             <p>Bạn thắc mắc về dịch vụ này? Chat với tôi!</p>
-                            <a href="https://zalo.me/dalatreview" class="detail__tour--content__left--contact__btn secondBtn"><ion-icon
+                            <a href="https://zalo.me/dalatreview"
+                                class="detail__tour--content__left--contact__btn secondBtn"><ion-icon
                                     name="chatbubbles"></ion-icon> <span>Chat với chúng tôi</span></a>
                         </div>
                         <div class="detail__tour--content__left--header">
@@ -317,19 +319,23 @@ if (have_posts()) {
 
                     </div>
                     <div class="detail__tour--content__right">
-                        <p><span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span></p>
-                        <button class="detail__tour--content__right--btn__pc firstBtn"><?php wc_get_template('loop/add-to-cart.php'); ?></div> 
-
+                        <p><span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span>
+                        </p>
+                        <button
+                            class="detail__tour--content__right--btn__pc detail__tour--content__right--btn firstBtn">
+                            <?php wc_get_template('loop/add-to-cart.php'); ?>
                         </button>
                     </div>
+
                 </div>
-                <div class="detail__tour--content__left--related">
-                    <div class="fourProductList__wrapper">
-                        <?php
-                        get_template_part('templates/template-tour/archive', 'detailtour');
-                        ?>
-                    </div>
+            </div>
+            <div class="detail__tour--content__left--related">
+                <div class="fourProductList__wrapper">
+                    <?php
+                    get_template_part('templates/template-tour/archive', 'detailtour');
+                    ?>
                 </div>
+            </div>
             </div>
         </section>
         </section>
@@ -337,7 +343,7 @@ if (have_posts()) {
 
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail-tour.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>
         <?php
 
     }

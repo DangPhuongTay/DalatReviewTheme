@@ -54,16 +54,9 @@ footer{
 }
 /* dành cho màn <=900px */
 @media only screen and (max-width: 900px) {
-    .footer__banner--left{
-    }
-}
-
-@media only screen and (max-width: 780px) {
-
     .footer__layout--desktop {
         display: none;
     }
-
     .footer__layout--mobile {
         margin-top: 50px !important;
         display: block;

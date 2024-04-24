@@ -38,13 +38,13 @@
                                     <ion-icon name="cart-outline"></ion-icon>
                                     <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span>
                                 </a>
+
+
+
                                 <div class="minicart__item--product shadow">
                                     <?php woocommerce_mini_cart(); ?>
                                 </div>
-                            </li> 
-                         
 
-                                
                             </li>
 
                             <style>
@@ -62,7 +62,7 @@
                                     top: 110%;
                                     right: -15%;
                                     background-color: white;
-                                    width: 400px;
+
                                     border-radius: 24px;
                                     display: flex;
                                     justify-content: center;
@@ -71,7 +71,8 @@
                                     z-index: 100;
 
                                 }
-                                .minicart__item::before{
+
+                                .minicart__item::before {
                                     position: absolute;
                                     content: '';
                                     top: 90%;
@@ -81,9 +82,11 @@
                                     background: transparent;
                                     z-index: 2;
                                 }
+
                                 .minicart__item:hover .minicart__item--product {
                                     visibility: visible;
                                 }
+
                                 .minicart__item--product img {
                                     width: 50px;
                                     height: 40px;
@@ -126,6 +129,10 @@
 
                                 .minicart__item--product ul li .quantity {
                                     margin-left: 5px !important;
+                                    width: 150px;
+                                    display: flex;
+                                    justify-content: end;
+                                    flex-wrap: nowrap;
                                 }
 
                                 .minicart__item--product p {
@@ -149,9 +156,6 @@
                                 .minicart__item--product p strong {
                                     margin-right: 10px;
                                 }
-
-                         
-
                             </style>
 
                             <li>
@@ -169,7 +173,7 @@
                         </div>
                         <div class="header__top--right__mobile--item">
                             <a href="<?php echo wc_get_cart_url() ?>"><ion-icon name="cart-outline"></ion-icon>
-                            <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span></a>
+                                <span>(<?php echo $cart_quantity = WC()->cart->get_cart_contents_count(); ?>)</span></a>
                         </div>
                         <!-- <div class="header__top--right__mobile--item open__login--signup__form login__mobile check__login">
                             <ion-icon name="person-outline"></ion-icon>

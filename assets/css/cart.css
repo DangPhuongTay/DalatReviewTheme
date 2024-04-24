@@ -131,7 +131,7 @@ input[type="number"] {
 
 .cart__container--top__left--list__item,
 .cart__container--top__left--all{
-    width: 100%;
+    width: 100% !important;
     background-color: var(--color-background-6);
     border-radius: var(--border-radius-size-4);
 }
