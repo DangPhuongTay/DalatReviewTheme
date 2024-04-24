@@ -23,7 +23,7 @@
                 </div>
                 <div class="detail__blog--left__content">
                     <div class="detail__blog--left__content--paragraph__title">
-                        <p>Năm 2021 Đà Lạt có quán cafe nào mới và đẹp? Những quán cafe dưới đây sẽ là gợi ý tuyệt vời, chắc chắn sẽ không làm bạn thất vọng. Cùng Đà Lạt Review tìm hiểu dưới bài viết nhé.</p>
+                        <p class="text__overflow--main">Năm 2021 Đà Lạt có quán cafe nào mới và đẹp? Những quán cafe dưới đây sẽ là gợi ý tuyệt vời, chắc chắn sẽ không làm bạn thất vọng. Cùng Đà Lạt Review tìm hiểu dưới bài viết nhé.</p>
                     </div>
                     <div class="detail__blog--left__content--paragraph">
                         <div class="detail__blog--left__content--paragraph__header" id="detail__blog--left__content--paragraph__header--1">

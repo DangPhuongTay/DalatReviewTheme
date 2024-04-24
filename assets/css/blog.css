@@ -88,7 +88,7 @@
 .blog__container--new__list--item__text p,
 .blog__container--bottom__left--header__list--item__text p,
 .blog__container--bottom__right--header__list--item__text p{
-    padding-bottom: 5px;
+    margin-bottom: 5px;
     font-size: var(--size-text-5);
     font-weight: 500;
 }

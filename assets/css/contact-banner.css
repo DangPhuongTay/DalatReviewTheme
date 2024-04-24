@@ -133,10 +133,14 @@
         padding-bottom: 5px;
     }
     .home__contact--banner__container--content form{
-        width: 50%;
+        width: 100%;
     }
     .home__contact--banner__container--content button{
-      width: 30%;
+      width: 50%;
+      margin: auto;
+    }
+    .home__contact--banner__container--content button ion-icon{
+      display: none;
     }
     .home__contact--banner__container--list{
         height: 350px;
