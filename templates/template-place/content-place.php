@@ -231,7 +231,7 @@ if (have_posts()) {
                                     </label>
                                 </div>
                             </div> -->
-                            <!-- <div class="detailHotel__list--body__select">
+                            <div class="detailHotel__list--body__select">
                                 <div class="detail__list--body__select--rom">
                                     <div class="primary__dropdown">
                                         <div class="primary__dropdown--button detail__list--body__select--rom__container">
@@ -251,16 +251,16 @@ if (have_posts()) {
 
                                     </div>
                                 </div>
-                                <div class="detail__list--body--select__tip">
+                                <!-- <div class="detail__list--body--select__tip">
                                     Có <b>4</b> mức giá cho loại phòng này
-                                </div>
-                            </div> -->
+                                </div> -->
+                            </div>
                             <div class="detailHotel__list--body__list--wrapper">
                                 <div class="detailHotel__list--body__list--wrapper__icon">
                                     <ion-icon name="close-outline"></ion-icon>
                                 </div>
 
-                                <!-- <div class="detailHotel__list--body__list--wrapper__container--box">
+                                <div class="detailHotel__list--body__list--wrapper__container--box">
                                     <nav>
                                         <a href="#detailHotel__room">Phòng Deluxe</a>
                                         <a href="#detailHotel__include">Bao gồm</a>
@@ -371,7 +371,7 @@ if (have_posts()) {
                                                 bạn không thể huỷ hoặc sửa đổi</div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="detailHotel__footer">
                                     <div class="detailHotel__footer--price">
                                         <div class="detailHotel__footer--price__info">
@@ -747,7 +747,7 @@ if (have_posts()) {
                                                 <?php
                                                 foreach ($product->attributes as $taxonomy => $attribute) {
                                                     foreach ($attribute->get_terms() as $term) {
-                                                        if ($term->taxonomy == 'pa_tien-ich') {
+                                                        if ($term->taxonomy == 'pa_service') {
                                                             ?>
                                                             <div class="detailHotel__list--body__facility--content__item--content--subitem">
                                                                 <ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -807,7 +807,7 @@ if (have_posts()) {
                                                             <?php
                                                             foreach ($product->attributes as $taxonomy => $attribute) {
                                                                 foreach ($attribute->get_terms() as $term) {
-                                                                    if ($term->taxonomy == 'pa_tien-ich') {
+                                                                    if ($term->taxonomy == 'pa_service') {
                                                                         ?>
                                                                         <div
                                                                             class="detailHotel__list--body__facility--content__item--content--subitem">
