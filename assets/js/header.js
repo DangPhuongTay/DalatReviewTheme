@@ -25,9 +25,9 @@ function openChat() {
 function closeChat() {
     headerBody.classList.remove('chatBox');
 }
-mobileMenuBtn.addEventListener('click',()=>{
-    headerBody.classList.toggle('active');
-})
+// mobileMenuBtn.addEventListener('click',()=>{
+//     headerBody.classList.toggle('active');
+// })
 hamburgerBtn.addEventListener('click',()=>{
     headerBody.classList.toggle('active');
 })

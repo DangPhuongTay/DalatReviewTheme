@@ -11,7 +11,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-left: 10px;
     border-bottom: 1.5px solid var(--color-background-3);
     
@@ -162,7 +162,7 @@
         padding: 0 30px;
     }
 }
-@media  (max-width: 630px) {
+/* @media  (max-width: 630px) {
     .hotel__right--tag__wrap{
         display: none;
     }
@@ -178,7 +178,7 @@
     .hotel__body--right{
         padding: 0 30px;
     }
-}
+} */
 /* mobie */
 @media  (max-width: 450px) {
     .hotel__body{
