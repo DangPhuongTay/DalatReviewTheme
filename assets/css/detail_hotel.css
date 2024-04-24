@@ -980,7 +980,9 @@
     align-items: center;
     color: var(--color-text-4);
 }
-
+.detailHotel__list--body__policies--content__check--content__instruction b{
+    margin-left: 8px;
+}
 .detailHotel__list--body__policies--content__check--content__desc,
 .detailHotel__list--body__policies--content__check--content__instruction {
     margin-bottom: 20px;

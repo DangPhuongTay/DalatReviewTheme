@@ -789,6 +789,10 @@ body.active .primary__dropdown--content {
   margin: 64px 0;
 }
 
+.hightlightProduct__content--list{
+  margin-left: 10px;
+}
+
 .hightlightProduct__content--list__item {
   width: 200px;
   margin-right: 35px;
