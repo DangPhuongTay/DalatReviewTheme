@@ -128,6 +128,7 @@ if (have_posts()) {
                             <!-- <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon> -->
+                            
                         </div>
                         <div class="detailHotel__info--wapper__right">
                             <p class="detailHotel__info--wapper__right--name">
@@ -144,13 +145,13 @@ if (have_posts()) {
                             <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
                         </div>
                         <div class="fourProductList__wrapper--info__review list__wrapper">
-                            <div class="fourProductList__wrapper--info__score">
+                            <!-- <div class="fourProductList__wrapper--info__score">
                                 <span>4.4</span>
                                 <span class="slash">/</span>
                                 <span>5</span>
                             </div>
-                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div>
-                            <div class="fourProductList__wrapper--info__count" onclick="btnDetailHotelRate()">47 Bình luận</div>
+                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div> -->
+                            <div class="fourProductList__wrapper--info__count" onclick="btnDetailHotelRate()"><?php echo $review_count = $product->get_review_count(); ?>  Bình luận</div>
                         </div>
                     </div>
                     <div class="detailHotel__info--summary">
@@ -159,7 +160,7 @@ if (have_posts()) {
                             $nub = 0;
                             foreach ($product->attributes as $taxonomy => $attribute) {
                                 foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_service' && $nub < 2) {
+                                    if ($term->taxonomy == 'pa_tien-ich' && $nub < 2) {
                                         $nub = $nub + 1;
                                         ?>
 
@@ -740,14 +741,13 @@ if (have_posts()) {
                                     <div class="detailHotel__list--body__facility--content">
                                         <div class="detailHotel__list--body__facility--content__item">
                                             <div class="detailHotel__list--body__facility--content__item--title">
-                                                Tiện nghi phổ biến
-                                                nhất</div>
+                                                Tiện nghi phổ biến nhất</div>
                                             <div
                                                 class="detailHotel__list--body__facility--content__item--content boder__bottom">
                                                 <?php
                                                 foreach ($product->attributes as $taxonomy => $attribute) {
                                                     foreach ($attribute->get_terms() as $term) {
-                                                        if ($term->taxonomy == 'pa_service') {
+                                                        if ($term->taxonomy == 'pa_tien-ich') {
                                                             ?>
                                                             <div class="detailHotel__list--body__facility--content__item--content--subitem">
                                                                 <ion-icon name="checkmark-circle-outline"></ion-icon>
@@ -807,7 +807,7 @@ if (have_posts()) {
                                                             <?php
                                                             foreach ($product->attributes as $taxonomy => $attribute) {
                                                                 foreach ($attribute->get_terms() as $term) {
-                                                                    if ($term->taxonomy == 'pa_service') {
+                                                                    if ($term->taxonomy == 'pa_tien-ich') {
                                                                         ?>
                                                                         <div
                                                                             class="detailHotel__list--body__facility--content__item--content--subitem">
