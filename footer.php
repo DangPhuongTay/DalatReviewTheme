@@ -68,11 +68,11 @@
     </div>
 </footer>
 
-<footer class="footer__layout--mobile">
+<!-- <footer class="footer__layout--mobile">
     <div class="layout__footer--devider "></div>
     <div class="layout__footer--wrapper">
         <div class="footer__internal--wrap">
-            <!-- module-banner -->
+            
             <div class="footer__internal--content">
                 <h3 class="footer__internal--header">
                     Về Đà Lạt Review
@@ -180,8 +180,9 @@
             </div>
 
         </div>
-</footer>
+</footer> -->
 
 </body>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
+
 </html>

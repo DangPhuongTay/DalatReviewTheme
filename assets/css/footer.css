@@ -1,212 +1,69 @@
-/* ==============================================
-    Name: footer
-    Creact by: NL Thanh Tinh
-    Creact at: 12:39 AM 29/11/2024
-    Update at: 12:39 AM 29/11/2024
-============================================== */
-
-/* phần footer  */
-footer {}
-
-@import url(../css/style.css);
-
-.footer__layout--mobile {
-
-    display: none;
-
-}
-
-/* dành cho màn <=1220px */
-@media only screen and (max-width: 1220px) {
-    .layout__footerBanner--wrapper {
-        align-items: center;
-        padding: 0 60px 0 60px !important;
-    }
-    .footer__banner--right{
-        display: none;
-    }
-    .footer__banner--left{
-        max-width: 900px;
-        display: grid;
-        grid-template-columns: 17em 12em 14em !important;
-    }
-    .footer__listUnit li{
-        margin-bottom: 5px !important;
-    }
-}
-
-
-/* dành cho màn <= 1100px */
-@media only screen and (max-width: 1100px) {
-
-    .layout__footerBanner--wrapper {
-        padding: 0 60px 0 60px;
-        margin: 0 auto;
-        justify-content: center;
-    }
-    .footer__banner--left{
-        max-width: 880px;
-    }
-
-}
-
-footer{
-}
-/* dành cho màn <=900px */
-@media only screen and (max-width: 900px) {
-    .footer__layout--desktop {
-        display: none;
-    }
-    .footer__layout--mobile {
-        margin-top: 50px !important;
-        display: block;
-        bottom: 0;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .footer__internal--wrap {
-        margin: 20px;
-    }
-
-    .layout__footer--devider {
-        margin-bottom: 26px;
-    }
-
-    .footer__thongBao--info a img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        border-style: none;
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    .footer__map {
-        width: 300px !important;
-        height: 200px !important;
-        border-radius: var(--border-radius-size-4);
-        min-width: 158px;
-    }
-}
-
 .footer__layout--desktop {
-    bottom: 0;
-}
-
-.layout__footer--devider {
-    background-color: black;
-    opacity: .07;
-    height: 1.5px;
-    margin-bottom: 25px;
-}
-
-.layout__footer--wrapper {
-    box-sizing: border-box;
+    border-top: 1px solid var(--color-text-16);
+    padding: 40px 0;
 }
 
 .layout__footerBanner--wrapper {
-
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 24px 0;
+
+
+}
+
+.footer__banner--left {
+    display: flex;
+
+    justify-content: space-between;
+
 }
 
 .footer__banner--title {
     font-size: var(--size-text-6);
-    font-weight: 500;
-    line-height: 1.5;
-    text-transform: uppercase;
-}
-
-.footer__banner--content {
-    margin-top: 12px;
-}
-
-
-.footer__listUnit {
-    color: var(--color-text-2);
-    margin-top: 12px;
-}
-
-.footer__listUnit li {
-    font-size: var(--size-text-4);
-    line-height: 1.5;
-    font-weight: 400;
-    margin-bottom: 12px;
-    width: 250px;
-}
-
-.footer__listUnit li a {
-    display: inline-block;
-    height: 12px;
-    line-height: 2;
-    color: var(--color-text-2);
-    width: 100%;
-}
-
-.footer__banner--left {
-    display: grid;
-    grid-template-columns: 18em 12em 18em;
-
-}
-
-.footer__banner {
-
-    margin-right: 30px;
-    padding: 0;
-
-}
-
-.footer__map {
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border-radius-size-4);
-    min-width: 158px;
-}
-
-
-.footer__internal--content {
-    margin-bottom: 25px;
-}
-
-/* thẻ H3  */
-.footer__section--header {
-    font-size: var(--size-text-10);
     font-weight: 600;
-    line-height: 1.32;
-    margin-bottom: 30px;
-}
-
-.footer__internal--header {
-    font-size: var(--size-text-5);
-    line-height: 1.5;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-/* thẻ ul */
-.footer__internal--wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -12px -12px -12px;
-}
-
-/* thẻ li */
-.footer__internal--unit {
-    font-size: var(--size-text-4);
-    line-height: 1.5;
-    font-weight: 400;
     margin-bottom: 10px;
 }
 
-/* thẻ a  */
-.footer__unit--suggestion {
-    display: inline-block;
-    padding: 0 10px 0 10px;
-    height: 17px;
-    border-right: 1px solid var(--color-background-16);
-    line-height: 20px;
+.footer__listUnit li {
     color: var(--color-text-2);
+}
+
+.footer__banner {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .layout__footerBanner--wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 1111px) {
+    .footer__banner--left {
+        width: 100%;
+
+    }
+
+    .footer__banner {
+        margin-bottom: 30px;
+    }
+
+
+
+    .footer__banner--right {
+        width: 100%;
+
+    }
+
+    .footer__map {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 580px) {
+    .footer__banner--left {
+        flex-wrap: wrap;
+
+    }
 }
