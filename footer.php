@@ -5,7 +5,7 @@
             <div class="footer__banner--left">
                 <!-- cột 1 -->
                 <div class="footer__banner">
-                    <div class="footer__banner--title">
+                    <!-- <div class="footer__banner--title">
                         Thông tin liên hệ
                     </div>
                     <div class="footer__banner--content">
@@ -17,7 +17,20 @@
                             <li>Ngân hàng: TECHCOMBANK</li>
                             <li>Số tài khoản: 7836373839</li>
                         </ul>
-                    </div>
+                    </div> -->
+                    <?php 
+                        $args = array(
+                            'post_type' => 'footer', 
+                            'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+                            'showposts' => 4, // số lượng bài viết
+                        );
+                    ?>
+                    <?php $getposts = new WP_query($args); ?>
+                    <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+
+                    <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
+                  
+                    <?php endwhile; wp_reset_postdata(); ?>
                 </div>
                 <!-- cột 2 -->
                 <div class="footer__banner">
