@@ -802,6 +802,8 @@
 
 .detailHotel__list--body__reviews--content .comment-author-dalatreviewtest .avatar {
     margin-right: 10px;
+    width: 70px;
+    object-fit: cover;
 }
 
 .detailHotel__info--summary__left--bot .comment-author-dalatreviewtest .comment_container {
