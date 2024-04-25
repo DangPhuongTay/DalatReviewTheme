@@ -330,6 +330,7 @@
     text-transform: uppercase;
     color: var(--color-text-6);
     margin-bottom: 5px;
+    width: 75%;
 }
 
 .home__slider--content__des {
@@ -339,6 +340,7 @@
     text-transform: capitalize;
     color: var(--color-text-6);
     margin-bottom: 20px;
+    width: 75%;
 }
 
 .home__slider--searchbox:hover {
