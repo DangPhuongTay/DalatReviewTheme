@@ -34,6 +34,7 @@
 }
 .home__sale--banner__container--list__item a img{
     height: 170px;
+    width: 350px;
     object-fit: cover;
     border-radius: var(--border-radius-size-3);
 }
