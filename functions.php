@@ -88,13 +88,7 @@ function tao_footer()
         'supports' => array(
             'title',
             'editor',
-            'excerpt',
-            'author',
-            'thumbnail',
-            'comments',
-            'trackbacks',
-            'revisions',
-            'custom-fields'
+
         ), 
         
         //Các tính năng được hỗ trợ trong post type
@@ -154,13 +148,6 @@ function tao_slide_img()
         'supports' => array(
             'title',
             'editor',
-            'excerpt',
-            'author',
-            'thumbnail',
-            'comments',
-            'trackbacks',
-            'revisions',
-            'custom-fields'
         ), 
         
         //Các tính năng được hỗ trợ trong post type
@@ -171,7 +158,7 @@ function tao_slide_img()
         'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-        'menu_position' => 1, //Thứ tự vị trí hiển thị trong menu (tay trái)
+        'menu_position' => 2, //Thứ tự vị trí hiển thị trong menu (tay trái)
         'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
@@ -181,14 +168,15 @@ function tao_slide_img()
     );
 
 
-    register_post_type('footer', $args); //Tạo post type với slug tên là sanpham và các tham số trong biến $args ở trên
+    register_post_type('slide', $args); //Tạo post type với slug tên là sanpham và các tham số trong biến $args ở trên
 
 
 }
 /* Kích hoạt hàm tạo custom post type */
-add_action('init', 'tao_slide_img',10);
+add_action('init', 'tao_slide_img');
 
 add_filter('pre_get_posts','lay_img');
+
 function lay_img($query) {
 if (is_home() && $query->is_main_query ())
 $query->set ('post_type', array ('post','slide'));
