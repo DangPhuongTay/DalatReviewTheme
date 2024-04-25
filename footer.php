@@ -4,79 +4,34 @@
         <div class="layout__footerBanner--wrapper">
             <div class="footer__banner--left">
                 <!-- cột 1 -->
-                <div class="footer__banner">
-                    <!-- <div class="footer__banner--title">
-                        Thông tin liên hệ
-                    </div>
-                    <div class="footer__banner--content">
-                        <ul class="footer__listUnit">
-                            <li>Công ty TNHH Đà Lạt Review Tất Tần Tật</li>
-                            <li>108 Lý Nam Đế,P8 ,TP Đà Lạt, Lâm Đồng</li>
-                            <li>Mã số công ty: 5801460907</li>
-                            <li>Chủ tài khoản: NGUYỄN KIM NHẬT</li>
-                            <li>Ngân hàng: TECHCOMBANK</li>
-                            <li>Số tài khoản: 7836373839</li>
-                        </ul>
-                    </div> -->
                     <?php 
                         $args = array(
                             'post_type' => 'footer', 
                             'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-                            'showposts' => 4, // số lượng bài viết
                         );
                     ?>
                     <?php $getposts = new WP_query($args); ?>
                     <?php global $wp_query; $wp_query->in_the_loop = true; ?>
 
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-                  
-                    <?php endwhile; wp_reset_postdata(); ?>
-                </div>
-                <!-- cột 2 -->
-                <div class="footer__banner">
+                    <div class="footer__banner">
                     <div class="footer__banner--title">
-                        Dịch vụ
-                    </div>
-                    <div class="footer__banner--content">
-                        <ul class="footer__listUnit ">
-                            <li><a href="hotel">Khách sạn</a></li>
-                            <li><a href="vehicle">Cho thuê xe</a></li>
-                            <li><a href="tour-camping">Campling Đà Lạt</a></li>
-                            <li><a href="tour">Vé tham quan Đà Lạt</a></li>
-                            <li><a href="liveshow">Đặt vé LiveShow</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- cột 3 -->
-                <div class="footer__banner">
-                    <div class="footer__banner--title">
-                        Thông tin
-                    </div>
-                    <div class="footer__banner--content">
+                        <?php
+                             the_title();
+                             ?>
+                                <div class="footer__banner--content">
                         <ul class="footer__listUnit">
-                            <li><a href="https://sapareview.vn/">Sapa Review Tất Tần Tật</a></li>
-                            <li><a href="">Đà Lạt Review Tất Tần Tật</a></li>
-                            <li><a href="https://www.tiktok.com/@dalatreviewtattantat">TikTok Đà Lạt Review Tất Tần
-                                    Tật</a></li>
-                            <li><a href="https://www.facebook.com/groups/NhaTrangReviewTatTanTat/">Nha Trang Review Tất
-                                    Tần Tật</a></li>
-                            <li><a href="https://www.facebook.com/groups/249050729669509/">Phan Thiết Review Tất Tần
-                                    Tật</a></li>
-                            <li><a href="https://www.facebook.com/groups/ninhthuantrongtoi/">Phan Rang Review Tất Tần
-                                    Tật</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- cột 4 -->
-            <div class="footer__banner--right">
-                <div class="footer__banner--title">
-                    Bản đồ
-                </div>
-                <div class="footer__banner--content">
-                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4162387727945!2d108.4411451931558!3d11.963462031245864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112c5ba5970a1%3A0x900519971f498118!2zMTA4IEzDvSBOYW0gxJDhur8sIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nIDY2MTA2!5e0!3m2!1svi!2s!4v1706237902739!5m2!1svi!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+                            <li>
+                             <?php
+                             the_content();
+                             ?>
+                             </li>
+                              </ul>
+                            </div> 
+                        </div>
+                             </div>
+                    <?php endwhile; wp_reset_postdata(); ?>
+            </div>          
         </div>
     </div>
 </footer>
