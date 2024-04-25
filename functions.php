@@ -30,17 +30,16 @@
                 'trackbacks',
                 'revisions',
                 'custom-fields'
-            ), 
-            'post-formats' =>array( 'gallery', 'quote', 'video', 'aside', 'image', 'link' ),
+            ),
             //Các tính năng được hỗ trợ trong post type
-            'taxonomies' => array( 'category', 'post_tag' ), //Các taxonomy được phép sử dụng để phân loại nội dung
+            
             'hierarchical' => false, //Cho phép phân cấp, nếu là false thì post type này giống như Post, true thì giống như Page
             'public' => true, //Kích hoạt post type
             'show_ui' => true, //Hiển thị khung quản trị như Post/Page
             'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
             'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
             'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-            'menu_position' => 3, //Thứ tự vị trí hiển thị trong menu (tay trái)
+            'menu_position' => 4, //Thứ tự vị trí hiển thị trong menu (tay trái)
             'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
             'can_export' => true, //Có thể export nội dung bằng Tools -> Export
             'has_archive' => true, //Cho phép lưu trữ (month, date, year)
@@ -92,15 +91,15 @@ function tao_footer()
         ), 
         
         //Các tính năng được hỗ trợ trong post type
-        'taxonomies' => array( 'category', 'post_tag' ), //Các taxonomy được phép sử dụng để phân loại nội dung
+       
         'hierarchical' => false, //Cho phép phân cấp, nếu là false thì post type này giống như Post, true thì giống như Page
         'public' => true, //Kích hoạt post type
         'show_ui' => true, //Hiển thị khung quản trị như Post/Page
         'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-        'menu_position' => 1, //Thứ tự vị trí hiển thị trong menu (tay trái)
-        'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
+        'menu_position' => 5, //Thứ tự vị trí hiển thị trong menu (tay trái)
+        'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/bottom.png', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
         'exclude_from_search' => false, //Loại bỏ khỏi kết quả tìm kiếm
@@ -151,15 +150,15 @@ function tao_slide_img()
         ), 
         
         //Các tính năng được hỗ trợ trong post type
-        'taxonomies' => array( 'category', 'post_tag' ), //Các taxonomy được phép sử dụng để phân loại nội dung
+       
         'hierarchical' => false, //Cho phép phân cấp, nếu là false thì post type này giống như Post, true thì giống như Page
         'public' => true, //Kích hoạt post type
         'show_ui' => true, //Hiển thị khung quản trị như Post/Page
         'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-        'menu_position' => 2, //Thứ tự vị trí hiển thị trong menu (tay trái)
-        'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
+        'menu_position' => 4, //Thứ tự vị trí hiển thị trong menu (tay trái)
+        'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/presentation.png', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
         'exclude_from_search' => false, //Loại bỏ khỏi kết quả tìm kiếm
