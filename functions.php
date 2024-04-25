@@ -40,7 +40,7 @@
             'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
             'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
             'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-            'menu_position' => 5, //Thứ tự vị trí hiển thị trong menu (tay trái)
+            'menu_position' => 3, //Thứ tự vị trí hiển thị trong menu (tay trái)
             'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
             'can_export' => true, //Có thể export nội dung bằng Tools -> Export
             'has_archive' => true, //Cho phép lưu trữ (month, date, year)
@@ -105,7 +105,7 @@ function tao_footer()
         'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-        'menu_position' => 5, //Thứ tự vị trí hiển thị trong menu (tay trái)
+        'menu_position' => 1, //Thứ tự vị trí hiển thị trong menu (tay trái)
         'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
@@ -128,6 +128,8 @@ if (is_home() && $query->is_main_query ())
 $query->set ('post_type', array ('post','footer'));
 return $query;
 }
+
+
 
 
 function tao_slide_img()
@@ -169,7 +171,7 @@ function tao_slide_img()
         'show_in_menu' => true, //Hiển thị trên Admin Menu (tay trái)
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
-        'menu_position' => 5, //Thứ tự vị trí hiển thị trong menu (tay trái)
+        'menu_position' => 1, //Thứ tự vị trí hiển thị trong menu (tay trái)
         'menu_icon' =>  home_url(). '/wp-content/uploads/2024/04/sale.png', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
@@ -184,7 +186,7 @@ function tao_slide_img()
 
 }
 /* Kích hoạt hàm tạo custom post type */
-add_action('init', 'tao_slide_img');
+add_action('init', 'tao_slide_img',10);
 
 add_filter('pre_get_posts','lay_img');
 function lay_img($query) {
