@@ -1,5 +1,5 @@
 
-<div class="fourProductList__wrapper">
+<div class="fourProductList__wrapper" >
         <?php
         
         global $paged;
