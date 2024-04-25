@@ -4,7 +4,7 @@
   <div class="popup__item">
     <div class="popup__item--name">
     <?php
-        substr(the_title(), 6);
+       the_title();
        ?>
     </div>
     <div class="popup__item--price">
