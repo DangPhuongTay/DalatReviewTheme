@@ -980,10 +980,20 @@ body.tourfirstQuestion #fifthQuestion__btn {
 }
 
 .alignnone {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 img{
-  border-radius: 20px;
+  border-radius: 15px;
   width: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 550px) {
+  .alignnone {
+    border-radius: 12px;
+  }
+  img{
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+  }
 }

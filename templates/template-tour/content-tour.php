@@ -214,19 +214,19 @@ if (have_posts()) {
                         <div class="detail__tour--content__left--sale">
                             <div class="detail__tour--content__left--sale__left">
                                 <span class="detail__tour--content__left--sale__header">
-                                    Ưu đãi lên đến 12%
+                                    Ưu đãi ngập tràn
                                 </span>
                                 <div class="detail__tour--content__left--sale__title">
-                                    <p>Pass Đà Lạt</p>
-                                    <span>Bao gồm Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt và 11 điểm tham quan</span>
+                                    <p>Du lịch Đà Lạt</p>
+                                    <span>Bao gồm các chuyến đi thú vị </span>
                                 </div>
                                 <div class="detail__tour--content__left--sale__price">
-                                    <p>₫ 640,000</p><span>₫ 730,000</span>
+                                    <!-- <p>₫ 640,000</p><span>₫ 730,000</span> -->
                                 </div>
                             </div>
                             <div class="detail__tour--content__left--sale__right">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                <a href="">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                <a href="<?php echo home_url( ); ?>/tour">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
                             </div>
                         </div>
                         <div class="detail__tour--content__left--sale__info shadow">
@@ -304,6 +304,17 @@ if (have_posts()) {
 
                             </div>
                         </div>
+                        <style>
+                            .comment .comment_container img{
+                                width: 30px;
+                                height: 30px
+                            }
+                            .comment .comment_container .comment-text img{
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 10px;
+                            }
+                        </style>
                         <div class="detail__tour--content__left--header">
                             Liên hệ với chúng tôi
                         </div>
@@ -312,9 +323,6 @@ if (have_posts()) {
                             <a href="https://zalo.me/dalatreview"
                                 class="detail__tour--content__left--contact__btn secondBtn"><ion-icon
                                     name="chatbubbles"></ion-icon> <span>Chat với chúng tôi</span></a>
-                        </div>
-                        <div class="detail__tour--content__left--header">
-                            Bài viết liên quan
                         </div>
 
                     </div>

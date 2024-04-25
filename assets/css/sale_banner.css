@@ -71,6 +71,9 @@
         width: 310px;
         border-radius: var(--border-radius-size-3);
      }
+     .home__sale--banner__container--list .home__sale--banner__container--list__item p{
+        width: 370px;
+     }
  }
  @media only screen and (max-width: 450px) {
 
