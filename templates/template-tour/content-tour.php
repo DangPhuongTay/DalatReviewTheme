@@ -214,14 +214,14 @@ if (have_posts()) {
                         <div class="detail__tour--content__left--sale">
                             <div class="detail__tour--content__left--sale__left">
                                 <span class="detail__tour--content__left--sale__header">
-                                    Ưu đãi lên đến 12%
+                                    Ưu đãi ngập tràn
                                 </span>
                                 <div class="detail__tour--content__left--sale__title">
-                                    <p>Pass Đà Lạt</p>
-                                    <span>Bao gồm Đi Xe Trượt Thác Datanla New Alpine Tại Đà Lạt và 11 điểm tham quan</span>
+                                    <p>Du lịch Đà Lạt</p>
+                                    <span>Bao gồm các chuyến đi thú vị </span>
                                 </div>
                                 <div class="detail__tour--content__left--sale__price">
-                                    <p>₫ 640,000</p><span>₫ 730,000</span>
+                                    <!-- <p>₫ 640,000</p><span>₫ 730,000</span> -->
                                 </div>
                             </div>
                             <div class="detail__tour--content__left--sale__right">
@@ -304,6 +304,17 @@ if (have_posts()) {
 
                             </div>
                         </div>
+                        <style>
+                            .comment .comment_container img{
+                                width: 30px;
+                                height: 30px
+                            }
+                            .comment .comment_container .comment-text img{
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 10px;
+                            }
+                        </style>
                         <div class="detail__tour--content__left--header">
                             Liên hệ với chúng tôi
                         </div>
