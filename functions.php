@@ -31,7 +31,7 @@
                 'revisions',
                 'custom-fields'
             ), 
-            
+            'post-formats' =>array( 'gallery', 'quote', 'video', 'aside', 'image', 'link' ),
             //Các tính năng được hỗ trợ trong post type
             'taxonomies' => array( 'category', 'post_tag' ), //Các taxonomy được phép sử dụng để phân loại nội dung
             'hierarchical' => false, //Cho phép phân cấp, nếu là false thì post type này giống như Post, true thì giống như Page
@@ -58,10 +58,11 @@
     add_action('init', 'tao_custom_post_type');
     
     add_filter('pre_get_posts','lay_custom_post_type');
-function lay_custom_post_type($query) {
-  if (is_home() && $query->is_main_query ())
-    $query->set ('post_type', array ('post','sale'));
-    return $query;
-}
-    
+    function lay_custom_post_type($query) {
+    if (is_home() && $query->is_main_query ())
+        $query->set ('post_type', array ('post','sale'));
+        return $query;
+    }
+
+
 ?>
