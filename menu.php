@@ -187,6 +187,32 @@
                 </div>
             </div>
         </header>
+        <div class="taskbarMobile">
+            <div class="taskbarMobile__item">
+                <a href="">
+                    <ion-icon name="call-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="taskbarMobile__item">
+            <a href="https://zalo.me/dalatreview"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Zaloiconchat.png" alt=""></a>
+
+            </div>
+            <div class="taskbarMobile__item">
+                <a href="https://www.facebook.com/groups/295094014719733">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+            <div class="taskbarMobile__item">
+                <a href="https://dalatreview.vn@gmail.com">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="taskbarMobile__item">
+                <a href="https://www.google.com/maps/@11.9632825,108.4417108,16z?hl=vi-VN&entry=ttu">
+                    <ion-icon name="location-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
         <div class="header__mobile shadow">
             <div class="header__mobile--box">
                 <ul>
