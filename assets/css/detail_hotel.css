@@ -50,17 +50,31 @@
 
 .detailHotel__img img,
 .detailHotel__list--body__list--wrap__item--left__img--main img {
-    object-fit: cover;
+   object-fit: cover;
     width: 100%;
+    
 }
 
 .detailHotel__img--left img {
     width: 100%;
     height: 40vh;
+    position: relative;
+
+}
+.detailHotel__img--right img {
+ 
 }
 
 .detailHotel__img--left {
     flex: 50%;
+    position: relative;
+}
+.blur{
+    width: 100%;
+    height: 100vh;
+    filter: blur(3px);
+    position: absolute;
+    z-index: 1;
 }
 
 .detailHotel__img--right {
@@ -1373,7 +1387,7 @@ body.MapCarForm {
         position: relative;
         margin-bottom: -20px;
         width: 100%;
-        padding-bottom: 75%;
+        padding-bottom: 60%;
         overflow: hidden;
     }
     .detailHotel {
@@ -1840,6 +1854,10 @@ body.MapCarForm {
 
     .detailHotelMobile__slides--show__item img {
         height: 370px;
+    }
+    .detailHotel__banner {
+        padding-bottom: 75%;
+
     }
 }
 
