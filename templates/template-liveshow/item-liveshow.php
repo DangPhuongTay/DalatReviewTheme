@@ -22,11 +22,9 @@
                             </div>
                         </div>-->
                         <span
-                            class="firstProduct__info--top__score--review">(<?php echo $review_count = $product->get_review_count(); ?>)Bình luận</span>
+                            class="firstProduct__info--top__score--review"><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                         <!-- sep -->
-                        <div class="sep">
-                            <ion-icon name="ellipse"></ion-icon>
-                        </div>
+
                         <!-- <div class="firstProduct__info--top__score--booked"> -->
                             <!--<span firstProduct__info--top__score--booked__number>1K+
                             Đã được đặt </span> -->
