@@ -714,7 +714,28 @@ body.CheckoutForm{
     }
     .checkouttour__container--left__header p{
         font-size: var(--size-text-5);
-}}
+    
+    }
+    .checkouttour{
+        margin-top: 0;
+    }
+    .checkouttour h4{
+        font-size: var(--size-text-6);
+    }
+    .checkouttour .col-12,
+    #customer_details{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .woocommerce-billing-fields__field-wrapper p span,
+    .woocommerce-billing-fields__field-wrapper p label{
+        width: 100% !important;
+    }
+    .woocommerce-billing-fields__field-wrapper p label{
+        font-size: var(--size-text-4);
+        color: var(--color-text-2);
+        margin-bottom: 2px;
+    }
 @media only screen and (max-width: 450px) {
     .checkouttour__container--left__info--form{
     

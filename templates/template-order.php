@@ -337,7 +337,7 @@ get_header(); ?>
                             <script type="text/javascript">
                               
                                             var data = "name=<?php echo $order_billing_first_name ?>&&phone=<?php echo $order_billing_phone ?>&&email=<?php echo $order_billing_email ?>&&address=<?php echo $order_billing_address_1 ?>&&order=<?php echo $text_order_list ?>&&total=<?php echo $order_total ?>";
-                                            console.log(data);
+                                            
                                             $.ajax({
                                                         type : 'GET', 
                                                         url : 'https://script.google.com/macros/s/AKfycbxDv3HoFM5yU_2wWGimhhNv2P4H0c07HBFhaTC_tiu6nWO30Pk9NgkoY5zy2umSxIpw/exec',

@@ -78,7 +78,7 @@
                 echo __( 'Không có sản phẩm!' );
             }
         ?></div>
-        <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
+        <div class="liveshow__container--body__product--list__page">
         <?php previous_posts_link( '<div class="liveshow__container--body__product--list__page--item">
                   <ion-icon name="chevron-back"></ion-icon>
                 </div>', $loop->max_num_pages); ?> 

@@ -983,7 +983,7 @@ body.tourfirstQuestion #fifthQuestion__btn {
   border-radius: 15px;
 }
 img{
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   width: 100%;
   object-fit: cover;
 }
