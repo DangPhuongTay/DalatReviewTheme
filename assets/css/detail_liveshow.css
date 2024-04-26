@@ -235,7 +235,7 @@
 .popup__detailLiveshow .popup__item a{
     position: absolute;
     z-index: 10;
-    width: 100%;
+    width: 96%;
     height: 100%;
     top: 0;
     left: 0;
@@ -281,8 +281,8 @@ body.listDetailLiveShowPopup {
     z-index: 1005;
 }
 .popup__title h3 {
-    padding-bottom: 5px;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     border-bottom: 1px solid var(--color-text-22);
 }
 .popup__item{
@@ -296,8 +296,8 @@ body.listDetailLiveShowPopup {
     font-size: 25px;
     font-weight: 600;
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 6px;
+    right: 11px;
 }
 
 @media only screen and (max-width:1200px) {
