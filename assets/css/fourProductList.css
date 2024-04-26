@@ -145,7 +145,7 @@
 @media (max-width: 550px) {
     .fourProductList__wrapper {
         gap: 10px;
-        display: flex;
+        display: grid;
         width: 100%;
         overflow-x: scroll;
         /* display: none; */
@@ -161,7 +161,6 @@
   
     .fourProductList__wrapper--img img {
         width: 100%;
-        min-width: 300px;
     }
 
     .fourProductList__wrapper--info__title {

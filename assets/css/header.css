@@ -974,3 +974,7 @@ body.checker .login__mobile {
     }
 
 }
+.taskbarMobile__item p img{
+    border-radius: 0;
+    object-fit: contain;
+}
