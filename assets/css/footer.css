@@ -32,18 +32,24 @@
     margin-right: 30px;
 }
 
+.footer__listUnit {
+    font-weight: lighter;
+}
+
 @media only screen and (max-width: 1120px) {
     .layout__footerBanner--wrapper {
         padding: 0 20px;
     }
-    .footer__listUnit li p{
+
+    .footer__listUnit li p {
         font-size: var(--size-text-5);
     }
 }
 
-@media only screen and (max-width: 1111px) {
+@media only screen and (max-width: 850px) {
     .footer__banner--left {
-        width: 100%;
+        min-width: 50%;
+        flex-wrap: wrap;
 
     }
 
@@ -53,10 +59,7 @@
 
 
 
-    .footer__banner--right {
-        width: 100%;
 
-    }
 
     .footer__map {
         width: 100%;
