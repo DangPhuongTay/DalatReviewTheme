@@ -11,7 +11,7 @@
                         );
                     ?>
                     <?php $getposts = new WP_query($args); ?>
-                    <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+                   
 
                     <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                     <div class="footer__banner">
