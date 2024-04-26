@@ -96,6 +96,7 @@ if (have_posts()) {
 
                 <div class="detailHotel__img" onclick="btnDetailHotelSlides()">
                     <div class="detailHotel__img--left">
+                        <!-- <div class="blur" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>')"></div> -->
                         <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="">
                     </div>
                     <div class="detailHotel__img--right">
