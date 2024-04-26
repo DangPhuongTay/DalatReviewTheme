@@ -16,6 +16,7 @@
 
     justify-content: space-between;
 
+
 }
 
 .footer__banner--title {
@@ -26,6 +27,10 @@
 
 .footer__listUnit li {
     color: var(--color-text-2);
+}
+
+.footer__listUnit li p {
+    font-size: var(--size-text-5);
 }
 
 .footer__banner {
