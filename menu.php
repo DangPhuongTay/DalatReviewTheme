@@ -69,6 +69,8 @@
                                     flex-direction: column;
                                     padding: 15px;
                                     z-index: 100;
+                                    min-width: 150px;
+
 
                                 }
 
@@ -156,6 +158,8 @@
                                 .minicart__item--product p strong {
                                     margin-right: 10px;
                                 }
+
+                                .minicart__item--product {}
                             </style>
 
                             <li>
@@ -188,24 +192,25 @@
             </div>
         </header>
         <div class="taskbarMobile">
-        <?php
+            <?php
 
             $args = array(
-                'post_type' => 'contact', 
+                'post_type' => 'contact',
                 'orderby' => ['time' => 'DESC'],
-                'post_status' => 'publish', 
+                'post_status' => 'publish',
             );
             ?>
             <?php $getposts = new WP_query($args); ?>
-    
+
             <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
-            <div class="taskbarMobile__item">
-            <?php
-            the_content();
-            ?>
-            </div>
-            <?php endwhile; wp_reset_postdata(); ?>
-          
+                <div class="taskbarMobile__item">
+                    <?php
+                    the_content();
+                    ?>
+                </div>
+            <?php endwhile;
+            wp_reset_postdata(); ?>
+
 
             <!-- <div class="taskbarMobile__item">
                 <a href="">
