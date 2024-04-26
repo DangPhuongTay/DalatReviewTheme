@@ -1,5 +1,7 @@
 const ListImage = document.querySelector('.home__slider--list__images');
-const imgs = document.querySelectorAll('.home__slider--item__image a');
+
+const imgs = document.querySelectorAll('.home__slider--item__image p');
+
 const btnLeft = document.querySelector('.home__slider--btn__left');
 const btnRight = document.querySelector('.home__slider--btn__right');
 const lenght = imgs.length;
