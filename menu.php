@@ -188,7 +188,27 @@
             </div>
         </header>
         <div class="taskbarMobile">
+        <?php
+
+            $args = array(
+                'post_type' => 'contact', 
+                'orderby' => ['time' => 'DESC'],
+                'post_status' => 'publish', // Chỉ lấy những bài viết được publish
+            );
+            ?>
+            <?php $getposts = new WP_query($args); ?>
+            <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+
+            <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
             <div class="taskbarMobile__item">
+            <?php
+            the_content();
+            ?>
+            </div>
+            <?php endwhile; wp_reset_postdata(); ?>
+          
+
+            <!-- <div class="taskbarMobile__item">
                 <a href="">
                     <ion-icon name="call-outline"></ion-icon>
                 </a>
@@ -211,7 +231,7 @@
                 <a href="https://www.google.com/maps/@11.9632825,108.4417108,16z?hl=vi-VN&entry=ttu">
                     <ion-icon name="location-outline"></ion-icon>
                 </a>
-            </div>
+            </div> -->
         </div>
         <div class="header__mobile shadow">
             <div class="header__mobile--box">
