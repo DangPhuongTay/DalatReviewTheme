@@ -2,8 +2,7 @@
 <?php 
 	$args = array(
 		'post_type' => 'sale', 
-		'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-		'showposts' => 4, // số lượng bài viết
+		'post_status' => 'publish', 
 	);
 ?>
 <?php $getposts = new WP_query($args); ?>

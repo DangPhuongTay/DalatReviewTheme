@@ -36,7 +36,7 @@
                                     submit.click(function () {
 
                                         var data = $('form#test-form').serialize();
-                                        console.log(data);
+                                       
                                         $.ajax({
                                             type: 'GET',
                                             url: 'https://script.google.com/macros/s/AKfycbx7XgM7pRC7lGsUSTXsJ6DTHmdvVpe8C_pfcio83D8N-mUmRx-uz0io99szR-44CCwe/exec',
@@ -44,11 +44,7 @@
                                             crossDomain: true,
                                             data: data,
                                             success: function (data) {
-                                                if (data == 'false') {
-                                                    alert('Thêm không thành công, bạn cũng có thể sử dụng để hiển thị Popup hoặc điều hướng');
-                                                } else {
-                                                    alert('Cảm ơn bạn rất nhiều!');
-                                                }
+ 
                                             }
                                         });
 
