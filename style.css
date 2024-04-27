@@ -922,8 +922,8 @@ del{
   color: var(--color-text-11);
 }
 del .woocommerce-Price-amount{
-  font-size: var(--size-text-4) !important;
-  text-decoration: inherit;
+  font-size: var(--size-text-5) !important;
+  text-decoration: none;
 
 }
 ins{
