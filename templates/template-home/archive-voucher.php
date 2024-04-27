@@ -1,4 +1,5 @@
 <div class="home__sale--banner__container--list">
+<div class="home__sale--banner__container--list__btn left_btn"><ion-icon name="chevron-back-outline"></ion-icon></div>
 <?php 
 	$args = array(
 		'post_type' => 'sale', 
@@ -13,4 +14,5 @@
 	get_template_part('templates/template-home/item', 'voucher' );
              ?>
 <?php endwhile; wp_reset_postdata(); ?>
+<div class="home__sale--banner__container--list__btn right_btn"><ion-icon name="chevron-forward-outline"></ion-icon></div>
 </div>

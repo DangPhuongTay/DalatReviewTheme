@@ -37,3 +37,6 @@ btnLeft.addEventListener('click',()=>{
         ListImage.style.transform = `translateX(${width * -1 * current}px)`;
     }
 })
+
+
+
