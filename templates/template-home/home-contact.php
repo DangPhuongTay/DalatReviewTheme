@@ -65,7 +65,6 @@
                                         document.querySelector(".btn__contact--text").innerHTML = "Gửi Thành Công";
                                         icon.style.display ='none';
                                     }
-                                    
                                     return false;
                                     
                                 }

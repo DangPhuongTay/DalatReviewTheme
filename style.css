@@ -938,13 +938,6 @@ ins{
 
 @media only screen and (max-width: 1100px) {
 
-  /* .primary__dropdown--button__all span, .fliter__category--content__box--item, .total__filter--btn{
-    font-size: var(--size-text-4);
-  } */
-  /* .quick__filter--entry__content{
-    flex-direction: column;
-    align-items: flex-start;
-  } */
   .nextBtn {
     display: none;
   }
