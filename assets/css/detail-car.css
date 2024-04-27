@@ -427,5 +427,7 @@ body.InfoCarForm{
     }
 }
 @media only screen and (max-width: 450px) {
-
+    .detail__car--map {
+        width: 100%;
+    }
 }

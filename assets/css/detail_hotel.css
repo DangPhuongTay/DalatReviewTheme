@@ -1478,6 +1478,9 @@ body.MapCarForm {
     .fourProductList__wrapper--info__count {
         display: block !important;
     }
+    .detailHotel__list--body__list--wrap__item--left__popular--name p{
+        font-size: 15px;
+    }
 
     .detailHotelMobile__info--summary {
         display: flex;
@@ -1574,7 +1577,7 @@ body.MapCarForm {
         color: var(--color-text-0);
         font-size: var(--size-text-5);
         font-weight: 600;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .detailHotel__list--body__list--wrap__item--left__popular--platform__wrap {
@@ -1719,9 +1722,10 @@ body.MapCarForm {
         margin: 0 -20px;
         padding: 0 20px;
         position: sticky;
-        top: 0;
+        top: -2px;
         z-index: 99;
-        overflow: hidden;
+        display: flex;
+        overflow-y: scroll;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .1);
         height: 35px;
         background-color: var(--color-background-6);
@@ -1731,6 +1735,7 @@ body.MapCarForm {
         margin-right: 16px;
         padding: 10px 0;
         font-size: var(--size-text-4);
+        white-space: nowrap;
     }
 
     .detailHotelMobie__footer {
