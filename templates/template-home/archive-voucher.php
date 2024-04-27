@@ -1,9 +1,9 @@
 <div class="home__sale--banner__container--list">
+<div class="home__sale--banner__container--list__btn left_btn"><ion-icon name="chevron-back-outline"></ion-icon></div>
 <?php 
 	$args = array(
 		'post_type' => 'sale', 
-		'post_status' => 'publish', // Chỉ lấy những bài viết được publish
-		'showposts' => 4, // số lượng bài viết
+		'post_status' => 'publish', 
 	);
 ?>
 <?php $getposts = new WP_query($args); ?>
@@ -14,4 +14,5 @@
 	get_template_part('templates/template-home/item', 'voucher' );
              ?>
 <?php endwhile; wp_reset_postdata(); ?>
+<div class="home__sale--banner__container--list__btn right_btn"><ion-icon name="chevron-forward-outline"></ion-icon></div>
 </div>

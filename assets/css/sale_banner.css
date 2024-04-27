@@ -20,6 +20,7 @@
     position: relative;
     border-radius: var(--border-radius-size-3);
     transition: all ease .1s;
+    width: 370px;
 }
 .home__sale--banner__container--list__item--text{
     position: absolute;
@@ -37,6 +38,7 @@
     width: 350px;
     object-fit: cover;
     border-radius: var(--border-radius-size-3);
+    max-width: none !important;
 }
 .home__sale--banner__container--list__item a{
     width: 370px;
