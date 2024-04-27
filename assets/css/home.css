@@ -533,7 +533,7 @@
 }
 
 .home__sale--banner__container--list__btn{
-    
+    top: 55%;
     position: absolute;
     width: 40px;
     height: 40px;
@@ -545,12 +545,12 @@
 
 }
 .home__sale--banner__container .left_btn{
- 
-    left: -10px;
+
+    left: -25px;
 }
 
 .home__sale--banner__container .right_btn{
-    right: -20px;
+    right: -25px;
 }
 
 
@@ -592,9 +592,6 @@
     width: 23%;
 }
 
-/* .home__product--banner{
-    height: 50vh;
-} */
 @media only screen and (max-width: 1400px) {
     .home__slider--btns {
         display: none;

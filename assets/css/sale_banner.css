@@ -5,12 +5,16 @@
     Update at: 2/2/2024
 ============================================== */
 .home__sale--banner__container--list{
+    overflow: hidden;
     width: 100%;
+    transition: 1s all ease;
+}
+.home__sale--banner__container--list__item--wrapper{
     display: flex;
     align-items: center;
     padding: 10px;
     gap: 20px;
-    overflow: hidden;
+
 }
 
 .home__sale--banner__container--list__item:hover{
@@ -81,3 +85,5 @@
 
     
  }
+
+ 
