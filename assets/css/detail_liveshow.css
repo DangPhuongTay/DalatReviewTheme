@@ -292,6 +292,10 @@ body.listDetailLiveShowPopup {
     justify-content: space-between;
     margin-bottom: 5px;
 }
+.popup__item--price span{
+    color: white !important;
+    text-decoration: inherit;
+}
 .popup__close{
     font-size: 25px;
     font-weight: 600;
