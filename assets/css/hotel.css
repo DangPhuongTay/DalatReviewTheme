@@ -654,7 +654,7 @@ body.hotelBlur .hotel__backgroup--blur {
 
   /* dropdown */
   body.listHotelMobileRange .hotel__right--fitter {
-    top: 0;
+    top: 13px;
   }
 
   body.hotelBlur .hotel__backgroup--blur {
@@ -690,7 +690,7 @@ body.hotelBlur .hotel__backgroup--blur {
   }
 
   .hotel__backgroup--blur {
-    top: 350px;
+    top: 375px;
     left: 0;
     z-index: 100;
   }
