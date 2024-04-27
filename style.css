@@ -918,6 +918,17 @@ body.tourfirstQuestion #fifthQuestion__btn {
   margin-left: 15px;
   color: var(--color-text-19);
 }
+del{
+  color: var(--color-text-11);
+}
+del .woocommerce-Price-amount{
+  font-size: var(--size-text-4) !important;
+  text-decoration: inherit;
+
+}
+ins{
+  color: var(--color-text-7);
+}
 
 @media only screen and (max-width: 1060px) {
   .search__filter {
