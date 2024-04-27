@@ -184,6 +184,7 @@
     padding: 20px;
     margin-bottom: 15px;
     overflow: auto;
+
 }
 
 .liveshow__container--body__product--filter__find {
@@ -335,20 +336,22 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 .firstProduct__content--list__item {
     min-height: 60px;
 }
+
 .liveshow__container--body__product--list .firstProduct {
     width: 100% !important;
 }
 
-.liveshow__container--body__product--list .firstProduct  .firstProduct__content--list{
+.liveshow__container--body__product--list .firstProduct .firstProduct__content--list {
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.liveshow__container--body__product--list .firstProduct  .firstProduct__content--list .firstProduct__content--list__item{
-width: 33.33333%;
+.liveshow__container--body__product--list .firstProduct .firstProduct__content--list .firstProduct__content--list__item {
+    width: 33.33333%;
 }
+
 .liveshow__container--body__product--list .firstProduct__content--list__item {
 
     margin-bottom: 15px;
@@ -358,20 +361,23 @@ width: 33.33333%;
     display: none;
 }
 
-@media (max-width: 1110px) { 
-    .liveshow__container--body__product--list .firstProduct  .firstProduct__content--list .firstProduct__content--list__item{
+@media (max-width: 1110px) {
+    .liveshow__container--body__product--list .firstProduct .firstProduct__content--list .firstProduct__content--list__item {
         width: 45%;
-        }
+    }
 }
-@media (max-width: 999px) { 
-    .liveshow__container--body__product--list .firstProduct  .firstProduct__content--list .firstProduct__content--list__item{
+
+@media (max-width: 999px) {
+    .liveshow__container--body__product--list .firstProduct .firstProduct__content--list .firstProduct__content--list__item {
         width: 50%;
-        }
+    }
 }
+
 @media (max-width: 750px) {
-    .liveshow__container--body__product--list{
+    .liveshow__container--body__product--list {
         width: 100%;
     }
+
     .liveshow__banner,
     .liveshow__container--link,
     .liveshow__container--body__wrap {
@@ -396,6 +402,7 @@ width: 33.33333%;
     .liveshow__container--body__product--filter {
         padding: 0;
         background-color: var(--color-background-3);
+        margin-top: 50px;
     }
 
     .liveshowMobile__title {
@@ -464,5 +471,12 @@ width: 33.33333%;
 
     .liveshow__container--body__product--list {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
     }
+
+    .liveshow__container--body__product--list .firstProduct .firstProduct__content--list .firstProduct__content--list__item {
+        width: 100%;
+    }
+
+
 }
