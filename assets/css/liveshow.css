@@ -378,6 +378,10 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
         width: 100%;
     }
 
+    .firstProduct__content--list {
+        justify-content: flex-start !important;
+    }
+
     .liveshow__banner,
     .liveshow__container--link,
     .liveshow__container--body__wrap {
