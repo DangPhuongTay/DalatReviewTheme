@@ -482,5 +482,17 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
         width: 100%;
     }
 
+    .liveshow__container--body__product--filter__price--wrap {
+        overflow-y: scroll !important;
+        width: 300px !important;
+    }
+
+    .liveshow__container--body__menu--item {
+        white-space: nowrap;
+    }
+
+    .firstProduct__info {
+        min-height: 200px;
+    }
 
 }
