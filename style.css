@@ -920,6 +920,7 @@ body.tourfirstQuestion #fifthQuestion__btn {
 }
 del{
   color: var(--color-text-11);
+  font-size: var(--size-text-4);
 }
 del .woocommerce-Price-amount{
   font-size: var(--size-text-5) !important;

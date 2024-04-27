@@ -2,15 +2,7 @@
 <div class="detailHotel__list--body__list--wrap">
     <div class="detailHotel__list--body__list--wrap__name">
         <?php
-            function the_title_trim($title)
-            {
-            $pattern[0] = '/Protected:/';
-            $pattern[1] = '/Private:/';
-            $replacement[0] = ''; // Enter some text to put in place of Protected:
-            $replacement[1] = ''; // Enter some text to put in place of Private:
-            return preg_replace($pattern, $replacement, $title);
-            }
-            add_filter('the_title', 'the_title_trim');
+            
           the_title();
        ?>
     </div> 
