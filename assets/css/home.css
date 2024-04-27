@@ -755,13 +755,14 @@
 
 }
 @media only screen and (max-width: 800px) {
+   
+}
+
+@media only screen and (max-width: 850px) {
     .home__sale--banner__container--list__btn{
         display: none;
     }
     
-}
-
-@media only screen and (max-width: 850px) {
     .home__info--banner__container--list__item p {
         font-size: var(--size-text-4);
         margin-bottom: 5px;
