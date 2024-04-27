@@ -124,7 +124,7 @@
     gap: 10px;
 }
 .detail__liveshow--ticket__left--price{
-    font-size: var(--size-text-6);
+    /* font-size: var(--size-text-6); */
     font-weight: 600;
     color: var(--color-text-7);
 }
@@ -291,6 +291,10 @@ body.listDetailLiveShowPopup {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
+}
+.popup__item--price span{
+    color: white !important;
+    text-decoration: inherit;
 }
 .popup__close{
     font-size: 25px;

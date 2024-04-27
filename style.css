@@ -918,6 +918,18 @@ body.tourfirstQuestion #fifthQuestion__btn {
   margin-left: 15px;
   color: var(--color-text-19);
 }
+del{
+  color: var(--color-text-11);
+  font-size: var(--size-text-4);
+}
+del .woocommerce-Price-amount{
+  font-size: var(--size-text-5) !important;
+  text-decoration: none;
+
+}
+ins{
+  color: var(--color-text-7);
+}
 
 @media only screen and (max-width: 1060px) {
   .search__filter {
@@ -927,13 +939,6 @@ body.tourfirstQuestion #fifthQuestion__btn {
 
 @media only screen and (max-width: 1100px) {
 
-  /* .primary__dropdown--button__all span, .fliter__category--content__box--item, .total__filter--btn{
-    font-size: var(--size-text-4);
-  } */
-  /* .quick__filter--entry__content{
-    flex-direction: column;
-    align-items: flex-start;
-  } */
   .nextBtn {
     display: none;
   }

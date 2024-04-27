@@ -555,8 +555,6 @@ body.hotelBlur .hotel__backgroup--blur {
     line-height: 1.5;
     padding: 12px;
     border-bottom: 1px solid var(--color-background-12);
-    margin-top: 10px;
-
   }
 
   .hotelMobile__header--filter__item {
@@ -654,7 +652,7 @@ body.hotelBlur .hotel__backgroup--blur {
 
   /* dropdown */
   body.listHotelMobileRange .hotel__right--fitter {
-    top: 0;
+    top: 13px;
   }
 
   body.hotelBlur .hotel__backgroup--blur {
@@ -690,7 +688,7 @@ body.hotelBlur .hotel__backgroup--blur {
   }
 
   .hotel__backgroup--blur {
-    top: 350px;
+    top: 375px;
     left: 0;
     z-index: 100;
   }

@@ -127,12 +127,12 @@
 }
 
 .fourProductList__wrapper--price__info span:first-child {
-    text-decoration: underline;
-    font-size: var(--size-text-3);
+    text-decoration: none;
+    /* font-size: var(--size-text-3); */
 }
 
 .fourProductList__wrapper--price__info span:last-child {
-    font-size: var(--size-text-6);
+    font-size: var(--size-text-5);
 }
 @media (max-width: 900px) {
     .fourProductList__wrapper {

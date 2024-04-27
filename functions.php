@@ -244,5 +244,13 @@ $query->set ('post_type', array ('post','slide'));
 return $query;
 }
 
-
+function the_title_trim($title)
+            {
+            $pattern[0] = '/Protected:/';
+            $pattern[1] = '/Private:/';
+            $replacement[0] = ''; // Enter some text to put in place of Protected:
+            $replacement[1] = ''; // Enter some text to put in place of Private:
+            return preg_replace($pattern, $replacement, $title);
+            }
+            add_filter('the_title', 'the_title_trim');
 ?>

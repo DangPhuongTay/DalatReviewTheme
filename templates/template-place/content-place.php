@@ -142,7 +142,7 @@ if (have_posts()) {
                                 </span>
                                 <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                             </p>
-                            <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
+                            <p class="detailHotel__info--wapper__right--tip"></p>
                             <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
                         </div>
                         <div class="fourProductList__wrapper--info__review list__wrapper">
@@ -202,11 +202,24 @@ if (have_posts()) {
                         </div>
                         <div class="detailHotel__info--summary__right" onclick="openMapsCarFormBtn()">
                             <div class="detailHotel__info--summary__right--address">
-                                <span>16 Trạng Trình(P.9)</span>
-                                <div class="detailHotel__info--summary__right--location">
+                                <span> <ion-icon name="location-outline"></ion-icon>
+                                    <?php
+                                    
+                                    foreach ($product->attributes as $taxonomy => $attribute) {
+                                       
+                                       foreach ($attribute->get_terms() as $term) {
+                                           if($term ->taxonomy == 'pa_dia-chi'){
+                                         echo $term->name ;
+                                         
+                                               }else{
+                                           echo '';
+                                       }
+                                       }
+                                    } ?></span>
+                                <!-- <div class="detailHotel__info--summary__right--location">
                                     <ion-icon name="train-outline"></ion-icon>
                                     <p>Ga Đà Lạt, 1.1km</p>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="detailHotel__info--summary__right--map">
                                 <span>Xem bản đồ</span>
@@ -257,7 +270,7 @@ if (have_posts()) {
                                     Có <b>4</b> mức giá cho loại phòng này
                                 </div> -->
                             </div>
-                            <div class="detailHotel__list--body__list--wrapper">
+                            <!-- <div class="detailHotel__list--body__list--wrapper">
                                 <div class="detailHotel__list--body__list--wrapper__icon">
                                     <ion-icon name="close-outline"></ion-icon>
                                 </div>
@@ -383,7 +396,7 @@ if (have_posts()) {
                                         </div>
                                         <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="detailHotel__list--body__list">
                                     <?php
@@ -910,7 +923,7 @@ if (have_posts()) {
                                     <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !
                                     </h2>
 
-                                    
+                        
                                     <div class="firstTag__internal--content">
                                         <h3 class="firstTag__internal--header">
                                             Trải nghiệm tuyệt vời tại Đà Lạt
