@@ -5,30 +5,32 @@
     Update at: 5/2/2024
 ============================================== */
 
-.motorbike{
+.motorbike {
     width: 100%;
     margin-top: 31px;
 }
 
-.motorbike__container--banner{
+.motorbike__container--banner {
     position: relative;
     width: 100%;
     height: 25rem;
     display: flex;
     align-items: end;
 }
-.motorbike__container--banner img{
+
+.motorbike__container--banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.motorbike__container--content{
+.motorbike__container--content {
     width: 100%;
     margin: 0 auto;
     max-width: 1160px;
 }
-.motorbike__container--banner__btn{
+
+.motorbike__container--banner__btn {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -38,14 +40,16 @@
     align-items: end;
     padding: 20px;
 }
-.motorbike__container--banner__box{
+
+.motorbike__container--banner__box {
     width: 100%;
     margin: 0 auto;
     max-width: 1160px;
     display: flex;
     gap: 20px;
 }
-.motorbike__container--banner__box--item a{
+
+.motorbike__container--banner__box--item a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,16 +59,19 @@
     background: var(--color-background-6);
     opacity: .8;
 }
-.motorbike__container--banner__box--item ion-icon{
-    font-size: var( --size-text-7);
+
+.motorbike__container--banner__box--item ion-icon {
+    font-size: var(--size-text-7);
 }
-.motorbike__container--header{
+
+.motorbike__container--header {
     position: relative;
     font-size: var(--size-text-7);
     padding-left: 15px;
     margin: 20px 0;
 }
-.motorbike__container--header::before{
+
+.motorbike__container--header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -74,11 +81,37 @@
     background: var(--color-background-7);
     border-radius: var(--border-radius-size-3);
 }
-.vehicle__pagging{
+
+.vehicle__pagging {
     margin-bottom: 30px;
 }
-.motorbike__fitter--price .total__filter--btn{
+
+.motorbike__fitter--price .total__filter--btn {
     background-color: var(--color-background-6);
     opacity: .8;
+
+}
+
+@media (max-width: 550px) {
+
+    .motorbike__container--banner {
+
+        height: 15rem;
+
+    }
+
+    .motorbike__container--banner__box--item a {
+        padding: 10px;
+    }
+
+    .motorbike__container--header {
+        margin: 5px 0;
+    }
+
+    .total__filter--list {
+        width: 100vw !important;
+        right: -20px !important;
+    }
+
 
 }
