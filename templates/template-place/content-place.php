@@ -142,7 +142,7 @@ if (have_posts()) {
                                 </span>
                                 <span class="detailHotel__info--wapper__right--unit">Mỗi đêm</span>
                             </p>
-                            <p class="detailHotel__info--wapper__right--tip">Đăng nhập để hưởng giá thành viên Đà Lạt Review</p>
+                            <p class="detailHotel__info--wapper__right--tip"></p>
                             <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
                         </div>
                         <div class="fourProductList__wrapper--info__review list__wrapper">

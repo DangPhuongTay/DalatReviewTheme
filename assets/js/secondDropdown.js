@@ -19,10 +19,10 @@ btnHotelRoomMobile.addEventListener('click', ()=>{
     secondDropDownBody.classList.add('listHotelRoomMoblie')
     secondDropDownBody.classList.add('hotelFitterBlur')
 })
-btnHotelDateMobile.addEventListener('click', ()=>{
-    secondDropDownBody.classList.add('listHotelDateMoblie')
-    secondDropDownBody.classList.add('hotelFitterBlur2')
-})
+// btnHotelDateMobile.addEventListener('click', ()=>{
+//     secondDropDownBody.classList.add('listHotelDateMoblie')
+//     secondDropDownBody.classList.add('hotelFitterBlur2')
+// })
 btnHotelSearchMobile.addEventListener('click', ()=>{
     secondDropDownBody.classList.add('listHotelSearchMoblie')
     secondDropDownBody.classList.add('hotelFitterBlur')
