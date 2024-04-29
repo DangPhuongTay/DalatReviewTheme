@@ -44,9 +44,9 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1240px) {
     .layout__footerBanner--wrapper {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .footer__listUnit li p {
@@ -63,6 +63,27 @@
 
     .footer__banner {
         margin-bottom: 30px;
+    }
+
+
+    .footer__map {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 830px) {
+    .footer__banner--left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__banner {
+        width: 100%;
+    }
+
+    .footer__map{
+        height: 400px;
     }
 }
 

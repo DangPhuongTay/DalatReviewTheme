@@ -454,11 +454,12 @@
     border-radius: var(--border-radius-size-5);
 }
 
-.home__banner--mobile__top {
+.home__banner--mobile__top{
     display: flex;
     align-items: start;
     justify-content: space-between;
     cursor: pointer;
+    
 }
 
 .home__banner--mobile__top--item {
@@ -661,7 +662,7 @@
     .home__product--banner__container--header p,
     .home__info--banner__container--header p,
     .home__sale--banner__container--header p {
-        font-size: var(--size-text-4);
+        font-size: var(--size-text-7);
     }
 
     .header__top--left__hamburger.active::before {
@@ -812,6 +813,7 @@
     .home__banner--mobile__top {
         justify-content: space-between;
         width: 100%;
+        padding: 10px;
     }
 
     .home__banner--mobile__top a {
@@ -821,8 +823,10 @@
         align-items: center;
     }
     .home__banner--mobile__top a span{
-	 color: var(--color-text-2);
-         font-size: var(--size-text-4);
+
+        text-transform: capitalize;
+        font-size: small;
+
     }
     .home__banner--mobile__top img {
         width: 40px;

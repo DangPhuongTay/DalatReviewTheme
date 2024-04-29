@@ -91,7 +91,16 @@
     opacity: .8;
 
 }
+@media (max-width: 1240px) {
+    .motorbike__container--content{
+        padding: 0 30px;
+    }
+}   
 
+@media (max-width: 550px) {
+
+
+}
 @media (max-width: 550px) {
 
     .motorbike__container--banner {
@@ -113,5 +122,18 @@
         right: -20px !important;
     }
 
+    .detail__car--container__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+
+    .detail__car--container__item {
+        width: 100%;
+    }
+
+    .detail__car--container__item--img {
+        height: 40vw;
+    }
 
 }
