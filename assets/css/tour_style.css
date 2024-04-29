@@ -254,4 +254,8 @@ body.filterBox .total__filter--list__mb {
   .firstProduct__info--top__title {
     font-size: var(--size-text-5);
   }
+
+  .firstProduct__info--bottom {
+    margin: 0;
+  }
 }
