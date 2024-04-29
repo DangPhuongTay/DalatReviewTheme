@@ -40,10 +40,13 @@
 .footer__listUnit {
     font-weight: lighter;
 }
+.footer__map{
+    border-radius: 20px;
+}
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1240px) {
     .layout__footerBanner--wrapper {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
     .footer__listUnit li p {
@@ -63,18 +66,49 @@
     }
 
 
-
-
-
     .footer__map {
         width: 100%;
     }
 
 }
 
+@media only screen and (max-width: 830px) {
+    .footer__banner--left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__banner {
+        width: 100%;
+    }
+
+    .footer__map{
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width: 580px) {
     .footer__banner--left {
         flex-wrap: wrap;
 
+    }
+    .footer__map{
+        width: 100%;
+    }
+    .footer__banner{
+        width: 100%;
+    }
+    .footer__banner:nth-child(1),
+    .footer__banner:nth-child(2),
+    .footer__banner:nth-child(3){
+        border-bottom: 1px solid var(--color-text-16);
+        margin-bottom: 10px;
+    }
+    .footer__banner{
+        margin: 0;
+        padding: 0 20px;
+    }
+    .layout__footerBanner--wrapper{
+        padding: 0;
     }
 }

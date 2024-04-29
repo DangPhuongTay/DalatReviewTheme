@@ -495,9 +495,7 @@ body.hotelBlur .hotel__backgroup--blur {
     font-size: var(--size-text-3);
   }
 
-  .hotel__body--right {
-    padding: 0 30px;
-  }
+
 }
 
 /* ==============================================
@@ -506,12 +504,6 @@ body.hotelBlur .hotel__backgroup--blur {
     Creact at: 11AM 28/1/2024
   ============================================== */
 @media (max-width: 550px) {
-  .hotel__body {
-    overflow-y: scroll;
-    top: 170px;
-    width: 100%;
-    display: grid;
-  }
 
   .hotel__body::-webkit-scrollbar {
     display: none;
@@ -572,11 +564,6 @@ body.hotelBlur .hotel__backgroup--blur {
     width: 100px;
   }
 
-  .hotel__body--right {
-    flex: none;
-    padding: 0 8px;
-    margin: 0;
-  }
 
   .hotel__right--item {
     padding-top: 0;
