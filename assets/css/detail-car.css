@@ -35,7 +35,7 @@
 }
 
 .detail__car--container__list {
-    padding: 20px 0;
+    padding: 20px 30px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, .333fr));

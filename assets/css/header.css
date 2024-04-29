@@ -413,7 +413,8 @@ body.chatBox .header__container--chat {
 }
 
 .header__mobile--box ul li a img {
-    width: 50px;
+    object-fit: contain;
+    width: 30px;
     height: 50px;
     margin-right: 15px;
     border-radius: 10px;

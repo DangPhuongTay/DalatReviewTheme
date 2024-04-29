@@ -1394,7 +1394,7 @@ body.MapCarForm {
         position: relative;
         background: #fff;
         z-index: 1;
-        border-radius: 20px;
+        border-radius: 12px;
     }
     .hotel__fitter,
     .detailHotel__top--link ion-icon,
@@ -1422,6 +1422,8 @@ body.MapCarForm {
     .detailHotel__top--link {
         justify-content: center;
         margin: 0;
+        align-items: center;
+        height: 50px;
     }
 
     .detailHotelMobile__slides {
@@ -1859,6 +1861,7 @@ body.MapCarForm {
 
     .detailHotelMobile__slides--show__item img {
         height: 370px;
+        border-radius: 0;
     }
     .detailHotel__banner {
         padding-bottom: 75%;
