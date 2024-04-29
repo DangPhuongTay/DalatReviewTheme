@@ -705,7 +705,7 @@ body.checker .login__mobile {
 .taskbarMobile__item:nth-child(2){
     position: fixed;
     background-color: var(--color-background-6);
-    padding: 15px;
+    padding: 20px;
     border-radius: 99rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
