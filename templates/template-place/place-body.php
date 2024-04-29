@@ -2,7 +2,7 @@
         <div class="hotel__body">
             <div class="hotel__body--left">
                 <div class="hotel__left--map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243.94747235251486!2d108.44151669696855!3d11.963452602828777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1706154505980!5m2!1svi!2s" width="300" height="117" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.1587690292367!2d108.43898547627491!3d11.963507236175037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317113f4c18632c7%3A0xb5d7f587fc6eac6c!2zxJDDoCBM4bqhdCBSZXZpZXcgVOG6pXQgVOG6p24gVOG6rXQ!5e0!3m2!1svi!2s!4v1714366661776!5m2!1svi!2s" style="border-radius:20px"; style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="hotel__left--section">
                     <!-- <div class="hotel__left--item">
@@ -59,9 +59,6 @@
             </div>
             
             <div class="hotel__body--right">
-               
-                        <?php get_template_part('templates/template-place/archive', 'place'); ?>
-            </div>
             <div class="hotel__right--fitter">
                 <?php
                 $taxonomy     = 'product_cat';
@@ -109,5 +106,8 @@
                 }
                 ?>
             </div>
+                        <?php get_template_part('templates/template-place/archive', 'place'); ?>
+            </div>
+      
         </div>
     </div>

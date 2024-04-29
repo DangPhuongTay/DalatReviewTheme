@@ -15,7 +15,6 @@
                         <span class="hotel__right--title">
                             <?php the_title(); ?>
                         </span>
-                        <span class="hotel__right--text">Golf Valley Hotel</span>
                         <span>
                             <!-- <span class="hotel__right--stars">
                                 <ion-icon name="star" class="icon__star"></ion-icon>
