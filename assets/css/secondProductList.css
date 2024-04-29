@@ -184,9 +184,8 @@
 /* mobie */
 @media  (max-width: 450px) {
     .hotel__body{
-        display: block;
+        display: grid;
         overflow-y: scroll;
-        position: fixed;
         top: 170px;
         max-width: 400px;
         width: 100%;
