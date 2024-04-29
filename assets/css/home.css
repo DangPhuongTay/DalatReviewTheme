@@ -662,7 +662,7 @@
     .home__product--banner__container--header p,
     .home__info--banner__container--header p,
     .home__sale--banner__container--header p {
-        font-size: var(--size-text-4);
+        font-size: var(--size-text-7);
     }
 
     .header__top--left__hamburger.active::before {

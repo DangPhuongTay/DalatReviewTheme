@@ -705,13 +705,13 @@ body.checker .login__mobile {
 .taskbarMobile__item:nth-child(2){
     position: fixed;
     background-color: var(--color-background-6);
-    padding: 20px;
+    padding: 15px;
     border-radius: 99rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .taskbarMobile__item:nth-child(1) {
     left: 30px;
-    bottom: 10%;
+    bottom: 30px;
     animation-name: trin;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -720,11 +720,11 @@ body.checker .login__mobile {
 }
 .taskbarMobile__item:nth-child(2) {
   right: 30px;
-  bottom: 10%;
+  bottom: 110px;
 }
 .taskbarMobile__item:nth-child(3){
     right: 30px;
-    bottom: 20%;
+    bottom: 30px;
 }
 .taskbarMobile__item:nth-child(4),
 .taskbarMobile__item:nth-child(5) {
@@ -988,7 +988,7 @@ body.checker .login__mobile {
     }
     .taskbarMobile__item:nth-child(4),
     .taskbarMobile__item:nth-child(5) {
-        padding: 20px;
+        padding: 15px;
         display: block;
      }
 }
