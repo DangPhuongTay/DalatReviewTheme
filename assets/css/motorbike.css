@@ -122,5 +122,18 @@
         right: -20px !important;
     }
 
+    .detail__car--container__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+
+    .detail__car--container__item {
+        width: 100%;
+    }
+
+    .detail__car--container__item--img {
+        height: 40vw;
+    }
 
 }
