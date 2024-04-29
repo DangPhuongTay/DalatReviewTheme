@@ -221,7 +221,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                     <span>Thường được đặt với</span>
                 </div>
                 <div class="firstProduct row-max-width">
-                    <div class="firstProduct__content container-fluid">
+                    <div class="firstProduct__content">
                         <div class="firstProduct__content--list row">
                         
         <?php

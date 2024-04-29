@@ -593,7 +593,7 @@ body.active .primary__dropdown--content {
   background-color: var(--color-background-13);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .firstProduct,
   .breakCrumb,
   .firstReview,
@@ -611,7 +611,7 @@ body.active .primary__dropdown--content {
   }
 
   .firstProduct__content--list__item {
-    width: 90%;
+    width: 44%;
     margin: 10px;
   }
 
@@ -997,7 +997,7 @@ img{
     border-radius: 12px;
   }
   img{
-    border-radius: 12px;
+    border-radius: 6px;
     width: 100%;
     object-fit: cover;
   }
