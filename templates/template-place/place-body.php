@@ -57,9 +57,12 @@
                 </div>
                 
             </div>
+            
             <div class="hotel__body--right">
-                <div class="hotel__right--fitter">
-
+               
+                        <?php get_template_part('templates/template-place/archive', 'place'); ?>
+            </div>
+            <div class="hotel__right--fitter">
                 <?php
                 $taxonomy     = 'product_cat';
                 $orderby      = 'name';
@@ -68,19 +71,19 @@
                 $hierarchical = 1;      // 1 for yes, 0 for no
                 $title        = '';
                 $empty        = 0;
-            $args = array(
-            'taxonomy'     => $taxonomy,
-            'orderby'      => $orderby,
-            'show_count'   => $show_count,
-            'pad_counts'   => $pad_counts,
-            'hierarchical' => $hierarchical,
-            'title_li'     => $title,
-            'hide_empty'   => $empty);
-            $all_categories = get_categories( $args );
+                $args = array(
+                'taxonomy'     => $taxonomy,
+                'orderby'      => $orderby,
+                'show_count'   => $show_count,
+                'pad_counts'   => $pad_counts,
+                'hierarchical' => $hierarchical,
+                'title_li'     => $title,
+                'hide_empty'   => $empty);
+                $all_categories = get_categories( $args );
 
-            foreach ( $all_categories as $cat ) {
-            if ( $cat->slug == 'place' ) {
-            $category_id = $cat->term_id;
+                foreach ( $all_categories as $cat ) {
+                if ( $cat->slug == 'place' ) {
+                $category_id = $cat->term_id;
                 $args2 = array(
                 'taxonomy'     => $taxonomy,
                 'child_of'     => 0,
@@ -92,21 +95,19 @@
                 'title_li'     => $title,
                 'hide_empty'   => $empty,
                 );
-            $sub_cats = get_categories( $args2 );
-            if ( $sub_cats ) {
+                $sub_cats = get_categories( $args2 );
+                if ( $sub_cats ) {
                     
                 foreach( $sub_cats as $sub_category ) { ?>
                         <div class="hotel__right--fitter__tag">
                         <a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>" id="hotel__right--fitter__title"  class="hotel__right--fitter__title"><?php echo $sub_category->name ?></a>
                     </div>
                 <?php }
-                   
+                
                 }
-            }
-            }
-?>
-                </div>
-                        <?php get_template_part('templates/template-place/archive', 'place'); ?>
+                }
+                }
+                ?>
             </div>
         </div>
     </div>
