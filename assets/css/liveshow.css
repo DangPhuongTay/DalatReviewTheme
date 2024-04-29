@@ -484,7 +484,8 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 
     .liveshow__container--body__product--filter__price--wrap {
         overflow-y: scroll !important;
-        width: calc(100vw - 42px) !important;
+        width: calc(100vw - 26px) !important;
+        white-space: nowrap;
     }
 
 
