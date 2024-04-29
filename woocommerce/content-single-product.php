@@ -18,9 +18,10 @@
 defined( 'ABSPATH' ) || exit;
 
 global $product;
-$product_variations = $product->get_available_variations();
 
-echo var_dump($product_variations); 
+
+
+
 /**
  * Hook: woocommerce_before_single_product.
  *
