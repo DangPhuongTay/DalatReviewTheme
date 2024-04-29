@@ -988,6 +988,7 @@ body.checker .login__mobile {
     }
     .taskbarMobile__item:nth-child(4),
     .taskbarMobile__item:nth-child(5) {
+        padding:15px;
         display: block;
      }
 }
