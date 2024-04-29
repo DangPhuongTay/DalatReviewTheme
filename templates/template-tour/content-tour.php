@@ -1,4 +1,6 @@
 <?php
+wc_get_template_part('single-product' ); 
+
 if (have_posts()) {
     while (have_posts()) {
         the_post();

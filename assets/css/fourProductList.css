@@ -194,5 +194,11 @@
     .fourProductList__wrapper--price__info span:last-child {
         font-size: var(--size-text-5);
     }
-
+    .fourProductList__wrapper--main {
+        min-height: 190px;
+    }
+    .fourProductList__wrapper--info__title {
+        font-size: var(--size-text-4);
+ 
+    }
 }

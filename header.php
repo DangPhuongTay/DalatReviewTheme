@@ -5,7 +5,7 @@
     Update at: 2/2/2024
 ============================================== -->
 <?php
- global $theme_path;
+global $theme_path;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/404.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/blog.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/cart.css">
-
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/checkout-tour.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/contact-banner.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/detail_hotel.css">
@@ -45,11 +44,7 @@
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/secondProductList.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/tour_style.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/range-slider.css">
-    <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/confirm_cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <?php wp_head(); ?>
 </head>
 <?php get_template_part('menu'); ?>
-
-
-
