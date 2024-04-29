@@ -44,7 +44,6 @@ global $theme_path;
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/secondProductList.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/tour_style.css">
     <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/range-slider.css">
-    <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/css/confirm_cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <?php wp_head(); ?>
 </head>
