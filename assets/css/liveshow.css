@@ -406,7 +406,7 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     .liveshow__container--body__product--filter {
         padding: 0;
         background-color: var(--color-background-3);
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .liveshowMobile__title {
@@ -484,7 +484,7 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 
     .liveshow__container--body__product--filter__price--wrap {
         overflow-y: scroll !important;
-        width: 300px !important;
+        width: calc(100vw - 42px) !important;
     }
 
     .liveshow__container--body__menu--item {
@@ -494,5 +494,21 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     .firstProduct__info {
         min-height: 200px;
     }
-
+    .liveshow__container--body{
+        padding: 10px;
+    }
+    .liveshow__container--body__product{
+        padding: 0;
+    }
+    .firstProduct__content--list{
+        padding: 0;
+    }
+    .firstProduct__content--list .firstProduct__info--top__title{
+        font-size: var(--size-text-4);
+        margin: 0;
+    }
+    
+    .firstProduct__content--list .firstProduct__info--top__title{
+        font-size: var(--size-text-4);
+    }
 }
