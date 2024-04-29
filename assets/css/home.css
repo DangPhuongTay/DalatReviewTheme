@@ -454,11 +454,12 @@
     border-radius: var(--border-radius-size-5);
 }
 
-.home__banner--mobile__top {
+.home__banner--mobile__top{
     display: flex;
     align-items: start;
     justify-content: space-between;
     cursor: pointer;
+    
 }
 
 .home__banner--mobile__top--item {
@@ -813,6 +814,7 @@
     .home__banner--mobile__top {
         justify-content: space-between;
         width: 100%;
+        padding: 10px;
     }
 
     .home__banner--mobile__top a {
@@ -821,7 +823,10 @@
         justify-content: center;
         align-items: center;
     }
-
+    .home__banner--mobile__top a span{
+        text-transform: capitalize;
+        font-size: small;
+    }
     .home__banner--mobile__top img {
         width: 45px;
         height: 45px;
