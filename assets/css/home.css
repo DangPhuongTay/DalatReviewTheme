@@ -285,17 +285,20 @@
 .home__slider--list__images p {
     width:100%
 }
-.home__slider--list__images p a{
-    width: 33.3333333% !important;
-}
-.home__slider--list__images p a img{
-    width: 100% !important;
-    height: 100%;
-}
+
 
 .home__slider--item__image {
     display: flex;
     width: 100%;
+}
+
+.home__slider--item__image p a img{
+    width: 100% !important;
+    height: 100%;
+}
+.home__slider--item__image p img{
+    width: 100% !important;
+    height: 100%;
 }
 
 .btn-slider:hover {
