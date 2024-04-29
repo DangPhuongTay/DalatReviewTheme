@@ -467,7 +467,7 @@
 }
 
 .home__banner--mobile__top--item img {
-    width: 48px;
+    width: 40px;
 }
 
 .home__banner--mobile__top--item span {
@@ -755,14 +755,13 @@
 
 }
 @media only screen and (max-width: 800px) {
-   
-}
-
-@media only screen and (max-width: 850px) {
     .home__sale--banner__container--list__btn{
         display: none;
     }
     
+}
+
+@media only screen and (max-width: 850px) {
     .home__info--banner__container--list__item p {
         font-size: var(--size-text-4);
         margin-bottom: 5px;
@@ -818,10 +817,13 @@
         justify-content: center;
         align-items: center;
     }
-
+    .home__banner--mobile__top a span{
+	 color: var(--color-text-2);
+         font-size: var(--size-text-4);
+    }
     .home__banner--mobile__top img {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         border-radius: 25%;
         /* background-color: var(--color-background-3); */
     }
