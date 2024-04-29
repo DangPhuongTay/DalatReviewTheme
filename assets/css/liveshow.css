@@ -502,7 +502,8 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
 
     .liveshow__container--body .firstProduct__content--list {
         padding: 0;
-        justify-content: center !important;
+        justify-content: flex-start !important;
+
     }
 
     .liveshow__container--body .firstProduct__content--list .firstProduct__info--top__title {
@@ -511,7 +512,7 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     }
 
     .liveshow__container--body .firstProduct__content--list .firstProduct__content--list__item {
-        width: 40% !important;
+        width: 44% !important;
     }
 
     .liveshow__container--body .firstProduct__info--top__score--review,
@@ -527,4 +528,5 @@ body.listLiveshowPoptip .liveshow__container--body__product--filter__price--popt
     .liveshow__container--body .firstProduct__info--bottom {
         margin: 0;
     }
+
 }

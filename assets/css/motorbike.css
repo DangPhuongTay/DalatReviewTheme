@@ -136,4 +136,13 @@
         height: 40vw;
     }
 
+    .checkouttour__container--right__bottom p:nth-child(1),
+    p:nth-child(2) {
+
+        font-size: var(--size-text-4) !important;
+    }
+
+    .detail__car--container__item--text__name {
+        font-size: var(--size-text-4);
+    }
 }
