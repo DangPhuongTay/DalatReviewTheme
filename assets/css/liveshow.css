@@ -256,7 +256,7 @@
 
 .liveshow__container--body__product--list__page {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 15px;
 
 }

@@ -18,7 +18,7 @@
   background: var(--color-background-6);
   border-radius: var(--border-radius-size-4);
   padding: 20px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .total__filter--list {
@@ -30,7 +30,7 @@
   background: var(--color-background-6);
   border-radius: var(--border-radius-size-4);
   padding: 20px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 body.filterBox .total__filter--list {
@@ -48,7 +48,7 @@ body.filterBox .total__filter--list__mb {
 .tour__banner--background {
   position: absolute;
   top: 0;
-  z-index: -100;
+  z-index: 1000;
   height: 330px;
   overflow: hidden;
 }
@@ -159,12 +159,6 @@ body.filterBox .total__filter--list__mb {
 
 @media only screen and (max-width:1280px) {
   .image_empty {
-    min-height: 631px;
-    max-height: 621px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
   }
 }
 

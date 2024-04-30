@@ -60,7 +60,9 @@
         flex-wrap: wrap;
 
     }
-
+    .layout__footerBanner--wrapper {
+        padding: 0 30px;
+    }
     .footer__banner {
         margin-bottom: 30px;
     }
