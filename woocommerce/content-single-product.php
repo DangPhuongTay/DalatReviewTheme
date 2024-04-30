@@ -63,9 +63,23 @@ if ( post_password_required() ) {
 
 		do_action( 'woocommerce_single_product_summary' );
 
+		echo '<p>---</p>';
+    echo '<p>---</p>';
+
+    $variations = $product->get_available_variations();
+    foreach ($variations as $key => $value) {
+        echo '<p> ------</p>';
+    echo 'variation ID'.$value['variation_id']. '<p></p>';
+    ?>
+    [add_to_cart id="<?php echo $value['variation_id']?>" style="border: 1px solid #000;" show_price="true" quantity="1"]
+        <?php
+    foreach ($value['attributes'] as $attr_key => $attr_value) {
+       echo $attr_key.': '.$attr_value .'<div></div>';
+
+    }}  
 		?>
 	</div>
-
+	[add_to_cart id="762" style="border: 1px solid #000;" show_price="true" quantity="1"]
 	<?php
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
