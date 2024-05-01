@@ -7,6 +7,7 @@ if (have_posts()) {
         <?php global $product; ?>
         <?php global $comment; ?>
         <div class="detail__hotel--wrap">
+            
             <!-- slide- area -->
             <div class="slide__img--box">
                 <div class="container__slides">
@@ -16,33 +17,44 @@ if (have_posts()) {
                         return;
                     }
                     $attachment_ids = $product->get_gallery_image_ids();
-                    if ($attachment_ids && $product->get_image_id()) {
-                        foreach ($attachment_ids as $attachment_id) {
+                    if ($attachment_ids && $product->get_image_id()) { ?>
+                        <!-- <div class="mySlides">
+                        <div data-thumb="" data-thumb-alt="" class="woocommerce-product-gallery__image">
+                            <a href="">
+                                <img width="600" height="338" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" data-large_image="http://localhost/wordpress/wp-content/uploads/2024/04/z5385579883187_f04897b50e299e7c4fa29a67112b402e.jpg" data-large_image_width="2560" data-large_image_height="1440" decoding="async" loading="lazy">
+                        </a>
+                        </div>
+                        </div> -->
+                        
+                
+                        <?php foreach ($attachment_ids as $attachment_id) {
                             ?>
                             <div class="mySlides">
+                          
                                 <?php
-                                echo apply_filters(
-                                    'woocommerce_single_product_image_thumbnail_html',
-                                    wc_get_gallery_image_html($attachment_id),
-                                    $attachment_id
-                                ); //
+                                    echo apply_filters(
+                                        'woocommerce_single_product_image_thumbnail_html',
+                                        wc_get_gallery_image_html($attachment_id),
+                                        $attachment_id
+                                    ); 
                                 ?>
+
                             </div>
                             <?php
                         }
+
                     } ?>
 
                 </div>   
 
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="prev" onclick="currentSlide(1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
                 </div>
             </div>
 
-            <!-- banner area -->
             <div class="secondDropDown">
                 <?php get_template_part('templates/template-search/searchhotel'); ?>
 
@@ -56,7 +68,7 @@ if (have_posts()) {
                 </div>
                 <div class="detailHotelMobile__slides">
                     <div class="detailHotelMobile__slides--show">
-                        <div class="detailHotelMobile__slides--show__item" onclick="btnDetailHotelSlides(   )">
+                        <div class="detailHotelMobile__slides--show__item" onclick="btnDetailHotelSlides( )">
                             <?php
 
 
@@ -94,9 +106,9 @@ if (have_posts()) {
             </div>
             <section class="detailHotel">
 
-                <div class="detailHotel__img" onclick="btnDetailHotelSlides()">
-                    <div class="detailHotel__img--left">
-                        <!-- <div class="blur" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>')"></div> -->
+                <div class="detailHotel__img">
+                    <div class="detailHotel__img--left"  onclick="btnDetailHotelSlides()">
+                      
                         <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="">
                     </div>
                     <div class="detailHotel__img--right">
@@ -125,6 +137,26 @@ if (have_posts()) {
                         <div class="detailHotel__info--wapper__left">
                             <h1>
                                 <?php the_title() ?>
+                                <?php
+ 
+                                ?>
+                                
+                                <div class="row">
+<?php
+
+    $attachment_ids = $product->get_gallery_attachment_ids();
+    $nubimg = 1;
+    $nameimg = 'img'.$nubimg;
+    echo $nameimg;
+    foreach( $attachment_ids as $attachment_id ) {
+        $image_link =wp_get_attachment_url( $attachment_id );
+        //Get image show by tag <img> 
+        echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
+       $nameimg++; 
+    }
+?>
+</div>
+            <!-- banner area -->
                             </h1>
                             <!-- <ion-icon name="star"></ion-icon>
                             <ion-icon name="star"></ion-icon>
@@ -1004,11 +1036,10 @@ if (have_posts()) {
                     </div>
             </section>
         </div>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script>
+        <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script> -->
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
+        <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script> -->
 
 
         <?php

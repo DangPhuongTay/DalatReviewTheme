@@ -12,13 +12,13 @@ const btnOpenLoginSignForm = document.querySelector('.open__login--signup__form 
 const btnTransEmailLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--email');
 const btnTransNumberLoginSignForm = document.querySelector('#login__signup--box__container--main__btn--numberphone');
 
-window.onload=function(){
-    mobileMenuBtn.addEventListener('click',mobileMenu);
-}
+// window.onload=function(){
+//     mobileMenuBtn.addEventListener('click',mobileMenu);
+// }
 
-function mobileMenu() {
-    headerBody.classList.toggle('active');
-}
+// function mobileMenu() {
+//     headerBody.classList.toggle('active');
+// }
 function openChat() {
     headerBody.classList.toggle('chatBox');
 }
@@ -44,9 +44,9 @@ btnLogin1.addEventListener('click',()=>{
 //     headerBody.classList.remove('checker');
 //     headerBody.classList.remove('LoginSignUpForm');
 // })
-btnOpenLoginSignForm.addEventListener('click',()=>{
-    headerBody.classList.add('LoginSignUpForm');
-})
+// btnOpenLoginSignForm.addEventListener('click',()=>{
+//     headerBody.classList.add('LoginSignUpForm');
+// })
 // btnOpenLoginSignFormPc1.addEventListener('click',()=>{
 //     headerBody.classList.add('LoginSignUpForm');
 // })

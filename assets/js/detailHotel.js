@@ -1,4 +1,5 @@
 const btnDetailHotelSevice = document.querySelector('.detailHotelMobile__info--summary.sevice');
+
 const btnDetailHotelSevice2 = document.querySelector('.detailHotel__list--footer.sevice');
 const btnDetailHotelTypeRoom = document.querySelector('.detail__list--body__select--rom');
 // const closeDetailHotelPrice = document.querySelector('.detailHotel__list--body__list--wrapper__icon ion-icon');
@@ -27,6 +28,7 @@ function btnDetailHotelSlides(){
     detailHotelBody.classList.add('listDetailHotelSlides')
     detailHotelBody.classList.add('detailHotelBlur')
 }
+
 btnDetailHotelSevice.addEventListener('click', ()=>{
     detailHotelBody.classList.add('listDetailHotelSevice')
     detailHotelBody.classList.add('detailHotelBlur')

@@ -252,5 +252,74 @@ function the_title_trim($title)
             $replacement[1] = ''; // Enter some text to put in place of Private:
             return preg_replace($pattern, $replacement, $title);
             }
-            add_filter('the_title', 'the_title_trim');
+   add_filter('the_title', 'the_title_trim');
+   
+    function my_vc_display_product_price( $args ) {
+        $product_id = $args['id'];
+        $product = wc_get_product( $product_id );
+        echo '<p class="price">' . $product->get_price_html() . '</p>';
+
+    }
+add_shortcode( 'my_vc_product_price', 'my_vc_display_product_price');      
+
+// function wc_variation_buttons($html, $args) {
+//     $args = wp_parse_args(apply_filters('woocommerce_dropdown_variation_attribute_options_args', $args), array(
+//       'options'          => false,
+//       'attribute'        => false,
+//       'product'          => false,
+//       'selected'         => false,
+//       'name'             => '',
+//       'id'               => '',
+//       'class'            => '',
+//       'show_option_none' => __('Choose an option', 'woocommerce'),
+//     ));
+  
+//     if(false === $args['selected'] && $args['attribute'] && $args['product'] instanceof WC_Product) {
+//       $selected_key     = 'attribute_'.sanitize_title($args['attribute']);
+//       $args['selected'] = isset($_REQUEST[$selected_key]) ? wc_clean(wp_unslash($_REQUEST[$selected_key])) : $args['product']->get_variation_default_attribute($args['attribute']);
+//     }
+  
+//     $options               = $args['options'];
+//     $product               = $args['product'];
+//     $attribute             = $args['attribute'];
+//     $name                  = $args['name'] ? $args['name'] : 'attribute_'.sanitize_title($attribute);
+//     $id                    = $args['id'] ? $args['id'] : sanitize_title($attribute);
+//     $class                 = $args['class'];
+//     $show_option_none      = (bool)$args['show_option_none'];
+//     $show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __('Choose an option', 'woocommerce');
+  
+//     if(empty($options) && !empty($product) && !empty($attribute)) {
+//       $attributes = $product->get_variation_attributes();
+//       $options    = $attributes[$attribute];
+//     }
+  
+//     $radios = '<div class="variation-radios">';
+  
+//     if(!empty($options)) {
+//       if($product && taxonomy_exists($attribute)) {
+//         $terms = wc_get_product_terms($product->get_id(), $attribute, array(
+//           'fields' => 'all',
+//         ));
+  
+//         foreach($terms as $term) {
+//           if(in_array($term->slug, $options, true)) {
+//             $id = $name.'-'.$term->slug;
+//             $radios .= '<label for="'.esc_attr($id).'">'.esc_html(apply_filters('woocommerce_variation_option_name', $term->name)).'</label><input type="radio" id="'.esc_attr($id).'" name="'.esc_attr($name).'" value="'.esc_attr($term->slug).'" '.checked(sanitize_title($args['selected']), $term->slug, false).'>';
+//           }
+//         }
+//       } else {
+//         foreach($options as $option) {
+//           $id = $name.'-'.$option;
+//           $checked    = sanitize_title($args['selected']) === $args['selected'] ? checked($args['selected'], sanitize_title($option), false) : checked($args['selected'], $option, false);
+//           $radios    .= '<label for="'.esc_attr($id).'">'.esc_html(apply_filters('woocommerce_variation_option_name', $option)).'</label><input type="radio" id="'.esc_attr($id).'" name="'.esc_attr($name).'" value="'.esc_attr($option).'" id="'.sanitize_title($option).'" '.$checked.'>';
+//         }
+//       }
+//     }
+  
+//     $radios .= '</div>';
+      
+//     return $html.$radios;
+//   }
+  
+//   add_filter( 'woocommerce_dropdown_variation_attribute_options_html', 'wc_variation_buttons', 20, 2 );
 ?>
