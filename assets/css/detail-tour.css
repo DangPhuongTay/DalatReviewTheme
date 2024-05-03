@@ -105,31 +105,37 @@ input[type="number"] {
     display: grid;
     gap: 5px;
     width: 100%;
-    height: 60vh;
-    border-radius: var(--border-radius-size-5);
-    overflow: hidden;
+    height: 50vh;
+    border-radius: var(--border-radius-size-5) !important;
     margin-bottom: 40px;
     background-color: var(--color-background-3);
-
-
 }
-.detail__tour--slide{
+.detail__tour--img img {
+    display: none;
+}
+.thumb{
 height: 100%;
 object-fit: cover;
+
 }
 
-.detail__imgtour1{
-    max-height: 60vh;
+.detail__tour--img .img1,.detail__tour--img .img2,.detail__tour--img .img3{
+    display: block !important;
+}
+.detail__tour--img .img1{
+    max-height: 50vh;
     grid-column: 1 / span 3;
     grid-row: 1/span 2;
   }
-.detail__imgtour2{
+  .detail__tour--img .img2{
     grid-column: 4;
+    height: 25vh;
     grid-row:  1;
   }
-.detail__imgtour3{
+  .detail__tour--img .img3{
     grid-column:4;
     grid-row: 2;
+    height: 25vh;
 }
 /* 
 .detail__tour--img__left{
@@ -1017,13 +1023,7 @@ body.sale__detail--tour{
         height: 100%;
         object-fit: cover;
     }
-    .detail__tour--img__left{
-        width: 100vw;
-        height: 370px;
-    }
-    .detail__tour--img__right{
-        display: none;
-    }
+    
     .detail__tour--container{
         position: relative;
         padding-top: 370px;

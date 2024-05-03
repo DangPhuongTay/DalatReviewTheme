@@ -99,27 +99,41 @@ if (have_posts()) {
 
                 <div class="">
 
-                    <div class="detail__tour--img__right">
-                        <?php
-
-                        $attachment_ids = $product->get_gallery_image_ids();
-
-                        if ($attachment_ids && $product->get_image_id()) {
-                            foreach ($attachment_ids as $attachment_id) {
-                                ?>
-                                <?php
-                                echo apply_filters('woocommerce_single_product_image_thumbnail_html', wc_get_gallery_image_html($attachment_id), $attachment_id); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
-                                ?>
-                                <?php
-                            }
-                        } ?>
-                    </div> 
                     <!-- =========================================================================== -->
 
                     <div class="detail__tour--img">
+                    <?php
 
+$attachment_ids = $product->get_gallery_attachment_ids();
+$nubimg = 1;
 
+foreach( $attachment_ids as $attachment_id ) {
 
+    $nameimg = 'img'.$nubimg;
+    $image_link =wp_get_attachment_url( $attachment_id );
+    //Get image show by tag <img> 
+    echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
+    $nubimg++; 
+}
+?>
+ <?php
+for($i = 1; $i <= count($attachment_ids); $i++){
+    ?><script>
+        const btnimg<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>` );
+
+        btnimg<?php echo $i; ?>.addEventListener('click', ()=>{
+        slideIndex = <?php echo $i; ?>;
+        location.hash = '#'+slideIndex;
+        img = slideIndex;
+        detailHotelBody.classList.add('listDetailHotelSlides')
+        detailHotelBody.classList.add('detailHotelBlur')
+        console.log(slideIndex);
+        showSlides(slideIndex);
+        })
+        </script>
+    <?php
+}
+?>
                      
                     <?php
 
@@ -131,7 +145,7 @@ if (have_posts()) {
                         $nameimg = 'imgtour' . $nubimg;
                         $image_link = wp_get_attachment_url($attachment_id);
                         //Get image show by tag <img> 
-                        echo '<img class="detail__tour--slide detail__' . $nameimg . '" src="' . $image_link . '">';
+                        echo '<img class="thumb' . $nameimg . '" src="' . $image_link . '">';
                         $nubimg++;
                     }
                     ?>

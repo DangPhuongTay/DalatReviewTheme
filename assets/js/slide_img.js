@@ -61,7 +61,6 @@ function closeSlides() {
   img = 0;
   headerBody.classList.remove('slider__detail--tour');
   headerBody.classList.remove('listDetailHotelSlides');
-
   headerBody.classList.remove('detailHotelBlur');
 }
 
@@ -79,7 +78,7 @@ function showImage(index) {
 const tourImages = document.querySelectorAll('.detail__tour--img .detail__tour--slide');
 tourImages.forEach((image, index) => {
   image.addEventListener('click', () => {
-    showImage(index); 
+    showImage(index+1); 
   });
 });
 
