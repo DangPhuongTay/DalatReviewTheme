@@ -6,7 +6,7 @@
     position: absolute;
     color: var(--color-background-6);
     font-weight: 700;
-    top: -7px;
+    top: 5px;
     right: 30px;
     font-size: 37px;
   }
@@ -49,17 +49,11 @@
     /* display: none; */
   }
   .mySlides .woocommerce-product-gallery__image a{
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
+    height: 97%;
   }
   .mySlides  img {
     vertical-align: middle;
     width: auto;
-    max-width:90%;
     height: 100%;
     object-fit: scale-down;
     min-width: 550px;
