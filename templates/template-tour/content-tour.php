@@ -95,10 +95,12 @@ if (have_posts()) {
 
                     </div>
                 </div>
+
                 <div class="">
 
 
               
+
                     <div class="detail__tour--img__right">
                         <?php
 

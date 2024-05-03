@@ -4,8 +4,10 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-        <?php global $product; ?>
         <?php global $comment; ?>
+        <?php 
+global $product;
+$available_variations = $product->get_available_variations();?>
         <div class="detail__hotel--wrap">
             
             <!-- slide- area -->
@@ -137,11 +139,9 @@ if (have_posts()) {
                         <div class="detailHotel__info--wapper__left">
                             <h1>
                                 <?php the_title() ?>
-                                <?php
- 
-                                ?>
-                                
-                                <div class="row">
+
+                               
+    
 <?php
 
     $attachment_ids = $product->get_gallery_attachment_ids();
@@ -155,7 +155,7 @@ if (have_posts()) {
        $nameimg++; 
     }
 ?>
-</div>
+
             <!-- banner area -->
                             </h1>
                             <!-- <ion-icon name="star"></ion-icon>
@@ -433,9 +433,12 @@ if (have_posts()) {
                                 <div class="detailHotel__list--body__list">
                                     <?php
 
-                                    get_template_part('templates/template-place/archive', 'detailhotel');
+                                    get_template_part('templates/template-place/item', 'detailhotel');
                                     ?>
 
+                               
+
+                                        
                                 </div>
                                 <div class="detailHotel__backgroup--blur"></div>
 
@@ -950,87 +953,7 @@ if (have_posts()) {
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="detailHotel__list--footer">
-                                <div class="firstTag__internal--wrap">
-                                    <h2 class="firstTag__internal--title">Khám phá thêm trên Đà Lạt Review !
-                                    </h2>
 
-                        
-                                    <div class="firstTag__internal--content">
-                                        <h3 class="firstTag__internal--header">
-                                            Trải nghiệm tuyệt vời tại Đà Lạt
-                                        </h3>
-                                        <ul class="firstTag__internal--wrapper">
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Puppy Farm</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Cáp treo Đà
-                                                    Lạt</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Tour săn mây</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Đồi cỏ mây</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Quảng trường</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Tour săn mây</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="firstTag__internal--content">
-                                        <h3 class="firstTag__internal--header">
-                                            Giao thông ở Đà Lạt
-                                        </h3>
-                                        <ul class="firstTag__internal--wrapper">
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Dịch vụ đưa đón
-                                                    Sân bay Liên
-                                                    Khương</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="firstTag__internal--content">
-                                        <h3 class="firstTag__internal--header">
-                                            Khám phá những trải nghiệm tại địa phương
-                                        </h3>
-                                        <ul class="firstTag__internal--wrapper">
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Tour săn mây</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Tour Đà Lạt</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Xe máy Đà Lạt</a>
-                                            </li>
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Vượt thác Đà
-                                                    Lạt</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="firstTag__internal--content">
-                                        <h3 class="firstTag__internal--header">
-                                            Xu hướng nổi
-                                        </h3>
-                                        <ul class="firstTag__internal--wrapper">
-                                            <li class="firstTag__internal--unit">
-                                                <a href="" class="firstTag__unit--suggestion">Tour săn mây Đà
-                                                    Lạt</a>
-                                                <a href="" class="firstTag__unit--suggestion">Dạo quanh Đà
-                                                    Lạt</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                 
-                            </div> -->
                             <?php wc_get_template('templates/template-home/home-contact.php'); ?>
                         </div>
                     </div>
@@ -1039,7 +962,7 @@ if (have_posts()) {
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
         <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script> -->
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-        <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script> -->
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
 
 
         <?php
