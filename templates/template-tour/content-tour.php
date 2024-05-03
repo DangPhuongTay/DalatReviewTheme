@@ -84,6 +84,7 @@ if (have_posts()) {
 
                     </div>
                 </div>
+
                 <div class="">
 
 
@@ -93,6 +94,11 @@ if (have_posts()) {
                             'thumbnail',
                             array('class' => 'thumbnail')
                         ); ?>   " alt="">
+
+                <div class="detail__tour--img">
+                    <div class="detail__tour--img__left">
+                        
+
                     </div>
                     <div class="detail__tour--img__right">
                         <?php

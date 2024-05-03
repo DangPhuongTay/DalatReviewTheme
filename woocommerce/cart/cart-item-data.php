@@ -18,9 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
+
 <dl class="variation">
 	<?php foreach ( $item_data as $data ) : ?>
-		<dt class="<?php echo sanitize_html_class( 'variation-' . $data['key'] ); ?>"><?php echo wp_kses_post( $data['key'] ); ?>:</dt>
-		<dd class="<?php echo sanitize_html_class( 'variation-' . $data['key'] ); ?>"><?php echo wp_kses_post( wpautop( $data['display'] ) ); ?></dd>
+		<div class="variation__attribute" style="text-transform: capitalize;width: 100%; display: flex;gap: 10px;  font-size: medium; align-items: center;">
+			<dt class="<?php echo sanitize_html_class( 'variation-' . $data['key'] ); ?>"><?php echo wp_kses_post( $data['key'] ); ?>:</dt>
+			<dd style=" display: flex;gap: 10px; align-items: center;margin-bottom: 0;" class="<?php echo sanitize_html_class( 'variation-' . $data['key'] ); ?>"><?php echo wp_kses_post( wpautop( $data['display'] ) ); ?></dd>
+		</div>	
 	<?php endforeach; ?>
 </dl>

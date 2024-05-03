@@ -31,7 +31,7 @@
 defined( 'ABSPATH' ) || exit;
 
 do_action( 'woocommerce_before_cart' ); ?>
-<form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+<form  class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 						<?php do_action( 'woocommerce_before_cart_contents' ); ?>
 
 			<?php
@@ -56,8 +56,8 @@ do_action( 'woocommerce_before_cart' ); ?>
 					?>
 				
 				<div class="cart__container--top__left--list__item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-                            <div class="cart__container--top__left--list__item--top">
-                                <div class="cart__container--top__left--list__item--top__info">
+                            <div class="cart__container--top__left--list__item--top" style="width:100%;">
+                                <div class="cart__container--top__left--list__item--top__info" style="width:100%;">
 
 									  <?php
 										$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
@@ -107,10 +107,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 						do_action( 'woocommerce_after_cart_item_description', $cart_item, $cart_item_key ); ?> </span>
                                   
 								
-											
+								  <style>
+									
+										</style>
+										</div>
 											<div class="cart__container--top__left--list__item--top__quality">
-												<div class="number-input ">
-											
+												
 													<?php
 												if ( $_product->is_sold_individually() ) {
 													$min_quantity = 1;
@@ -134,15 +136,52 @@ do_action( 'woocommerce_before_cart' ); ?>
 												echo apply_filters( 'woocommerce_cart_item_quantity', $product_quantity, $cart_item_key, $cart_item ); // PHPCS: XSS ok.
 									
 									?>
+
+
                                      	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 									<?php do_action( 'woocommerce_cart_actions' ); ?>
-                                      </div>
-									 
-								<button type="submit" style="margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
-								</div>
-									  </div>
-                                </div>
+                               
 
+								<button type="submit" style="margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
+								<script>
+    jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+	jQuery('.quantity').each(function() {
+	var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = 1,
+		max = 10;
+
+	btnUp.click(function() {
+		var oldValue = parseFloat(input.val());
+		console.log(oldValue);
+		if (oldValue >= max) {
+		var newVal = oldValue;
+		} else {
+		var newVal = oldValue + 1;
+		}
+		spinner.find("input").val(newVal);
+		spinner.find("input").trigger("change");
+	});
+
+	btnDown.click(function() {
+		var oldValue = parseFloat(input.val());
+		console.log(oldValue);
+		if (oldValue <= min) {
+		var newVal = oldValue;
+		} else {
+		var newVal = oldValue - 1;
+		}
+		spinner.find("input").val(newVal);
+		spinner.find("input").trigger("change");
+	});
+
+	});
+    </script>
+									
+                                </div>
+								</div>
 
 								<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 								<script type="text/javascript">

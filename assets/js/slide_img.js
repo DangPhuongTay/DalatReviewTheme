@@ -1,11 +1,10 @@
-// const btnimg1 = document.querySelector('.img1');
-// const btnimg2 = document.querySelector('.img2');
-// const btnimg3 = document.querySelector('.img3');
-// const btnimg4 = document.querySelector('.img4');
-// const btnimg5 = document.querySelector('.img5');
-// const btnimg1 = document.querySelector(`.img` + slideIndex);
-// let img = location.hash.slice(1);
-// let slideIndex = img;
+
+const btnimg1 = document.querySelector('.img1');
+const btnimg2 = document.querySelector('.img2');
+
+let img = location.hash.slice(1);
+let slideIndex = img;
+
 
 // btnimg1.addEventListener('click', ()=>{
 //   slideIndex = 1;

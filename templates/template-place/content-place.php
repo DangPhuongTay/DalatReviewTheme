@@ -164,7 +164,26 @@ if (have_posts()) {
                         <div class="detailHotel__info--wapper__left">
                             <h1>
                                 <?php the_title() ?>
-                              
+
+                                <?php
+ 
+                                ?>
+                                
+                                <div class="row">
+                <?php
+
+                    $attachment_ids = $product->get_gallery_attachment_ids();
+                    $nubimg = 1;
+                    $nameimg = 'img'.$nubimg;
+                    echo $nameimg;
+                    foreach( $attachment_ids as $attachment_id ) {
+                        $image_link =wp_get_attachment_url( $attachment_id );
+                        //Get image show by tag <img> 
+                        echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
+                    $nameimg++; 
+                    }
+                ?>
+</div>
             <!-- banner area -->
                             </h1>
                             <!-- <ion-icon name="star"></ion-icon>
