@@ -86,11 +86,7 @@ if (have_posts()) {
                 </div>
                 <div class="detail__tour--img">
                     <div class="detail__tour--img__left">
-                        <img src="<?php echo get_the_post_thumbnail_url(
-                            get_the_ID(),
-                            'thumbnail',
-                            array('class' => 'thumbnail')
-                        ); ?>   " alt="">
+                        
                     </div>
                     <div class="detail__tour--img__right">
                         <?php

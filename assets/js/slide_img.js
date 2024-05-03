@@ -1,5 +1,6 @@
 const btnimg1 = document.querySelector('.img1');
 const btnimg2 = document.querySelector('.img2');
+
 let img = location.hash.slice(1);
 let slideIndex = img;
 

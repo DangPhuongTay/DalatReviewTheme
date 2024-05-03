@@ -33,6 +33,7 @@
                                     Đăng nhập
                                 </div>
                             </li> -->
+                        
                             <li class="minicart__item">
                                 <a href="<?php echo wc_get_cart_url() ?>" class="header__top--right__cart">
                                     <ion-icon name="cart-outline"></ion-icon>
@@ -73,7 +74,10 @@
 
 
                                 }
-
+                                .minicart__item .variation{
+                                    display:none;
+                                    
+                                }
                                 .minicart__item::before {
                                     position: absolute;
                                     content: '';

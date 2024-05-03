@@ -50,7 +50,7 @@ do_action('woocommerce_before_mini_cart'); ?>
 						<?php echo $thumbnail . wp_kses_post($product_name); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 						?>
 					<?php else : ?>
-						<a href="<?php echo esc_url($product_permalink); ?>">
+						<a href="">
 
 							<?php echo $thumbnail // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 							?>
