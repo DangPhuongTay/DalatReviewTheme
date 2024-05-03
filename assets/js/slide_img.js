@@ -109,6 +109,7 @@ function closeSlides() {
   img = 0;
   headerBody.classList.remove('slider__detail--tour');
   headerBody.classList.remove('listDetailHotelSlides');
+  headerBody.classList.remove('detailHotelBlur');
 }
 
 
@@ -130,10 +131,3 @@ tourImages.forEach((image, index) => {
 });
 
 
-// quay lại 
-window.addEventListener('popstate', function(event) {
-  if (location.hash === '') {
-  
-    window.location.href = '';
-  }
-});

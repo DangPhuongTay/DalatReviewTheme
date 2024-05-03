@@ -115,16 +115,16 @@ height: 100%;
 object-fit: cover;
 }
 
-.imgBannerimg1{
+.detail__imgtour1{
     max-height: 60vh;
     grid-column: 1 / span 3;
     grid-row: 1/span 2;
   }
-.imgBannerimg2{
+.detail__imgtour2{
     grid-column: 4;
     grid-row:  1;
   }
-.imgBannerimg3{
+.detail__imgtour3{
     grid-column:4;
     grid-row: 2;
 }
