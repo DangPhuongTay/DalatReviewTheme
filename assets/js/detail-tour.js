@@ -7,9 +7,9 @@ const checkout_detail_tour_open_pc = document.querySelector('.detail__tour--cont
 const slider_detail_tour_close = document.querySelector('.header__background--blur__fullview');
 const option_detail_tour_open = document.querySelector('.detail__tour--content__left--option__list');
 
-slider_detail_tour_open.addEventListener('click',()=>{
-    headerBody.classList.add('slider__detail--tour');
-  })
+// slider_detail_tour_open.addEventListener('click',()=>{
+//     headerBody.classList.add('slider__detail--tour');
+//   })
 option_detail_tour_open.addEventListener('click',()=>{
     headerBody.classList.add('option__detail--tour');
 })

@@ -7,38 +7,48 @@ if (have_posts()) {
         <?php global $product; ?>
 
         <div class="slide__img--box">
-            <div class="container__slides">
+                <div class="container__slides">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="image_empty">
-                    <?php if (!function_exists('wc_get_gallery_image_html')) {
+                <?php if (!function_exists('wc_get_gallery_image_html')) {
                         return;
                     }
                     $attachment_ids = $product->get_gallery_image_ids();
-                    if ($attachment_ids && $product->get_image_id()) {
-                        foreach ($attachment_ids as $attachment_id) {
+                    if ($attachment_ids && $product->get_image_id()) { ?>
+                        <!-- <div class="mySlides">
+                        <div data-thumb="" data-thumb-alt="" class="woocommerce-product-gallery__image">
+                            <a href="">
+                                <img width="600" height="338" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" data-large_image="http://localhost/wordpress/wp-content/uploads/2024/04/z5385579883187_f04897b50e299e7c4fa29a67112b402e.jpg" data-large_image_width="2560" data-large_image_height="1440" decoding="async" loading="lazy">
+                        </a>
+                        </div>
+                        </div> -->
+                        
+                
+                        <?php foreach ($attachment_ids as $attachment_id) {
                             ?>
                             <div class="mySlides">
                                 <?php
-                                echo apply_filters(
-                                    'woocommerce_single_product_image_thumbnail_html',
-                                    wc_get_gallery_image_html($attachment_id),
-                                    $attachment_id
-                                ); //
+                                    echo apply_filters(
+                                        'woocommerce_single_product_image_thumbnail_html',
+                                        wc_get_gallery_image_html($attachment_id),
+                                        $attachment_id
+                                    ); 
                                 ?>
                             </div>
                             <?php
                         }
+
                     } ?>
 
+                </div>   
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="currentSlide(1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
                 </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
             </div>
-        </div>
         <section class="detail__tour">
             <div class="detail__tour--content__right--mobile shadow">
                 <p><span>đ</span> <span
@@ -89,19 +99,6 @@ if (have_posts()) {
 
                 <div class="">
 
-
-                    <!-- <div class="detail__tour--img__left">
-                        <img src="<?php echo get_the_post_thumbnail_url(
-                            get_the_ID(),
-                            'thumbnail',
-                            array('class' => 'thumbnail')
-                        ); ?>   " alt="">
-
-                <div class="detail__tour--img">
-                    <div class="detail__tour--img__left">
-                        
-
-                    </div>
                     <div class="detail__tour--img__right">
                         <?php
 
@@ -121,135 +118,52 @@ if (have_posts()) {
 
                     <div class="detail__tour--img">
 
-                        <?php
 
-                        $attachment_ids = $product->get_gallery_attachment_ids();
-                        $nubimg = 1;
 
-                        foreach ($attachment_ids as $attachment_id) {
+                     
+                    <?php
 
-                            $nameimg = 'img' . $nubimg;
-                            $image_link = wp_get_attachment_url($attachment_id);
-                            //Get image show by tag <img> 
-                            echo '<img class="detail__tour--slide imgBanner' . $nameimg . '" src="' . $image_link . '">';
-                            $nubimg++;
-                        }
-                        ?>
-                        <?php
-                        for ($i = 1; $i <= count($attachment_ids); $i++) {
-                            ?>
-                            <script>
-                                const btnimgpc<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>`);
+                    $attachment_ids = $product->get_gallery_attachment_ids();
+                    $nubimg = 1;
 
-                                    btnimgpc <?php echo $i; ?>.addEventListener('click', () => {
-                                    slideIndex = <?php echo $i; ?>;
-                                    location.hash = '#' + slideIndex;
-                                    img = slideIndex;
-                                    detailHotelBody.classList.add('listDetailHotelSlides')
-                                    detailHotelBody.classList.add('detailHotelBlur')
-                                    console.log(slideIndex);
-                                    showSlides(slideIndex);
-                                })
-                            </script>
-                            <?php
-                        }
-                        ?>
+                    foreach ($attachment_ids as $attachment_id) {
+
+                        $nameimg = 'imgtour' . $nubimg;
+                        $image_link = wp_get_attachment_url($attachment_id);
+                        //Get image show by tag <img> 
+                        echo '<img class="detail__tour--slide detail__' . $nameimg . '" src="' . $image_link . '">';
+                        $nubimg++;
+                    }
+                    ?>
+        <?php
+               for ($i = 1; $i <= count($attachment_ids); $i++) {
+                   ?><script>
+                        const btnimg<?php echo $i; ?> = document.querySelector(`.imgtour<?php echo $i; ?>`);
+
+                        btnimg<?php echo $i; ?>.addEventListener('click', () => {
+                            slideIndex = <?php echo $i; ?>;
+                            location.hash = '#' + slideIndex;
+                            img = slideIndex;
+                            detailHotelBody.classList.add('listDetailHotelSlides')
+                            detailHotelBody.classList.add('detailHotelBlur')
+                            console.log(slideIndex);
+                            showSlides(slideIndex);
+                        })
+                    </script>
+            <?php
+               }
+               ?>
+
+                        <!-- ========================= -->
+                       
+                    </div>
 
 
                     <!-- ------------------------------------------------------------------------ -->
                 </div>
                 <div class="detail__tour--content">
                     <div class="detail__tour--content__left">
-                        <!-- <div class="detail__tour--content__left--header">
-                            Các gói dịch vụ
-                        </div>
-                        <div class="detail__tour--content__left--option">
-                            <div class="detail__tour--content__left--option__title--1">
-                                <p>Vui lòng chọn ngày & gói dịch vụ</p><a href="#">Xóa tất cả</a>
-                            </div>
-                            <p class="detail__tour--content__left--option__title--2">
-                                Xin chọn ngày tham quan
-                            </p>
-                            <input class="detail__tour--content__left--option__date" type="date">
-
-                            <p class="detail__tour--content__left--option__title--2">
-                                Loại gói dịch vụ
-                            </p>
-                            <div class="detail__tour--content__left--option__item--info shadow "><ion-icon
-                                    class="detail__tour--content__left--option__item--info__close" name="close"></ion-icon>
-                                <div class="detail__tour--content__left--option__item--info__title">Chọn dịch vụ</div>
-                                <div class="detail__tour--content__left--option__item--info__list">
-                                    <div class="detail__tour--content__left--option__item--info__item">
-                                        <div class="detail__tour--content__left--option__item--info__header">Vé Xe Trượt Thác
-                                            Datanla New Alpine</div>
-                                        <div class="detail__tour--content__left--option__item--info__quality">
-                                            <div class="detail__tour--content__left--option__item--info__quality--item">
-                                                <span>Người lớn</span>
-                                                <div class="number-input">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="minus"></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="plus"></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="detail__tour--content__left--option__item--info__item">
-                                        <div class="detail__tour--content__left--option__item--info__header"> Combo Vé Đà Lạt
-                                            High Rope Course + Vé Xe Trượt Thác Datanla</div>
-                                        <div class="detail__tour--content__left--option__item--info__quality">
-                                            <div class="detail__tour--content__left--option__item--info__quality--item">
-                                                <span>Người lớn</span>
-                                                <div class="number-input">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="minus"></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="plus"></button>
-                                                </div>
-                                            </div>
-                                            <div class="detail__tour--content__left--option__item--info__quality--item">
-                                                <span>Trẻ em</span>
-                                                <div class="number-input">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                                        class="minus"></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number">
-                                                    <button
-                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                                        class="plus"></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="detail__tour--content__left--option__item--info__price">
-                                    <div class="detail__tour--content__left--option__item--info__price--left">
-                                        <p><span>đ</span> <span>700000</span></p>
-
-                                    </div>
-                                    <div class="detail__tour--content__left--option__item--info__price--right">
-                                        <a href="cart">Thêm vào giỏ hàng</a>
-                                        <a href="checkout-tour">Đặt ngay</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="detail__tour--content__left--option__list">
-                                <div class="detail__tour--content__left--option__item">
-                                    Vé Xe Trượt Thác Datanla New Alpine
-                                </div>
-                                <div class="detail__tour--content__left--option__item">
-                                    Combo Vé Đà Lạt High Rope Course + Vé Xe Trượt Thác Datanla
-
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="detail__tour--content__left--header">
                             Về dịch vụ này
                         </div>
@@ -399,6 +313,7 @@ if (have_posts()) {
         </section>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/header.js"></script>
 
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail-tour.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/checkout-tour.js"></script>

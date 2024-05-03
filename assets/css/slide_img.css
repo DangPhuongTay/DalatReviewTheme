@@ -100,9 +100,14 @@
     position: absolute;
     top: 0;
   }
-  
+  body.detailHotelBlur .header__background--blur__fullview{
+display:block;
+  }
+  .header__background--blur__fullview{
+    display:none;
+  }
   /* Container for image text */
-  .caption-container {
+  .caption-container  {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
