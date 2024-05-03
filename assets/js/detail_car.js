@@ -7,9 +7,9 @@ const detailCarBody = document.querySelector('body');
 function openInfoCarFormBtn(){
     detailCarBody.classList.add('InfoCarForm');
 }
-openMapCarFormBtn.addEventListener('click',()=>{
-    detailCarBody.classList.add('MapCarForm');
-})
+// openMapCarFormBtn.addEventListener('click',()=>{
+//     detailCarBody.classList.add('MapCarForm');
+// })
 closeInfoCarFormBtn.addEventListener('click',()=>{
     detailCarBody.classList.remove('InfoCarForm');
 })

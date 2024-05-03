@@ -15,10 +15,10 @@ btnHotelSearch.addEventListener('click', ()=>{
 btnHotelRoom.addEventListener('click', ()=>{
     secondDropDownBody.classList.add('listHotelRoom')
 })
-btnHotelRoomMobile.addEventListener('click', ()=>{
-    secondDropDownBody.classList.add('listHotelRoomMoblie')
-    secondDropDownBody.classList.add('hotelFitterBlur')
-})
+// btnHotelRoomMobile.addEventListener('click', ()=>{
+//     secondDropDownBody.classList.add('listHotelRoomMoblie')
+//     secondDropDownBody.classList.add('hotelFitterBlur')
+// })
 // btnHotelDateMobile.addEventListener('click', ()=>{
 //     secondDropDownBody.classList.add('listHotelDateMoblie')
 //     secondDropDownBody.classList.add('hotelFitterBlur2')

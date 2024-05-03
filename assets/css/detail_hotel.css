@@ -1441,10 +1441,9 @@ body.MapCarForm {
 
     .detailHotelMobile__slides--show__item {
         display: flex;
-        transition: .5s;
+        transition: transform .3s ease-in-out;
         width: 100%;
-        /* overflow-x: auto;
-        scroll-snap-type: x mandatory; */
+
     }
 
     .detailHotelMobile__slides--show__item img {
@@ -1567,7 +1566,7 @@ body.MapCarForm {
     .detailHotel__list--body__list--wrap__item--left__popular--price__amount {
         display: flex;
         align-items: center;
-    }
+    } 
 
     .detailHotel__list--body__list--wrap__item--left__popular--price__amount,
     .detailHotel__list--body__list--wrap__item--left__popular--platform__wrap {

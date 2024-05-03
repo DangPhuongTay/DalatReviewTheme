@@ -24,7 +24,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-
     z-index: 1005;
   }
   .container__slide--number{
@@ -55,6 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
   }
   .mySlides  img {
     vertical-align: middle;
@@ -63,7 +63,7 @@
     height: 100%;
     object-fit: scale-down;
     min-width: 550px;
-  
+   
   }
   
   /* Add a pointer when hovering over the thumbnail images */
