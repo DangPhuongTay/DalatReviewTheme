@@ -14,7 +14,7 @@ const detailHotelBody = document.querySelector('body');
 
 function btnDetailHotelRate(){
     detailHotelBody.classList.add('listDetailHotelRate')
-    detailHotelBody.classList.add('detailHotelBlur')  
+    
 }
 function btnDetailHotelPrice(){
     detailHotelBody.classList.add('listDetailHotelPrice')
@@ -104,7 +104,7 @@ ListSlide.addEventListener('touchend', handleTouchEnd);
 
 const updateSlider = () => {
     let width = slides[0].offsetWidth;
-    ListSlide.style.transform = `translateX(${width * -current}px)`;
+    ListSlide.style.transform = `translateX(${width * -current}px)`; // Move by the width of the viewport
 };
 
 updateSlider();
@@ -115,4 +115,4 @@ const changeSlideAutomatically = () => {
     updateSlider();
 };
 
-setInterval(changeSlideAutomatically, 4000);
+setInterval(changeSlideAutomatically, 2000);
