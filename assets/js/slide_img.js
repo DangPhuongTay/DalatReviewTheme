@@ -1,56 +1,9 @@
 
-const btnimg1 = document.querySelector('.img1');
-const btnimg2 = document.querySelector('.img2');
 
 let img = location.hash.slice(1);
 let slideIndex = img;
 
 
-// btnimg1.addEventListener('click', ()=>{
-//   slideIndex = 1;
-//   location.hash = '#'+slideIndex;
-//   img = slideIndex;
-//   detailHotelBody.classList.add('listDetailHotelSlides')
-//   detailHotelBody.classList.add('detailHotelBlur')
-//   console.log(slideIndex);
-//   showSlides(slideIndex);
-// })
-// btnimg2.addEventListener('click', ()=>{
-//   slideIndex = 2;
-//   location.hash = '#'+slideIndex;
-//   img = slideIndex;
-//   detailHotelBody.classList.add('listDetailHotelSlides')
-//   detailHotelBody.classList.add('detailHotelBlur')
-//   console.log(slideIndex);
-//   showSlides(slideIndex);
-// })
-// btnimg3.addEventListener('click', ()=>{
-//   slideIndex = 3;
-//   location.hash = '#'+slideIndex;
-//   img = slideIndex;
-//   detailHotelBody.classList.add('listDetailHotelSlides')
-//   detailHotelBody.classList.add('detailHotelBlur')
-//   console.log(slideIndex);
-//   showSlides(slideIndex);
-// })
-// btnimg4.addEventListener('click', ()=>{
-//   slideIndex = 4;
-//   location.hash = '#'+slideIndex;
-//   img = slideIndex;
-//   detailHotelBody.classList.add('listDetailHotelSlides')
-//   detailHotelBody.classList.add('detailHotelBlur')
-//   console.log(slideIndex);
-//   showSlides(slideIndex);
-// })
-// btnimg5.addEventListener('click', ()=>{
-//   slideIndex = 5;
-//   location.hash = '#'+slideIndex;
-//   img = slideIndex;
-//   detailHotelBody.classList.add('listDetailHotelSlides')
-//   detailHotelBody.classList.add('detailHotelBlur')
-//   console.log(slideIndex);
-//   showSlides(slideIndex);
-// })
 
 const imghotels = document.querySelectorAll('.image_empty .mySlides');
 
@@ -109,30 +62,3 @@ function closeSlides() {
   headerBody.classList.remove('slider__detail--tour');
   headerBody.classList.remove('listDetailHotelSlides');
 }
-
-
-function showImage(index) {
-  slideIndex = index;
-  location.hash = '#' + slideIndex;
-  img = slideIndex;
-  detailHotelBody.classList.add('listDetailHotelSlides');
-  detailHotelBody.classList.add('detailHotelBlur');
-  console.log(slideIndex);
-  showSlides(slideIndex);
-}
-
-const tourImages = document.querySelectorAll('.detail__tour--img .detail__tour--slide');
-tourImages.forEach((image, index) => {
-  image.addEventListener('click', () => {
-    showImage(index); 
-  });
-});
-
-
-// quay lại 
-window.addEventListener('popstate', function(event) {
-  if (location.hash === '') {
-  
-    window.location.href = '';
-  }
-});
