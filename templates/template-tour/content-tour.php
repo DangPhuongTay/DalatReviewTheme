@@ -41,7 +41,8 @@ if (have_posts()) {
         </div>
         <section class="detail__tour">
             <div class="detail__tour--content__right--mobile shadow">
-            <p><span>đ</span> <span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span></p>
+                <p><span>đ</span> <span
+                        class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span></p>
                 <div class="detail__tour--content__right--mobile__btn firstBtn">
                     <?php wc_get_template('loop/add-to-cart.php'); ?>
                 </div>
@@ -85,6 +86,7 @@ if (have_posts()) {
                     </div>
                 </div>
 
+
                 <div class="">
 
 
@@ -115,24 +117,46 @@ if (have_posts()) {
                             }
                         } ?>
                     </div> -->
-<!-- =========================================================================== -->
+                    <!-- =========================================================================== -->
 
-                        <div class="detail__tour--img">
+                    <div class="detail__tour--img">
+
                         <?php
-                            $attachment_ids = $product->get_gallery_attachment_ids();
-                            $nubimg = 1;
-                            $nameimg = 'img'.$nubimg;
-                            foreach( $attachment_ids as $attachment_id ) {
-                                $image_link =wp_get_attachment_url( $attachment_id );
-                                //Get image show by tag <img> 
-                                echo '<img class="detail__tour--slide imgBanner'.$nameimg.'" src="' . $image_link . '">';
-                               $nameimg++; 
-                            }
+
+                        $attachment_ids = $product->get_gallery_attachment_ids();
+                        $nubimg = 1;
+
+                        foreach ($attachment_ids as $attachment_id) {
+
+                            $nameimg = 'img' . $nubimg;
+                            $image_link = wp_get_attachment_url($attachment_id);
+                            //Get image show by tag <img> 
+                            echo '<img class="detail__tour--slide imgBanner' . $nameimg . '" src="' . $image_link . '">';
+                            $nubimg++;
+                        }
                         ?>
-                    </div>
+                        <?php
+                        for ($i = 1; $i <= count($attachment_ids); $i++) {
+                            ?>
+                            <script>
+                                const btnimgpc<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>`);
+
+                                    btnimgpc <?php echo $i; ?>.addEventListener('click', () => {
+                                    slideIndex = <?php echo $i; ?>;
+                                    location.hash = '#' + slideIndex;
+                                    img = slideIndex;
+                                    detailHotelBody.classList.add('listDetailHotelSlides')
+                                    detailHotelBody.classList.add('detailHotelBlur')
+                                    console.log(slideIndex);
+                                    showSlides(slideIndex);
+                                })
+                            </script>
+                            <?php
+                        }
+                        ?>
 
 
-<!-- ------------------------------------------------------------------------ -->
+                    <!-- ------------------------------------------------------------------------ -->
                 </div>
                 <div class="detail__tour--content">
                     <div class="detail__tour--content__left">
@@ -251,7 +275,8 @@ if (have_posts()) {
                             </div>
                             <div class="detail__tour--content__left--sale__right">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-4.png" alt="">
-                                <a href="<?php echo home_url( ); ?>/tour">Xem chi tiết <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                                <a href="<?php echo home_url(); ?>/tour">Xem chi tiết <ion-icon
+                                        name="chevron-forward-outline"></ion-icon></a>
                             </div>
                         </div>
                         <div class="detail__tour--content__left--sale__info shadow">
@@ -330,11 +355,12 @@ if (have_posts()) {
                             </div>
                         </div>
                         <style>
-                            .comment .comment_container img{
+                            .comment .comment_container img {
                                 width: 30px;
                                 height: 30px
                             }
-                            .comment .comment_container .comment-text img{
+
+                            .comment .comment_container .comment-text img {
                                 width: 100px;
                                 height: 100px;
                                 border-radius: 10px;
@@ -354,8 +380,7 @@ if (have_posts()) {
                     <div class="detail__tour--content__right">
                         <p><span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span>
                         </p>
-                        <button
-                            class="detail__tour--content__right--btn__pc detail__tour--content__right--btn firstBtn">
+                        <button class="detail__tour--content__right--btn__pc detail__tour--content__right--btn firstBtn">
                             <?php wc_get_template('loop/add-to-cart.php'); ?>
                         </button>
                     </div>
