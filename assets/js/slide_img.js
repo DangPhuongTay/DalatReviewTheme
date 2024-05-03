@@ -110,3 +110,30 @@ function closeSlides() {
   headerBody.classList.remove('slider__detail--tour');
   headerBody.classList.remove('listDetailHotelSlides');
 }
+
+
+function showImage(index) {
+  slideIndex = index;
+  location.hash = '#' + slideIndex;
+  img = slideIndex;
+  detailHotelBody.classList.add('listDetailHotelSlides');
+  detailHotelBody.classList.add('detailHotelBlur');
+  console.log(slideIndex);
+  showSlides(slideIndex);
+}
+
+const tourImages = document.querySelectorAll('.detail__tour--img .detail__tour--slide');
+tourImages.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    showImage(index); 
+  });
+});
+
+
+// quay lại 
+window.addEventListener('popstate', function(event) {
+  if (location.hash === '') {
+  
+    window.location.href = '';
+  }
+});
