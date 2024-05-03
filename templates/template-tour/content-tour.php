@@ -98,9 +98,6 @@ if (have_posts()) {
 
                 <div class="">
 
-
-              
-
                     <div class="detail__tour--img__right">
                         <?php
 
@@ -115,7 +112,7 @@ if (have_posts()) {
                                 <?php
                             }
                         } ?>
-                    </div> -->
+                    </div> 
                     <!-- =========================================================================== -->
 
                     <div class="detail__tour--img">
