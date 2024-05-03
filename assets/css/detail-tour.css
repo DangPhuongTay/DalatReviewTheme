@@ -114,7 +114,7 @@ input[type="number"] {
 height: 100%;
 object-fit: cover;
 }
-
+.imgBannerimg1,.imgBannerimg2,.imgBannerimg3{}
 .imgBannerimg1{
     max-height: 60vh;
     grid-column: 1 / span 3;
