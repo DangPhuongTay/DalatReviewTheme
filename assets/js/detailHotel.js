@@ -104,7 +104,7 @@ ListSlide.addEventListener('touchend', handleTouchEnd);
 
 const updateSlider = () => {
     let width = slides[0].offsetWidth;
-    ListSlide.style.transform = `translateX(${width * -current}px)`; // Move by the width of the viewport
+    ListSlide.style.transform = `translateX(${width * -current}px)`;
 };
 
 updateSlider();
@@ -115,4 +115,4 @@ const changeSlideAutomatically = () => {
     updateSlider();
 };
 
-setInterval(changeSlideAutomatically, 2000);
+setInterval(changeSlideAutomatically, 4000);

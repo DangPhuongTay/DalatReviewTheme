@@ -1,26 +1,57 @@
-const btnimg1 = document.querySelector('.img1');
-const btnimg2 = document.querySelector('.img2');
-let img = location.hash.slice(1);
-let slideIndex = img;
+// const btnimg1 = document.querySelector('.img1');
+// const btnimg2 = document.querySelector('.img2');
+// const btnimg3 = document.querySelector('.img3');
+// const btnimg4 = document.querySelector('.img4');
+// const btnimg5 = document.querySelector('.img5');
+// const btnimg1 = document.querySelector(`.img` + slideIndex);
+// let img = location.hash.slice(1);
+// let slideIndex = img;
 
-btnimg1.addEventListener('click', ()=>{
-  slideIndex = 1;
-  location.hash = '#'+slideIndex;
-  img = slideIndex;
-  detailHotelBody.classList.add('listDetailHotelSlides')
-  detailHotelBody.classList.add('detailHotelBlur')
-  console.log(slideIndex);
-  showSlides(slideIndex);
-})
-btnimg2.addEventListener('click', ()=>{
-  slideIndex = 2;
-  location.hash = '#'+slideIndex;
-  img = slideIndex;
-  detailHotelBody.classList.add('listDetailHotelSlides')
-  detailHotelBody.classList.add('detailHotelBlur')
-  console.log(slideIndex);
-  showSlides(slideIndex);
-})
+// btnimg1.addEventListener('click', ()=>{
+//   slideIndex = 1;
+//   location.hash = '#'+slideIndex;
+//   img = slideIndex;
+//   detailHotelBody.classList.add('listDetailHotelSlides')
+//   detailHotelBody.classList.add('detailHotelBlur')
+//   console.log(slideIndex);
+//   showSlides(slideIndex);
+// })
+// btnimg2.addEventListener('click', ()=>{
+//   slideIndex = 2;
+//   location.hash = '#'+slideIndex;
+//   img = slideIndex;
+//   detailHotelBody.classList.add('listDetailHotelSlides')
+//   detailHotelBody.classList.add('detailHotelBlur')
+//   console.log(slideIndex);
+//   showSlides(slideIndex);
+// })
+// btnimg3.addEventListener('click', ()=>{
+//   slideIndex = 3;
+//   location.hash = '#'+slideIndex;
+//   img = slideIndex;
+//   detailHotelBody.classList.add('listDetailHotelSlides')
+//   detailHotelBody.classList.add('detailHotelBlur')
+//   console.log(slideIndex);
+//   showSlides(slideIndex);
+// })
+// btnimg4.addEventListener('click', ()=>{
+//   slideIndex = 4;
+//   location.hash = '#'+slideIndex;
+//   img = slideIndex;
+//   detailHotelBody.classList.add('listDetailHotelSlides')
+//   detailHotelBody.classList.add('detailHotelBlur')
+//   console.log(slideIndex);
+//   showSlides(slideIndex);
+// })
+// btnimg5.addEventListener('click', ()=>{
+//   slideIndex = 5;
+//   location.hash = '#'+slideIndex;
+//   img = slideIndex;
+//   detailHotelBody.classList.add('listDetailHotelSlides')
+//   detailHotelBody.classList.add('detailHotelBlur')
+//   console.log(slideIndex);
+//   showSlides(slideIndex);
+// })
 
 const imghotels = document.querySelectorAll('.image_empty .mySlides');
 
