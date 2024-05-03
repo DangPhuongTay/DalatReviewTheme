@@ -145,6 +145,7 @@ if (count($available_variations) > 0) {
                         </div>
                     </div>
                 </div>
+                
             </form>
             </div>
 

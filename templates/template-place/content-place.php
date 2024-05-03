@@ -973,7 +973,7 @@ $available_variations = $product->get_available_variations();?>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detailHotel.js"></script>
         <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/secondDropdown.js"></script> -->
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script>
-        <!-- <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script> -->
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail_car.js"></script>
 
 
         <?php

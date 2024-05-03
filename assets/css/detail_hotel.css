@@ -99,20 +99,22 @@
 
 
 
+.mySlides .woocommerce-product-gallery__image a {
+    pointer-events: none;
+}
 
-
-.detailHotel__img--right .woocommerce-product-gallery__image {
+.detailHotel__img .woocommerce-product-gallery__image {
     width: calc(50% - 5px) !important;
     height: 20vh;
 }
 
-.detailHotel__img--right .woocommerce-product-gallery__image a {
+.detailHotel__img .woocommerce-product-gallery__image a {
     width: 100% !important;
     height: 20vh;
     pointer-events: none;
 }
 
-.detailHotel__img--right .woocommerce-product-gallery__image a img {
+.detailHotel__img .woocommerce-product-gallery__image a img {
     width: 100% !important;
     height: 20vh;
     pointer-events: none;
