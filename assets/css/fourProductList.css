@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, .25fr));
     gap: 10px;
+
 }
 
 .fourProductList__wrapper--item {
@@ -42,6 +43,7 @@
 .fourProductList__wrapper--info__title {
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 .icon__star {
@@ -107,6 +109,10 @@
 .fourProductList__wrapper--info__tag {
     display: flex;
     flex-wrap: wrap;
+
+}
+.fourProductList__wrapper--info__tag p {
+    text-transform: capitalize;
 }
 
 .fourProductList__wrapper--info__card--tag {
