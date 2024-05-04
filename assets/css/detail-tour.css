@@ -108,6 +108,7 @@ input[type="number"] {
     height: 50vh;
     border-radius: var(--border-radius-size-5) !important;
     margin-bottom: 40px;
+    overflow: hidden;
     background-color: var(--color-background-3);
 }
 .detail__tour--img img {
@@ -123,6 +124,7 @@ object-fit: cover;
     display: block !important;
 }
 .detail__tour--img .img1{
+    
     max-height: 50vh;
     grid-column: 1 / span 3;
     grid-row: 1/span 2;
