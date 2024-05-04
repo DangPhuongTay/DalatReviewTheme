@@ -475,6 +475,7 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
+    text-transform: capitalize;
 }
 
 .detailHotel__list--body__list--wrap__item {
