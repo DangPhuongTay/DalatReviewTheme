@@ -88,6 +88,7 @@
     }
     ?>
 </div>
+
 <div class="liveshow__container--body__product--list__page" style="align-items: center;justify-content: center;">
 
     <?php previous_posts_link('<div class="liveshow__container--body__product--list__page--item">
@@ -109,5 +110,6 @@
                 </div>', $loop->max_num_pages) ?>
 
 
+</div>
 </div>
 <?php wp_reset_postdata(); ?>

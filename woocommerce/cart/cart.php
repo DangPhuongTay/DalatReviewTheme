@@ -141,67 +141,17 @@ do_action( 'woocommerce_before_cart' ); ?>
                                      	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 									<?php do_action( 'woocommerce_cart_actions' ); ?>
                                
+									<script type="text/javascript">
+										(function($){
+											$( document.body ).on( 'change input', 'input.qty', function(){
+												$("[name='update_cart']").trigger("click");
+											});
+										})(jQuery);
+									</script>
+								<button type="submit" style="display:none;margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
 
-								<button type="submit" style="margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
-								<script>
-    jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
-	jQuery('.quantity').each(function() {
-	var spinner = jQuery(this),
-		input = spinner.find('input[type="number"]'),
-		btnUp = spinner.find('.quantity-up'),
-		btnDown = spinner.find('.quantity-down'),
-		min = 1,
-		max = 10;
-
-	btnUp.click(function() {
-		var oldValue = parseFloat(input.val());
-		console.log(oldValue);
-		if (oldValue >= max) {
-		var newVal = oldValue;
-		} else {
-		var newVal = oldValue + 1;
-		}
-		spinner.find("input").val(newVal);
-		spinner.find("input").trigger("change");
-	});
-
-	btnDown.click(function() {
-		var oldValue = parseFloat(input.val());
-		console.log(oldValue);
-		if (oldValue <= min) {
-		var newVal = oldValue;
-		} else {
-		var newVal = oldValue - 1;
-		}
-		spinner.find("input").val(newVal);
-		spinner.find("input").trigger("change");
-	});
-
-	});
-    </script>
-									
                                 </div>
 								</div>
-
-								<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-								<script type="text/javascript">
-										var timeout;
-
-										jQuery( function( $ ) {
-											$('.woocommerce').on('change', 'input.qty', function(){
-
-												if ( timeout !== undefined ) {
-													clearTimeout( timeout );
-												}
-												timeout = setTimeout(function() {
-													$("[name='update_cart']").trigger("click");
-													console.log(1)
-												}, 500 );
-
-											});
-										} );
-								</script>
-							
 							</div>
                             <div class="cart__container--top__left--list__item--bottom">
                                 <div class="cart__container--top__left--list__item--bottom__option">

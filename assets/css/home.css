@@ -582,13 +582,13 @@
 }
 
 .home__info--banner__container--list__item p {
-    font-size: var(--size-text-6);
+    font-size: var(--size-text-5);
     margin-bottom: 15px;
     font-weight: 500;
 }
 
 .home__info--banner__container--list__item span {
-    font-size: var(--size-text-4);
+    font-size: var(--size-text-3);
     color: var(--color-text-2);
 }
 

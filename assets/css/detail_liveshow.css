@@ -9,6 +9,17 @@
 
     margin-top: 61px;
 }
+.detail__liveshow  input[type=number]::-webkit-inner-spin-button,
+.detail__liveshow input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+} 
+
+.detail__liveshow input[type=number]
+{
+  -moz-appearance: textfield;
+} 
 .detail__liveshow--container{
     width: 100%;
     max-width: 1160px;

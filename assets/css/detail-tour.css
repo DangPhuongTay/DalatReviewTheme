@@ -4,17 +4,17 @@
     Creact at: 23/2/2024
     Update at: 27/2/2024
 ==============================================  */
-
+/* 
 input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
   }
-  
-  input[type=number]::-webkit-inner-spin-button,
+   */
+  /* input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-  }
+  } */
   
   .number-input {
     /* border: 1px solid #ddd; */
@@ -243,7 +243,7 @@ object-fit: cover;
     width: 100%;
     justify-content: space-between;
 }
-.detail__tour--content__left--option__title--1 p,a{
+.detail__tour--content__left--option__title--1 p{
     font-size: var(--size-text-5);
     font-weight: 500;
 }
