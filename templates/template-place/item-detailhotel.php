@@ -43,7 +43,7 @@ if (count($available_variations) > 0) {
                                   
                                 ?>
                                
-                                <!-- <?php echo var_dump($variation) ?> -->
+                                
                             </div>
                             
                             <div class="detailHotel__list--body__list--wrap__item--left__popular--price">

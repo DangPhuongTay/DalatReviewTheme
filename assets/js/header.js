@@ -16,9 +16,9 @@ const btnTransNumberLoginSignForm = document.querySelector('#login__signup--box_
 //     mobileMenuBtn.addEventListener('click',mobileMenu);
 // }
 
-// function mobileMenu() {
-//     headerBody.classList.toggle('active');
-// }
+function mobileMenu() {
+    headerBody.classList.toggle('active');
+}
 function openChat() {
     headerBody.classList.toggle('chatBox');
 }
