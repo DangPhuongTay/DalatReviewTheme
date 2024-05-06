@@ -1,11 +1,21 @@
-
-
+const urlindex = window.location.href;
 let img = location.hash.slice(1);
 let slideIndex = img;
-
-
-
 const imghotels = document.querySelectorAll('.image_empty .mySlides');
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Lấy URL của trang hiển thị sản phẩm ban đầu
+  var initialProductPage = urlindex ;
+
+  // Lắng nghe sự kiện khi nhấn nút trở về trên trình duyệt
+  window.onpopstate = function(event) {
+    // Kiểm tra xem trang hiện tại có phải là các trang sản phẩm đã xem trước đó không
+    if (urlindex !== initialProductPage) {
+      // Nếu không phải, chuyển hướng về trang sản phẩm ban đầu
+      urlindex = initialProductPage;
+    }
+  };
+});
 
 // Next/previous controls
 function plusSlides(n) {
@@ -35,9 +45,6 @@ function currentSlide(n) {
       console.log(slideIndex)
     }
   
-
-
-
 }
 
 function showSlides(n) {
@@ -53,9 +60,8 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
-  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
 function closeSlides() {
   location.hash = '';
   img = 0;
@@ -63,7 +69,6 @@ function closeSlides() {
   headerBody.classList.remove('listDetailHotelSlides');
   headerBody.classList.remove('detailHotelBlur');
 }
-
 
 function showImage(index) {
   slideIndex = index;
@@ -81,5 +86,3 @@ tourImages.forEach((image, index) => {
     showImage(index+1); 
   });
 });
-
-

@@ -4,13 +4,15 @@ if (have_posts()) {
     while (have_posts()) {
         the_post();
         ?>
-        <?php global $product; ?>
+        <?php global $product;
+ ?>
+
 
         <div class="slide__img--box">
-                <div class="container__slides">
+            <div class="container__slides">
                 <ion-icon class="slide__img--close" name="close-outline" onclick="closeSlides()"></ion-icon>
                 <div class="image_empty">
-                <?php if (!function_exists('wc_get_gallery_image_html')) {
+                    <?php if (!function_exists('wc_get_gallery_image_html')) {
                         return;
                     }
                     $attachment_ids = $product->get_gallery_image_ids();
@@ -22,17 +24,17 @@ if (have_posts()) {
                         </a>
                         </div>
                         </div> -->
-                        
-                
+
+
                         <?php foreach ($attachment_ids as $attachment_id) {
                             ?>
                             <div class="mySlides">
                                 <?php
-                                    echo apply_filters(
-                                        'woocommerce_single_product_image_thumbnail_html',
-                                        wc_get_gallery_image_html($attachment_id),
-                                        $attachment_id
-                                    ); 
+                                echo apply_filters(
+                                    'woocommerce_single_product_image_thumbnail_html',
+                                    wc_get_gallery_image_html($attachment_id),
+                                    $attachment_id
+                                );
                                 ?>
                             </div>
                             <?php
@@ -40,15 +42,15 @@ if (have_posts()) {
 
                     } ?>
 
-                </div>   
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="currentSlide(1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
                 </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="currentSlide(1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
             </div>
+        </div>
         <section class="detail__tour">
             <div class="detail__tour--content__right--mobile shadow">
                 <p><span>đ</span> <span
@@ -76,23 +78,7 @@ if (have_posts()) {
                     </div>
                     <div class="detail__tour--header__info">
                         <ion-icon name="location-outline"></ion-icon>
-                        <?php
-                        if ($product->attributes) {
-                            foreach ($product->attributes as $taxonomy => $attribute) {
-
-                                foreach ($attribute->get_terms() as $term) {
-                                    if ($term->taxonomy == 'pa_dia-chi') {
-                                        echo $term->name;
-
-                                    } else {
-                                        echo '';
-                                    }
-                                }
-                            }
-                        } else {
-                            echo '';
-                        } ?>
-
+                       
                     </div>
                 </div>
 
@@ -102,82 +88,98 @@ if (have_posts()) {
                     <!-- =========================================================================== -->
 
                     <div class="detail__tour--img">
-                    <?php
+                        <?php
 
-$attachment_ids = $product->get_gallery_attachment_ids();
-$nubimg = 1;
+                        $attachment_ids = $product->get_gallery_attachment_ids();
+                        $nubimg = 1;
 
-foreach( $attachment_ids as $attachment_id ) {
+                        foreach ($attachment_ids as $attachment_id) {
 
-    $nameimg = 'img'.$nubimg;
-    $image_link =wp_get_attachment_url( $attachment_id );
-    //Get image show by tag <img> 
-    echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
-    $nubimg++; 
-}
-?>
- <?php
-for($i = 1; $i <= count($attachment_ids); $i++){
-    ?><script>
-        const btnimg<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>` );
+                            $nameimg = 'img' . $nubimg;
+                            $image_link = wp_get_attachment_url($attachment_id);
+                            //Get image show by tag <img> 
+                            echo '<img class="thumb ' . $nameimg . '" src="' . $image_link . '">';
+                            $nubimg++;
+                        }
+                        ?>
+                        <?php
+                        for ($i = 1; $i <= count($attachment_ids); $i++) {
+                            ?>
+                            <script>
+                                const btnimg<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>`);
 
-        btnimg<?php echo $i; ?>.addEventListener('click', ()=>{
-        slideIndex = <?php echo $i; ?>;
-        location.hash = '#'+slideIndex;
-        img = slideIndex;
-        detailHotelBody.classList.add('listDetailHotelSlides')
-        detailHotelBody.classList.add('detailHotelBlur')
-        console.log(slideIndex);
-        showSlides(slideIndex);
-        })
-        </script>
-    <?php
-}
-?>
-                     
-                    <?php
+                                btnimg<?php echo $i; ?>.addEventListener('click', () => {
+                                    slideIndex = <?php echo $i; ?>;
+                                    location.hash = '#' + slideIndex;
+                                    img = slideIndex;
+                                    detailHotelBody.classList.add('listDetailHotelSlides')
+                                    detailHotelBody.classList.add('detailHotelBlur')
+                                    console.log(slideIndex);
+                                    showSlides(slideIndex);
+                                })
+                            </script>
+                            <?php
+                        }
+                        ?>
 
-                    $attachment_ids = $product->get_gallery_attachment_ids();
-                    $nubimg = 1;
+                        <?php
 
-                    foreach ($attachment_ids as $attachment_id) {
+                        $attachment_ids = $product->get_gallery_attachment_ids();
+                        $nubimg = 1;
 
-                        $nameimg = 'imgtour' . $nubimg;
-                        $image_link = wp_get_attachment_url($attachment_id);
-                        //Get image show by tag <img> 
-                        echo '<img class="thumb' . $nameimg . '" src="' . $image_link . '">';
-                        $nubimg++;
-                    }
-                    ?>
-        <?php
-               for ($i = 1; $i <= count($attachment_ids); $i++) {
-                   ?><script>
-                        const btnimg<?php echo $i; ?> = document.querySelector(`.imgtour<?php echo $i; ?>`);
+                        foreach ($attachment_ids as $attachment_id) {
 
-                        btnimg<?php echo $i; ?>.addEventListener('click', () => {
-                            slideIndex = <?php echo $i; ?>;
-                            location.hash = '#' + slideIndex;
-                            img = slideIndex;
-                            detailHotelBody.classList.add('listDetailHotelSlides')
-                            detailHotelBody.classList.add('detailHotelBlur')
-                            console.log(slideIndex);
-                            showSlides(slideIndex);
-                        })
-                    </script>
-            <?php
-               }
-               ?>
+                            $nameimg = 'imgtour' . $nubimg;
+                            $image_link = wp_get_attachment_url($attachment_id);
+                            //Get image show by tag <img> 
+                            echo '<img class="thumb' . $nameimg . '" src="' . $image_link . '">';
+                            $nubimg++;
+                        }
+                        ?>
+                        <?php
+                        for ($i = 1; $i <= count($attachment_ids); $i++) {
+                            ?>
+                            <script>
+                                const btnimg<?php echo $i; ?> = document.querySelector(`.imgtour<?php echo $i; ?>`);
+
+                                btnimg<?php echo $i; ?>.addEventListener('click', () => {
+                                    slideIndex = <?php echo $i; ?>;
+                                    location.hash = '#' + slideIndex;
+                                    img = slideIndex;
+                                    detailHotelBody.classList.add('listDetailHotelSlides')
+                                    detailHotelBody.classList.add('detailHotelBlur')
+                                    console.log(slideIndex);
+                                    showSlides(slideIndex);
+                                })
+                            </script>
+                            <?php
+                        }
+                        ?>
 
                         <!-- ========================= -->
-                       
+
                     </div>
 
 
                     <!-- ------------------------------------------------------------------------ -->
                 </div>
+                               <!-- ----------------------------------Start banner type services------------------------------------------------------ -->
+                            <div class="detail__tour--content">
+                                    <div class="detail__tour--content__left detail__tour--services__left">
+                
+                                    <?php
+                
+                get_template_part('templates/template-tour/tour', 'services');
+                ?>
+                                        
+                                    </div>
+                                </div>
+                <!-- ===================================end================================================== -->
+  
+                
                 <div class="detail__tour--content">
                     <div class="detail__tour--content__left">
-                        
+
                         <div class="detail__tour--content__left--header">
                             Về dịch vụ này
                         </div>
@@ -185,6 +187,9 @@ for($i = 1; $i <= count($attachment_ids); $i++){
                             <?php echo $product->get_description(); ?>
                         </div>
 
+
+
+                        
                         <div class="detail__tour--content__left--header">
                             Tiết kiệm hơn khi du lịch Đà Lạt
                         </div>
@@ -306,15 +311,54 @@ for($i = 1; $i <= count($attachment_ids); $i++){
 
                     </div>
                     <div class="detail__tour--content__right">
-                        <p><span class="detail__tour--content__right--price"><?php echo $product->get_price_html(); ?></span>
-                        </p>
                         <button class="detail__tour--content__right--btn__pc detail__tour--content__right--btn firstBtn">
-                            <?php wc_get_template('loop/add-to-cart.php'); ?>
+                          Chọn loại vé
                         </button>
                     </div>
-
                 </div>
-            </div>
+
+                <!-- mobile -->
+
+                <div class="detailHotelMobile__slides">
+                    <div class="detailHotelMobile__slides--show">
+                        <div class="detailHotelMobile__slides--show__item">
+                             <?php
+
+                            $attachment_ids = $product->get_gallery_attachment_ids();
+                            $nubimg = 1;
+                            
+                            foreach( $attachment_ids as $attachment_id ) {
+
+                                $nameimg = 'img'.$nubimg;
+                                $image_link =wp_get_attachment_url( $attachment_id );
+                                //Get image show by tag <img> 
+                                echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
+                                $nubimg++; 
+                            }
+                            ?>
+                             <?php
+                            for($i = 1; $i <= count($attachment_ids); $i++){
+                                ?><script>
+                                    const btnimg<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>` );
+
+                                    btnimg<?php echo $i; ?>.addEventListener('click', ()=>{
+                                    slideIndex = <?php echo $i; ?>;
+                                    location.hash = '#'+slideIndex;
+                                    img = slideIndex;
+                                    detailHotelBody.classList.add('listDetailHotelSlides')
+                                    detailHotelBody.classList.add('detailHotelBlur')
+                                    console.log(slideIndex);
+                                    showSlides(slideIndex);
+                                    })
+                                    </script>
+                                <?php
+                            }
+                        ?>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+           </div>
             <div class="detail__tour--content__left--related">
                 <div class="fourProductList__wrapper">
                     <?php
