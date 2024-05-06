@@ -78,12 +78,14 @@ if (have_posts()) {
                                                         <?php 
                                                             foreach ($variation['attributes'] as $attribute => $term_slug) {
                                                                 $taxonomy = 'pa_loai-xe';
-                                                                $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
-                                                                echo '<p>'. $term_name . '</p>';
-
+                                                                $term = get_term_by('slug', $term_slug, $taxonomy);
+                                                                if ($term) {
+                                                                    $term_name = $term->name;
+                                                                    echo '<p>' . $term_name . '</p>';
+                                                                }
                                                             }
-                                                        
-                                                        ?>
+                                                            ?>
+
                                                         </span>
                                                         <span class="fourProductList__wrapper--stars">
                                                             <!-- <ion-icon name="star" class="icon__star"></ion-icon>
@@ -148,5 +150,39 @@ if (have_posts()) {
     }
 }
 ?>
+<script>
+    jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+jQuery('.quantity').each(function() {
+  var spinner = jQuery(this),
+    input = spinner.find('input[type="number"]'),
+    btnUp = spinner.find('.quantity-up'),
+    btnDown = spinner.find('.quantity-down'),
+    min = input.attr('min'),
+    max = input.attr('max');
+
+  btnUp.click(function() {
+    var oldValue = parseFloat(input.val());
+    if (oldValue >= max) {
+      var newVal = oldValue;
+    } else {
+      var newVal = oldValue + 1;
+    }
+    spinner.find("input").val(newVal);
+    spinner.find("input").trigger("change");
+  });
+
+  btnDown.click(function() {
+    var oldValue = parseFloat(input.val());
+    if (oldValue <= min) {
+      var newVal = oldValue;
+    } else {
+      var newVal = oldValue - 1;
+    }
+    spinner.find("input").val(newVal);
+    spinner.find("input").trigger("change");
+  });
+
+});
+    </script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slide_img.js"></script><?php
    get_footer(); ?>

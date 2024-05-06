@@ -1,7 +1,7 @@
 const btnDetailHotelSevice = document.querySelector('.detailHotelMobile__info--summary.sevice');
 
 const btnDetailHotelSevice2 = document.querySelector('.detailHotel__list--footer.sevice');
-const btnDetailHotelTypeRoom = document.querySelector('.detail__list--body__select--rom');
+// const btnDetailHotelTypeRoom = document.querySelector('.detail__list--body__select--rom');
 // const closeDetailHotelPrice = document.querySelector('.detailHotel__list--body__list--wrapper__icon ion-icon');
 const closeDetailHotelRate = document.querySelector('.detailHotel__list--body__reviews--wrap__icon ion-icon');
 const closeDetailHotelBlur = document.querySelector('.detailHotel__backgroup--blur');
@@ -36,9 +36,9 @@ btnDetailHotelSevice2.addEventListener('click', ()=>{
 function btnDetailHotelRoom(){
     detailHotelBody.classList.toggle('listDetailHotelRoom')
 }
-btnDetailHotelTypeRoom.addEventListener('click', ()=>{
-    detailHotelBody.classList.toggle('listDetailHotelTypeRoom')
-})
+// btnDetailHotelTypeRoom.addEventListener('click', ()=>{
+//     detailHotelBody.classList.toggle('listDetailHotelTypeRoom')
+// })
 // closeDetailHotelPrice.addEventListener('click', ()=>{
 //   detailHotelBody.classList.remove('listDetailHotelPrice')
 //   detailHotelBody.classList.remove('listDetailHotelPrice2')

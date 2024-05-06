@@ -20,14 +20,7 @@ $available_variations = $product->get_available_variations();?>
                     }
                     $attachment_ids = $product->get_gallery_image_ids();
                     if ($attachment_ids && $product->get_image_id()) { ?>
-                        <!-- <div class="mySlides">
-                        <div data-thumb="" data-thumb-alt="" class="woocommerce-product-gallery__image">
-                            <a href="">
-                                <img width="600" height="338" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" data-large_image="http://localhost/wordpress/wp-content/uploads/2024/04/z5385579883187_f04897b50e299e7c4fa29a67112b402e.jpg" data-large_image_width="2560" data-large_image_height="1440" decoding="async" loading="lazy">
-                        </a>
-                        </div>
-                        </div> -->
-                        
+                       
                 
                         <?php foreach ($attachment_ids as $attachment_id) {
                             ?>
@@ -65,7 +58,7 @@ $available_variations = $product->get_available_variations();?>
                 <div class="detailHotel__top--link">
                     <ion-icon name="chevron-back-outline"></ion-icon>
 
-                    <a href="<?php echo home_url(); ?>/">Tìm thêm khách sạn tại Đà Lạt</a>
+                    <a href="<?php echo home_url(); ?>/place">Tìm thêm khách sạn tại Đà Lạt</a>
 
                 </div>
                 <div class="detailHotelMobile__slides">
@@ -143,7 +136,6 @@ $available_variations = $product->get_available_variations();?>
                         ?>
                         <script>
                             const btnimgpc<?php echo $i; ?> = document.querySelector(`.imgpc<?php echo $i; ?>` );
-
                             btnimgpc<?php echo $i; ?>.addEventListener('click', ()=>{
                             slideIndex = <?php echo $i; ?>;
                             location.hash = '#'+slideIndex;
@@ -189,12 +181,7 @@ $available_variations = $product->get_available_variations();?>
                             <a href="#detailHotel__selectRoom" class="detailHotel__info--wapper__btn firstBtn">Chọn phòng</a>
                         </div>
                         <div class="fourProductList__wrapper--info__review list__wrapper">
-                            <!-- <div class="fourProductList__wrapper--info__score">
-                                <span>4.4</span>
-                                <span class="slash">/</span>
-                                <span>5</span>
-                            </div>
-                            <div class="fourProductList__wrapper--info__desc">Rất tốt</div> -->
+                           
                             <div class="fourProductList__wrapper--info__count" onclick="btnDetailHotelRate()"><?php echo $review_count = $product->get_review_count(); ?>  Bình luận</div>
                         </div>
                     </div>
@@ -259,10 +246,7 @@ $available_variations = $product->get_available_variations();?>
                                        }
                                        }
                                     } ?></span>
-                                <!-- <div class="detailHotel__info--summary__right--location">
-                                    <ion-icon name="train-outline"></ion-icon>
-                                    <p>Ga Đà Lạt, 1.1km</p>
-                                </div> -->
+                            
                             </div>
                             <div class="detailHotel__info--summary__right--map">
                                 <span>Xem bản đồ</span>
@@ -279,167 +263,9 @@ $available_variations = $product->get_available_variations();?>
                         <div class="detailHotel__list--body">
                             <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là
                                 mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p>
-                            <!-- <p class="detailHotel__list--body__fitter">Lọc để tìm các lựa chọn phù hợp:</p>
-                            <div class="detailHotel__list--body__checkbox">
-                                <div class="detailHotel__list--body__checkbox--group">
-                                    <input type="checkbox" id="checkbox--group">
-                                    <label class="detailHotel__list--body__checkbox--lable" for="checkbox--group">
-                                        <ion-icon name="gift-outline"></ion-icon>
-                                        <p>Ưu đãi của khách sạn(8)</p>
-                                    </label>
-                                </div>
-                            </div> -->
-                            <div class="detailHotel__list--body__select">
-                                <div class="detail__list--body__select--rom">
-                                    <div class="primary__dropdown">
-                                        <div class="primary__dropdown--button detail__list--body__select--rom__container">
-                                            <span>2 loại phòng</span>
-                                            <div class="primary__dropdown--icon">
-                                                <ion-icon name="chevron-down-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <div class="detail__list--body__select--rom__item">
-                                            <ul class=" primary__dropdown--content__list" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="primary__dropdown--content__list--item" href="#">Phòng Deluxe (Từ
-                                                        ₫ 20XXXXX)</a></li>
-                                                <li><a class="primary__dropdown--content__list--item" href="#">Phòng Đôi (Từ ₫
-                                                        20XXXXX)</a></li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!-- <div class="detail__list--body--select__tip">
-                                    Có <b>4</b> mức giá cho loại phòng này
-                                </div> -->
-                            </div>
-                            <!-- <div class="detailHotel__list--body__list--wrapper">
-                                <div class="detailHotel__list--body__list--wrapper__icon">
-                                    <ion-icon name="close-outline"></ion-icon>
-                                </div>
-
-                                <div class="detailHotel__list--body__list--wrapper__container--box">
-                                    <nav>
-                                        <a href="#detailHotel__room">Phòng Deluxe</a>
-                                        <a href="#detailHotel__include">Bao gồm</a>
-                                        <a href="#detailHotel__prices">Giá chi tiết</a>
-                                        <a href="#detailHotel__location">Chính sách chỗ lưu trú</a>
-                                    </nav>
-                                    <div class="detailHotel__list--body__list--wrapper__container">
-                                        <div class="header__list--header__title" id="detailHotel__room">
-                                            <h2>Phòng Deluxe</h2>
-                                        </div>
-                                        <div class="detailHotel__list--body__list--wrappper__img">
-                                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/detailHotel1.avif"
-                                                alt="">
-                                        </div>
-                                        <div class="detailHotel__rate--content__list">
-                                            <div
-                                                class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-info">
-                                                <ion-icon name="cafe-outline"></ion-icon>
-                                                <span>Bữa sáng miễn phí</span>
-                                            </div>
-                                            <div
-                                                class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card">
-                                                <ion-icon name="ban-outline"></ion-icon>
-                                                <span>Không hoàn tiền</span>
-                                            </div>
-                                        </div>
-                                        <div class="detailHotel__list--body__list--wrap__item--left__popular">
-                                            <div class="detailHotel__list--body__list--wrap__item--left__popular--platform">
-                                                <ion-icon name="bar-chart-outline"></ion-icon>
-                                                <p>25.0 m²</p>
-                                            </div>
-                                            <div class="detailHotel__list--body__list--wrap__item--left__popular--platform">
-                                                <ion-icon name="albums-outline"></ion-icon>
-                                                <p>Tầm nhìn hướng sân trong</p>
-                                            </div>
-                                        </div>
-                                        <div class="detailHotel__list--body__list--wrap__item--left__facility--text">
-                                            Tiện ích Phòng
-                                        </div>
-                                        <div class="detailHotel__list--body__list--wrap__item--left__facility">
-                                            <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
-                                                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                                <p>Không hút thuốc</p>
-                                            </div>
-                                            <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
-                                                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                                <p>Quạt trần</p>
-                                            </div>
-                                            <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
-                                                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                                <p>TV</p>
-                                            </div>
-                                            <div class="detailHotel__list--body__list--wrap__item--left__facility--platform">
-                                                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                                <p>Dịch vụ dọn phòng</p>
-                                            </div>
-                                        </div>
-                                        <div class="header__list--header__title" id="detailHotel__include">
-                                            <h2>Bao gồm</h2>
-                                        </div>
-                                        <div
-                                            class="detailHotel__list--body__list--wrap__item--right__body--info__left--rate__card text-primary">
-                                            <ion-icon name="car-sport-outline"></ion-icon>
-                                            <span>Đỗ xe miễn phí</span>
-                                        </div>
-                                        <div class="header__list--header__title" id="detailHotel__prices">
-                                            <h2>Giá chi tiết</h2>
-                                        </div>
-                                        <div class="detailHotel__price--item__top">
-                                            <div class="detailHotel__lable--section">
-                                                <span>1 phòng x 1 đêm</span>
-                                            </div>
-                                            <span class="detailHotel__value--section">
-                                                đ<b>615</b>
-                                            </span>
-                                        </div>
-                                        <div class="detailHotel__price--item__top">
-                                            <div class="detailHotel__lable--section">
-                                                <span>Thuế và phí</span>
-                                            </div>
-                                            <span class="detailHotel__value--section">
-                                                đ<b>615</b>
-                                            </span>
-                                        </div>
-                                        <div class="detailHotel__price">
-                                            <div class="detailHotel__price--item__top">
-                                                <span>Thanh toán online</span>
-                                                <p>
-                                                    <i>Tổng</i>
-                                                    <b>₫ 529,901</b>
-                                                </p>
-                                            </div>
-                                            <div class="detailHotel__price--tip">
-                                                <span>Đã bao gồm thuế</span>
-                                            </div>
-                                        </div>
-                                        <div class="header__list--header__title" id="detailHotel__location">
-                                            <h2>Chính sách chỗ lưu trú</h2>
-                                        </div>
-                                        <div class="detailHotel__policy--section">
-                                            <div class="detailHotel__policy--section__title">Xác nhận tức thời</div>
-                                            <div class="detailHotel__policy--section__content">Nhận xác nhận đặt phòng chỉ trong
-                                                vài phút</div>
-                                        </div>
-                                        <div class="detailHotel__policy--section">
-                                            <div class="detailHotel__policy--section__title">Không hoàn tiền</div>
-                                            <div class="detailHotel__policy--section__content">Sau khi xác nhận, đơn hàng của
-                                                bạn không thể huỷ hoặc sửa đổi</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="detailHotel__footer">
-                                    <div class="detailHotel__footer--price">
-                                        <div class="detailHotel__footer--price__info">
-                                            <div class="detailHotel__footer--price__info--desc">đ <b>20XXXXX</b></div>
-                                            <div class="detailHotel__footer--price__info--unit">Mỗi đêm</div>
-                                            <ion-icon name="alert-circle-outline"></ion-icon>
-                                        </div>
-                                        <a class="firstBtn" <?php wc_get_template('loop/add-to-cart.php'); ?> </div>
-                                    </div>
-                                </div> -->
+                  
+                            
+                           
 
                                 <div class="detailHotel__list--body__list">
                                     <?php
@@ -477,100 +303,10 @@ $available_variations = $product->get_available_variations();?>
                                                         <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="detailHotel__list--body__reviews--content__overview--category">
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                        <div>Vị trí</div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                                5.0</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                        <div>Vị trí</div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                                5.0</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                        <div>Vị trí</div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                                5.0</div>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                        <div>Vị trí</div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                                </div>
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                                5.0</div>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
+                                               
 
                                             </div>
-                                            <!-- <div class="detailHotel__list--body__reviews--content__swiper">
-                                                <div class="detailHotel__list--body__reviews--content__swiper--item">
-                                                    <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                        Tất cả
-                                                    </div>
-                                                    <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                        Có hình
-                                                        ảnh</div>
-                                                    <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                        4.5+</div>
-                                                    <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                        3.0+</div>
-                                                </div>
-                                            </div> -->
+                                         
 
                                             <?php
                                             $args = array('post_id' => $product->id);
@@ -582,215 +318,7 @@ $available_variations = $product->get_available_variations();?>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="detailHotel__list--body__reviews">
-                                    <div class="detailHotel__list--header">
-                                        <div class="header__list--header__title">
-                                            <h2>Đánh giá</h2>
-                                        </div>
-                                    </div>
-                                    <div class="detailHotel__list--body__reviews--content">
-                                        <div class="detailHotel__list--body__reviews--content__overview">
-                                            <a class="detailHotel__list--body__reviews--content__overview--link"
-                                                onclick="btnDetailHotelRate()">Đọc tất cả đánh giá</a>
-                                            <div class="detailHotel__list--body__reviews--content__overview--info">
-                                                <div class="detailHotel__list--body__reviews--content__overview--info__score">
-                                                    <span>5.0</span>
-                                                    <span>/5</span>
-                                                </div>
-                                                <div class="detailHotel__list--body__reviews--content__overview--info__fomart">
-                                                    <p>Tuyệt vời</p>
-                                                    <span><?php echo $review_count = $product->get_review_count(); ?> Bình luận</span>
-                                                </div>
-                                            </div>
-                                            <div class="detailHotel__list--body__reviews--content__overview--category">
-                                                <div
-                                                    class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                    <div>Vị trí</div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                            5.0</div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                    <div>Vị trí</div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                            5.0</div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                    <div>Vị trí</div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                            5.0</div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="detailHotel__list--body__reviews--content__overview--category__item">
-                                                    <div>Vị trí</div>
-                                                    <div
-                                                        class="detailHotel__list--body__reviews--content__overview--category__item--progress">
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__content">
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--runway">
-                                                            </div>
-                                                            <div
-                                                                class="detailHotel__list--body__reviews--content__overview--category__item--progress__content--progress">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="detailHotel__list--body__reviews--content__overview--category__item--progress__end">
-                                                            5.0</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="detailHotel__list--body__reviews--content__swiper">
-                                            <div class="detailHotel__list--body__reviews--content__swiper--item">
-                                                <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                    Tất cả</div>
-                                                <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                    Có hình ảnh
-                                                </div>
-                                                <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                    4.5+</div>
-                                                <div class="detailHotel__list--body__reviews--content__swiper--items">
-                                                    3.0+</div>
-                                            </div>
-                                        </div>
-                                        <div class="" onclick="btnDetailHotelRate()">
-            
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="detailHotel__list--body__detail">
-                                                    <div class="detailHotel__list--header">
-                                                        <div class="header__list--header__title">
-                                                            <h2>Điểm tham quan gần đó</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="detailHotel__list--body__detail--content">
-                                                        <div class="detailHotel__list--body__detail--content__wrap">
-                                                            <div class="detailHotel__list--body__detail--content__item">
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Chùa
-                                                                        Thiên Vương</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        200m
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Ha Dong
-                                                                        Flower Village</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        800m
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Câu lạc
-                                                                        bộ golf Dalat Palace</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        1.5km</div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Gasoline
-                                                                        tree Ta Nung</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        11.6km</div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Tượng
-                                                                        phật vàng</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        300m
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Vườn Ánh
-                                                                        Sáng Lumiere</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        1.3km</div>
-                                                                </div>
-                                                                <div
-                                                                    class="detailHotel__list--body__detail--content__item--wrap">
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__left">
-                                                                        Cathedral of Da Lat Diocese</div>
-                                                                    <div
-                                                                        class="detailHotel__list--body__detail--content__item--wrap__distance">
-                                                                        3.3km</div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="detailHotel__list--body__detail--content__footer"
-                                                        onclick="openMapsCarFormBtn()">
-                                                        <span>Xem bản đồ</span>
-                                                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                                                    </div>
-                                                </div> -->
+                           
 
                                 <div class="detailHotel__list--body__facility">
                                     <div class="detailHotel__list--header">
