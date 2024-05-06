@@ -634,7 +634,7 @@
 
 .detailHotel__list--body__list--wrap__item--right__body--info__right {
     align-self: flex-end;
-    padding: 40px 20px 20px 0;
+    padding: 40px 20px 20px 10px;
 }
 
 .detailHotel__list--body__list--wrap__item--right__body--info__right--price {
@@ -643,7 +643,7 @@
     align-items: flex-end;
     justify-content: flex-end;
     overflow: hidden;
-    margin-left: 16px;
+
     cursor: pointer;
 }
 .detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom{
@@ -1347,6 +1347,17 @@ body.MapCarForm .detailHotel__backgroup--blur {
 
 body.MapCarForm {
     overflow: hidden;
+}
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom input[type=number]::-webkit-inner-spin-button,
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom input[type=number]
+{
+  -moz-appearance: textfield;
 }
 
 /* ==============================================
