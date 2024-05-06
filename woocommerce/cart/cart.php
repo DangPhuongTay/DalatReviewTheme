@@ -18,7 +18,7 @@
 	$url = wc_get_cart_url();
 	?>
 	<script>
-		 window.location= "<?php echo $url;?>";
+		 window.location = "<?php echo $url;?>";
 	</script>
 	<?php
 }
@@ -259,6 +259,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
 </form>
-													
+												
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
