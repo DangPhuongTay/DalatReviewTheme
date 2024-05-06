@@ -100,4 +100,3 @@ const changeSlideAutomatically = () => {
 setInterval(changeSlideAutomatically, 2000);
 
 
-

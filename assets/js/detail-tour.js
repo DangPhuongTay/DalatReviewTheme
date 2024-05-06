@@ -7,9 +7,19 @@ const checkout_detail_tour_open_pc = document.querySelector('.detail__tour--cont
 const slider_detail_tour_close = document.querySelector('.header__background--blur__fullview');
 const option_detail_tour_open = document.querySelector('.detail__tour--content__left--option__list');
 
+var initialProductPage = window.location.href;
 
+document.addEventListener("DOMContentLoaded", function() {
 
-
+    alert("URL của trang hiện tại: " + currentURL);
+    // window.onpopstate = function(event) {
+    //     // Kiểm tra xem trang hiện tại có phải là các trang sản phẩm đã xem trước đó không
+    //     if (window.location.href !== initialProductPage) {
+    //         // Nếu không phải, chuyển hướng về trang sản phẩm ban đầu
+    //         window.location.href = initialProductPage;
+    //     }
+    // };
+});
 
 
 
