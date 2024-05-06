@@ -649,8 +649,9 @@
 .detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+}
+.detailHotel__list--body__list--wrap__item--right__body--info__right--price__bottom .add_to_cart_button{
+  margin-left: 30px;
 }
 .detailHotel__list--body__list--wrap__item--right__body--info__right--price__part--desc {
     display: inline-block;
