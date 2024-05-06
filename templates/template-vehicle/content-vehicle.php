@@ -78,12 +78,14 @@ if (have_posts()) {
                                                         <?php 
                                                             foreach ($variation['attributes'] as $attribute => $term_slug) {
                                                                 $taxonomy = 'pa_loai-xe';
-                                                                $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
-                                                                echo '<p>'. $term_name . '</p>';
-
+                                                                $term = get_term_by('slug', $term_slug, $taxonomy);
+                                                                if ($term) {
+                                                                    $term_name = $term->name;
+                                                                    echo '<p>' . $term_name . '</p>';
+                                                                }
                                                             }
-                                                        
-                                                        ?>
+                                                            ?>
+
                                                         </span>
                                                         <span class="fourProductList__wrapper--stars">
                                                             <!-- <ion-icon name="star" class="icon__star"></ion-icon>

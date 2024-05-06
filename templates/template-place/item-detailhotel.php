@@ -14,14 +14,16 @@ if (count($available_variations) > 0) {
                     data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
                     <div class="detailHotel__list--body__list--wrap__name">
                     <?php 
-                                     foreach ($variation['attributes'] as $attribute => $term_slug) {
-                                        $taxonomy = 'pa_loai-phong';
-                                        $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
-                                        echo '<p>'. $term_name . '</p>';
+                        foreach ($variation['attributes'] as $attribute => $term_slug) {
+                            $taxonomy = 'pa_loai-phong';
+                            $term = get_term_by('slug', $term_slug, $taxonomy);
+                            if ($term) {
+                                $term_name = $term->name;
+                                echo '<p>' . $term_name . '</p>';
+                            }
+                        }
+                        ?>
 
-                                    }
-                                  
-                                ?>
                     </div>
                 <div class="detailHotel__list--body__list--wrap__item">
                     <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
@@ -33,15 +35,17 @@ if (count($available_variations) > 0) {
                         <div class="detailHotel__list--body__list--wrap__item--left__popular">
                             <div class="detailHotel__list--body__list--wrap__item--left__popular--name">
                            
-                                <?php 
-                                     foreach ($variation['attributes'] as $attribute => $term_slug) {
-                                        $taxonomy = 'pa_loai-phong';
-                                        $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
-                                        echo '<p>'. $term_name . '</p>';
-
+                            <?php 
+                                foreach ($variation['attributes'] as $attribute => $term_slug) {
+                                    $taxonomy = 'pa_loai-phong';
+                                    $term = get_term_by('slug', $term_slug, $taxonomy);
+                                    if ($term) {
+                                        $term_name = $term->name;
+                                        echo '<p>' . $term_name . '</p>';
                                     }
-                                  
+                                }
                                 ?>
+
                                
                                 
                             </div>
@@ -60,7 +64,7 @@ if (count($available_variations) > 0) {
                             </div>
                         </div>
 
-                        <div class="detailHotel__list--body__list--wrap__item--left__facility">
+                        <!-- <div class="detailHotel__list--body__list--wrap__item--left__facility">
                             <?php
                             $nub = 0;
                             foreach ($product->attributes as $taxonomy => $attribute) {
@@ -82,7 +86,7 @@ if (count($available_variations) > 0) {
                                 }
                             }
                             ?>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="detailHotel__list--body__list--wrap__item--right">
                         <div class="detailHotel__list--body__list--wrap__item--right__header">
