@@ -63,6 +63,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
+  }
+  .detail__liveshow--content .liveshow__bottom--form span:nth-child(1){
+    display: none;
   }
 .detail__liveshow--ticket__box{
      width: 100%;
@@ -452,6 +456,43 @@ body.listDetailLiveShowPopup {
         width: 46%;
         margin-top: 0;
       }
+      .detail__liveshow--content .liveshow__bottom--form{
+        align-items: start;
+    }
+    .detail__liveshow--content .liveshow__bottom--form button{
+        padding: 10px 15px; 
+    }
+}
+@media only screen and (max-width:550px){
+    .detail__liveshow--content .liveshow__bottom--form{
+        width: 50%;
+        gap: 5px;
+        align-items: start;
+    }
+    .detail__liveshow--content .liveshow__bottom--form button{
+        padding: 10px;
+    }
+    .detail__liveshow--content .liveshow__bottom--form button span:nth-child(1){
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        padding: 0px 20px;
+    }
+    .detail__liveshow--content .liveshow__bottom--form button span:nth-child(2){
+        display: none;
+    }
+    .detail__liveshow--content .liveshow__bottom--form button span:nth-child(1) ion-icon{
+        font-size: var(--size-text-7);
+    }
+}
+@media only screen and (max-width:450px){
+    .detail__liveshow--content .liveshow__bottom--form{
+        width: 50%;
+        gap: 5px;
+        align-items: start;
+    }
 
-
+    .detail__liveshow--content .variations_form.cart{
+        gap: 5px;
+    }
 }

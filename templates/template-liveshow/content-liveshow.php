@@ -111,7 +111,7 @@ $available_variations = $product->get_available_variations();?>
           <div class="quantity">
             <input name="quantity" type="number" min="1" max="9" step="1" value="1">
           </div>
-          <button type="submit" class="add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>">Thêm vào giỏ hàng</button>
+          <button type="submit" class="add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"><span>+ <ion-icon name="cart-outline"></ion-icon></span><span>Thêm vào giỏ hàng</span></button>
           </div>
                 
           
