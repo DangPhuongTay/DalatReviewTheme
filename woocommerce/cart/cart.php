@@ -13,7 +13,15 @@
  * @see     https://woo.com/document/template-structure/
  * @package WooCommerce\Templates
  * @version 7.9.0
- */
+ * 
+ */if(isset($_GET['removed_item']) && $_GET['removed_item']==1){
+	$url = wc_get_cart_url();
+	?>
+	<script>
+		 window.location= "<?php echo $url;?>";
+	</script>
+	<?php
+}
 // ?> 
    <section class="cart">
         <div class="cart__container">
@@ -147,6 +155,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 												$("[name='update_cart']").trigger("click");
 											});
 										})(jQuery);
+										
 									</script>
 								<button type="submit" style="display:none;margin-top: -5px;outline:none;padding: 7px 10px 5px 10px; border-radius: 10px;" class="button<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><ion-icon name="reload-outline"></ion-icon></button>
 
@@ -158,16 +167,16 @@ do_action( 'woocommerce_before_cart' ); ?>
 									
 								<td class="product-remove">
 								<?php
-    echo apply_filters( 
-        'woocommerce_cart_item_remove_link', 
-        sprintf( 
-            '<a href="%s" class="remove" title="%s">&times;</a>', 
-            esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), 
-            __( 'Remove this item', 'woocommerce' ) 
-        ), 
-        $cart_item_key 
-    );
-?>
+									echo apply_filters( 
+										'woocommerce_cart_item_remove_link', 
+										sprintf( 
+											'<a href="%s" class="remove" title="%s">&times;</a>', 
+											esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), 
+											__( 'Remove this item', 'woocommerce' ) 
+										), 
+										$cart_item_key 
+									);
+								?>
 						</td>
                                 </div>
                                 <div class="cart__container--top__left--list__item--bottom__price">

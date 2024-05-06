@@ -358,4 +358,16 @@ if (is_home() && $query->is_main_query ())
 $query->set ('post_type', array ('post','bannercontact'));
 return $query;
 }
+
+add_filter( 'woocommerce_get_remove_url', 'custom_item_remove_url', 10, 1 );
+function custom_item_remove_url( $remove_url ) {
+    $cart_page_url   = wc_get_page_permalink( 'cart' );
+    $replacement_url = wc_get_page_permalink( 'shop' ); // Shop page
+
+    // Change URL to shop page + remove Url query vars
+    $remove_url = str_replace($cart_page_url, $replacement_url, $remove_url);
+
+    return $remove_url;
+}
 ?>
+
