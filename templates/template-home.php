@@ -78,32 +78,24 @@ get_header(); ?>
                 <p>Vì sao bạn nên chọn Đà Lạt Review</p>
             </div>
             <div class="home__info--banner__container--list">
+            <?php 
+                    $args = array(
+                        'post_type' => 'bannerinf', 
+                        'post_status' => 'publish', 
+                    );
+                ?>
+                <?php $getposts = new WP_query($args); ?>
+                <?php global $wp_query; $wp_query->in_the_loop = true; ?>
+
+                <?php while ($getposts->have_posts()) : $getposts->the_post(); ?>
                 <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-3.png"
-                        alt="img">
-                    <p>Vô vàn lựa chọn</p>
-                    <span>Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn và nhiều trải nghiệm thú
-                        vị</span>
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'thumbnail'); ?>" alt="">
+                    <p><?php the_title(); ?></p>
+                    <span><?php the_content(); ?></span>
                 </div>
-                <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-2.png"
-                        alt="img">
-                    <p>Chơi vui, giá tốt</p>
-                    <span>Trải nghiệm chất lượng với giá tốt. Tích luỹ Klook credit để được thêm ưu đãi</span>
-                </div>
-                <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-1.png"
-                        alt="img">
-                    <p>Dễ dàng và tiện lợi</p>
-                    <span>Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn tha hồ khám phá</span>
-                </div>
-                <div class="home__info--banner__container--list__item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-info-banner-img-3.png"
-                        alt="img">
-                    <p>Đáng tin cậy</p>
-                    <span>Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành cùng bạn mọi lúc, mọi
-                        nơi</span>
-                </div>
+                <?php endwhile; wp_reset_postdata(); ?>
+
+
             </div>
         </div>
     </div>

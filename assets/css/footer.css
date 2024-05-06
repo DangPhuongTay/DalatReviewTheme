@@ -20,7 +20,6 @@
 }
 
 .footer__banner--title {
-    font-size: var(--size-text-6);
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -43,7 +42,17 @@
 .footer__map{
     border-radius: 20px;
 }
-
+.footer__listUnit{
+    padding-top: 3px;
+}
+.footer__listUnit li p a{
+    font-size: var(--size-text-5);
+    color: var(--color-text-2) !important;
+}
+.footer__banner--title .footer__banner--content .footer__listUnit li  a{
+    font-size: var(--size-text-5);
+    color: var(--color-text-2) !important;
+}
 @media only screen and (max-width: 1240px) {
     .layout__footerBanner--wrapper {
         padding: 0 30px;
@@ -51,6 +60,18 @@
 
     .footer__listUnit li p {
         font-size: var(--size-text-5);
+        color: var(--color-text-2) !important;
+    }
+    .footer__listUnit li p a{
+        font-size: var(--size-text-5);
+        color: var(--color-text-2) !important;
+    }
+    .footer__banner--title .footer__banner--content .footer__listUnit li  a{
+        font-size: var(--size-text-5);
+        color: var(--color-text-2) !important;
+    }
+    .footer__banner--title .footer__banner--content .footer__listUnit li{
+        height: auto;
     }
 }
 

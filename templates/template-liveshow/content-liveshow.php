@@ -97,12 +97,14 @@ $available_variations = $product->get_available_variations();?>
                   $option_value = implode( ' | ', $option_value );
 
                   $output .= '<option  value="'.$variation['variation_id'].'">'.$option_value.'</option>';
+                  
               }
               $output .= '
                   </select>
               </div>';
-
+         
               echo $output;
+         
           }
           ?>
           <div class="liveshow__bottom--form">
@@ -111,7 +113,7 @@ $available_variations = $product->get_available_variations();?>
           </div>
           <button type="submit" class="add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>">Thêm vào giỏ hàng</button>
           </div>
-
+                
           
 
           </form>

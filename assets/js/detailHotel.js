@@ -18,25 +18,20 @@ function btnDetailHotelRate(){
 }
 function btnDetailHotelPrice(){
     detailHotelBody.classList.add('listDetailHotelPrice')
-    detailHotelBody.classList.add('detailHotelBlur')
 }
 function btnDetailHotelPrice2(){
     detailHotelBody.classList.add('listDetailHotelPrice2')
-    detailHotelBody.classList.add('detailHotelBlur')
 }
 function btnDetailHotelSlides() {
-    detailHotelBody.classList.add('listDetailHotelSlides');
-    detailHotelBody.classList.add('detailHotelBlur');
+    detailHotelBody.classList.add('listDetailHotelSlides')
 }
 
 
 btnDetailHotelSevice.addEventListener('click', ()=>{
     detailHotelBody.classList.add('listDetailHotelSevice')
-    detailHotelBody.classList.add('detailHotelBlur')
 })
 btnDetailHotelSevice2.addEventListener('click', ()=>{
     detailHotelBody.classList.add('listDetailHotelSevice2')
-    detailHotelBody.classList.add('detailHotelBlur')
 })
 function btnDetailHotelRoom(){
     detailHotelBody.classList.toggle('listDetailHotelRoom')

@@ -4,7 +4,7 @@
     Creact at: 5/2/2024
     Update at: 5/2/2024
 ============================================== */
-
+/* 
 input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
@@ -14,7 +14,7 @@ input[type="number"] {
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-  }
+  } */
   
   .number-input {
     /* border: 1px solid #ddd; */

@@ -13,7 +13,7 @@
     width: 100%;
     max-width: 1060px;
     margin: 0 auto;
-    padding: 30px 0;
+
 }
 
 .detail__car--container__header::before {
@@ -26,12 +26,17 @@
     background: var(--color-background-7);
 
 }
-
+.detail__car--info__body img {
+    margin: 20px 0;
+}
 .detail__car--container__header {
     position: relative;
     font-size: var(--size-text-6);
     font-weight: 500;
     margin-bottom: 20px;
+}
+.detail__car--info__body--img .fourProductList__wrapper--img img{
+    margin: 0;
 }
 
 .detail__car--container__list {
@@ -48,6 +53,7 @@
     padding: 10px;
     border-radius: var(--border-radius-size-5);
     border: 1px solid var(--color-text-3);
+    min-height: 400px;
     /* scroll-snap-align: start;
     width: 100%; */
 }
@@ -100,13 +106,8 @@
     color: var(--color-text-6);
     cursor: pointer;
 }
-
-.detail__car--container__item--select {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 15px;
+.detail__car--info__body--img .fourProductList__wrapper--item{
+    min-width: 250px;
 }
 
 .detail__car--info {
@@ -181,6 +182,7 @@
     align-items: center;
     overflow: auto;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .detail__car--info__body--img .woocommerce-product-gallery__image {
@@ -279,8 +281,11 @@
     gap: 10px;
 }
 
-.detail__car--info__body img {
-    margin: 20px 0;
+.detail__car--info__body--img .fourProductList__wrapper--price__info{
+    margin-bottom: 10px;
+}
+.detail__car--info__body--img .woocommerce-Price-amount bdi{
+   color: var(--color-background-7);
 }
 
 .detail__car--info__body--desc__text {
@@ -326,13 +331,16 @@
     font-weight: 500;
 }
 
+
 .detail__car--container__top--des img {
     width: 100%;
     height: 50vh;
     object-fit: cover;
     border-radius: var(--border-radius-size-3);
 }
-
+.detail__car--container__top--des p {
+    margin-bottom: 10px !important;
+}
 .detail__car--container__top--des img,
 .detail__car--container__top--des p,
 .detail__car--container__top--contact,
@@ -446,7 +454,6 @@ body.InfoCarForm {
     .detail__car--container__item--img {
         width: 100%;
     }
-
     .detail__car--container__item--text {
         gap: 2px;
     }
