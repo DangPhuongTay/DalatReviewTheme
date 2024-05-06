@@ -169,8 +169,8 @@ if (have_posts()) {
                 
                                     <?php
                 
-                get_template_part('templates/template-tour/tour', 'services');
-                ?>
+                                get_template_part('templates/template-tour/tour', 'services');
+                                ?>  
                                         
                                     </div>
                                 </div>

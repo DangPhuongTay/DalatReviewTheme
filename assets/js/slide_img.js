@@ -1,6 +1,10 @@
-const urlindex = window.location.href;
+
+
 let img = location.hash.slice(1);
 let slideIndex = img;
+
+
+
 const imghotels = document.querySelectorAll('.image_empty .mySlides');
 document.addEventListener('keydown', function(event) {
   if (event.key === "Escape" || event.key === "Esc") {
@@ -57,6 +61,7 @@ window.addEventListener('touchend', function(event) {
   // Lấy vị trí của ngón tay khi bắt đầu lướt
   imageToHide.style.margin = '0px';
 });
+ ThanhTinhHt
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -83,6 +88,10 @@ function currentSlide(n) {
       slideIndex= slideIndex - n;
       console.log(slideIndex)
     }
+  
+
+
+
 }
 
 function showSlides(n) {
@@ -98,8 +107,9 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
 function closeSlides() {
   location.hash = '';
   img = 0;
@@ -107,6 +117,7 @@ function closeSlides() {
   headerBody.classList.remove('listDetailHotelSlides');
   headerBody.classList.remove('detailHotelBlur');
 }
+
 
 function showImage(index) {
   slideIndex = index;
@@ -124,3 +135,5 @@ tourImages.forEach((image, index) => {
     showImage(index+1); 
   });
 });
+
+
