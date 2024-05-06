@@ -101,7 +101,3 @@ setInterval(changeSlideAutomatically, 2000);
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var currentURL = window.location.href;
-  alert("URL của trang hiện tại: " + currentURL);
-});
