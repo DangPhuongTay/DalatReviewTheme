@@ -7,12 +7,13 @@ if (count($available_variations) > 0) {
 
     foreach ($available_variations as $variation) {
         ?>
-        <div class="detailTour__services--body__list--wrap">
+        <div class="detailTour__services--body__list--wrap shadow">
             <form class="variations_form"
                 action="<?php echo esc_url(apply_filters('woocommerce_loop_add_to_cart_link', $product->get_permalink())); ?>"
                 method="get" enctype='multipart/form-data' data-product_id="<?php echo absint($product->get_id()); ?>"
                 data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
                 <div class="detailTour__services--body__list--wrap__item">
+                    
                     <div class="detailTour__services--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
                         <div class="detailTour__services--body__list--wrap__item--left__img">
 
