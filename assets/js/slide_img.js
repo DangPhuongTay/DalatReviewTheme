@@ -34,10 +34,6 @@ function currentSlide(n) {
       slideIndex= slideIndex - n;
       console.log(slideIndex)
     }
-  
-
-
-
 }
 
 function showSlides(n) {
