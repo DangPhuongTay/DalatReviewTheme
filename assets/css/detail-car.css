@@ -325,7 +325,20 @@
 .detail__car--container__top {
     width: 100%;
 }
-
+.detail__car--info__body--img .fourProductList__wrapper--info__tag{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.detail__car--info__body--img .fourProductList__wrapper--info__description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+    font-size: var(--size-text-5);
+    line-height: 1.5;
+    font-weight: 600;
+}
 .detail__car--container__top--contact span:nth-child(1),
 .detail__car--container__top--address span:nth-child(1) {
     font-weight: 500;

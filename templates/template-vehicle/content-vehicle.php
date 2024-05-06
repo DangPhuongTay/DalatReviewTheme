@@ -96,21 +96,33 @@ if (have_posts()) {
                                                     </div>
                                                     
                                                     <div class="fourProductList__wrapper--info__tag">
-                                                        Thời gian :
-                                                    <?php 
-                                                            foreach ($variation['attributes'] as $attribute => $term_slug) {
-                                                                $taxonomy = 'pa_thoi-gian';
-                                                                $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
-                                                                echo '<p>'. $term_name . '</p>';
+                                                    <?php
+                                                        $counter = 0;
 
+                                                        foreach ($variation['attributes'] as $attribute => $term_slug) {
+                                                            $taxonomy = str_replace('attribute_', '', $attribute);
+                                                            $attribute_name = get_taxonomy($taxonomy)->labels->singular_name;
+                                                            $term_name = get_term_by('slug', $term_slug, $taxonomy)->name;
+
+                                                            echo '<p>' . $attribute_name . ': ' . $term_name . '</p>';
+
+                                                            $counter++; 
+
+                                                            
+                                                            if ($counter == 3) {
+                                                                break;
                                                             }
-                                                        
+                                                        }
                                                         ?>
+
                                                     </div>
-                                                    <div class="fourProductList__wrapper--info__tag">
-                                                        Mô tả : 
-                                                        <?php echo $variation['variation_description']; ?>
+                                                    <div class="fourProductList__wrapper--info__description">
+                                                        <span>Mô tả</span>  
+                                                         <ion-icon name="chevron-forward-outline"></ion-icon>
                                                     </div>
+                                                    <div class="text__overflow--main">
+                                                            <?php echo $variation['variation_description']; ?>
+                                                        </div>
                                                 </div>
                                                 <div class="fourProductList__wrapper--price">
                                                     <div class="fourProductList__wrapper--price__info">

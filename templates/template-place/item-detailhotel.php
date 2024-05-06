@@ -125,7 +125,7 @@ if (count($available_variations) > 0) {
                                             <span>Mô tả</span>
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </div>
-                                        <div>
+                                        <div class="text__overflow--main">
                                             <?php echo $variation['variation_description']; ?>
                                         </div>
                                     </div>
