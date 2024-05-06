@@ -137,13 +137,14 @@ if (have_posts()) {
                                             </div>
                                             <div>
                                                 <button type="submit"
-                                                    class="add_to_cart_button firstBtn button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+                                                    class="add_to_cart_button firstBtn button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>">Đặt</button>
                                             </div>
                                                 </div>
                                             </div>
                                         
                                     </div>
                                 </form>
+                                
                                 <?php
                             }
                         }
