@@ -1,7 +1,31 @@
 let slideIndex = parseInt(location.hash.slice(1)) || 1;
 
 const imghotels = document.querySelectorAll('.image_empty .mySlides');
+var imageToHide = document.querySelector('.image_empty'); // Thay 'imageId' bằng id của ảnh hoặc phần tử bạn muốn ẩn
+imageToHide.style.padding = '0px';
+// Xử lý sự kiện khi lướt trên thiết bị di động
+window.addEventListener('touchmove', function(event) {
+    // Kiểm tra nếu người dùng đang lướt xuống
+    var distant = 300;
+   var pixel =  event.touches[0].clientY - startY;
+        console.log(pixel);
+        imageToHide.style.marginTop = (pixel/2)+'px';
+    if((pixel/2) > distant  || (pixel/2) < - distant){
+      closeSlides();
+    }
 
+});
+
+// Lưu vị trí ban đầu của ngón tay
+var startY;
+window.addEventListener('touchstart', function(event) {
+    // Lấy vị trí của ngón tay khi bắt đầu lướt
+    startY = event.touches[0].clientY;
+});
+window.addEventListener('touchend', function(event) {
+  // Lấy vị trí của ngón tay khi bắt đầu lướt
+  imageToHide.style.margin = '0px';
+});
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -31,7 +55,6 @@ function closeSlides() {
 function showImage(index) {
   slideIndex = index;
   showSlides(slideIndex);
-  updateHash();
 }
 
 const tourImages = document.querySelectorAll('.detail__tour--img .detail__tour--slide');
