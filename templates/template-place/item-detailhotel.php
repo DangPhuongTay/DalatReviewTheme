@@ -125,7 +125,7 @@ if (count($available_variations) > 0) {
                                             <span>Mô tả</span>
                                             <ion-icon name="chevron-forward-outline"></ion-icon>
                                         </div>
-                                        <div>
+                                        <div class="text__overflow--main">
                                             <?php echo $variation['variation_description']; ?>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@ if (count($available_variations) > 0) {
                                             </div>
                                             <div>
                                                 <button type="submit"
-                                                    class="add_to_cart_button firstBtn button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>"><?php echo esc_html($product->single_add_to_cart_text()); ?></button>
+                                                    class="add_to_cart_button firstBtn button alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>">Đặt</button>
                                             </div>
                                         </div>
                                     </div>

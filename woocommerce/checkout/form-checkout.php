@@ -23,8 +23,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $checkout = WC()->checkout();
 do_action( 'woocommerce_before_checkout_form', $checkout );
+?>
+<script>
+	
+	function clearback(){
+		var url =  window.location.href;
+		window.location.replace(url);
+	}
 
-
+	//  alert(url)
+</script>
+<?php
+	
 
 ?>
 
