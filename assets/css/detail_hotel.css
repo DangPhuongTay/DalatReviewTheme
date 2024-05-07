@@ -557,9 +557,7 @@
     margin-right: 5px;
 }
 
-.detailHotel__list--body__list--wrap__item--right {
-  
-}
+
 
 .detailHotel__list--body__list--wrap__item--right__header {
     display: flex;
@@ -1501,7 +1499,7 @@ body.MapCarForm {
         display: block !important;
     }
     .detailHotel__list--body__list--wrap__item--left__popular--name p{
-        font-size: 18px;
+        font-size: 15px;
         text-transform: capitalize;
         font-weight: 600;
     }
@@ -1601,6 +1599,7 @@ body.MapCarForm {
         font-weight: 600;
         margin-left: 5px;
     }
+    
 
     .detailHotel__list--body__list--wrap__item--left__popular--platform__wrap {
         display: flex;
