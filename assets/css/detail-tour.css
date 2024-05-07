@@ -1422,7 +1422,9 @@ body.sale__detail--tour {
         width: 100%;
         z-index: 1;
     }
-
+    .detail__tour--content__left{
+        padding: 0 14px;
+    }
     .detail__tour--container {
 
         padding: 32vh 10px 0px 10px;

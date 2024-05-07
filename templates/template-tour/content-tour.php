@@ -317,47 +317,7 @@ if (have_posts()) {
                     </div>
                 </div>
 
-                <!-- mobile -->
-
-                <div class="detailHotelMobile__slides">
-                    <div class="detailHotelMobile__slides--show">
-                        <div class="detailHotelMobile__slides--show__item">
-                             <?php
-
-                            $attachment_ids = $product->get_gallery_attachment_ids();
-                            $nubimg = 1;
-                            
-                            foreach( $attachment_ids as $attachment_id ) {
-
-                                $nameimg = 'img'.$nubimg;
-                                $image_link =wp_get_attachment_url( $attachment_id );
-                                //Get image show by tag <img> 
-                                echo '<img class="thumb '.$nameimg.'" src="' . $image_link . '">';
-                                $nubimg++; 
-                            }
-                            ?>
-                             <?php
-                            for($i = 1; $i <= count($attachment_ids); $i++){
-                                ?><script>
-                                    const btnimg<?php echo $i; ?> = document.querySelector(`.img<?php echo $i; ?>` );
-
-                                    btnimg<?php echo $i; ?>.addEventListener('click', ()=>{
-                                    slideIndex = <?php echo $i; ?>;
-                                    location.hash = '#'+slideIndex;
-                                    img = slideIndex;
-                                    detailHotelBody.classList.add('listDetailHotelSlides')
-                                    detailHotelBody.classList.add('detailHotelBlur')
-                                    console.log(slideIndex);
-                                    showSlides(slideIndex);
-                                    })
-                                    </script>
-                                <?php
-                            }
-                        ?>
-                        </div>
-                    </div>
-                </div>
-                <!-- end -->
+              
            </div>
             <div class="detail__tour--content__left--related">
                 <div class="fourProductList__wrapper">
