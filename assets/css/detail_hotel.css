@@ -466,6 +466,7 @@
     background-color: var(--color-background-12);
     margin-top: 20px;
     padding: 20px;
+    border-radius: 12px;
 }
 
 .detailHotel__list--body__list--wrap__name {
@@ -487,7 +488,7 @@
 .detailHotel__list--body__list--wrap__item--left {
     flex: 30%;
     padding: 0 10px;
-    min-height: 300px;
+    max-height: 300px;
 }
 
 .detailHotel__list--body__list--wrap__item--left__img {
