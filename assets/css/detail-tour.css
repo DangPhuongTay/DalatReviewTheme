@@ -942,12 +942,13 @@ body.sale__detail--tour {
     margin-top: 20px;
     padding: 20px;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .detailTour__services--body__list--wrap__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+  
     max-height: 170px;
 }
 
@@ -1331,6 +1332,7 @@ body.sale__detail--tour {
     .detail__tour--content__left--option__item--info__price--left {
         width: 100%;
     }
+    
 
     .detail__tour--content__left--option__item--info__price--right {
         justify-content: space-between;
@@ -1396,14 +1398,120 @@ body.sale__detail--tour {
         font-weight: 600;
         padding: 0 10px 10px 10px;
     }
-
+    .detailTour__services--body__list--wrap__item--left { 
+        width: 30%;
+    }
     .detailTour__services--body__list--wrap__item--left__img {
         height: 100%;
 
     }
+    .detailTour__services--body__list--wrap__item--right__body--info__left {
+        padding: 0px 0 0 20px;}
+        
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 700px) {
+    .detail__tour--img {
+        margin: 0;
+        height: 30vh;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 0 !important;
+        overflow-x: scroll;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .detail__tour--container {
+
+        padding: 32vh 10px 0px 10px;
+    }
+
+    .detail__tour--container::before {
+        top: 28vh;
+        height: 31px;
+    }
+
+    .detail__tour--header__title {
+        padding: 0 6px;
+    }
+
+    .detail__tour--content {
+        margin-top: 50px;
+    }
+
+    /* img  */
+    .detailTour__services--body__list--wrap__item--left {
+        width: 50%;
+        border-radius: 5px;
+    }
+
+    .detailTour__services--body__list--wrap__item--left__wrapper img {
+        border-radius: unset;
+    }
+
+    /*  */
+    .detailTour__services--body__list--wrap {
+        margin: 20px 17px;
+        padding: 0px;
+        border-radius: 17px
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info {
+
+        flex-direction: column;
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info__left {
+        padding: 15px 0 0 15px;
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info__left--name {
+        text-transform: capitalize;
+        font-size: var(--size-text-4);
+    }
+    .detailTour__services--body__list--wrap__item--right__body--info__left--rate {
+        font-size: 12px;
+    }
+    .detailTour__services--body__list--wrap__item--right__body--info__right {
+        padding: 0;
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price {
+        margin: 0;
+        flex-direction: row;
+        gap:40px
+    }
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__part{
+        padding: 0;
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom{
+        width: fit-content;
+        padding: 0 10px 10px 0;
+    }
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom div button{
+        padding: 5px 6px;
+    }
+    
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__part--desc {
+        font-size: var(--size-text-3);
+        margin-top: 0;
+    }
+
+    .quantity input {
+        display: none;
+    }
+
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom button {
+        font-size: var(--size-text-4);
+        padding: 6px 5px;
+        border-radius: var(--border-radius-size-1);
+    }
+}
+
+@media only screen and (max-width: 450px) {
     .detail__tour--img {
         margin: 0;
         height: 30vh;
@@ -1479,7 +1587,7 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom{
-        width: fit-content;
+        width: inherit;
         padding: 0 10px 10px 0;
     }
     .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom div button{
