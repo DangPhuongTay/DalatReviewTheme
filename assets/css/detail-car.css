@@ -362,6 +362,9 @@
     color: var(--color-text-1);
     padding-bottom: 5px;
 }
+.fourProductList__wrapper--price .quantity input {
+    padding: 15px;
+}
 
 body.InfoCarForm .detail__car--info {
     display: block;
