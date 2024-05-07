@@ -1778,9 +1778,7 @@ body.MapCarForm {
     Creact at: 23/2/2024
 ============================================== */
 
-    body.listDetailHotelRoom .detailHotel__list--body__list--wrap__item--right {
-        display: block;
-    }
+
 
     .detailHotel__list--body__list--wrap__item--right {
         display: none;

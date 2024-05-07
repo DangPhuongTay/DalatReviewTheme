@@ -4,9 +4,21 @@ $available_variations = $product->get_available_variations(); ?>
 
 <?php
 if (count($available_variations) > 0) {
+    $name_js =1;
+    $string_name= '__item';
+    ?>
 
+    <?php
     foreach ($available_variations as $variation) {
         ?>
+            <style>
+        .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+        display: none;
+    }
+        body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+        display: block;
+    }
+    </style>
             <div class="detailHotel__list--body__list--wrap">
                 <form class="variations_form"
                     action="<?php echo esc_url(apply_filters('woocommerce_loop_add_to_cart_link', $product->get_permalink())); ?>"
@@ -26,7 +38,7 @@ if (count($available_variations) > 0) {
 
                     </div>
                 <div class="detailHotel__list--body__list--wrap__item">
-                    <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
+                    <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom<?php echo $name_js;?>()">
                         <div class="detailHotel__list--body__list--wrap__item--left__img">
                             
                                     <?php echo "<img src=" . $variation['image']['url'] . ">"; ?>
@@ -88,7 +100,7 @@ if (count($available_variations) > 0) {
                             ?>
                         </div> -->
                     </div>
-                    <div class="detailHotel__list--body__list--wrap__item--right">
+                    <div class="detailHotel__list--body__list--wrap__item--right<?php echo $string_name.$name_js;?>">
                         <div class="detailHotel__list--body__list--wrap__item--right__header">
                             <div>Đề xuất cho bạn</div>
                             <div>Giá</div>
@@ -163,45 +175,49 @@ if (count($available_variations) > 0) {
                 
             </form>
             </div>
-
-
+            <script> 
+            const detailHotelBody<?php echo $name_js;?> = document.querySelector('body');
+            function btnDetailHotelRoom<?php echo $name_js;?>(){
+                        detailHotelBody<?php echo $name_js;?>.classList.toggle('listDetailHotelRoom<?php echo $name_js;?>');
+                    }                               
+            </script>
         <?php
-
+        $name_js++;
     }
 
 }
 ?>
 <script>
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
-jQuery('.quantity').each(function() {
-  var spinner = jQuery(this),
-    input = spinner.find('input[type="number"]'),
-    btnUp = spinner.find('.quantity-up'),
-    btnDown = spinner.find('.quantity-down'),
-    min = input.attr('min'),
-    max = input.attr('max');
+    jQuery('.quantity').each(function() {
+    var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
 
-  btnUp.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue >= max) {
-      var newVal = oldValue;
-    } else {
-      var newVal = oldValue + 1;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
+    btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+        var newVal = oldValue;
+        } else {
+        var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+    });
 
-  btnDown.click(function() {
-    var oldValue = parseFloat(input.val());
-    if (oldValue <= min) {
-      var newVal = oldValue;
-    } else {
-      var newVal = oldValue - 1;
-    }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
+    btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+        var newVal = oldValue;
+        } else {
+        var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+    });
 
-});
+    });
     </script>
