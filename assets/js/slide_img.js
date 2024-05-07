@@ -5,19 +5,15 @@ const imghotels = document.querySelectorAll('.image_empty .mySlides');
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
-  updateHash();
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(n);
-  slideIndex = n;
-  updateHash();
+  showSlides(slideIndex-=n);
+
 }
 
-function updateHash() {
-  location.hash = '#' + slideIndex;
-}
+
 
 function showSlides(n) {
   let i;
@@ -31,8 +27,6 @@ function showSlides(n) {
 }
 
 function closeSlides() {
-  window.location.replace(initialProductPage);
-  img = 0;
   headerBody.classList.remove('slider__detail--tour');
   headerBody.classList.remove('listDetailHotelSlides');
   headerBody.classList.remove('detailHotelBlur');
