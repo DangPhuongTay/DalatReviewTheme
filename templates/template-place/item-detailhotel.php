@@ -11,13 +11,28 @@ if (count($available_variations) > 0) {
     <?php
     foreach ($available_variations as $variation) {
         ?>
-            <style>
-        .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
-        display: none;
-    }
-        body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
-        display: block;
-    }
+        <style>
+         
+                .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?>{
+                  
+                    width: calc(100% - 316px);
+                    display: flex;
+                    align-self: stretch;
+                    flex-direction: column;
+                    background-color: var(--color-background-6);
+                }
+            
+            @media (max-width: 800px) {
+                .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+                    display: none;
+                    width: 100%;
+                }
+                    body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+                    display: block;
+                    transition: all ease-in .3s;
+                }
+            }
+        
     </style>
             <div class="detailHotel__list--body__list--wrap">
                 <form class="variations_form"
@@ -39,10 +54,8 @@ if (count($available_variations) > 0) {
                     </div>
                 <div class="detailHotel__list--body__list--wrap__item">
                     <div class="detailHotel__list--body__list--wrap__item--left" onclick="btnDetailHotelRoom<?php echo $name_js;?>()">
-                        <div class="detailHotel__list--body__list--wrap__item--left__img">
-                            
+                        <div class="detailHotel__list--body__list--wrap__item--left__img">     
                                     <?php echo "<img src=" . $variation['image']['url'] . ">"; ?>
-
                         </div>
                         <div class="detailHotel__list--body__list--wrap__item--left__popular">
                             <div class="detailHotel__list--body__list--wrap__item--left__popular--name">
