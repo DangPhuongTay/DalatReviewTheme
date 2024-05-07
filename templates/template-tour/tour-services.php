@@ -13,12 +13,13 @@ if (count($available_variations) > 0) {
                 method="get" enctype='multipart/form-data' data-product_id="<?php echo absint($product->get_id()); ?>"
                 data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
                 <div class="detailTour__services--body__list--wrap__item">
-                    
                     <div class="detailTour__services--body__list--wrap__item--left" onclick="btnDetailHotelRoom()">
-                        <div class="detailTour__services--body__list--wrap__item--left__img">
-
+                    <div class="detailTour__services--body__list--wrap__item--left__wrapper">
+                    <?php echo "<img src=" . $variation['image']['url'] . ">"; ?>    
+                    </div>
+                  
+                    <div class="detailTour__services--body__list--wrap__item--left__img">
                             <?php echo "<img src=" . $variation['image']['url'] . ">"; ?>
-
                         </div>
                         
                     </div>
