@@ -100,3 +100,14 @@ const changeSlideAutomatically = () => {
 setInterval(changeSlideAutomatically, 2000);
 
 
+if (window.location.hash === "#") {
+  // Chuyển hướng trang về trang mặc định, chẳng hạn "/"
+  window.location.href = "/";
+}
+else if (document.referrer !== "") {
+  // Chuyển hướng trang hiện tại về trang nguồn
+  window.location.href = document.referrer;
+} else {
+  // Nếu không có trang nguồn, thực hiện hành động khác, chẳng hạn chuyển về trang chính
+  window.location.href = "/";
+}
