@@ -16,6 +16,7 @@ window.addEventListener('touchmove', function(event) {
 
 });
 
+
 // Lưu vị trí ban đầu của ngón tay
 var startY;
 window.addEventListener('touchstart', function(event) {
