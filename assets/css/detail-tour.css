@@ -1024,31 +1024,37 @@ body.sale__detail--tour {
 }
 
 .detailTour__services--body__list--wrap__item--right__body--info {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
+   
 }
 
 .detailTour__services--body__list--wrap__item--right__body--info__left {
-    padding: 16px 16px 48px 20px;
+  display: flex;
+}
+.detailTour__services--body__list--wrap__item--right__body--info__left--container{
+    padding: 16px 16px 0px 20px;
     flex: 1;
 }
 
 .detailTour__services--body__list--wrap__item--right__body--info__left--name {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: space-between;
     font-size: var(--size-text-5);
     line-height: 1.5;
     font-weight: 600;
-
 }
-
-.detailTour__services--body__list--wrap__item--right__body--info__left--rate {}
+.detailTour__services--body__list--wrap__item--right__body--info__left--name__bottom{
+    display: flex;
+    flex-direction: row;
+}
+.detailTour__services--body__list--wrap__item--right__body--info__left--rate {
+    padding-bottom: 10px;
+}
 
 .detailTour__services--body__list--wrap__item--right__body--info__right {
     align-self: flex-end;
-    padding: 40px 20px 20px 0;
+    padding: 0;
 }
 
 .detailTour__services--body__list--wrap__item--right__body--info__right--price {
@@ -1059,6 +1065,7 @@ body.sale__detail--tour {
     overflow: hidden;
     margin-left: 16px;
     cursor: pointer;
+    padding-bottom: 20px;
 }
 
 .detailTour__services--body__list--wrap__item--right__body--info__right--price__part {
@@ -1502,7 +1509,7 @@ body.sale__detail--tour {
         margin-top: 0;
     }
 
-    .quantity input {
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom .quantity input {
         display: none;
     }
 
@@ -1557,7 +1564,7 @@ body.sale__detail--tour {
     /*  */
     .detailTour__services--body__list--wrap {
         padding: 0px;
-        border-radius: 6px
+        border-radius: 15px
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info {
@@ -1566,7 +1573,8 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__left {
-        padding: 0 0 0 15px;
+        padding:0;
+        flex-direction: column;
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__left--name {
@@ -1574,10 +1582,11 @@ body.sale__detail--tour {
         font-size: var(--size-text-2);
     }
     .detailTour__services--body__list--wrap__item--right__body--info__left--rate {
-        font-size: 8px;
+        font-size: 10px;
     }
     .detailTour__services--body__list--wrap__item--right__body--info__right {
         padding: 0;
+      
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price {

@@ -6,13 +6,11 @@ const btnLeft = document.querySelector('.home__slider--btn__left');
 const btnRight = document.querySelector('.home__slider--btn__right');
 const lenght = imgs.length;
 
-
-
 let current = 0;
 
 
 const handleChangeSlide = () =>{
-    if(current == lenght - 1){
+    if(current == lenght - 3){
         current = 0;
         let width = imgs[0].offsetWidth;
         ListImage.style.transform = `translateX(0px)`;

@@ -8,7 +8,8 @@
                             <div class="header__top--left__hamburger--box">
                             </div>
                         </div>
-                        <a href="http://localhost/wordpress"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-logo.png" alt="" class="header__top--left__logo"></a>
+
+                        <a href="<?php echo home_url( ); ?>"> <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo_Congty.png" alt="" class="header__top--left__logo"></a>
                         <div class="header__top--left__namewebsite">Đà Lạt Review Tất Tần Tật</div>
                         <div class="header__top--left__search">
                             <?php wc_get_template('templates/template-search/searchform.php'); ?>

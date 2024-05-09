@@ -369,5 +369,6 @@ function custom_item_remove_url( $remove_url ) {
 
     return $remove_url;
 }
+
 ?>
 

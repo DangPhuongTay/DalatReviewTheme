@@ -40,7 +40,9 @@
     font-weight: lighter;
 }
 .footer__map{
-    border-radius: 20px;
+    border: unset;
+    outline: unset;
+    /* border-radius: 20px; */
 }
 .footer__listUnit{
     padding-top: 3px;
@@ -131,6 +133,9 @@
     }
     .layout__footerBanner--wrapper{
         padding: 0;
+    }
+    .footer__layout--desktop {
+        padding-bottom: 60px;
     }
 }
 @media only screen and (max-width: 250px) {

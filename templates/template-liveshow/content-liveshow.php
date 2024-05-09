@@ -82,7 +82,7 @@ $available_variations = $product->get_available_variations();?>
               $output = '<div class="product-variations-dropdown">
                   <select id="available-variations" class="selector" name="add-to-cart">';
                 
-              $output .= '<option  value="">'. __('Chọn loại vé') .'</option>';
+              $output .= '<option  value="'.$available_variations[0]['variation_id'].'">'. __('Chọn loại vé') .'</option>';
 
               foreach( $available_variations as $variation ){
                   $option_value = array();

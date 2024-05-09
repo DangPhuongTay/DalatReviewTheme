@@ -6,7 +6,7 @@ imageToHide.style.padding = '0px';
 // Xử lý sự kiện khi lướt trên thiết bị di động
 window.addEventListener('touchmove', function(event) {
     // Kiểm tra nếu người dùng đang lướt xuống
-    var distant = 300;
+    var distant = 120;
    var pixel =  event.touches[0].clientY - startY;
         console.log(pixel);
         imageToHide.style.marginTop = (pixel/2)+'px';
@@ -15,6 +15,7 @@ window.addEventListener('touchmove', function(event) {
     }
 
 });
+
 
 // Lưu vị trí ban đầu của ngón tay
 var startY;
@@ -25,6 +26,7 @@ window.addEventListener('touchstart', function(event) {
 window.addEventListener('touchend', function(event) {
   // Lấy vị trí của ngón tay khi bắt đầu lướt
   imageToHide.style.margin = '0px';
+  
 });
 // Next/previous controls
 function plusSlides(n) {
