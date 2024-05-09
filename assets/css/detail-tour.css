@@ -1610,9 +1610,7 @@ body.sale__detail--tour {
         margin-top: 0;
     }
 
-    .quantity input {
-        display: none;
-    }
+
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom button {
         font-size: var(--size-text-1);

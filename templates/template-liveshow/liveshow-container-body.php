@@ -92,7 +92,7 @@
                             foreach ($sub_cats as $sub_category) { ?>
 
                             <div class="liveshow__container--body__menu--item">
-                            <a href="<?php echo home_url(); ?>/<?php echo $sub_category->slug ?>" class="cart__container--top__left--all__left--check">
+                            <a href="<?php echo home_url(); ?>/<?php echo $sub_category->slug ?>/" class="cart__container--top__left--all__left--check">
                                         <?php echo $sub_category->name ?>
 
                                     </a>
@@ -138,7 +138,7 @@
                 foreach ($all_categories as $cat) {
                     if ( $cat->term_id != 24 ) { ?>
                         <div class="liveshow__container--body__menu--item" onclick="btnLiveshowSub()"> 
-                            <div class="cart__container--top__left--all__left--check"><a href="<?php echo home_url(); ?>/<?php echo $cat->slug ?>"><?php echo $cat->name ?></a></div>
+                            <div class="cart__container--top__left--all__left--check"><a href="<?php echo home_url(); ?>/<?php echo $cat->slug ?>/"><?php echo $cat->name ?></a></div>
                         </div>
                         
                         <?php

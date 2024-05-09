@@ -16,7 +16,6 @@
  */
 ?>
     <section class="checkouttour">
-
 <?php
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;coupon;

@@ -495,4 +495,7 @@ body.listDetailLiveShowPopup {
     .detail__liveshow--content .variations_form.cart{
         gap: 5px;
     }
+    .detail__liveshow .quantity input {
+        width: 70px;
+    }
 }
