@@ -558,11 +558,7 @@
 }
 
 .detailHotel__list--body__list--wrap__item--right {
-    width: calc(100% - 316px);
-    display: flex;
-    align-self: stretch;
-    flex-direction: column;
-    background-color: var(--color-background-6);
+  
 }
 
 .detailHotel__list--body__list--wrap__item--right__header {
@@ -1782,10 +1778,7 @@ body.MapCarForm {
 
 
 
-    .detailHotel__list--body__list--wrap__item--right {
-        display: none;
-        transition: all ease-in .3s;
-    }
+ 
 
     .detailHotel__list--body__list--wrap__item--right__body--info {
         display: block;
