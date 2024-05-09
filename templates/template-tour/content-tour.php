@@ -5,7 +5,7 @@ if (have_posts()) {
         the_post();
         ?>
         <?php global $product;
- ?>
+        ?>
 
 
         <div class="slide__img--box">
@@ -78,7 +78,7 @@ if (have_posts()) {
                     </div>
                     <div class="detail__tour--header__info">
                         <ion-icon name="location-outline"></ion-icon>
-                       
+
                     </div>
                 </div>
 
@@ -163,20 +163,20 @@ if (have_posts()) {
 
                     <!-- ------------------------------------------------------------------------ -->
                 </div>
-                               <!-- ----------------------------------Start banner type services------------------------------------------------------ -->
-                            <div class="detail__tour--content">
-                                    <div class="detail__tour--content__left detail__tour--services__left">
-                
-                                    <?php
-                
-                                get_template_part('templates/template-tour/tour', 'services');
-                                ?>  
-                                        
-                                    </div>
-                                </div>
+                <!-- ----------------------------------Start banner type services------------------------------------------------------ -->
+                <div class="detail__tour--content">
+                    <div class="detail__tour--content__left detail__tour--services__left">
+
+                        <?php
+
+                        get_template_part('templates/template-tour/tour', 'services');
+                        ?>
+
+                    </div>
+                </div>
                 <!-- ===================================end================================================== -->
-  
-                
+
+
                 <div class="detail__tour--content">
                     <div class="detail__tour--content__left">
 
@@ -189,7 +189,7 @@ if (have_posts()) {
 
 
 
-                        
+
                         <div class="detail__tour--content__left--header">
                             Tiết kiệm hơn khi du lịch Đà Lạt
                         </div>
@@ -312,13 +312,13 @@ if (have_posts()) {
                     </div>
                     <div class="detail__tour--content__right">
                         <button class="detail__tour--content__right--btn__pc detail__tour--content__right--btn firstBtn">
-                          Chọn loại vé
+                            Chọn loại vé
                         </button>
                     </div>
                 </div>
 
-              
-           </div>
+
+            </div>
             <div class="detail__tour--content__left--related">
                 <div class="fourProductList__wrapper">
                     <?php
