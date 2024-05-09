@@ -388,14 +388,11 @@ input[type="number"] {
     .cart__container{
         padding:0 20px;
     }
-    .cart__container--top__left--list__item--top__info{
-      flex-wrap: wrap;
-    }
+ 
     .cart__container--top__left--list__item--top__info--text{
         width: 100%;
       }
     .cart__container--top__left--list__item--top{
-        flex-wrap: wrap;
         gap: 20px;
     }
     .cart__container--top__left--list__item--top__info{
@@ -473,5 +470,15 @@ input[type="number"] {
     .cart__container--top__left--list__item--top__info--text span a{
       font-size: var(--size-text-4);
       color: var(--color-background-2) !important;
+    }
+    .cart__container--top__right{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .cart__container--top__right .cart_totals{
+      width: 50% !important;
     }
   }

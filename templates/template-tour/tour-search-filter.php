@@ -120,7 +120,7 @@
                                                 echo ' <div class="fliter__category--content__box">';
                                                 foreach ($sub_cats as $sub_category) {
                                                     echo '<div class="fliter__category--content__box--item">
-                                                                <a href="' . home_url() . '/' . $sub_category->slug . '">' . $sub_category->name . '</a>
+                                                                <a href="' . home_url() . '/' . $sub_category->slug . '/">' . $sub_category->name . '</a>
                                                             </div>';
                                                 }
                                                 echo '</div>';

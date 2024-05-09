@@ -41,7 +41,7 @@
 
                         foreach ($sub_cats as $sub_category) { ?>
                             <div style="text-transform:uppercase;" class="motorbike__container--banner__box--item">
-                                <a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>"
+                                <a href="<?php echo home_url() ?>/<?php echo $sub_category->slug ?>/"
                                     class="cart__container--top__left--all__left--check"><?php echo $sub_category->name ?>
                                 </a>
                             </div>

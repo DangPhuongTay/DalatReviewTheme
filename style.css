@@ -603,7 +603,12 @@ body.active .primary__dropdown--content {
     margin: auto;
     width: 100%;
   }
-
+  .cart__container .firstProduct__content--list {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .firstProduct__content--list {
     padding: 0 20px;
     display: flex;
@@ -1007,17 +1012,17 @@ img{
   position: relative;
 }
 
-/* input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
+.home input[type=number]::-webkit-inner-spin-button,
+.home input[type=number]::-webkit-outer-spin-button
 {
   -webkit-appearance: none;
   margin: 0;
-} */
+} 
 
-/* input[type=number]
+.home input[type=number]
 {
   -moz-appearance: textfield;
-} */
+} 
 
 .quantity input {
   height: 42px;

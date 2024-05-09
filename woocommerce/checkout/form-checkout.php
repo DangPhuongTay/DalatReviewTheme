@@ -16,7 +16,6 @@
  */
 ?>
     <section class="checkouttour">
-
 <?php
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;coupon;
@@ -111,6 +110,10 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 	.woocommerce-billing-fields__field-wrapper .form-row .optional{
 		display:none;
 	}
+	.checkouttour .woocommerce-notices-wrapper .woocommerce-error{
+    padding: 45px 30px 0px 30px !important;
+	color: red;
+}
 </style>
 
 <?php  do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
