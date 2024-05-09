@@ -471,4 +471,14 @@ input[type="number"] {
       font-size: var(--size-text-4);
       color: var(--color-background-2) !important;
     }
+    .cart__container--top__right{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .cart__container--top__right .cart_totals{
+      width: 50% !important;
+    }
   }
