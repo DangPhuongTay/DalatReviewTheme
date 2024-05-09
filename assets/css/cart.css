@@ -388,14 +388,11 @@ input[type="number"] {
     .cart__container{
         padding:0 20px;
     }
-    .cart__container--top__left--list__item--top__info{
-      flex-wrap: wrap;
-    }
+ 
     .cart__container--top__left--list__item--top__info--text{
         width: 100%;
       }
     .cart__container--top__left--list__item--top{
-        flex-wrap: wrap;
         gap: 20px;
     }
     .cart__container--top__left--list__item--top__info{
