@@ -1521,7 +1521,7 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom .quantity input {
-        text-align: center;
+        text-align:start;
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom button {

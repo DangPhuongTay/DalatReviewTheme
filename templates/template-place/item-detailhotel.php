@@ -13,7 +13,7 @@ if (count($available_variations) > 0) {
         ?>
         <style>
          
-                .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?>{
+                .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?>{
                   
                     width: calc(100% - 316px);
                     display: flex;
@@ -23,11 +23,11 @@ if (count($available_variations) > 0) {
                 }
             
             @media (max-width: 800px) {
-                .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+                .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?> {
                     display: none;
                     width: 100%;
                 }
-                    body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+                    body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?> {
                     display: block;
                     transition: all ease-in .3s;
                 }
