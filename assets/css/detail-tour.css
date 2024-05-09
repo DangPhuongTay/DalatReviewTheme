@@ -1509,7 +1509,7 @@ body.sale__detail--tour {
         margin-top: 0;
     }
 
-    .quantity input {
+    .detailTour__services--body__list--wrap__item--right__body--info__right--price__bottom .quantity input {
         display: none;
     }
 
@@ -1564,7 +1564,7 @@ body.sale__detail--tour {
     /*  */
     .detailTour__services--body__list--wrap {
         padding: 0px;
-        border-radius: 6px
+        border-radius: 15px
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info {
@@ -1573,7 +1573,8 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__left {
-        padding: 0 0 0 15px;
+        padding:0;
+        flex-direction: column;
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__left--name {
@@ -1581,10 +1582,11 @@ body.sale__detail--tour {
         font-size: var(--size-text-2);
     }
     .detailTour__services--body__list--wrap__item--right__body--info__left--rate {
-        font-size: 8px;
+        font-size: 10px;
     }
     .detailTour__services--body__list--wrap__item--right__body--info__right {
         padding: 0;
+      
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info__right--price {
