@@ -102,7 +102,7 @@ get_header(); ?>
     <!-- home contact banner -->
     <?php wc_get_template('templates/template-home/home-contact.php'); ?>
     <!-- home product hot banner -->
-    <div class="home__product--banner">
+    <div class="home__product--banner__hot">
         <div class="home__product--banner__container">
             <div class="home__product--banner__container--header">
                 <p>Sản phẩm nổi bật</p>
