@@ -23,7 +23,7 @@
 	$url = wc_get_cart_url();
 	?>
 	<script>
-		window.history.go(-1);
+			location.href =  <?php echo $url;?>;
 	</script>
 	<?php
 }
