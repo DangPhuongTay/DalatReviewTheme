@@ -263,10 +263,6 @@ $available_variations = $product->get_available_variations();?>
                         <div class="detailHotel__list--body">
                             <p class="detailHotel__list--body__desc">Khám phá những lựa chọn tuyệt vời nhất. Mức giá hiển thị là
                                 mức giá cho mỗi phòng mỗi đêm bao gồm thuế phí</p>
-                  
-                            
-                           
-
                                 <div class="detailHotel__list--body__list">
                                     <?php
 
@@ -313,8 +309,6 @@ $available_variations = $product->get_available_variations();?>
                                             $comments = get_comments($args);
                                             wp_list_comments(array('callback' => 'woocommerce_comments'), $comments);
                                             ?>
-
-
                                         </div>
                                     </div>
                                 </div>
