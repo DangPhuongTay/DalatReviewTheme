@@ -381,7 +381,7 @@ body.chatBox .header__container--chat {
 
 .header__mobile--box {
     width: 100%;
-    height: 60vh;
+    height: 54vh;
     display: flex;
     align-items: start;
     justify-content: center;
