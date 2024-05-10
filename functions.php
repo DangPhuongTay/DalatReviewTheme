@@ -369,6 +369,51 @@ function custom_item_remove_url( $remove_url ) {
 
     return $remove_url;
 }
+function wpse_178112_permastruct_html( $post_type, $args ) {
+    if ( $post_type === 'product' )
+    add_permastruct( $post_type, "{$args->rewrite['slug']}/%$post_type%.html", $args->rewrite );
+  }
+  
+  add_action( 'registered_post_type', 'wpse_178112_permastruct_html', 10, 2 );
+  function na_remove_slug( $post_link, $post, $leavename ) {
+ 
+    if ( 'product' != $post->post_type || 'publish' != $post->post_status ) {
 
-?>
+    return $post_link;
+
+}
+
+    $post_link = str_replace( '/product/', '/', $post_link );
+
+    return $post_link;
+
+}
+
+add_filter( 'post_type_link', 'na_remove_slug', 10, 3 );
+
+function change_slug_struct( $query ) {
+
+    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+
+    return;
+
+}
+
+            if ( ! empty( $query->query['name'] ) ) {
+
+            $query->set( 'post_type', array( 'post', 'product', 'page' ) );
+
+            } elseif ( ! empty( $query->query['pagename'] ) && false === strpos( $query->query['pagename'], '/' ) ) {
+
+            $query->set( 'post_type', array( 'post', 'product', 'page' ) );
+
+    // We also need to set the name query var since redirect_guess_404_permalink() relies on it.
+
+    $query->set( 'name', $query->query['pagename'] );
+
+}
+
+}
+
+add_action( 'pre_get_posts', 'change_slug_struct', 99 );
 
