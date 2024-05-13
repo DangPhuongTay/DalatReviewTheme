@@ -263,7 +263,7 @@
     .hotelMobile__fitter {
       position: relative;
       z-index: 1004;
-      top: 25px;
+      top: 70px;
       padding: 12px 35px;
       background-color: var(--color-background-6);
       display: block;

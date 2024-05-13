@@ -239,10 +239,6 @@
   font-size: var(--size-text-7);
 }
 
-.hotel__right--price__info span:first-child {
-  font-size: var(--size-text-5);
-  text-decoration: underline;
-}
 
 .hotel__right--desc {
   font-size: var(--size-text-3);
