@@ -164,7 +164,10 @@
 
                 }
                 ?>
-
+         <li class="header__bottom--listlink__category1 "> 
+            <a href=" <?php echo home_url() ?>/blog/">
+                Tin tức
+            </a>
         </ul>
     </div>
 
