@@ -1476,7 +1476,7 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--right__body--info {
-
+        height: 100%;
         flex-direction: column;
     }
 
@@ -1569,7 +1569,7 @@ body.sale__detail--tour {
     }
 
     .detailTour__services--body__list--wrap__item--left__wrapper img {
-        border-radius: unset;
+      
     }
 
     /*  */
