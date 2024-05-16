@@ -78,9 +78,9 @@
                             }
                         }
                         ?>
-                        <div class="hotel__right--card__tag">
+                        <!-- <div class="hotel__right--card__tag">
                             <span>Lễ tân 24/24</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="hotel__right--booking">
                         <div class="hotel__right--booking__tag">
