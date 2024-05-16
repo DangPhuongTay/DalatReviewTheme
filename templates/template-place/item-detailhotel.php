@@ -11,29 +11,29 @@ if (count($available_variations) > 0) {
     <?php
     foreach ($available_variations as $variation) {
         ?>
-        <style>
+       <style>
          
-                .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?>{
-                  
-                    width: calc(100% - 316px);
-                    display: flex;
-                    align-self: stretch;
-                    flex-direction: column;
-                    background-color: var(--color-background-6);
-                }
-            
-            @media (max-width: 800px) {
-                .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?> {
-                    display: none;
-                    width: 100%;
-                }
-                    body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item <?php echo $name_js;?> {
-                    display: block;
-                    transition: all ease-in .3s;
-                }
-            }
-        
-    </style>
+         .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?>{
+           
+             width: calc(100% - 316px);
+             display: flex;
+             align-self: stretch;
+             flex-direction: column;
+             background-color: var(--color-background-6);
+         }
+     
+     @media (max-width: 800px) {
+         .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+             display: none;
+             width: 100%;
+         }
+             body.listDetailHotelRoom<?php echo $name_js;?> .detailHotel__list--body__list--wrap__item--right__item<?php echo $name_js;?> {
+             display: block;
+             transition: all ease-in .3s;
+         }
+     }
+ 
+</style>
             <div class="detailHotel__list--body__list--wrap">
                 <form class="variations_form"
                     action="<?php echo esc_url(apply_filters('woocommerce_loop_add_to_cart_link', $product->get_permalink())); ?>"
