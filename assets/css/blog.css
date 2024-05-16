@@ -59,6 +59,9 @@
 .blog__container--new{
     /* height: 30vh; */
 }
+.blog__container--bottom__right--header__list--item{
+    width: 100%;
+}
 .blog__container--bottom{
     display: flex;
     align-items: start;
@@ -79,6 +82,7 @@
     display: flex;
     align-items: start;
     gap: 10px;
+    width: 100%;
     padding: 15px;
 }
 .blog__container--bottom__right--header__list--item a,
