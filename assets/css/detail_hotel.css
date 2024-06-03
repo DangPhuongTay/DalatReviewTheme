@@ -1391,6 +1391,12 @@ body.MapCarForm {
     }
 }
 @media (max-width: 800px) {
+    .detailHotel__list--body__facility--content__item--content {
+        flex-direction: column;
+    }
+    .detailHotel__list--body__facility--content__item--content--subitem{
+        margin: 0;
+    }
     .woocommerce-product-gallery__image a{
         pointer-events: none;
     }
