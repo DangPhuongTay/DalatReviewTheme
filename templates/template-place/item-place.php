@@ -60,24 +60,28 @@
                 </div>
                 <div class="hotel__right--tag">
                     <div class="hotel__right--tag__wrap">
-                        <?php
-                        foreach ($product->attributes as $taxonomy => $attribute) {
-                            foreach ($attribute->get_terms() as $term) {
-                                if ($term->taxonomy == 'pa_loai-phong') {
+                    <?php
+                    $count = 0; 
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                        foreach ($attribute->get_terms() as $term) {
+                            if ($term->taxonomy == 'pa_loai-phong') {
+                                if ($count < 2) { 
                                     ?>
-
                                     <div class="hotel__right--card__tag">
                                         <span>
                                             <?php echo $term->name; ?>
                                         </span>
                                     </div>
                                     <?php
+                                    $count++; 
                                 } else {
-                                    echo '';
+                                    break 2; 
                                 }
                             }
                         }
-                        ?>
+                    }
+                    ?>
+
                         <!-- <div class="hotel__right--card__tag">
                             <span>Lễ tân 24/24</span>
                         </div> -->
