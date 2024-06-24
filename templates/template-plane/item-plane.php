@@ -1,69 +1,67 @@
 <?php global $product; ?>
 
-<div class="flight-card">
-    <div class="flight-summary">
-        <div class="flight-details">
-            <div class="flight-img">
-                <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'thumbnail')); ?>
-                <?php the_title(); ?>
-            </div>
-            <div class="flight-info">
-                <div class="flight-info-route">
-                    <div class="flight-times">
-                        <?php
-                        foreach ($product->attributes as $taxonomy => $attribute) {
-                            foreach ($attribute->get_terms() as $term) {
-                                if ($term->taxonomy == 'pa_thoi-gian') {
-                                    echo '<span>' . $term->name . '</span>';
-                                }
-                            }
-                        }
-                        ?>
-                    </div>
-                    <div class="flight-route">
-                        <?php
-                        foreach ($product->attributes as $taxonomy => $attribute) {
-                            foreach ($attribute->get_terms() as $term) {
-                                if ($term->taxonomy == 'pa_dia-diem') {
-                                    echo '<span>' . $term->name . '</span>';
-                                }
-                            }
-                        }
-                        ?>
-                    </div>
-                </div>
-                <div class="flight-info-type">
-                    <div class="flight-class">
+<div class="flight-summary">
+    <div class="flight-details">
+        <div class="flight-img">
+            <?php echo get_the_post_thumbnail(get_the_ID(), 'thumbnail', array('class' => 'thumbnail')); ?>
+            <?php the_title(); ?>
+        </div>
+        <div class="flight-info">
+            <div class="flight-info-route">
+                <div class="flight-times">
                     <?php
-                        foreach ($product->attributes as $taxonomy => $attribute) {
-                            foreach ($attribute->get_terms() as $term) {
-                                if ($term->taxonomy == 'pa_loai-ve') {
-                                    echo '<span>' . $term->name . '</span>';
-                                }
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                        foreach ($attribute->get_terms() as $term) {
+                            if ($term->taxonomy == 'pa_thoi-gian') {
+                                echo '<span>' . $term->name . '</span>';
                             }
                         }
-                        ?>
-                    </div>
+                    }
+                    ?>
+                </div>
+                <div class="flight-route">
+                    <?php
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                        foreach ($attribute->get_terms() as $term) {
+                            if ($term->taxonomy == 'pa_dia-diem') {
+                                echo '<span>' . $term->name . '</span>';
+                            }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
-            <div class="flight-price">
-                <span><?php echo $product->get_price_html(); ?></span>
-                <a href="<?php the_permalink(); ?>"></a>
-                <div class="flight-price-btn firstBtn" onclick="toggleDropdown()">
-                    Xem Thêm Loại Vé
+            <div class="flight-info-type">
+                <div class="flight-class">
+                <?php
+                    foreach ($product->attributes as $taxonomy => $attribute) {
+                        foreach ($attribute->get_terms() as $term) {
+                            if ($term->taxonomy == 'pa_loai-ve') {
+                                echo '<span>' . $term->name . '</span>';
+                            }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
+        <div class="flight-price">
+            <span><?php echo $product->get_price_html(); ?></span>
+            <div class="flight-price-btn firstBtn" onclick="toggleDropdown('<?php echo 'dropdown-' . get_the_ID(); ?>')">
+                Xem Thêm
+            </div>
+        </div>
     </div>
+</div>
 
-    <?php
+<?php
 $available_variations = $product->get_available_variations();
 
 if (count($available_variations) > 0) {
     $name_js = 1;
     ?>
 
-    <div class="flight-dropdown-content">
+    <div class="flight-dropdown-content" id="<?php echo 'dropdown-' . get_the_ID(); ?>" style="display: none;">
         <?php foreach ($available_variations as $variation) {
             $variation_obj = wc_get_product($variation['variation_id']);
             ?>
@@ -123,48 +121,57 @@ if (count($available_variations) > 0) {
                     </form>
                 </div>
                 <script> 
-            const detailHotelBody<?php echo $name_js;?> = document.querySelector('body');
-            function btnDetailHotelRoom<?php echo $name_js;?>(){
+                    const detailHotelBody<?php echo $name_js;?> = document.querySelector('body');
+                    function btnDetailHotelRoom<?php echo $name_js;?>(){
                         detailHotelBody<?php echo $name_js;?>.classList.toggle('listDetailHotelRoom<?php echo $name_js;?>');
                     }                               
-            </script>
+                </script>
             </div>
         <?php } ?>
     </div>
 
 <?php } ?>
-</div>
+
 <script>
+    function toggleDropdown(id) {
+        var dropdown = document.getElementById(id);
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+
     jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function() {
-    var spinner = jQuery(this),
-        input = spinner.find('input[type="number"]'),
-        btnUp = spinner.find('.quantity-up'),
-        btnDown = spinner.find('.quantity-down'),
-        min = input.attr('min'),
-        max = input.attr('max');
+        var spinner = jQuery(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
 
-    btnUp.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue >= max) {
-        var newVal = oldValue;
-        } else {
-        var newVal = oldValue + 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-    });
+        btnUp.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
 
-    btnDown.click(function() {
-        var oldValue = parseFloat(input.val());
-        if (oldValue <= min) {
-        var newVal = oldValue;
-        } else {
-        var newVal = oldValue - 1;
-        }
-        spinner.find("input").val(newVal);
-        spinner.find("input").trigger("change");
-    });
+        btnDown.click(function() {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
 
     });
-    </script>
+</script>
